@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rozvrh tréninků TJ Sokol Vratimov</title>
+</head>
+<style>
+  body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f4f7f6; 
+    color: #333; 
+    margin: 40px; 
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+    max-width: 950px;
+  }
+  h1 { 
+    text-align: center; 
+    color: #2c3e50; 
+    margin-bottom: 30px; 
+  }
+  table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    background-color: #fff; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); 
+    border-radius: 8px; 
+    overflow: hidden; 
+  }
+  th, td { 
+    padding: 16px 20px; 
+    text-align: left; 
+    border-bottom: 1px solid #e0e0e0; 
+    vertical-align: middle;
+  }
+  th { 
+    background-color: #2c3e50; 
+    color: #ffffff; 
+    text-transform: uppercase; 
+    font-size: 0.9em; 
+    letter-spacing: 0.05em; 
+    border-bottom: none;
+  }
+  tr:last-child td { 
+    border-bottom: none; 
+  }
+
+  :root {
+    --prep-color: #fbf5d6;
+    --u14a-color: #fbe5e5;
+    --u14b-color: #f9eedd;
+    --u16-color: #e2f4fb;
+    --u18-color: #e9fcf1;
+    --u20-color: #d2ceec;
+    --zeny-color: #dad8d8;
+  }
+  
+  tbody tr.group-prep td { background-color: var(--prep-color); } 
+  tbody tr.group-u14a td { background-color: var(--u14a-color); } 
+  tbody tr.group-u14b td { background-color: var(--u14b-color); } 
+  tbody tr.group-u16 td { background-color: var(--u16-color); } 
+  tbody tr.group-u18 td { background-color: var(--u18-color); } 
+  tbody tr.group-u20 td { background-color: var(--u20-color); } 
+  tbody tr.group-zeny td { background-color: var(--zeny-color); }
+
+  
+  
+  tr.group-border-top td {
+    border-top: 5px solid #cbd5e1;
+  }
+  
+  .group-name { 
+    font-weight: 600; 
+    font-size: 1.05em; 
+    vertical-align: top;
+  }
+  .trainer {
+    display: block;
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 6px;
+    font-weight: normal;
+  }
+  strong {
+    color: #e74c3c;
+  }
+  .combined {
+    display: inline-block;
+    background-color: rgba(41, 128, 185, 0.1);
+    color: #2980b9;
+    font-size: 0.82em;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-top: 6px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    body { margin: 10px; }
+    th, td { padding: 10px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Rozvrh tréninků TJ Sokol Vratimov</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Tým</th>
+          <th>Den</th>
+          <th>Čas</th>
+          <th>Místo</th>
+        </tr>
+      </thead>
+      <tbody>
+         <!-- Přípravka -->
+        <tr class="group-prep group-border-top">
+          <td rowspan="2" class="group-name">Přípravka<span class="trainer">Trenér: Ramíková Š.</span></td>
+          <td>Úterý</td>
+          <td>15:00 – 16:30</td>
+          <td>Škola</td>
+        </tr>
+        <tr class="group-prep">
+          <td>Čtvrtek</td>
+          <td>15:00 – 16:30</td>
+          <td>Škola</td>
+        </tr>
+        <!-- U14Z-A -->
+        <tr class="group-u14a group-border-top">
+          <td rowspan="3" class="group-name">U14Z-A<span class="trainer">Trenér: Kavala V.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92498&amp;competitionId=18574&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span></td>
+          <td>Pondělí</td>
+          <td>14:30 – 16:00</td>
+          <td>Sokolovna</td>
+        </tr>
+        <tr class="group-u14a">
+          <td>Úterý</td>
+          <td>14:30 – 16:00</td>
+          <td>Sokolovna</td>
+        </tr>
+        <tr class="group-u14a">
+          <td>Pátek</td>
+          <td>14:45 – 16:30</td>
+          <td>Sokolovna</td>
+        </tr>
+        <tr class="group-u16">
+          <td class="group-name">U16B<span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92491&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <!-- U14Z(M)-B -->
+        <tr class="group-u14b group-border-top">
+          <td rowspan="3" class="group-name">U14Z-B<span class="trainer">Trenér: Cocca M.</span></td>
+          <td>Pondělí</td>
+          <td>15:00 – 17:00</td>
+          <td>Datyně</td>
+        </tr>
+        <tr class="group-u14b">
+          <td>Středa</td>
+          <td>14:30 – 16:30</td>
+          <td>Sokolovna</td>
+        </tr>
+        <tr class="group-u14b">
+          <td>Pátek</td>
+          <td>15:00 – 17:00</td>
+          <td>Datyně</td>
+        </tr>
+
+        <!-- U16Z-A -->
+        <tr class="group-u16 group-border-top">
+          <td rowspan="3" class="group-name">U16Z-A<span class="trainer">Trenéři: Špalek J. / Kaločová K.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92493&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span></td>
+          <td>Pondělí</td>
+          <td>16:00 – 17:30</td>
+          <td>Sokolovna</td>
+        </tr>
+        <tr class="group-u16">
+          <td>Úterý</td>
+          <td>16:00 – 17:30</td>
+          <td>Sokolovna</td>
+        </tr>
+        <tr class="group-u16">
+          <td>Čtvrtek</td>
+          <td>14:45 – 16:30</td>
+          <td>Sokolovna</td>
+        </tr>
+
+        <!-- U18Z -->
+        <tr class="group-u18 group-border-top">
+          <td rowspan="3" class="group-name">U18Z<span class="trainer">Trenér: Kavala T. / Přibylová K.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92492&amp;competitionId=18566&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span></td>
+          <td>Pondělí</td>
+          <td>17:30 – 19:00</td>
+          <td>Sokolovna<br><span class="combined">Společně s U20Z</span></td>
+        </tr>
+        <tr class="group-u18">
+          <td>Čtvrtek</td>
+          <td>16:30 – 18:00</td>
+          <td>Sokolovna<br><span class="combined">Společně s U20Z</span></td>
+        </tr>
+        <tr class="group-u18">
+          <td>Pátek</td>
+          <td>16:30 – 18:00</td>
+          <td>Sokolovna<br><span class="combined">Společně s U20Z</span></td>
+        </tr>
+
+        <!-- U20Z -->
+        <tr class="group-u20 group-border-top">
+          <td rowspan="4" class="group-name">U20Z<span class="trainer">Trenér: Kavala T. / Přibylová K.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92494&amp;competitionId=18564&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span></td>
+          <td>Pondělí</td>
+          <td>17:30 – 19:00</td>
+          <td>Sokolovna<br><span class="combined">Společně s U18Z</span></td>
+        </tr>
+        <tr class="group-u20">
+          <td>Úterý</td>
+          <td>17:30 – 19:30</td>
+          <td>Sokolovna<br><span class="combined">Společně s Ženami</span></td>
+        </tr>
+        <tr class="group-u20">
+          <td>Čtvrtek</td>
+          <td>16:30 – 18:00</td>
+          <td>Sokolovna<br><span class="combined">Společně s U18Z</span></td>
+        </tr>
+        <tr class="group-u20">
+          <td>Pátek</td>
+          <td>16:30 – 18:00</td>
+          <td>Sokolovna<br><span class="combined">Společně s U18Z</span></td>
+        </tr>
+        <!-- Ženy -->
+        <tr class="group-zeny group-border-top">
+          <td class="group-name">Ženy<span class="trainer">Trenér: Kavala T. / Kavala V.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=94459&amp;competitionId=18793&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span></td>
+          <td>Úterý</td>
+          <td>17:30 – 19:30</td>
+          <td>Sokolovna<br><span class="combined">Společně s U20Z</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
