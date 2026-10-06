@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-06 16:21",
+  "updated": "2026-10-06 16:35",
   "days": [
     {
       "date": "2026-10-06",
@@ -7,9 +7,9 @@
         {
           "skupina": "OV-Z",
           "cislo": "(7)",
-          "tymy": "TJ Sokol Vratimov - VK Polanka n. O. LIVE",
+          "tymy": "TJ Sokol Vratimov - VK Polanka n. O.",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=943010"
         }
       ]
