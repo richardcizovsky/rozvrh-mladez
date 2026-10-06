@@ -187,12 +187,36 @@
    .section-title {
      color: #2c3e50;
      text-align: center;
-     margin: 40px 0 15px;
+     margin: 40px 0 4px;
      font-size: 1.4em;
    }
+   .section-subtitle {
+     text-align: center;
+     color: #777;
+     font-size: 0.9em;
+     margin-bottom: 15px;
+   }
    .today-table tbody tr.today-row { cursor: pointer; }
-   .today-table tbody tr.today-row:hover td { background-color: #e8f4f8; }
+   .today-table tbody tr.today-row.hover td,
+   .today-table tbody tr.today-row.hover th { background-color: #e8f4f8; }
    .today-info { text-align: center; color: #666; }
+   .today-table tbody th {
+     width: 90px;
+     background-color: #f4f7f6;
+     color: #555;
+     text-transform: none;
+     font-size: 0.85em;
+     letter-spacing: 0;
+     font-weight: 600;
+     border-bottom: 1px solid #e0e0e0;
+   }
+   .today-table tbody tr.match-first th,
+   .today-table tbody tr.match-first td { border-top: 4px solid #2c3e50; }
+   .today-table tbody tr:first-child th,
+   .today-table tbody tr:first-child td { border-top: none; }
+   .match-teams { font-weight: 600; }
+   .match-score { font-weight: 700; font-size: 1.1em; margin-right: 6px; }
+   .match-sets { color: #555; margin-right: 6px; }
    .status-badge {
      display: inline-block;
      padding: 2px 8px;
@@ -351,18 +375,11 @@
     </table>
 
     <!-- Dnešní zápasy (data z current.json, generuje GitHub Action) -->
-    <h3 class="section-title" id="todayTitle">Dnešní zápasy</h3>
+    <h3 class="section-title">Dnešní zápasy</h3>
+    <div class="section-subtitle" id="todayDate"></div>
     <table class="today-table">
-      <thead>
-        <tr>
-          <th>Skupina</th>
-          <th>Číslo</th>
-          <th>Týmy</th>
-          <th>Stav</th>
-        </tr>
-      </thead>
       <tbody id="todayMatches">
-        <tr><td colspan="4" class="today-info">Načítání dat...</td></tr>
+        <tr><td colspan="2" class="today-info">Načítání dat...</td></tr>
       </tbody>
     </table>
 
@@ -383,32 +400,42 @@
       const d = new Date();
       const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
       const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-      document.getElementById('todayTitle').textContent =
-        'Dnešní zápasy – ' + d.toLocaleDateString('cs-CZ', { weekday: 'long', day: 'numeric', month: 'long' });
+      document.getElementById('todayDate').textContent =
+        d.toLocaleDateString('cs-CZ', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
       try {
         const res = await fetch(`current.json?t=${Date.now()}`, { cache: 'no-store' });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
         const days = (data.days || []).filter(x => x.date === dateStr && x.matches.length);
         if (!days.length) {
-          tbody.innerHTML = '<tr><td colspan="4" class="today-info">Dnes žádný zápas</td></tr>';
+          tbody.innerHTML = '<tr><td colspan="2" class="today-info">Dnes žádný zápas</td></tr>';
           return;
         }
         const row = m => {
           let badge = '';
           if (m.badge) {
             const cls = m.badge.includes('PLAY') ? 'status-play' : m.badge.includes('PAUSE') ? 'status-pause' : '';
-            badge = `<br><span class="status-badge ${cls}">${esc(m.badge)}</span>`;
+            badge = ` <span class="status-badge ${cls}">${esc(m.badge)}</span>`;
           }
-          return `<tr class="today-row" data-href="${esc(m.href)}">
-            <td>${esc(m.skupina)}</td><td>${esc(m.cislo)}</td>
-            <td>${esc(m.tymy)}${badge}</td><td>${esc(m.stav)}</td></tr>`;
+          // "3:2 (19,-22,21,-25,17)" -> výsledek "3:2" a sety "19, -22, 21, -25, 17"
+          const mt = String(m.stav || '').match(/^\s*([^()]*?)\s*(?:\((.*)\))?\s*$/);
+          const vysledek = (mt && mt[1]) || m.stav || '-';
+          const sety = mt && mt[2] ? mt[2].split(',').map(x => x.trim()).filter(Boolean).join(', ') : '';
+          const href = esc(m.href);
+          return `
+            <tr class="today-row match-first" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams">${esc(m.tymy)}</td></tr>
+            <tr class="today-row" data-href="${href}"><th>Výsledek</th><td><span class="match-score">${esc(vysledek)}</span>${sety ? `<span class="match-sets">(${esc(sety)})</span>` : ''}${badge}</td></tr>`;
         };
         tbody.innerHTML = days.map(x => x.matches.map(row).join('')).join('');
-        tbody.querySelectorAll('tr[data-href]').forEach(r =>
-          r.addEventListener('click', () => window.open(r.dataset.href, '_blank', 'noopener')));
+        // Všechny řádky jednoho zápasu fungují jako jeden odkaz (klik + společné zvýraznění)
+        tbody.querySelectorAll('tr[data-href]').forEach(r => {
+          const group = () => tbody.querySelectorAll(`tr[data-href="${CSS.escape(r.dataset.href)}"]`);
+          r.addEventListener('click', () => window.open(r.dataset.href, '_blank', 'noopener'));
+          r.addEventListener('mouseenter', () => group().forEach(x => x.classList.add('hover')));
+          r.addEventListener('mouseleave', () => group().forEach(x => x.classList.remove('hover')));
+        });
       } catch (e) {
-        tbody.innerHTML = `<tr><td colspan="4" class="today-info">Nepodařilo se načíst zápasy (${esc(e.message)})</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="2" class="today-info">Nepodařilo se načíst zápasy (${esc(e.message)})</td></tr>`;
       }
     }
     loadTodayMatches();
