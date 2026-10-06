@@ -378,7 +378,7 @@
     </footer>
   </div>
   <script>
-    (async function () {
+    async function loadTodayMatches() {
       const tbody = document.getElementById('todayMatches');
       const d = new Date();
       const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
@@ -410,7 +410,11 @@
       } catch (e) {
         tbody.innerHTML = `<tr><td colspan="4" class="today-info">Nepodařilo se načíst zápasy (${esc(e.message)})</td></tr>`;
       }
-    })();
+    }
+    loadTodayMatches();
+    // Automatické obnovení dat každou minutu a při návratu na záložku
+    setInterval(() => { if (!document.hidden) loadTodayMatches(); }, 60000);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) loadTodayMatches(); });
   </script>
 </body>
 </html>
