@@ -1,0 +1,25 @@
+# GitHub Pages configuration for tjsokolvratimov.cz
+title: "Rozvrh tréninků TJ Sokol Vratimov"
+description: "Aktuální časy a místa tréninků pro všechny věkové kategorie"
+url: "https://tjsokolvratimov.cz"
+domain: "tjsokolvratimov.cz"
+
+# Disable Jekyll processing
+plugins: []
+
+# Exclude files from Jekyll
+exclude:
+  - .nojekyll
+  - scripts/
+  - .git/
+  - .github/
+
+# Set the timezone
+timezone: Europe/Prague
+
+# Markdown settings (if needed)
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
