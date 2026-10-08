@@ -238,6 +238,34 @@
    }
    .status-play { background-color: #d4edda; color: #155724; }
    .status-pause { background-color: #fff3cd; color: #856404; }
+   .date-nav-btn {
+     background-color: #2c3e50;
+     color: #ffffff;
+     border: none;
+     padding: 8px 16px;
+     margin: 0 10px;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 0.95em;
+     font-weight: 600;
+     transition: background-color 0.2s;
+   }
+   .date-nav-btn:hover {
+     background-color: #34495e;
+   }
+   .date-nav-btn:disabled {
+     background-color: #bdc3c7;
+     cursor: not-allowed;
+     opacity: 0.6;
+   }
+   .date-display {
+     font-size: 1.1em;
+     font-weight: 600;
+     color: #2c3e50;
+     min-width: 250px;
+     display: inline-block;
+     text-align: center;
+   }
  </style>
 </head>
 <body>
@@ -265,7 +293,7 @@
          <!-- Přípravka -->
         <tr class="group-prep group-border-top">
           <td rowspan="3" class="group-name">Přípravka<span class="trainer">Trenér: Ramíková Š.</span></td>
-          <td>Úterý</td>
+          <td>Úter��</td>
           <td>14:30 – 16:00</td>
           <td>Škola</td>
         </tr>
@@ -296,13 +324,6 @@
           <td>14:30 – 16:30</td>
           <td>Sokolovna</td>
         </tr>
-        <tr class="group-u16">
-          <td class="group-name">U16B<span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92491&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=29668&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=program">Další turnaj</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28842&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></span></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-
         <!-- U14Z(M)-B -->
         <tr class="group-u14b group-border-top">
           <td rowspan="2" class="group-name">U14Z-B<span class="trainer">Trenér: Cocca M.</span></td>
@@ -385,9 +406,13 @@
       </tbody>
     </table>
 
-    <!-- Dnešní zápasy (data z current.json, generuje GitHub Action) -->
-    <h3 class="section-title">Dnešní zápasy eZapis</h3>
-    <div class="section-subtitle" id="todayDate"></div>
+    <!-- Zápasy z eZapis (data z current.json, generuje GitHub Action) -->
+    <h3 class="section-title">Zápasy eZapis</h3>
+    <div class="section-subtitle">
+      <button id="prevBtn" class="date-nav-btn">← Předchozí</button>
+      <span id="currentDate" class="date-display"></span>
+      <button id="nextBtn" class="date-nav-btn">Další →</button>
+    </div>
     <table class="today-table">
       <tbody id="todayMatches">
         <tr><td colspan="2" class="today-info">Načítání dat...</td></tr>
@@ -406,53 +431,82 @@
     </footer>
   </div>
   <script>
-    async function loadTodayMatches() {
-      const tbody = document.getElementById('todayMatches');
-      const d = new Date();
-      const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-      const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-      document.getElementById('todayDate').textContent =
-        d.toLocaleDateString('cs-CZ', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    let allDays = [];
+    let currentDayIndex = 0;
+
+    async function loadMatches() {
       try {
         const res = await fetch(`current.json?t=${Date.now()}`, { cache: 'no-store' });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
-        const days = (data.days || []).filter(x => x.date === dateStr && x.matches.length);
-        if (!days.length) {
-          tbody.innerHTML = '<tr><td colspan="2" class="today-info">Dnes žádný zápas</td></tr>';
-          return;
-        }
-        const row = m => {
-          let badge = '';
-          if (m.badge) {
-            const cls = m.badge.includes('PLAY') ? 'status-play' : m.badge.includes('PAUSE') ? 'status-pause' : '';
-            badge = ` <span class="status-badge ${cls}">${esc(m.badge)}</span>`;
-          }
-          // "3:2 (19,-22,21,-25,17)" -> výsledek "3:2" a sety "19, -22, 21, -25, 17"
-          const mt = String(m.stav || '').match(/^\s*([^()]*?)\s*(?:\((.*)\))?\s*$/);
-          const vysledek = (mt && mt[1]) || m.stav || '-';
-          const sety = mt && mt[2] ? mt[2].split(',').map(x => x.trim()).filter(Boolean).join(', ') : '';
-          const href = esc(m.href);
-          return `
-            <tr class="today-row match-first" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams">${esc(m.tymy)}</td></tr>
-            <tr class="today-row" data-href="${href}"><th>Výsledek</th><td><span class="match-score">${esc(vysledek)}</span>${sety ? `<span class="match-sets">(${esc(sety)})</span>` : ''}${badge}</td></tr>`;
-        };
-        tbody.innerHTML = days.map(x => x.matches.map(row).join('')).join('');
-        // Všechny řádky jednoho zápasu fungují jako jeden odkaz (klik + společné zvýraznění)
-        tbody.querySelectorAll('tr[data-href]').forEach(r => {
-          const group = () => tbody.querySelectorAll(`tr[data-href="${CSS.escape(r.dataset.href)}"]`);
-          r.addEventListener('click', () => window.open(r.dataset.href, '_blank', 'noopener'));
-          r.addEventListener('mouseenter', () => group().forEach(x => x.classList.add('hover')));
-          r.addEventListener('mouseleave', () => group().forEach(x => x.classList.remove('hover')));
-        });
+        allDays = data.days || [];
+
+        // Najdi index dnešního dne
+        const today = new Date();
+        const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+        currentDayIndex = Math.max(0, allDays.findIndex(d => d.date === todayStr));
+
+        renderDay();
       } catch (e) {
-        tbody.innerHTML = `<tr><td colspan="2" class="today-info">Nepodařilo se načíst zápasy (${esc(e.message)})</td></tr>`;
+        const tbody = document.getElementById('todayMatches');
+        tbody.innerHTML = `<tr><td colspan="2" class="today-info">Chyba při načítání: ${String(e.message)}</td></tr>`;
       }
     }
-    loadTodayMatches();
-    // Automatické obnovení dat každou minutu a při návratu na záložku
-    setInterval(() => { if (!document.hidden) loadTodayMatches(); }, 60000);
-    document.addEventListener('visibilitychange', () => { if (!document.hidden) loadTodayMatches(); });
+
+    function renderDay() {
+      const tbody = document.getElementById('todayMatches');
+      const dateDisplay = document.getElementById('currentDate');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+
+      if (!allDays.length) {
+        tbody.innerHTML = '<tr><td colspan="2" class="today-info">Žádná data</td></tr>';
+        return;
+      }
+
+      const day = allDays[currentDayIndex];
+      const date = new Date(day.date + 'T00:00:00');
+      dateDisplay.textContent = date.toLocaleDateString('cs-CZ', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+
+      prevBtn.disabled = currentDayIndex === 0;
+      nextBtn.disabled = currentDayIndex === allDays.length - 1;
+      prevBtn.onclick = () => { if (currentDayIndex > 0) { currentDayIndex--; renderDay(); } };
+      nextBtn.onclick = () => { if (currentDayIndex < allDays.length - 1) { currentDayIndex++; renderDay(); } };
+
+      if (!day.matches.length) {
+        tbody.innerHTML = '<tr><td colspan="2" class="today-info">Žádné zápasy</td></tr>';
+        return;
+      }
+
+      const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      const row = m => {
+        let badge = '';
+        if (m.badge) {
+          const cls = m.badge.includes('PLAY') ? 'status-play' : m.badge.includes('PAUSE') ? 'status-pause' : '';
+          badge = ` <span class="status-badge ${cls}">${esc(m.badge)}</span>`;
+        }
+        const mt = String(m.stav || '').match(/^\s*([^()]*?)\s*(?:\((.*)\))?\s*$/);
+        const vysledek = (mt && mt[1]) || m.stav || '-';
+        const sety = mt && mt[2] ? mt[2].split(',').map(x => x.trim()).filter(Boolean).join(', ') : '';
+        const href = esc(m.href);
+        return `
+          <tr class="today-row match-first" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams">${esc(m.tymy)}</td></tr>
+          <tr class="today-row" data-href="${href}"><th>Výsledek</th><td><span class="match-score">${esc(vysledek)}</span>${sety ? `<span class="match-sets">(${esc(sety)})</span>` : ''}${badge}</td></tr>`;
+      };
+      tbody.innerHTML = day.matches.map(row).join('');
+
+      tbody.querySelectorAll('tr[data-href]').forEach(r => {
+        const group = () => tbody.querySelectorAll(`tr[data-href="${CSS.escape(r.dataset.href)}"]`);
+        r.addEventListener('click', () => window.open(r.dataset.href, '_blank', 'noopener'));
+        r.addEventListener('mouseenter', () => group().forEach(x => x.classList.add('hover')));
+        r.addEventListener('mouseleave', () => group().forEach(x => x.classList.remove('hover')));
+      });
+    }
+
+    loadMatches();
+    // Automatické obnovení dat každou minutu
+    setInterval(() => { if (!document.hidden) loadMatches(); }, 60000);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) loadMatches(); });
   </script>
 </body>
 </html>
