@@ -304,7 +304,7 @@
          <!-- Přípravka -->
         <tr class="group-prep group-border-top">
           <td rowspan="3" class="group-name">Přípravka<span class="trainer">Trenér: Ramíková Š.</span></td>
-          <td>Úter������</td>
+          <td>Úterý</td>
           <td>14:30 – 16:00</td>
           <td>Škola</td>
         </tr>
@@ -328,7 +328,7 @@
         <tr class="group-u14a">
           <td>Úterý</td>
           <td>14:30 – 16:00</td>
-          <td>Sokolovna</td>
+          <td>Škola</td>
         </tr>
         <tr class="group-u14a">
           <td>Pátek</td>
@@ -469,28 +469,37 @@
         sortedDays.forEach((day, dayIdx) => {
           const date = new Date(day.date + 'T00:00:00');
           const dateStr = date.toLocaleDateString('cs-CZ', { weekday: 'long', day: 'numeric', month: 'long' });
+          const isToday = dayIdx === 0;
+          const displayDateStr = isToday ? `Dnes ${dateStr}` : dateStr;
 
-          if (!day.matches.length) {
-            html += `<tr class="date-header"><th colspan="3">${dateStr}</th></tr>
-                     <tr><td colspan="3" class="today-info">Žádné zápasy</td></tr>`;
-          } else {
-            html += `<tr class="date-header"><th colspan="3">${dateStr}</th></tr>`;
-            day.matches.forEach((m, mIdx) => {
-              let badge = '';
-              if (m.badge) {
-                const cls = m.badge.includes('PLAY') ? 'status-play' : m.badge.includes('PAUSE') ? 'status-pause' : '';
-                badge = ` <span class="status-badge ${cls}">${esc(m.badge)}</span>`;
-              }
-              const mt = String(m.stav || '').match(/^\s*([^()]*?)\s*(?:\((.*)\))?\s*$/);
-              const vysledek = (mt && mt[1]) || m.stav || '-';
-              const sety = mt && mt[2] ? mt[2].split(',').map(x => x.trim()).filter(Boolean).join(', ') : '';
-              const href = esc(m.href);
+          // Zobrazit dnešní den vždy, ostatní dny jen když mají zápasy
+          if (day.matches.length || isToday) {
+            html += `<tr class="date-header"><th colspan="3">${displayDateStr}</th></tr>`;
+            if (day.matches.length) {
+              day.matches.forEach((m, mIdx) => {
+                let badge = '';
+                if (m.badge) {
+                  const cls = m.badge.includes('PLAY') ? 'status-play' : m.badge.includes('PAUSE') ? 'status-pause' : '';
+                  badge = ` <span class="status-badge ${cls}">${esc(m.badge)}</span>`;
+                }
+                const mt = String(m.stav || '').match(/^\s*([^()]*?)\s*(?:\((.*)\))?\s*$/);
+                const vysledek = (mt && mt[1]) || m.stav || '-';
+                const sety = mt && mt[2] ? mt[2].split(',').map(x => x.trim()).filter(Boolean).join(', ') : '';
+                const href = esc(m.href);
 
-              const firstRow = mIdx === 0;
-              html += `
-                <tr class="today-row ${firstRow ? 'match-first' : ''}" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams" colspan="2">${esc(m.tymy)}</td></tr>
-                <tr class="today-row" data-href="${href}"><th>Výsledek</th><td colspan="2"><span class="match-score">${esc(vysledek)}</span>${sety ? ` <span class="match-sets">(${esc(sety)})</span>` : ''}${badge}</td></tr>`;
-            });
+                const firstRow = mIdx === 0;
+                html += `
+                  <tr class="today-row ${firstRow ? 'match-first' : ''}" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams" colspan="2">${esc(m.tymy)}</td></tr>`;
+
+                // Zobrazuj řádek výsledku jen u dnešních zápasů
+                if (isToday) {
+                  html += `
+                  <tr class="today-row" data-href="${href}"><th>Výsledek</th><td colspan="2"><span class="match-score">${esc(vysledek)}</span>${sety ? ` <span class="match-sets">(${esc(sety)})</span>` : ''}${badge}</td></tr>`;
+                }
+              });
+            } else if (isToday) {
+              html += `<tr><td colspan="3" class="today-info">Dnes žádné zápasy</td></tr>`;
+            }
           }
         });
 

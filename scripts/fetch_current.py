@@ -10,7 +10,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 FILTER = "Sokol Vratimov"
-DAYS_AHEAD = 0  # jen dnešek (např. 7 = týden dopředu)
+DAYS_AHEAD = 8  # jen dnešek (např. 7 = týden dopředu)
 OUT = Path(__file__).resolve().parent.parent / "current.json"
 
 
