@@ -1,10 +1,6 @@
 {
-  "updated": "2026-10-09 00:01",
+  "updated": "2026-10-10 00:19",
   "days": [
-    {
-      "date": "2026-10-09",
-      "matches": []
-    },
     {
       "date": "2026-10-10",
       "matches": [
@@ -142,6 +138,27 @@
           "stav": "-",
           "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936558"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "matches": [
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(27)",
+          "tymy": "TJ Hlučín - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937005"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(30)",
+          "tymy": "TJ Hlučín - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937008"
         }
       ]
     }
