@@ -1,27 +1,6 @@
 {
-  "updated": "2026-10-10 13:53",
+  "updated": "2026-10-11 00:09",
   "days": [
-    {
-      "date": "2026-10-10",
-      "matches": [
-        {
-          "skupina": "MS-U18ZA",
-          "cislo": "(20)",
-          "tymy": "TJ Sokol Vratimov - TJ Odry",
-          "stav": "3:1 (21,16,-21,16)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=936548"
-        },
-        {
-          "skupina": "MS-U18ZA",
-          "cislo": "(24)",
-          "tymy": "TJ Sokol Vratimov - TJ Odry",
-          "stav": "3:0 (16,14,9)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=936552"
-        }
-      ]
-    },
     {
       "date": "2026-10-11",
       "matches": [
@@ -161,6 +140,10 @@
           "href": "https://ezapis.cvf.cz/online/view.php?match=937008"
         }
       ]
+    },
+    {
+      "date": "2026-10-19",
+      "matches": []
     }
   ]
 }
