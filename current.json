@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10 11:42",
+  "updated": "2026-10-10 12:07",
   "days": [
     {
       "date": "2026-10-10",
@@ -17,7 +17,7 @@
           "cislo": "(24)",
           "tymy": "TJ Sokol Vratimov - TJ Odry",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936552"
         }
       ]
