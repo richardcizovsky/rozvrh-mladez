@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10 13:31",
+  "updated": "2026-10-10 13:53",
   "days": [
     {
       "date": "2026-10-10",
@@ -16,8 +16,8 @@
           "skupina": "MS-U18ZA",
           "cislo": "(24)",
           "tymy": "TJ Sokol Vratimov - TJ Odry",
-          "stav": "-",
-          "badge": "PAUSE",
+          "stav": "3:0 (16,14,9)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936552"
         }
       ]
