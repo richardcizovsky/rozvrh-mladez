@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11 11:36",
+  "updated": "2026-10-11 11:58",
   "days": [
     {
       "date": "2026-10-11",
@@ -15,9 +15,9 @@
         {
           "skupina": "MS-U16Z-T1D",
           "cislo": "(3)",
-          "tymy": "TJ Sokol Vratimov \"A\" - Happy Opava",
+          "tymy": "TJ Sokol Vratimov \"A\" - Happy Opava LIVE",
           "stav": "-",
-          "badge": "PAUSE",
+          "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=953190"
         },
         {
@@ -55,15 +55,15 @@
         {
           "skupina": "MS-U20ZA",
           "cislo": "(20)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol Bohumín LIVE",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Bohumín",
           "stav": "3:0 (19,18,18)",
-          "badge": "",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936998"
         },
         {
           "skupina": "MS-U20ZA",
           "cislo": "(23)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol Bohumín",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Bohumín LIVE",
           "stav": "-",
           "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=937001"
