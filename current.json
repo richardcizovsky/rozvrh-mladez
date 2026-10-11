@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11 12:20",
+  "updated": "2026-10-11 12:47",
   "days": [
     {
       "date": "2026-10-11",
@@ -15,9 +15,9 @@
         {
           "skupina": "MS-U16Z-T1D",
           "cislo": "(3)",
-          "tymy": "TJ Sokol Vratimov \"A\" - Happy Opava LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Sokol Vratimov \"A\" - Happy Opava",
+          "stav": "2:0 (17,16)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=953190"
         },
         {
