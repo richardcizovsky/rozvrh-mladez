@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11 13:17",
+  "updated": "2026-10-11 13:53",
   "days": [
     {
       "date": "2026-10-11",
@@ -63,9 +63,9 @@
         {
           "skupina": "MS-U20ZA",
           "cislo": "(23)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol Bohumín LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Bohumín",
+          "stav": "3:1 (-14,20,19,23)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=937001"
         }
       ]
