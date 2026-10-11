@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11 09:57",
+  "updated": "2026-10-11 10:27",
   "days": [
     {
       "date": "2026-10-11",
@@ -17,7 +17,7 @@
           "cislo": "(3)",
           "tymy": "TJ Sokol Vratimov \"A\" - Happy Opava",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=953190"
         },
         {
@@ -41,7 +41,7 @@
           "cislo": "(3)",
           "tymy": "TJ Sokol Vratimov \"B\" - TJ Sokol F-M \"B\"",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=953208"
         },
         {
