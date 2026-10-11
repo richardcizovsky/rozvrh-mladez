@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11 11:58",
+  "updated": "2026-10-11 12:20",
   "days": [
     {
       "date": "2026-10-11",
@@ -39,9 +39,9 @@
         {
           "skupina": "MS-U16Z-T1F",
           "cislo": "(3)",
-          "tymy": "TJ Sokol Vratimov \"B\" - TJ Sokol F-M \"B\" LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Sokol Vratimov \"B\" - TJ Sokol F-M \"B\"",
+          "stav": "0:2 (-12,-11)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=953208"
         },
         {
