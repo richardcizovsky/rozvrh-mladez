@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11 12:47",
+  "updated": "2026-10-11 13:17",
   "days": [
     {
       "date": "2026-10-11",
@@ -23,9 +23,9 @@
         {
           "skupina": "MS-U16Z-T1D",
           "cislo": "(6)",
-          "tymy": "TJ Sokol Vratimov \"A\" - SVK Nový Jičín \"B\"",
+          "tymy": "TJ Sokol Vratimov \"A\" - SVK Nový Jičín \"B\" LIVE",
           "stav": "-",
-          "badge": "PAUSE",
+          "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=953193"
         },
         {
@@ -47,9 +47,9 @@
         {
           "skupina": "MS-U16Z-T1F",
           "cislo": "(5)",
-          "tymy": "TJ Sokol Vratimov \"B\" - TJ Sokol Stará Bělá",
+          "tymy": "TJ Sokol Vratimov \"B\" - TJ Sokol Stará Bělá LIVE",
           "stav": "-",
-          "badge": "PAUSE",
+          "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=953210"
         },
         {
