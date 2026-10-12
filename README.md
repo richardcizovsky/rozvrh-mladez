@@ -118,10 +118,13 @@ Script je spouštěn automaticky prostřednictvím GitHub Actions každou hodinu
 
 Stránka `index.html`:
 - Zobrazuje statický rozvrh tréninků
-- Pod tím zobrazuje sekci **"Odehrané zápasy - Minulý týden"** - minulé zápasy od včerejška zpět
-- Dále zobrazuje sekci **"Budoucí zápasy"** - plánované zápasy na nadcházející dny
+- Zobrazuje sekci **"Aktuální a budoucí zápasy"** (8 dní dopředu) - plánované zápasy od dnešího dne
+  - Dnešní zápasy zobrazují řádek s výsledky a sety
+  - Budoucí zápasy (ne dnešní) zobrazují jen týmy bez výsledků
+- Zobrazuje sekci **"Odehrané zápasy - Minulý týden"** (8 dní zpět) - minulé zápasy od včerejška zpět
+  - Zobrazují jen dny se skutečnými zápasy
+  - Vždy zobrazují výsledky a jednotlivé sety
 - Obě sekce dynamicky načítají data z `current.json`
-- Minulé i budoucí zápasy zobrazují výsledky a jednotlivé sety
-- Dny bez zápasů se nezobrazují (v sekci budoucích zápasů se dnešní den vždy zobrazí)
+- Dny bez zápasů se nezobrazují (v sekci aktuálních se dnešní den vždy zobrazí)
 - Zápasy jsou seřazeny od nejnověji odehrané (minulé) a od dnešního dne (budoucí)
 
