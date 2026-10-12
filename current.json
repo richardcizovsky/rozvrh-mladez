@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12 00:18",
+  "updated": "2026-10-12 13:03",
   "days": [
     {
       "date": "2026-10-12",
@@ -86,6 +86,132 @@
           "stav": "-",
           "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=943017"
+        }
+      ]
+    }
+  ],
+  "past_days": [
+    {
+      "date": "2026-10-11",
+      "matches": [
+        {
+          "skupina": "MS-U16Z-T1D",
+          "cislo": "(1)",
+          "tymy": "TJ Sokol Vratimov \"A\" - TJ Frenštát p. R. \"B\"",
+          "stav": "2:0 (10,17)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=953188"
+        },
+        {
+          "skupina": "MS-U16Z-T1D",
+          "cislo": "(3)",
+          "tymy": "TJ Sokol Vratimov \"A\" - Happy Opava",
+          "stav": "2:0 (17,16)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=953190"
+        },
+        {
+          "skupina": "MS-U16Z-T1D",
+          "cislo": "(6)",
+          "tymy": "TJ Sokol Vratimov \"A\" - SVK Nový Jičín \"B\"",
+          "stav": "2:0 (12,20)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=953193"
+        },
+        {
+          "skupina": "MS-U16Z-T1F",
+          "cislo": "(1)",
+          "tymy": "TJ Sokol Vratimov \"B\" - VK Kylešovice",
+          "stav": "0:2 (-22,-19)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=953206"
+        },
+        {
+          "skupina": "MS-U16Z-T1F",
+          "cislo": "(3)",
+          "tymy": "TJ Sokol Vratimov \"B\" - TJ Sokol F-M \"B\"",
+          "stav": "0:2 (-12,-11)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=953208"
+        },
+        {
+          "skupina": "MS-U16Z-T1F",
+          "cislo": "(5)",
+          "tymy": "TJ Sokol Vratimov \"B\" - TJ Sokol Stará Bělá",
+          "stav": "2:0 (14,18)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=953210"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(20)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Bohumín",
+          "stav": "3:0 (19,18,18)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936998"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(23)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Bohumín",
+          "stav": "3:1 (-14,20,19,23)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937001"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "matches": [
+        {
+          "skupina": "MS-U18ZA",
+          "cislo": "(20)",
+          "tymy": "TJ Sokol Vratimov - TJ Odry",
+          "stav": "3:1 (21,16,-21,16)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936548"
+        },
+        {
+          "skupina": "MS-U18ZA",
+          "cislo": "(24)",
+          "tymy": "TJ Sokol Vratimov - TJ Odry",
+          "stav": "3:0 (16,14,9)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936552"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "matches": [
+        {
+          "skupina": "OV-Z",
+          "cislo": "(7)",
+          "tymy": "TJ Sokol Vratimov - VK Polanka n. O.",
+          "stav": "3:2 (19,-22,21,-25,17)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=943010"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "matches": [
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(14)",
+          "tymy": "VO Slezská Orlice - TJ Sokol Vratimov",
+          "stav": "3:0 (13,12,12)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936992"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(17)",
+          "tymy": "VO Slezská Orlice - TJ Sokol Vratimov",
+          "stav": "3:2 (17,-23,11,-21,5)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936995"
         }
       ]
     }

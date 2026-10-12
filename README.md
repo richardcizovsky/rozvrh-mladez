@@ -38,16 +38,18 @@ python3 scripts/fetch_current.py
 
 ### Co se stane
 
-- Script stáhne zápasy na dnešek a 7 dní dopředu
+- Script stáhne zápasy na dnešek a 8 dní dopředu (budoucí zápasy)
+- Script stáhne zápasy z posledních 8 dní zpět (minulé zápasy)
 - Filtruje zápasy, kde hraje "Sokol Vratimov"
 - Uloží data do `current.json`
-- Vypíše počet načtených zápasů
+- Pro minulé zápasy se zobrazují jen dny se skutečnými zápasy
+- Vypíše počet načtených budoucích a minulých zápasů
 
 ### Výstup
 
 Příklad úspěšného běhu:
 ```
-Uloženo 8 zápasů (2026-10-08 – 2026-10-16)
+Uloženo 6 budoucích + 13 minulých zápasů
 ```
 
 Pokud se nic nezmění:
@@ -68,18 +70,37 @@ Script je spouštěn automaticky prostřednictvím GitHub Actions každou hodinu
 
 ```json
 {
-  "updated": "2026-10-08 08:34",
+  "updated": "2026-10-12 12:44",
   "days": [
     {
-      "date": "2026-10-08",
+      "date": "2026-10-12",
+      "matches": []
+    },
+    {
+      "date": "2026-10-14",
       "matches": [
         {
-          "skupina": "MS-U18ZA",
-          "cislo": "(20)",
-          "tymy": "TJ Sokol Vratimov - TJ Odry",
+          "skupina": "OV-Z",
+          "cislo": "(10)",
+          "tymy": "TJ Hlučín - TJ Sokol Vratimov",
           "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=943013"
+        }
+      ]
+    }
+  ],
+  "past_days": [
+    {
+      "date": "2026-10-11",
+      "matches": [
+        {
+          "skupina": "MS-U16Z-T1D",
+          "cislo": "(1)",
+          "tymy": "TJ Sokol Vratimov \"A\" - TJ Frenštát p. R. \"B\"",
+          "stav": "3:1 (23,-18,21,18)",
           "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=936548"
+          "href": "https://ezapis.cvf.cz/online/view.php?match=953188"
         }
       ]
     }
@@ -87,12 +108,20 @@ Script je spouštěn automaticky prostřednictvím GitHub Actions každou hodinu
 }
 ```
 
+### Pole v JSON
+
+- **updated**: Čas poslední aktualizace
+- **days**: Budoucí zápasy od dnešního dne až na 8 dní dopředu (včetně prázdných dní)
+- **past_days**: Minulé zápasy z posledních 8 dní (jen dny se zápasy)
+
 ## Zobrazení na webu
 
 Stránka `index.html`:
 - Zobrazuje statický rozvrh tréninků
-- Pod tím dynamicky načítá zápasy z `current.json`
-- Dnešní zápasy zobrazuje s výsledky a časy
-- Budoucí zápasy zobrazuje bez výsledků
-- Dny bez zápasů se nezobrazují (jen dnešní den se vždy zobrazí)
+- Pod tím zobrazuje sekci **"Odehrané zápasy - Minulý týden"** - minulé zápasy od včerejška zpět
+- Dále zobrazuje sekci **"Budoucí zápasy"** - plánované zápasy na nadcházející dny
+- Obě sekce dynamicky načítají data z `current.json`
+- Minulé i budoucí zápasy zobrazují výsledky a jednotlivé sety
+- Dny bez zápasů se nezobrazují (v sekci budoucích zápasů se dnešní den vždy zobrazí)
+- Zápasy jsou seřazeny od nejnověji odehrané (minulé) a od dnešního dne (budoucí)
 

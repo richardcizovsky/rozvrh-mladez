@@ -11,6 +11,7 @@ from zoneinfo import ZoneInfo
 
 FILTER = "Sokol Vratimov"
 DAYS_AHEAD = 8  # jen dnešek (např. 7 = týden dopředu)
+DAYS_BACK = 8  # minulé zápasy - 8 dní zpět
 OUT = Path(__file__).resolve().parent.parent / "current.json"
 
 
@@ -80,25 +81,48 @@ def fetch_day(date):
 def main():
     now = datetime.now(ZoneInfo("Europe/Prague"))
     old = json.loads(OUT.read_text("utf-8")) if OUT.exists() else {}
-    old_days = {d["date"]: d["matches"] for d in old.get("days", [])}
+    old_future_days = {d["date"]: d["matches"] for d in old.get("days", [])}
+    old_past_days = {d["date"]: d["matches"] for d in old.get("past_days", [])}
 
-    days = []
+    # Stahuj budoucí zápasy
+    future_days = []
     for i in range(DAYS_AHEAD + 1):
         date = (now + timedelta(days=i)).strftime("%Y-%m-%d")
         try:
             matches = fetch_day(date)
         except Exception as e:  # při výpadku ponechat stará data pro daný den
             print(f"Chyba {date}: {e}", file=sys.stderr)
-            matches = old_days.get(date, [])
-        days.append({"date": date, "matches": matches})
+            matches = old_future_days.get(date, [])
+        future_days.append({"date": date, "matches": matches})
+
+    # Stahuj minulé zápasy
+    past_days = []
+    for i in range(1, DAYS_BACK + 1):
+        date = (now - timedelta(days=i)).strftime("%Y-%m-%d")
+        try:
+            matches = fetch_day(date)
+        except Exception as e:  # při výpadku ponechat stará data pro daný den
+            print(f"Chyba {date}: {e}", file=sys.stderr)
+            matches = old_past_days.get(date, [])
+        if matches:  # jen dny se zápasy
+            past_days.append({"date": date, "matches": matches})
+
+    # Seřaď minulé zápasy od nejnovějšího
+    past_days.sort(key=lambda x: x["date"], reverse=True)
 
     # Neměnit soubor, pokud se změnil jen čas aktualizace (méně commitů)
-    if old.get("days") == days:
+    if old.get("days") == future_days and old.get("past_days") == past_days:
         print("Beze změny")
         return
-    data = {"updated": now.strftime("%Y-%m-%d %H:%M"), "days": days}
+    data = {
+        "updated": now.strftime("%Y-%m-%d %H:%M"),
+        "days": future_days,
+        "past_days": past_days
+    }
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", "utf-8")
-    print(f"Uloženo {sum(len(d['matches']) for d in days)} zápasů ({days[0]['date']} – {days[-1]['date']})")
+    future_count = sum(len(d['matches']) for d in future_days)
+    past_count = sum(len(d['matches']) for d in past_days)
+    print(f"Uloženo {future_count} budoucích + {past_count} minulých zápasů")
 
 
 if __name__ == "__main__":

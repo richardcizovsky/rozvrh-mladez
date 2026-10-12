@@ -424,9 +424,18 @@
     </table>
 
     <!-- Zápasy z eZapis (data z current.json, generuje GitHub Action) -->
-    <h3 class="section-title">Zápasy eZapis</h3>
+    <h3 class="section-title">Aktuální zápasy eZapis</h3>
+    <h4 style="text-align: center; color: #777; font-size: 0.9em; margin-top: -8px; margin-bottom: 15px; font-weight: 400;">8 dní dopředu</h4>
     <table class="today-table">
       <tbody id="todayMatches">
+        <tr><td colspan="3" class="today-info">Načítání dat...</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="section-title">Odehrané zápasy eZapis</h3>
+    <h4 style="text-align: center; color: #777; font-size: 0.9em; margin-top: -8px; margin-bottom: 15px; font-weight: 400;">8 dní zpět</h4>
+    <table class="today-table">
+      <tbody id="pastMatches">
         <tr><td colspan="3" class="today-info">Načítání dat...</td></tr>
       </tbody>
     </table>
@@ -443,16 +452,83 @@
     </footer>
   </div>
   <script>
+    function renderMatches(allDays, tbody, isToday = false) {
+      if (!allDays.length) {
+        tbody.innerHTML = '<tr><td colspan="3" class="today-info">Žádná data</td></tr>';
+        return;
+      }
+
+      const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      let html = '';
+
+      allDays.forEach((day, dayIdx) => {
+        const date = new Date(day.date + 'T00:00:00');
+        const dateStr = date.toLocaleDateString('cs-CZ', { weekday: 'long', day: 'numeric', month: 'long' });
+        const isFirstDay = dayIdx === 0;
+        const displayDateStr = isToday && isFirstDay ? `Dnes ${dateStr}` : dateStr;
+
+        // Zobrazit první den vždy (pokud je s budoucími) nebo jen když má zápasy (pokud je s minulými)
+        if (day.matches.length || (isToday && isFirstDay)) {
+          html += `<tr class="date-header"><th colspan="3">${displayDateStr}</th></tr>`;
+          if (day.matches.length) {
+            day.matches.forEach((m, mIdx) => {
+              let badge = '';
+              if (m.badge) {
+                const cls = m.badge.includes('PLAY') ? 'status-play' : m.badge.includes('PAUSE') ? 'status-pause' : '';
+                badge = ` <span class="status-badge ${cls}">${esc(m.badge)}</span>`;
+              }
+              const mt = String(m.stav || '').match(/^\s*([^()]*?)\s*(?:\((.*)\))?\s*$/);
+              const vysledek = (mt && mt[1]) || m.stav || '-';
+              const sety = mt && mt[2] ? mt[2].split(',').map(x => x.trim()).filter(Boolean).join(', ') : '';
+              const href = esc(m.href);
+
+              const firstRow = mIdx === 0;
+              html += `
+                <tr class="today-row ${firstRow ? 'match-first' : ''}" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams" colspan="2">${esc(m.tymy)}</td></tr>`;
+
+              // Zobrazuj řádek výsledku jen pro dnešní den a minulé zápasy
+              if (!isToday || isFirstDay) {
+                html += `
+                <tr class="today-row" data-href="${href}"><th>Výsledek</th><td colspan="2"><span class="match-score">${esc(vysledek)}</span>${sety ? ` <span class="match-sets">(${esc(sety)})</span>` : ''}${badge}</td></tr>`;
+              }
+            });
+          } else if (isToday && isFirstDay) {
+            html += `<tr><td colspan="3" class="today-info">Dnes žádné zápasy</td></tr>`;
+          }
+        }
+      });
+
+      tbody.innerHTML = html;
+
+      // Přidej event listenery
+      tbody.querySelectorAll('tr[data-href]').forEach(r => {
+        const group = () => tbody.querySelectorAll(`tr[data-href="${CSS.escape(r.dataset.href)}"]`);
+        r.addEventListener('click', () => window.open(r.dataset.href, '_blank', 'noopener'));
+        r.addEventListener('mouseenter', () => group().forEach(x => x.classList.add('hover')));
+        r.addEventListener('mouseleave', () => group().forEach(x => x.classList.remove('hover')));
+      });
+    }
+
     async function loadMatches() {
       try {
         const res = await fetch(`current.json?t=${Date.now()}`, { cache: 'no-store' });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
-        const allDays = data.days || [];
 
+        // Načti minulé zápasy
+        const pastDays = data.past_days || [];
+        const pastTbody = document.getElementById('pastMatches');
+        if (pastDays.length) {
+          renderMatches(pastDays, pastTbody, false);
+        } else {
+          pastTbody.innerHTML = '<tr><td colspan="3" class="today-info">Žádné minulé zápasy</td></tr>';
+        }
+
+        // Načti budoucí zápasy
+        const allDays = data.days || [];
         if (!allDays.length) {
-          const tbody = document.getElementById('todayMatches');
-          tbody.innerHTML = '<tr><td colspan="3" class="today-info">Žádná data</td></tr>';
+          const todayTbody = document.getElementById('todayMatches');
+          todayTbody.innerHTML = '<tr><td colspan="3" class="today-info">Žádná data</td></tr>';
           return;
         }
 
@@ -467,60 +543,14 @@
           sortedDays = [allDays[todayIndex], ...allDays.slice(0, todayIndex), ...allDays.slice(todayIndex + 1)];
         }
 
-        // Sestav tabulku ze všech dní
-        const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-        const tbody = document.getElementById('todayMatches');
-        let html = '';
-
-        sortedDays.forEach((day, dayIdx) => {
-          const date = new Date(day.date + 'T00:00:00');
-          const dateStr = date.toLocaleDateString('cs-CZ', { weekday: 'long', day: 'numeric', month: 'long' });
-          const isToday = dayIdx === 0;
-          const displayDateStr = isToday ? `Dnes ${dateStr}` : dateStr;
-
-          // Zobrazit dnešní den vždy, ostatní dny jen když mají zápasy
-          if (day.matches.length || isToday) {
-            html += `<tr class="date-header"><th colspan="3">${displayDateStr}</th></tr>`;
-            if (day.matches.length) {
-              day.matches.forEach((m, mIdx) => {
-                let badge = '';
-                if (m.badge) {
-                  const cls = m.badge.includes('PLAY') ? 'status-play' : m.badge.includes('PAUSE') ? 'status-pause' : '';
-                  badge = ` <span class="status-badge ${cls}">${esc(m.badge)}</span>`;
-                }
-                const mt = String(m.stav || '').match(/^\s*([^()]*?)\s*(?:\((.*)\))?\s*$/);
-                const vysledek = (mt && mt[1]) || m.stav || '-';
-                const sety = mt && mt[2] ? mt[2].split(',').map(x => x.trim()).filter(Boolean).join(', ') : '';
-                const href = esc(m.href);
-
-                const firstRow = mIdx === 0;
-                html += `
-                  <tr class="today-row ${firstRow ? 'match-first' : ''}" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams" colspan="2">${esc(m.tymy)}</td></tr>`;
-
-                // Zobrazuj řádek výsledku jen u dnešních zápasů
-                if (isToday) {
-                  html += `
-                  <tr class="today-row" data-href="${href}"><th>Výsledek</th><td colspan="2"><span class="match-score">${esc(vysledek)}</span>${sety ? ` <span class="match-sets">(${esc(sety)})</span>` : ''}${badge}</td></tr>`;
-                }
-              });
-            } else if (isToday) {
-              html += `<tr><td colspan="3" class="today-info">Dnes žádné zápasy</td></tr>`;
-            }
-          }
-        });
-
-        tbody.innerHTML = html;
-
-        // Přidej event listenery
-        tbody.querySelectorAll('tr[data-href]').forEach(r => {
-          const group = () => tbody.querySelectorAll(`tr[data-href="${CSS.escape(r.dataset.href)}"]`);
-          r.addEventListener('click', () => window.open(r.dataset.href, '_blank', 'noopener'));
-          r.addEventListener('mouseenter', () => group().forEach(x => x.classList.add('hover')));
-          r.addEventListener('mouseleave', () => group().forEach(x => x.classList.remove('hover')));
-        });
+        const todayTbody = document.getElementById('todayMatches');
+        renderMatches(sortedDays, todayTbody, true);
       } catch (e) {
-        const tbody = document.getElementById('todayMatches');
-        tbody.innerHTML = `<tr><td colspan="3" class="today-info">Chyba: ${String(e.message)}</td></tr>`;
+        const pastTbody = document.getElementById('pastMatches');
+        const todayTbody = document.getElementById('todayMatches');
+        const msg = `Chyba: ${String(e.message)}`;
+        pastTbody.innerHTML = `<tr><td colspan="3" class="today-info">${msg}</td></tr>`;
+        todayTbody.innerHTML = `<tr><td colspan="3" class="today-info">${msg}</td></tr>`;
       }
     }
 
