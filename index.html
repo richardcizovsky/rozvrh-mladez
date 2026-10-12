@@ -120,10 +120,24 @@
     border-top: 5px solid #cbd5e1;
   }
   
-  .group-name { 
-    font-weight: 600; 
-    font-size: 1.05em; 
-    vertical-align: top;
+  tbody tr.team-header td {
+    font-weight: 600;
+    font-size: 1.05em;
+    border-bottom: none;
+    padding-bottom: 4px;
+  }
+  tbody tr.team-links td {
+    font-size: 0.85em;
+    color: #555;
+    padding-top: 4px;
+  }
+  tbody tr.team-links a { margin-right: 14px; }
+  tbody tr.team-links:has(+ tr.team-links) td { border-bottom: none; padding-bottom: 0; }
+  .trainer-inline {
+    font-weight: normal;
+    font-size: 0.85em;
+    color: #555;
+    margin-left: 10px;
   }
   .trainer {
     display: block;
@@ -142,9 +156,11 @@
     font-size: 0.82em;
     padding: 3px 8px;
     border-radius: 12px;
-    margin-top: 6px;
+    margin-left: 8px;
     font-weight: 600;
   }
+  thead th:nth-child(1) { width: 110px; }
+  thead th:nth-child(2) { width: 190px; }
   
   @media (max-width: 768px) {
     body { margin: 10px; }
@@ -294,7 +310,6 @@
     <table>
       <thead>
         <tr>
-          <th>Tým</th>
           <th>Den</th>
           <th>Čas</th>
           <th>Místo</th>
@@ -302,25 +317,35 @@
       </thead>
       <tbody>
          <!-- Přípravka -->
-        <tr class="group-prep group-border-top">
-          <td rowspan="3" class="group-name">Přípravka<span class="trainer">Trenér: Ramíková Š.</span></td>
+        <tr class="group-prep group-border-top team-header">
+          <td colspan="3">Přípravka<span class="trainer-inline">Trenér: Ramíková Š.</span></td>
+        </tr>
+        <tr class="group-prep">
           <td>Úterý</td>
           <td>14:30 – 16:00</td>
           <td>Škola</td>
         </tr>
         <tr class="group-prep">
           <td>Čtvrtek</td>
-          <td>15:30 – 17:00 (mladší děti)</td>
+          <td>15:30 – 17:00 (mladší)</td>
           <td>Škola</td>
         </tr>
         <tr class="group-prep">
           <td>Čtvrtek</td>
-          <td>17:00 – 18:30 (starší děti)</td>
+          <td>17:00 – 18:30 (starší)</td>
           <td>Škola</td>
         </tr>
         <!-- U14Z-A -->
-        <tr class="group-u14a group-border-top">
-          <td rowspan="3" class="group-name">U14Z-A<span class="trainer">Trenér: Kavala V.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92498&amp;competitionId=18574&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?mode=program&amp;competitionId=18574&amp;region=Moravskoslezsk%C3%BD&amp;filteredGroupId=29916">turnaj_24.10.</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28938&amp;competitionId=18574&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></span></td>
+        <tr class="group-u14a group-border-top team-header">
+          <td colspan="3">U14Z-A<span class="trainer-inline">Trenér: Kavala V.</span></td>
+        </tr>
+        <tr class="group-u14a team-links">
+          <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92498&amp;competitionId=18574&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28938&amp;competitionId=18574&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
+        </tr>
+        <tr class="group-u14a team-links">
+          <td colspan="3">Turnaje: <a href="https://www.cvf.cz/souteze/krajske-souteze?mode=program&amp;competitionId=18574&amp;region=Moravskoslezsk%C3%BD&amp;filteredGroupId=29916">24.10.</a></td>
+        </tr>
+        <tr class="group-u14a">
           <td>Pondělí</td>
           <td>14:30 – 16:00</td>
           <td>Sokolovna</td>
@@ -335,15 +360,20 @@
           <td>14:30 – 16:30</td>
           <td>Sokolovna</td>
         </tr>
-          <tr class="group-u16">
-            <td class="group-name">U16Z-B<span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92491&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=29668&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">turnaj_11.10.</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28842&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></span></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+        <tr class="group-u16 group-border-top team-header">
+          <td colspan="3">U16Z-B<span class="trainer-inline">Trenér: Kavala V.</span></td>
+        </tr>
+        <tr class="group-u16 team-links">
+          <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92491&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28842&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
+        </tr>
+        <tr class="group-u16 team-links">
+          <td colspan="3">Turnaje: <a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=29668&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">11.10.</a></td>
+        </tr>
         <!-- U14Z(M)-B -->
-        <tr class="group-u14b group-border-top">
-          <td rowspan="2" class="group-name">U14Z-B<span class="trainer">Trenér: Cocca M.</span></td>
+        <tr class="group-u14b group-border-top team-header">
+          <td colspan="3">U14Z-B<span class="trainer-inline">Trenér: Cocca M.</span></td>
+        </tr>
+        <tr class="group-u14b">
           <td>Pondělí</td>
           <td>15:30 – 17:00</td>
           <td>Datyně</td>
@@ -355,8 +385,16 @@
         </tr>
 
          <!-- U16Z-A -->
-         <tr class="group-u16 group-border-top">
-            <td rowspan="3" class="group-name">U16Z-A<span class="trainer">Trenéři: Špalek J. / Kaločová K.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92493&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=29666&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">turnaj_11.10.</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28842&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></span></td>
+         <tr class="group-u16 group-border-top team-header">
+          <td colspan="3">U16Z-A<span class="trainer-inline">Trenéři: Špalek J. / Kaločová K.</span></td>
+        </tr>
+        <tr class="group-u16 team-links">
+          <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92493&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28842&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
+        </tr>
+        <tr class="group-u16 team-links">
+          <td colspan="3">Turnaje: <a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=29666&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">11.10.</a></td>
+        </tr>
+        <tr class="group-u16">
            <td>Pondělí</td>
            <td>16:00 – 17:30</td>
            <td>Sokolovna</td>
@@ -373,51 +411,66 @@
         </tr>
 
         <!-- U18Z -->
-        <tr class="group-u18 group-border-top">
-          <td rowspan="3" class="group-name">U18Z<span class="trainer">Trenéři: Kavala T. / Přibylová K.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92492&amp;competitionId=18566&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28840&amp;competitionId=18566&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></span></td>
+        <tr class="group-u18 group-border-top team-header">
+          <td colspan="3">U18Z<span class="trainer-inline">Trenéři: Kavala T. / Přibylová K.</span></td>
+        </tr>
+        <tr class="group-u18 team-links">
+          <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92492&amp;competitionId=18566&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28840&amp;competitionId=18566&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
+        </tr>
+        <tr class="group-u18">
           <td>Pondělí</td>
           <td>17:30 – 19:00</td>
-          <td>Sokolovna<br><span class="combined">Společně s U20Z</span></td>
+          <td>Sokolovna<span class="combined">+U20Z</span></td>
         </tr>
         <tr class="group-u18">
           <td>Čtvrtek</td>
           <td>16:30 – 18:00</td>
-          <td>Sokolovna<br><span class="combined">Společně s U20Z</span></td>
+          <td>Sokolovna<span class="combined">+U20Z</span></td>
         </tr>
         <tr class="group-u18">
           <td>Pátek</td>
           <td>16:30 – 18:00</td>
-          <td>Sokolovna<br><span class="combined">Společně s U20Z</span></td>
+          <td>Sokolovna<span class="combined">+U20Z</span></td>
         </tr>
 
         <!-- U20Z -->
-        <tr class="group-u20 group-border-top">
-          <td rowspan="4" class="group-name">U20Z<span class="trainer">Trenéři: Kavala T. / Přibylová K.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92494&amp;competitionId=18564&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28838&amp;competitionId=18564&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></span></td>
+        <tr class="group-u20 group-border-top team-header">
+          <td colspan="3">U20Z<span class="trainer-inline">Trenéři: Kavala T. / Přibylová K.</span></td>
+        </tr>
+        <tr class="group-u20 team-links">
+          <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92494&amp;competitionId=18564&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28838&amp;competitionId=18564&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
+        </tr>
+        <tr class="group-u20">
           <td>Pondělí</td>
           <td>17:30 – 19:00</td>
-          <td>Sokolovna<br><span class="combined">Společně s U18Z</span></td>
+          <td>Sokolovna<span class="combined">+U18Z</span></td>
         </tr>
         <tr class="group-u20">
           <td>Úterý</td>
           <td>17:30 – 19:30</td>
-          <td>Sokolovna<br><span class="combined">Společně s Ženami</span></td>
+          <td>Sokolovna<span class="combined">+Ženy</span></td>
         </tr>
         <tr class="group-u20">
           <td>Čtvrtek</td>
           <td>16:30 – 18:00</td>
-          <td>Sokolovna<br><span class="combined">Společně s U18Z</span></td>
+          <td>Sokolovna<span class="combined">+U18Z</span></td>
         </tr>
         <tr class="group-u20">
           <td>Pátek</td>
           <td>16:30 – 18:00</td>
-          <td>Sokolovna<br><span class="combined">Společně s U18Z</span></td>
+          <td>Sokolovna<span class="combined">+U18Z</span></td>
         </tr>
         <!-- Ženy -->
-        <tr class="group-zeny group-border-top">
-           <td class="group-name">Ženy<span class="trainer">Trenéři: Kavala T. / Kavala V.</span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=94459&amp;competitionId=18793&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a></span><span class="trainer"><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=29344&amp;competitionId=18793&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></span></td>
+        <tr class="group-zeny group-border-top team-header">
+          <td colspan="3">Ženy<span class="trainer-inline">Trenéři: Kavala T. / Kavala V.</span></td>
+        </tr>
+        <tr class="group-zeny team-links">
+          <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=94459&amp;competitionId=18793&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=29344&amp;competitionId=18793&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
+        </tr>
+        <tr class="group-zeny">
           <td>Úterý</td>
           <td>17:30 – 19:30</td>
-          <td>Sokolovna<br><span class="combined">Společně s U20Z</span></td>
+          <td>Sokolovna<span class="combined">+U20Z</span></td>
         </tr>
 
       </tbody>
