@@ -12,9 +12,24 @@ rozvrh-mladez/
 ├── sitemap.xml             # Mapa webu pro SEO
 ├── robots.txt              # Pravidla pro roboty
 ├── _config.yml             # GitHub Pages config
+├── CNAME                   # Vlastní doména pro GitHub Pages
+├── .github/
+│   ├── copilot-instructions.md  # Instrukce pro Copilota
+│   └── workflows/
+│       └── current.yml     # GitHub Actions – aktualizace current.json každých 5 minut
 └── scripts/
     └── fetch_current.py    # Script na stažení zápasů z eZapis
 ```
+
+## Lokální náhled stránky
+
+`index.html` načítá `current.json` přes `fetch`, což nefunguje z `file://`. Spusť lokální server:
+
+```bash
+python3 -m http.server
+```
+
+a otevři `http://localhost:8000`.
 
 ## Lokální testování `fetch_current.py`
 
@@ -24,13 +39,7 @@ Script nemá externí závislosti, používá jen standardní Python knihovny.
 
 ### Spuštění
 
-Přejdi do adresáře projektu:
-
-```bash
-cd /Users/richard/Family/rozvrh-mladez
-```
-
-Spusť script:
+V kořenovém adresáři projektu spusť script (vyžaduje přístup k internetu):
 
 ```bash
 python3 scripts/fetch_current.py
@@ -41,7 +50,8 @@ python3 scripts/fetch_current.py
 - Script stáhne zápasy na dnešek a 8 dní dopředu (budoucí zápasy)
 - Script stáhne zápasy z posledních 8 dní zpět (minulé zápasy)
 - Filtruje zápasy, kde hraje "Sokol Vratimov"
-- Uloží data do `current.json`
+- Pokud se některý den nepodaří stáhnout, ponechá se jeho předchozí obsah
+- Uloží data do `current.json` (jen pokud se zápasy změnily)
 - Pro minulé zápasy se zobrazují jen dny se skutečnými zápasy
 - Vypíše počet načtených budoucích a minulých zápasů
 
@@ -64,7 +74,9 @@ Chyba 2026-10-08: [popis chyby]
 
 ## Automatizace
 
-Script je spouštěn automaticky prostřednictvím GitHub Actions každou hodinu (viz `.github/workflows/fetch.yml`).
+Script je spouštěn automaticky prostřednictvím GitHub Actions každých 5 minut (`.github/workflows/current.yml`, lze spustit i ručně přes `workflow_dispatch`). Pokud se `current.json` změní, workflow ho commitne a pushne.
+
+`current.json` needituj ručně, generuje ho script.
 
 ## Data v `current.json`
 
