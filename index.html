@@ -674,8 +674,20 @@
       }, { passive: true });
     })();
     // Automatické obnovení dat každou minutu
-    setInterval(() => { if (!document.hidden) { loadMatches(); refreshStatic(); } }, 60000);
-    document.addEventListener('visibilitychange', () => { if (!document.hidden) { loadMatches(); refreshStatic(); } });
+    setInterval(() => { if (!document.hidden) loadMatches(); }, 60000);
+    // Statický obsah (rozvrh, patička) jednou za 5 minut
+    let lastStatic = Date.now();
+    const STATIC_INTERVAL = 5 * 60 * 1000;
+    const maybeRefreshStatic = () => {
+      if (!document.hidden && Date.now() - lastStatic >= STATIC_INTERVAL) {
+        lastStatic = Date.now();
+        refreshStatic();
+      }
+    };
+    setInterval(maybeRefreshStatic, 30000);
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) { loadMatches(); maybeRefreshStatic(); }
+    });
   </script>
 </body>
 </html>
