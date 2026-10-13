@@ -285,6 +285,21 @@
      cursor: not-allowed;
      opacity: 0.6;
    }
+   .ptr-indicator {
+     position: fixed;
+     top: 0;
+     left: 50%;
+     transform: translate(-50%, -60px);
+     background: #2c3e50;
+     color: #fff;
+     font-size: 0.85em;
+     padding: 8px 16px;
+     border-radius: 0 0 16px 16px;
+     z-index: 1000;
+     pointer-events: none;
+     transition: transform 0.2s;
+   }
+   .ptr-indicator.visible { transform: translate(-50%, 0); }
    .date-display {
      font-size: 1.1em;
      font-weight: 600;
@@ -307,7 +322,7 @@
       </div>
       <a href="https://www.facebook.com/profile.php?id=61551862265058" class="fb-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
     </div>
-    <table>
+    <table id="schedule">
       <thead>
         <tr>
           <th>Den</th>
@@ -607,10 +622,60 @@
       }
     }
 
+    async function refreshStatic() {
+      try {
+        const res = await fetch(`${location.pathname}?t=${Date.now()}`, { cache: 'no-store' });
+        if (!res.ok) return;
+        const doc = new DOMParser().parseFromString(await res.text(), 'text/html');
+        const swap = sel => {
+          const n = doc.querySelector(sel), o = document.querySelector(sel);
+          if (n && o && n.innerHTML !== o.innerHTML) o.innerHTML = n.innerHTML;
+        };
+        swap('#schedule');
+        swap('footer');
+      } catch (e) { /* ignoruj, zkusí se příště */ }
+    }
+
     loadMatches();
+    // Pull-to-refresh pro iOS (Safari/PWA), kde není nativně podporován
+    (function () {
+      const ind = document.createElement('div');
+      ind.className = 'ptr-indicator';
+      document.body.appendChild(ind);
+      const THRESHOLD = 70;
+      let startY = null, pulled = 0, busy = false;
+
+      window.addEventListener('touchstart', e => {
+        startY = (window.scrollY <= 0 && !busy) ? e.touches[0].clientY : null;
+        pulled = 0;
+      }, { passive: true });
+
+      window.addEventListener('touchmove', e => {
+        if (startY === null) return;
+        pulled = e.touches[0].clientY - startY;
+        if (pulled > 20 && window.scrollY <= 0) {
+          ind.textContent = pulled >= THRESHOLD ? 'Pusťte pro obnovení' : 'Přetáhněte dolů pro obnovení';
+          ind.classList.add('visible');
+        } else {
+          ind.classList.remove('visible');
+        }
+      }, { passive: true });
+
+      window.addEventListener('touchend', async () => {
+        if (startY === null) return;
+        const doRefresh = pulled >= THRESHOLD && window.scrollY <= 0;
+        startY = null;
+        if (!doRefresh) { ind.classList.remove('visible'); return; }
+        busy = true;
+        ind.textContent = 'Obnovuji…';
+        await Promise.all([loadMatches(), refreshStatic()]);
+        ind.classList.remove('visible');
+        busy = false;
+      }, { passive: true });
+    })();
     // Automatické obnovení dat každou minutu
-    setInterval(() => { if (!document.hidden) loadMatches(); }, 60000);
-    document.addEventListener('visibilitychange', () => { if (!document.hidden) loadMatches(); });
+    setInterval(() => { if (!document.hidden) { loadMatches(); refreshStatic(); } }, 60000);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) { loadMatches(); refreshStatic(); } });
   </script>
 </body>
 </html>
