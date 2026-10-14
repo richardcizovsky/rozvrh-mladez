@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14 18:23",
+  "updated": "2026-10-14 21:16",
   "days": [
     {
       "date": "2026-10-14",
@@ -7,9 +7,9 @@
         {
           "skupina": "OV-Z",
           "cislo": "(10)",
-          "tymy": "TJ Hlučín - TJ Sokol Vratimov LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Hlučín - TJ Sokol Vratimov",
+          "stav": "2:3 (14,-19,-15,19,-11)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=943013"
         }
       ]
