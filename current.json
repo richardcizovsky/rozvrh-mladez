@@ -1,10 +1,6 @@
 {
-  "updated": "2026-10-15 00:00",
+  "updated": "2026-10-16 00:20",
   "days": [
-    {
-      "date": "2026-10-15",
-      "matches": []
-    },
     {
       "date": "2026-10-16",
       "matches": []
@@ -79,6 +75,59 @@
     {
       "date": "2026-10-23",
       "matches": []
+    },
+    {
+      "date": "2026-10-24",
+      "matches": [
+        {
+          "skupina": "MS-U14Z-T1A",
+          "cislo": "(1)",
+          "tymy": "TJ Sokol Vratimov - VK Polanka n. O. \"A\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=954304"
+        },
+        {
+          "skupina": "MS-U14Z-T1A",
+          "cislo": "(3)",
+          "tymy": "VKB Frýdlant n. O. - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=954306"
+        },
+        {
+          "skupina": "MS-U14Z-T1A",
+          "cislo": "(6)",
+          "tymy": "TJ Sokol Vratimov - TJ Ostrava \"A\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=954309"
+        },
+        {
+          "skupina": "MS-U14Z-T1A",
+          "cislo": "(8)",
+          "tymy": "TJ Ostrava \"B\" - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=954311"
+        },
+        {
+          "skupina": "MS-U18ZA",
+          "cislo": "(35)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"B\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936563"
+        },
+        {
+          "skupina": "MS-U18ZA",
+          "cislo": "(39)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"B\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936567"
+        }
+      ]
     }
   ],
   "past_days": [
