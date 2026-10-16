@@ -532,6 +532,9 @@
   <script>
     // Termín a hala zápasu podle matchId z team.json
     let matchInfo = {};
+    let matchByTeams = {};
+    const normName = x => String(x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase().replace(/[^a-z0-9]/g, '');
     let matchInfoLoaded = 0;
     async function loadMatchInfo() {
       if (Date.now() - matchInfoLoaded < 5 * 60 * 1000) return;
@@ -540,22 +543,37 @@
         if (!res.ok) return;
         const data = await res.json();
         const info = {};
+        const byTeams = {};
         (data.collection || []).forEach(t => (t.leagueGroups || []).forEach(g => {
           ((g.schedule && g.schedule.responseData) || []).forEach(m => {
             if (m.matchId == null) return;
             const hall = m.hallResponse && m.hallResponse.value
               ? String(m.hallResponse.value).replace(/\s+/g, ' ').trim() : '';
-            info[m.matchId] = { start: m.matchStart, hall };
+            const rec = { start: m.matchStart, hall };
+            info[m.matchId] = rec;
+            // záložní klíč (datum + domácí + hosté), když se matchId v eZapis liší
+            const key = `${String(m.matchStart || '').slice(0, 10)}|${normName(m.homeName)}|${normName(m.guestName)}`;
+            (byTeams[key] = byTeams[key] || []).push(rec);
           });
         }));
         matchInfo = info;
+        matchByTeams = byTeams;
         matchInfoLoaded = Date.now();
       } catch (e) { /* bez termínů a hal se zápasy zobrazí jako dřív */ }
     }
 
-    function matchWhen(href) {
+    function matchWhen(href, date, tymy) {
       const id = (String(href || '').match(/[?&]match=(\d+)/) || [])[1];
-      const mi = id && matchInfo[id];
+      let mi = id && matchInfo[id];
+      if (!mi && date && tymy) {
+        // záloha: shoda podle data a dvojice týmů (jen pokud je jednoznačná)
+        const parts = String(tymy).split(' - ');
+        for (let i = 1; i < parts.length && !mi; i++) {
+          const key = `${date}|${normName(parts.slice(0, i).join(' - '))}|${normName(parts.slice(i).join(' - '))}`;
+          const list = matchByTeams[key];
+          if (list && list.length === 1) mi = list[0];
+        }
+      }
       if (!mi) return null;
       const d = new Date(mi.start);
       const when = isNaN(d) ? '' : d.toLocaleTimeString('cs-CZ', {
@@ -598,7 +616,7 @@
               // 1. skupina + soupeři, 2. čas + hala (pokud jsou k dispozici), 3. výsledek
               html += `
                 <tr class="today-row ${firstRow ? 'match-first' : ''}" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams" colspan="2">${esc(m.tymy)}</td></tr>`;
-              const when = matchWhen(m.href);
+              const when = matchWhen(m.href, day.date, m.tymy);
               if (when) {
                 html += `
                 <tr class="today-row" data-href="${href}"><th>${esc(when.when)}</th><td class="match-when" colspan="2">${esc(when.hall)}</td></tr>`;

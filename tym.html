@@ -121,7 +121,7 @@
   }
 
   // Záhlaví skupiny (header z API) – zobrazí se jako text, nikdy jako HTML
-  function renderHeader(header) {
+  function renderOrganizer(header) {
     if (header === null || header === undefined || header === "") return null;
     let text = "";
     if (typeof header === "string") {
@@ -200,7 +200,7 @@
     for (const g of groups) {
       wrap.append(el("h4", {}, g.groupName || "Skupina"));
       wrap.append(renderScoreboard(g.scoreboard));
-      const gh = renderHeader(g.header);
+      const gh = renderOrganizer(g.poradatel);
       if (gh) wrap.append(gh);
       const showAll = ALL_MATCHES_TEAMS.includes(team.id);
       const matches = renderMatches(getMatches(g.schedule, showAll), showAll);

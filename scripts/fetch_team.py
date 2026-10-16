@@ -80,6 +80,18 @@ def find_header(obj):
     return None
 
 
+def describe_keys(obj, depth=0):
+    """Vrátí jen NÁZVY klíčů odpovědi (ne hodnoty) – pro diagnostiku v logu."""
+    if isinstance(obj, dict):
+        if depth >= 2:
+            return "{...}"
+        return "{" + ", ".join(f"{k}{describe_keys(v, depth + 1) if isinstance(v, (dict, list)) else ''}"
+                               for k, v in obj.items()) + "}"
+    if isinstance(obj, list):
+        return "[" + (describe_keys(obj[0], depth + 1) if obj else "") + "]"
+    return ""
+
+
 def strip_contacts(obj):
     if isinstance(obj, dict):
         return {k: strip_contacts(v) for k, v in obj.items() if not CONTACT_RE.search(k)}
@@ -189,10 +201,17 @@ def main():
                 sc = request(f"{BASE}/match/{gid}/schedule", token=token, soft=True)
                 gr = request(f"{BASE}/group/{gid}", token=token, soft=True)
                 header = find_header(gr) if gr is not None else None
+                if header is None:
+                    # Diagnostika: bez hodnot, jen názvy klíčů odpovědi
+                    present = isinstance(gr, dict) and any(k.lower() == "header" for k in gr)
+                    print(f"Skupina {gid}: header "
+                          f"{'je v odpovědi prázdný' if present else 'v odpovědi chybí'}; "
+                          f"odpověď: {describe_keys(gr) if gr is not None else 'žádná (chyba volání)'}")
                 group_cache[gid] = {
                     "scoreboard": strip_contacts(sb) if sb is not None else None,
                     "schedule": strip_contacts(sc) if sc is not None else None,
-                    "header": strip_contacts(header) if header is not None else None,
+                    # položka 'header' z /group/{groupId} = pořadatel skupiny
+                    "poradatel": strip_contacts(header) if header is not None else None,
                 }
             group.update(group_cache[gid])
 
