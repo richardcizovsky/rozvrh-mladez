@@ -1,5 +1,8 @@
 name: Stažení dat týmů z CVF API
 on:
+  schedule:
+    # Každou hodinu, posunuto mimo „kulatou“ minutu (ta bývá vytížená GitHubem)
+    - cron: "17 * * * *"
   workflow_dispatch:
 permissions:
   contents: write

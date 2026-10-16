@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Info o týmu – TJ Sokol Vratimov</title>
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .container { width: 100%; max-width: 950px; }
+  .header { display: grid; grid-template-columns: 64px 1fr 64px; align-items: center; gap: 10px; margin-bottom: 20px; }
+  .header img { width: 64px; height: 64px; object-fit: contain; }
+  .header-content { text-align: center; }
+  h1 { color: #2c3e50; margin: 0; }
+  h2 { color: #2c3e50; margin: 4px 0 0; font-size: 1.1em; font-weight: normal; }
+  h3.section-title { color: #2c3e50; margin: 32px 0 10px; }
+  h4 { color: #2c3e50; margin: 18px 0 8px; }
+  a { color: #2c6fbb; }
+  .back { display: inline-block; margin-bottom: 16px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #e3e8e6; }
+  th { background: #2c3e50; color: #fff; font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  tr.me td { background: #fff6d6; font-weight: 600; }
+  .num { text-align: center; }
+  .muted { color: #777; }
+  .group-header { white-space: pre-line; margin: 8px 0 0; padding: 10px 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #555; font-size: .9em; }
+  .cvf-link { margin: 6px 0 0; font-size: .9em; }
+  td.match { padding: 10px 12px; }
+  .match-when { color: #777; font-size: .85em; }
+  .match-teams { font-weight: 600; margin: 2px 0; }
+  .match-result { font-size: 1em; }
+  .empty { padding: 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #777; }
+  .table-wrap { overflow-x: auto; }
+  footer { margin-top: 40px; text-align: center; color: #777; font-size: .9em; }
+  @media (max-width: 600px) { body { margin: 16px; } th, td { padding: 6px 8px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="./">&larr; Zpět na rozvrh</a>
+  <div class="header">
+    <img src="logo.png" alt="Logo TJ Sokol Vratimov">
+    <div class="header-content">
+      <h1 id="title">Načítám…</h1>
+      <h2 id="subtitle"></h2>
+      <p class="cvf-link" id="cvfLink"></p>
+    </div>
+    <span></span>
+  </div>
+  <div id="content"></div>
+  <footer>Data: Česká volejbalová federace. Aktualizováno: <span id="updated">–</span></footer>
+</div>
+<script>
+  const MY_CLUB_RE = /sokol\s+vratimov/i;
+  // U16Z-A (92493), U16Z-B (92491), U14Z-A (92498), U18Z (92492), U20Z (92494), Ženy (94459):
+  // zobrazí se všechny zápasy skupiny, zápasy Sokola Vratimov jsou zvýrazněné.
+  const ALL_MATCHES_TEAMS = [92493, 92491, 92498, 92492, 92494, 94459];
+
+  // Pomocná funkce pro bezpečné vytváření prvků (žádné vkládání HTML z dat)
+  function el(tag, attrs, ...children) {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (k === "class") e.className = v; else e.setAttribute(k, v);
+    }
+    for (const c of children) {
+      if (c === null || c === undefined) continue;
+      e.append(c.nodeType ? c : document.createTextNode(String(c)));
+    }
+    return e;
+  }
+
+  function isMine(name) {
+    return typeof name === "string" && MY_CLUB_RE.test(name);
+  }
+
+  // Zástupný soupeř (volný los), např. "#8" – takové zápasy se nezobrazují
+  function isPlaceholder(name) {
+    return typeof name === "string" && /^\s*#\d+/.test(name);
+  }
+
+  function fmtDate(iso) {
+    const d = new Date(iso);
+    if (isNaN(d)) return "";
+    return d.toLocaleString("cs-CZ", {
+      timeZone: "Europe/Prague", day: "numeric", month: "numeric",
+      year: "numeric", hour: "2-digit", minute: "2-digit"
+    });
+  }
+
+  function renderRoster(players) {
+    const wrap = el("div");
+    wrap.append(el("h3", { class: "section-title" }, "Soupiska"));
+    if (!players || !players.length) {
+      wrap.append(el("div", { class: "empty" }, "Soupiska není k dispozici."));
+      return wrap;
+    }
+    const sorted = [...players].sort((a, b) =>
+      (a.lastName || "").localeCompare(b.lastName || "", "cs") ||
+      (a.firstName || "").localeCompare(b.firstName || "", "cs"));
+    const tbody = el("tbody");
+    sorted.forEach((p, i) => {
+      const born = p.birthYear ? (p.birthMonth ? `${p.birthMonth}/${p.birthYear}` : p.birthYear) : "";
+      tbody.append(el("tr", {},
+        el("td", { class: "num" }, i + 1),
+        el("td", {}, `${p.lastName || ""} ${p.firstName || ""}`.trim()),
+        el("td", { class: "num" }, born)));
+    });
+    wrap.append(el("div", { class: "table-wrap" }, el("table", {},
+      el("thead", {}, el("tr", {}, el("th", { class: "num" }, "#"), el("th", {}, "Jméno"), el("th", { class: "num" }, "Narození"))),
+      tbody)));
+    return wrap;
+  }
+
+  // Záhlaví skupiny (header z API) – zobrazí se jako text, nikdy jako HTML
+  function renderHeader(header) {
+    if (header === null || header === undefined || header === "") return null;
+    let text = "";
+    if (typeof header === "string") {
+      const doc = new DOMParser().parseFromString(header.replace(/<br\s*\/?>/gi, "\n"), "text/html");
+      text = (doc.body.textContent || "").trim();
+    } else if (Array.isArray(header)) {
+      text = header.filter(v => v !== null && typeof v !== "object").join("\n");
+    } else if (typeof header === "object") {
+      text = Object.entries(header)
+        .filter(([, v]) => v !== null && v !== "" && typeof v !== "object")
+        .map(([k, v]) => `${k}: ${v}`).join("\n");
+    } else {
+      text = String(header);
+    }
+    if (!text) return null;
+    return el("div", { class: "group-header" }, text);
+  }
+
+  function renderScoreboard(sb) {
+    if (!sb || !Array.isArray(sb.rows) || !sb.rows.length) {
+      return el("div", { class: "empty" }, "Tabulka zatím není k dispozici.");
+    }
+    const cols = (sb.columns || []).slice().sort((a, b) => a.column - b.column);
+    const thead = el("thead", {}, el("tr", {}, ...cols.map((c, i) =>
+      el("th", { class: i === 1 ? "" : "num" }, c.value))));
+    const tbody = el("tbody");
+    for (const row of sb.rows) {
+      const cells = (row.cells || []).slice().sort((a, b) => a.column - b.column);
+      const mine = cells.some(c => isMine(c.value));
+      tbody.append(el("tr", { class: mine ? "me" : "" },
+        ...cells.map((c, i) => el("td", { class: i === 1 ? "" : "num" }, c.value))));
+    }
+    return el("div", { class: "table-wrap" }, el("table", {}, thead, tbody));
+  }
+
+  function getMatches(schedule, showAll) {
+    const all = (schedule && Array.isArray(schedule.responseData)) ? schedule.responseData : [];
+    return all
+      .filter(m => showAll || isMine(m.homeName) || isMine(m.guestName))
+      .filter(m => !isPlaceholder(m.homeName) && !isPlaceholder(m.guestName))
+      .sort((a, b) => new Date(a.matchStart) - new Date(b.matchStart));
+  }
+
+  function hallName(m) {
+    return m.hallResponse && m.hallResponse.value
+      ? String(m.hallResponse.value).replace(/\s+/g, " ").trim() : "";
+  }
+
+  function renderMatches(mine, highlight) {
+    if (!mine.length) return null;
+    const tbody = el("tbody");
+    for (const m of mine) {
+      const label = `${m.homeName || "?"} – ${m.guestName || "?"}`;
+      const teams = m.matchId
+        ? el("a", {
+            href: "https://ezapis.cvf.cz/online/view.php?match=" + encodeURIComponent(m.matchId),
+            target: "_blank", rel: "noopener noreferrer"
+          }, label)
+        : label;
+      const venue = hallName(m);
+      // Tři řádky: 1. termín + hala, 2. zápas, 3. výsledek
+      const mineMatch = isMine(m.homeName) || isMine(m.guestName);
+      tbody.append(el("tr", { class: highlight && mineMatch ? "me" : "" }, el("td", { class: "match" },
+        el("div", { class: "match-when" }, fmtDate(m.matchStart) + (venue ? " · " + venue : "")),
+        el("div", { class: "match-teams" }, teams),
+        el("div", { class: "match-result" }, m.result ? m.result : el("span", { class: "muted" }, "–")))));
+    }
+    return el("div", { class: "table-wrap" }, el("table", {}, tbody));
+  }
+
+  function renderGroups(team) {
+    const wrap = el("div");
+    const groups = team.leagueGroups || [];
+    if (!groups.length) return wrap;
+    wrap.append(el("h3", { class: "section-title" }, "Tabulky a výsledky"));
+    for (const g of groups) {
+      wrap.append(el("h4", {}, g.groupName || "Skupina"));
+      wrap.append(renderScoreboard(g.scoreboard));
+      const gh = renderHeader(g.header);
+      if (gh) wrap.append(gh);
+      const showAll = ALL_MATCHES_TEAMS.includes(team.id);
+      const matches = renderMatches(getMatches(g.schedule, showAll), showAll);
+      if (matches) {
+        wrap.append(el("h4", { class: "muted" }, showAll ? "Zápasy" : "Zápasy Vratimova"));
+        wrap.append(matches);
+      }
+    }
+    return wrap;
+  }
+
+  async function init() {
+    const id = Number(new URLSearchParams(location.search).get("id"));
+    const content = document.getElementById("content");
+    try {
+      content.replaceChildren();
+      // Vždy čerstvá data: bez cache prohlížeče + unikátní parametr proti cache CDN
+      const resp = await fetch("team.json?t=" + Date.now(), { cache: "no-store" });
+      if (!resp.ok) throw new Error("HTTP " + resp.status);
+      const data = await resp.json();
+      const team = (data.collection || []).find(t => t.id === id);
+      if (!team) {
+        document.getElementById("title").textContent = "Tým nenalezen";
+        return;
+      }
+      const comp = (team.leagueGroups && team.leagueGroups[0]) ? team.leagueGroups[0].competitionName : "";
+      document.getElementById("title").textContent = team.shortName || team.name;
+      document.getElementById("subtitle").textContent = comp || "";
+      // Odkaz na tabulku hlavní skupiny na webu CVF
+      const main = team.leagueGroups && team.leagueGroups[0];
+      const link = document.getElementById("cvfLink");
+      link.replaceChildren();
+      if (main && main.groupId && main.competitionId) {
+        const qs = new URLSearchParams({
+          filteredGroupId: main.groupId, competitionId: main.competitionId,
+          region: "Moravskoslezský", mode: "scoreboard"
+        });
+        link.append(el("a", {
+          href: "https://www.cvf.cz/souteze/krajske-souteze?" + qs.toString(),
+          target: "_blank", rel: "noopener noreferrer"
+        }, "Tabulky a Výsledky na CVF"));
+      }
+      document.title = `${team.shortName || team.name} – TJ Sokol Vratimov`;
+      content.append(renderRoster(team.players), renderGroups(team));
+    } catch (e) {
+      document.getElementById("title").textContent = "Data se nepodařilo načíst";
+    }
+  }
+  init();
+  // Návrat tlačítkem Zpět může stránku obnovit z paměti – načti data znovu
+  window.addEventListener("pageshow", e => { if (e.persisted) init(); });
+</script>
+</body>
+</html>
+

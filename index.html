@@ -132,6 +132,15 @@
     padding-top: 4px;
   }
   tbody tr.team-links a { margin-right: 14px; }
+  /* Odkazy Program a Výsledky / Tabulka / Turnaje jsou skryté (přesunuto na tym.html) */
+  tbody tr.team-links { display: none; }
+  tbody tr.team-header a.team-link {
+    color: #1a5fb4;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+  tbody tr.team-header a.team-link:hover { color: #0b3d91; text-decoration-thickness: 2px; }
   tbody tr.team-links:has(+ tr.team-links) td { border-bottom: none; padding-bottom: 0; }
   .trainer-inline {
     font-weight: normal;
@@ -242,6 +251,7 @@
    .today-table tbody tr:first-child th,
    .today-table tbody tr:first-child td { border-top: none; }
    .match-teams { font-weight: 600; }
+   .match-when { color: #555; }
    .match-score { font-weight: 700; font-size: 1.1em; margin-right: 6px; }
    .match-sets { color: #555; margin-right: 6px; }
    .status-badge {
@@ -318,7 +328,7 @@
       </div>
       <div class="header-content">
         <h1>TJ Sokol Vratimov</h1>
-        <h2>Rozvrh tréninků</h2>
+        <h2>Rozpis tréninků a aktuálních zápasů</h2>
       </div>
       <a href="https://www.facebook.com/profile.php?id=61551862265058" class="fb-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
     </div>
@@ -352,7 +362,7 @@
         </tr>
         <!-- U14Z-A -->
         <tr class="group-u14a group-border-top team-header">
-          <td colspan="3">U14Z-A<span class="trainer-inline">Trenér: Kavala V.</span></td>
+          <td colspan="3"><a class="team-link" href="tym.html?id=92498">U14Z-A</a><span class="trainer-inline">Trenér: Kavala V.</span></td>
         </tr>
         <tr class="group-u14a team-links">
           <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92498&amp;competitionId=18574&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28938&amp;competitionId=18574&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
@@ -376,7 +386,7 @@
           <td>Sokolovna</td>
         </tr>
         <tr class="group-u16 group-border-top team-header">
-          <td colspan="3">U16Z-B<span class="trainer-inline">Trenér: Kavala V.</span></td>
+          <td colspan="3"><a class="team-link" href="tym.html?id=92491">U16Z-B</a><span class="trainer-inline">Trenér: Kavala V.</span></td>
         </tr>
         <tr class="group-u16 team-links">
           <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92491&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28842&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
@@ -401,7 +411,7 @@
 
          <!-- U16Z-A -->
          <tr class="group-u16 group-border-top team-header">
-          <td colspan="3">U16Z-A<span class="trainer-inline">Trenéři: Špalek J. / Kaločová K.</span></td>
+          <td colspan="3"><a class="team-link" href="tym.html?id=92493">U16Z-A</a><span class="trainer-inline">Trenéři: Špalek J. / Kaločová K.</span></td>
         </tr>
         <tr class="group-u16 team-links">
           <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92493&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28842&amp;competitionId=18568&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
@@ -427,7 +437,7 @@
 
         <!-- U18Z -->
         <tr class="group-u18 group-border-top team-header">
-          <td colspan="3">U18Z<span class="trainer-inline">Trenéři: Kavala T. / Přibylová K.</span></td>
+          <td colspan="3"><a class="team-link" href="tym.html?id=92492">U18Z</a><span class="trainer-inline">Trenéři: Kavala T. / Přibylová K.</span></td>
         </tr>
         <tr class="group-u18 team-links">
           <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92492&amp;competitionId=18566&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28840&amp;competitionId=18566&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
@@ -450,7 +460,7 @@
 
         <!-- U20Z -->
         <tr class="group-u20 group-border-top team-header">
-          <td colspan="3">U20Z<span class="trainer-inline">Trenéři: Kavala T. / Přibylová K.</span></td>
+          <td colspan="3"><a class="team-link" href="tym.html?id=92494">U20Z</a><span class="trainer-inline">Trenéři: Kavala T. / Přibylová K.</span></td>
         </tr>
         <tr class="group-u20 team-links">
           <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=92494&amp;competitionId=18564&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=28838&amp;competitionId=18564&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
@@ -477,7 +487,7 @@
         </tr>
         <!-- Ženy -->
         <tr class="group-zeny group-border-top team-header">
-          <td colspan="3">Ženy<span class="trainer-inline">Trenéři: Kavala T. / Kavala V.</span></td>
+          <td colspan="3"><a class="team-link" href="tym.html?id=94459">Ženy</a><span class="trainer-inline">Trenéři: Kavala T. / Kavala V.</span></td>
         </tr>
         <tr class="group-zeny team-links">
           <td colspan="3"><a href="https://www.cvf.cz/souteze/krajske-souteze?teamId=94459&amp;competitionId=18793&amp;region=Moravskoslezsk%C3%BD&amp;mode=clubs">Program a Výsledky</a><a href="https://www.cvf.cz/souteze/krajske-souteze?filteredGroupId=29344&amp;competitionId=18793&amp;region=Moravskoslezsk%C3%BD&amp;mode=scoreboard">Tabulka</a></td>
@@ -520,6 +530,40 @@
     </footer>
   </div>
   <script>
+    // Termín a hala zápasu podle matchId z team.json
+    let matchInfo = {};
+    let matchInfoLoaded = 0;
+    async function loadMatchInfo() {
+      if (Date.now() - matchInfoLoaded < 5 * 60 * 1000) return;
+      try {
+        const res = await fetch(`team.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!res.ok) return;
+        const data = await res.json();
+        const info = {};
+        (data.collection || []).forEach(t => (t.leagueGroups || []).forEach(g => {
+          ((g.schedule && g.schedule.responseData) || []).forEach(m => {
+            if (m.matchId == null) return;
+            const hall = m.hallResponse && m.hallResponse.value
+              ? String(m.hallResponse.value).replace(/\s+/g, ' ').trim() : '';
+            info[m.matchId] = { start: m.matchStart, hall };
+          });
+        }));
+        matchInfo = info;
+        matchInfoLoaded = Date.now();
+      } catch (e) { /* bez termínů a hal se zápasy zobrazí jako dřív */ }
+    }
+
+    function matchWhen(href) {
+      const id = (String(href || '').match(/[?&]match=(\d+)/) || [])[1];
+      const mi = id && matchInfo[id];
+      if (!mi) return null;
+      const d = new Date(mi.start);
+      const when = isNaN(d) ? '' : d.toLocaleTimeString('cs-CZ', {
+        timeZone: 'Europe/Prague', hour: '2-digit', minute: '2-digit'
+      });
+      return { when, hall: mi.hall };
+    }
+
     function renderMatches(allDays, tbody, isToday = false) {
       if (!allDays.length) {
         tbody.innerHTML = '<tr><td colspan="3" class="today-info">Žádná data</td></tr>';
@@ -551,8 +595,14 @@
               const href = esc(m.href);
 
               const firstRow = mIdx === 0;
+              // 1. skupina + soupeři, 2. čas + hala (pokud jsou k dispozici), 3. výsledek
               html += `
                 <tr class="today-row ${firstRow ? 'match-first' : ''}" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams" colspan="2">${esc(m.tymy)}</td></tr>`;
+              const when = matchWhen(m.href);
+              if (when) {
+                html += `
+                <tr class="today-row" data-href="${href}"><th>${esc(when.when)}</th><td class="match-when" colspan="2">${esc(when.hall)}</td></tr>`;
+              }
 
               // Zobrazuj řádek výsledku jen pro dnešní den a minulé zápasy
               if (!isToday || isFirstDay) {
@@ -582,6 +632,7 @@
         const res = await fetch(`current.json?t=${Date.now()}`, { cache: 'no-store' });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
+        await loadMatchInfo();
 
         // Načti minulé zápasy
         const pastDays = data.past_days || [];

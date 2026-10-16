@@ -62,6 +62,24 @@ def extract_token(resp):
     return None
 
 
+def find_header(obj):
+    """Najde klíč 'header' (kdekoli v odpovědi) a vrátí jeho hodnotu."""
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k.lower() == "header":
+                return v
+        for v in obj.values():
+            found = find_header(v)
+            if found is not None:
+                return found
+    elif isinstance(obj, list):
+        for v in obj:
+            found = find_header(v)
+            if found is not None:
+                return found
+    return None
+
+
 def strip_contacts(obj):
     if isinstance(obj, dict):
         return {k: strip_contacts(v) for k, v in obj.items() if not CONTACT_RE.search(k)}
@@ -169,9 +187,12 @@ def main():
             if gid not in group_cache:
                 sb = request(f"{BASE}/group/{gid}/scoreboard", token=token, soft=True)
                 sc = request(f"{BASE}/match/{gid}/schedule", token=token, soft=True)
+                gr = request(f"{BASE}/group/{gid}", token=token, soft=True)
+                header = find_header(gr) if gr is not None else None
                 group_cache[gid] = {
                     "scoreboard": strip_contacts(sb) if sb is not None else None,
                     "schedule": strip_contacts(sc) if sc is not None else None,
+                    "header": strip_contacts(header) if header is not None else None,
                 }
             group.update(group_cache[gid])
 
