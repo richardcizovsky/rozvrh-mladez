@@ -1,10 +1,6 @@
 {
-  "updated": "2026-10-16 00:20",
+  "updated": "2026-10-17 00:07",
   "days": [
-    {
-      "date": "2026-10-16",
-      "matches": []
-    },
     {
       "date": "2026-10-17",
       "matches": [
@@ -126,6 +122,27 @@
           "stav": "-",
           "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936567"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "matches": [
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(31)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Stará Bělá",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937009"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(34)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Stará Bělá",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937012"
         }
       ]
     }
