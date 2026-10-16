@@ -71,7 +71,7 @@ BIRTH_RE = re.compile(r"(birth|narozen|dob$)", re.IGNORECASE)
 # Další osobní údaje, které se u hráčů nikdy neukládají
 PLAYER_DROP_RE = re.compile(
     r"(rodn|ssn|personal|passport|photo|foto|avatar|image|insurance|pojist|"
-    r"citizen|obcan|idnp|^pid$|veto)",
+    r"citizen|obcan|idnp|^pid$|veto|^userId$|^gender$|^nationality$)",
     re.IGNORECASE,
 )
 
