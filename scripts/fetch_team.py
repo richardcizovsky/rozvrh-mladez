@@ -135,6 +135,27 @@ def main():
     query = urllib.parse.urlencode({"season": SEASON, "clubId": CLUB_ID})
     data = strip_contacts(request(f"{BASE}/team?{query}", token=token))
 
+    # Pro každý tým stáhne soutěže z leagueGroups[].competitionId (každé ID se stahuje jen jednou)
+    cache = {}
+    for team in data.get("collection", []):
+        ids = []
+        for group in team.get("leagueGroups", []):
+            cid = group.get("competitionId")
+            if cid is not None and cid not in ids:
+                ids.append(cid)
+        competitions = []
+        for cid in ids:
+            if cid not in cache:
+                cache[cid] = strip_contacts(
+                    request(f"{BASE}/competition?{urllib.parse.urlencode({'competitionId': cid})}",
+                            token=token))
+            competitions.append(cache[cid])
+        team["competitions"] = competitions
+
+        # Soupiska: jen hráči, z data narození zůstane pouze rok a měsíc
+        roster = request(f"{BASE}/team/{team['id']}/with-roster", token=token)
+        team["players"] = [clean_player(p) for p in find_players(roster)]
+
     new = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     if OUT.exists() and OUT.read_text(encoding="utf-8") == new:
         print("Beze změny, nic se neukládá")
