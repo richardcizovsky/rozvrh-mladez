@@ -92,6 +92,33 @@ def describe_keys(obj, depth=0):
     return ""
 
 
+def find_group_list(obj):
+    """Najde seznam skupin (list slovníků s klíčem 'id') kdekoli v odpovědi."""
+    if isinstance(obj, list):
+        if obj and all(isinstance(v, dict) and "id" in v for v in obj):
+            return obj
+        for v in obj:
+            found = find_group_list(v)
+            if found:
+                return found
+    elif isinstance(obj, dict):
+        for v in obj.values():
+            found = find_group_list(v)
+            if found:
+                return found
+    return []
+
+
+def fetch_group_headers(competition_id, token):
+    """Z /group/{competitionId}?count=500 vrátí {groupId: header} pro všechny skupiny soutěže."""
+    resp = request(f"{BASE}/group/{competition_id}?count=500", token=token, soft=True)
+    groups = find_group_list(resp) if resp is not None else []
+    if not groups:
+        print(f"Soutěž {competition_id}: seznam skupin nenalezen, odpověď: "
+              f"{describe_keys(resp) if resp is not None else 'žádná (chyba volání)'}")
+    return {g["id"]: g.get("header") for g in groups}
+
+
 def strip_contacts(obj):
     if isinstance(obj, dict):
         return {k: strip_contacts(v) for k, v in obj.items() if not CONTACT_RE.search(k)}
@@ -172,6 +199,7 @@ def main():
     # Pro každý tým stáhne soutěže z leagueGroups[].competitionId (každé ID se stahuje jen jednou)
     cache = {}
     group_cache = {}
+    headers_by_comp = {}
     for team in data.get("collection", []):
         ids = []
         for group in team.get("leagueGroups", []):
@@ -199,18 +227,15 @@ def main():
             if gid not in group_cache:
                 sb = request(f"{BASE}/group/{gid}/scoreboard", token=token, soft=True)
                 sc = request(f"{BASE}/match/{gid}/schedule", token=token, soft=True)
-                gr = request(f"{BASE}/group/{gid}", token=token, soft=True)
-                header = find_header(gr) if gr is not None else None
-                if header is None:
-                    # Diagnostika: bez hodnot, jen názvy klíčů odpovědi
-                    present = isinstance(gr, dict) and any(k.lower() == "header" for k in gr)
-                    print(f"Skupina {gid}: header "
-                          f"{'je v odpovědi prázdný' if present else 'v odpovědi chybí'}; "
-                          f"odpověď: {describe_keys(gr) if gr is not None else 'žádná (chyba volání)'}")
+                # pořadatel = 'header' skupiny; skupiny se hledají v /group/{competitionId}
+                cid = group.get("competitionId")
+                if cid not in headers_by_comp:
+                    headers_by_comp[cid] = fetch_group_headers(cid, token)
+                header = headers_by_comp[cid].get(gid)
                 group_cache[gid] = {
                     "scoreboard": strip_contacts(sb) if sb is not None else None,
                     "schedule": strip_contacts(sc) if sc is not None else None,
-                    # položka 'header' z /group/{groupId} = pořadatel skupiny
+                    # 'header' skupiny z /group/{competitionId}?count=500
                     "poradatel": strip_contacts(header) if header is not None else None,
                 }
             group.update(group_cache[gid])
