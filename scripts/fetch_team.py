@@ -11,7 +11,9 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 BASE = "https://api.cvf.1webit.cz/api/v1"
 SEASON = "2026/27"
@@ -240,10 +242,19 @@ def main():
                 }
             group.update(group_cache[gid])
 
-    new = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-    if OUT.exists() and OUT.read_text(encoding="utf-8") == new:
+    # Čas aktualizace se zapisuje jen při skutečné změně dat (jinak by se commitovalo každou hodinu)
+    old = {}
+    if OUT.exists():
+        try:
+            old = json.loads(OUT.read_text(encoding="utf-8"))
+        except ValueError:
+            old = {}
+    old_updated = old.pop("updated", None)
+    if old_updated and old == data:
         print("Beze změny, nic se neukládá")
         return
+    data["updated"] = datetime.now(ZoneInfo("Europe/Prague")).isoformat(timespec="minutes")
+    new = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     OUT.write_text(new, encoding="utf-8")
     print(f"Uloženo do {OUT.name}")
 

@@ -46,7 +46,7 @@
 </head>
 <body>
 <div class="container">
-  <a class="back" href="./">&larr; Zpět na rozvrh</a>
+  <a class="back" href="./">&larr; Zpět na rozpis</a>
   <div class="header">
     <img src="logo.png" alt="Logo TJ Sokol Vratimov">
     <div class="header-content">
@@ -221,6 +221,11 @@
       const resp = await fetch("team.json?t=" + Date.now(), { cache: "no-store" });
       if (!resp.ok) throw new Error("HTTP " + resp.status);
       const data = await resp.json();
+      const upd = new Date(data.updated);
+      document.getElementById("updated").textContent = isNaN(upd) ? "–" : upd.toLocaleString("cs-CZ", {
+        timeZone: "Europe/Prague", day: "numeric", month: "numeric", year: "numeric",
+        hour: "2-digit", minute: "2-digit"
+      });
       const team = (data.collection || []).find(t => t.id === id);
       if (!team) {
         document.getElementById("title").textContent = "Tým nenalezen";
