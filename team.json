@@ -4,6 +4,39 @@
       "ball": "Gala",
       "clubId": 10000165,
       "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U18Z",
+              "certification": 0,
+              "code": "MS-U18Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS18",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18566,
+              "lpd": 2000,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U18",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U18",
+              "season": "2026/27",
+              "termDate": "2026-06-26T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92492,
       "leagueGroups": [
@@ -27,6 +60,161 @@
           "name": "Sokolovna"
         }
       ],
+      "players": [
+        {
+          "birthMonth": 9,
+          "birthYear": 2010,
+          "firstName": "Tereza",
+          "lastName": "Bartošová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 2013,
+          "firstName": "Helena",
+          "lastName": "Cizovská",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 2010,
+          "firstName": "Karolína",
+          "lastName": "Gvuzdová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2013,
+          "firstName": "Valentýna",
+          "lastName": "Havlíčková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 2013,
+          "firstName": "Valérie",
+          "lastName": "Kaločová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2010,
+          "firstName": "Elen",
+          "lastName": "Klimoszková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2012,
+          "firstName": "Elizabeth Marie",
+          "lastName": "Kwaczek",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 4,
+          "birthYear": 2012,
+          "firstName": "Iva",
+          "lastName": "Němečková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 11,
+          "birthYear": 2011,
+          "firstName": "Sára",
+          "lastName": "Omeiri",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2013,
+          "firstName": "Bára",
+          "lastName": "Pindurová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 7,
+          "birthYear": 2010,
+          "firstName": "Tereza",
+          "lastName": "Sokolová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2012,
+          "firstName": "Ema",
+          "lastName": "Soldánová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 4,
+          "birthYear": 2010,
+          "firstName": "Nela",
+          "lastName": "Svozilová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 5,
+          "birthYear": 2013,
+          "firstName": "Nina",
+          "lastName": "Špalková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 2,
+          "birthYear": 2010,
+          "firstName": "Vilma",
+          "lastName": "Španihelová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2010,
+          "firstName": "Bára",
+          "lastName": "Tomisová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 11,
+          "birthYear": 2013,
+          "firstName": "Adéla",
+          "lastName": "Vyrobíková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        }
+      ],
       "shortName": "TJ Sokol Vratimov",
       "vetoId": 93603118,
       "volleyId": null
@@ -35,6 +223,39 @@
       "ball": "Gala",
       "clubId": 10000165,
       "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U16Z",
+              "certification": 0,
+              "code": "MS-U16Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS21",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18568,
+              "lpd": 1000,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U16",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U16",
+              "season": "2026/27",
+              "termDate": "2026-06-26T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92491,
       "leagueGroups": [
@@ -98,6 +319,170 @@
           "name": "Sokolovna"
         }
       ],
+      "players": [
+        {
+          "birthMonth": 9,
+          "birthYear": 2014,
+          "firstName": "Valentina",
+          "lastName": "Černaková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 6,
+          "birthYear": 2012,
+          "firstName": "Hedvika",
+          "lastName": "Dokoupilová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 11,
+          "birthYear": 2012,
+          "firstName": "Natálie",
+          "lastName": "Eštočáková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 6,
+          "birthYear": 2014,
+          "firstName": "Beáta",
+          "lastName": "Gambalová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 3,
+          "birthYear": 2015,
+          "firstName": "Eliška",
+          "lastName": "Chrástková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 2014,
+          "firstName": "Tereza",
+          "lastName": "Kaimová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 2,
+          "birthYear": 2014,
+          "firstName": "Adriana",
+          "lastName": "Máchová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2012,
+          "firstName": "Liliana",
+          "lastName": "Malúšková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 5,
+          "birthYear": 2015,
+          "firstName": "Viktorie",
+          "lastName": "Musálková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 2013,
+          "firstName": "Magdaléna",
+          "lastName": "Mynarzová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 2,
+          "birthYear": 2014,
+          "firstName": "Julie",
+          "lastName": "Parzyk",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2013,
+          "firstName": "Hana",
+          "lastName": "Petržilková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2014,
+          "firstName": "Markéta",
+          "lastName": "Šimoníková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 8,
+          "birthYear": 2014,
+          "firstName": "Ema",
+          "lastName": "Špalková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 3,
+          "birthYear": 2015,
+          "firstName": "Eva",
+          "lastName": "Tománková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2014,
+          "firstName": "Ella",
+          "lastName": "Václavková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 2014,
+          "firstName": "Veronika",
+          "lastName": "Žoldáková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 2014,
+          "firstName": "Nikol",
+          "lastName": "Žvaková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        }
+      ],
       "shortName": "TJ Sokol Vratimov \"B\"",
       "vetoId": 93603118,
       "volleyId": null
@@ -106,6 +491,39 @@
       "ball": "Gala",
       "clubId": 10000165,
       "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U16Z",
+              "certification": 0,
+              "code": "MS-U16Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS21",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18568,
+              "lpd": 1000,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U16",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U16",
+              "season": "2026/27",
+              "termDate": "2026-06-26T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92493,
       "leagueGroups": [
@@ -169,6 +587,134 @@
           "name": "Sokolovna"
         }
       ],
+      "players": [
+        {
+          "birthMonth": 3,
+          "birthYear": 2013,
+          "firstName": "Eliška",
+          "lastName": "Brodová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 2013,
+          "firstName": "Helena",
+          "lastName": "Cizovská",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2013,
+          "firstName": "Valentýna",
+          "lastName": "Havlíčková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 2013,
+          "firstName": "Valérie",
+          "lastName": "Kaločová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2013,
+          "firstName": "Viktorie",
+          "lastName": "Kaniová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 11,
+          "birthYear": 2012,
+          "firstName": "Ana",
+          "lastName": "Klimoszková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2012,
+          "firstName": "Elizabeth Marie",
+          "lastName": "Kwaczek",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 4,
+          "birthYear": 2012,
+          "firstName": "Iva",
+          "lastName": "Němečková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 2013,
+          "firstName": "Kristýna",
+          "lastName": "Nitková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2013,
+          "firstName": "Bára",
+          "lastName": "Pindurová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2012,
+          "firstName": "Natálie",
+          "lastName": "Plachá",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2012,
+          "firstName": "Ema",
+          "lastName": "Soldánová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 5,
+          "birthYear": 2013,
+          "firstName": "Nina",
+          "lastName": "Špalková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 11,
+          "birthYear": 2013,
+          "firstName": "Adéla",
+          "lastName": "Vyrobíková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        }
+      ],
       "shortName": "TJ Sokol Vratimov \"A\"",
       "vetoId": 93603118,
       "volleyId": null
@@ -177,6 +723,39 @@
       "ball": "Gala",
       "clubId": 10000165,
       "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U20Z",
+              "certification": 0,
+              "code": "MS-U20Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS14",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18564,
+              "lpd": 2000,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U20",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U20",
+              "season": "2026/27",
+              "termDate": "2026-06-26T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92494,
       "leagueGroups": [
@@ -200,6 +779,116 @@
           "name": "Sokolovna"
         }
       ],
+      "players": [
+        {
+          "birthMonth": 9,
+          "birthYear": 2010,
+          "firstName": "Tereza",
+          "lastName": "Bartošová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 5,
+          "birthYear": 2009,
+          "firstName": "Ivana",
+          "lastName": "Cizovská",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 4,
+          "birthYear": 2009,
+          "firstName": "Simona",
+          "lastName": "Dardová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 2010,
+          "firstName": "Karolína",
+          "lastName": "Gvuzdová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 6,
+          "birthYear": 2009,
+          "firstName": "Alice",
+          "lastName": "Horáková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2010,
+          "firstName": "Elen",
+          "lastName": "Klimoszková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 4,
+          "birthYear": 2012,
+          "firstName": "Iva",
+          "lastName": "Němečková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 11,
+          "birthYear": 2011,
+          "firstName": "Sára",
+          "lastName": "Omeiri",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 7,
+          "birthYear": 2010,
+          "firstName": "Tereza",
+          "lastName": "Sokolová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 2,
+          "birthYear": 2010,
+          "firstName": "Vilma",
+          "lastName": "Španihelová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2010,
+          "firstName": "Bára",
+          "lastName": "Tomisová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2009,
+          "firstName": "Barbora",
+          "lastName": "Zemčíková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        }
+      ],
       "shortName": "TJ Sokol Vratimov",
       "vetoId": null,
       "volleyId": null
@@ -208,6 +897,39 @@
       "ball": "",
       "clubId": 10000165,
       "code": "SoV",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 8006,
+              "application": true,
+              "category": "Z",
+              "certification": 0,
+              "code": "OV-Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS7",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18793,
+              "lpd": 500,
+              "master": true,
+              "name": "Okresní přebor žen Ostrava",
+              "parentId": 15024,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Okresní přebor Ostrava",
+              "season": "2026/27",
+              "termDate": "2026-07-24T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
       "field": "Sokolovna Vratimov, Sokolská 290/16, 73932",
       "id": 94459,
       "leagueGroups": [
@@ -231,6 +953,170 @@
           "name": "Sokolovna"
         }
       ],
+      "players": [
+        {
+          "birthMonth": 9,
+          "birthYear": 2010,
+          "firstName": "Tereza",
+          "lastName": "Bartošová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 1996,
+          "firstName": "Veronika",
+          "lastName": "Burešová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 5,
+          "birthYear": 2009,
+          "firstName": "Ivana",
+          "lastName": "Cizovská",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 4,
+          "birthYear": 2009,
+          "firstName": "Simona",
+          "lastName": "Dardová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 6,
+          "birthYear": 2009,
+          "firstName": "Alice",
+          "lastName": "Horáková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 5,
+          "birthYear": 2004,
+          "firstName": "Klára",
+          "lastName": "Cholevíková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2007,
+          "firstName": "Kristýna",
+          "lastName": "Kaločová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 2,
+          "birthYear": 1991,
+          "firstName": "Andrea",
+          "lastName": "Katonová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 7,
+          "birthYear": 1974,
+          "firstName": "Jana",
+          "lastName": "Kavalová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2010,
+          "firstName": "Elen",
+          "lastName": "Klimoszková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 1987,
+          "firstName": "Jana",
+          "lastName": "Kuchařová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 1991,
+          "firstName": "Hana",
+          "lastName": "Novosádová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 7,
+          "birthYear": 2005,
+          "firstName": "Klára",
+          "lastName": "Přibylová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 8,
+          "birthYear": 1974,
+          "firstName": "Šárka",
+          "lastName": "Ramíková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 1986,
+          "firstName": "Radka",
+          "lastName": "Schreierová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 7,
+          "birthYear": 1984,
+          "firstName": "Petra",
+          "lastName": "Špalková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2009,
+          "firstName": "Barbora",
+          "lastName": "Zemčíková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 6,
+          "birthYear": 1987,
+          "firstName": "Lenka",
+          "lastName": "Žvaková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        }
+      ],
       "shortName": "TJ Sokol Vratimov",
       "vetoId": null,
       "volleyId": null
@@ -239,6 +1125,39 @@
       "ball": "",
       "clubId": 10000165,
       "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U14Z",
+              "certification": 0,
+              "code": "MS-U14Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS26",
+              "endDate": "2027-03-13T00:00:00+01:00",
+              "id": 18574,
+              "lpd": 500,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U14",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U14",
+              "season": "2026/27",
+              "termDate": "2026-09-13T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92498,
       "leagueGroups": [
@@ -280,6 +1199,116 @@
         {
           "id": 410,
           "name": "Sokolovna"
+        }
+      ],
+      "players": [
+        {
+          "birthMonth": 9,
+          "birthYear": 2014,
+          "firstName": "Valentina",
+          "lastName": "Černaková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 6,
+          "birthYear": 2014,
+          "firstName": "Beáta",
+          "lastName": "Gambalová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 2014,
+          "firstName": "Tereza",
+          "lastName": "Kaimová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 2,
+          "birthYear": 2014,
+          "firstName": "Adriana",
+          "lastName": "Máchová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 5,
+          "birthYear": 2015,
+          "firstName": "Viktorie",
+          "lastName": "Musálková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 2,
+          "birthYear": 2014,
+          "firstName": "Julie",
+          "lastName": "Parzyk",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2014,
+          "firstName": "Markéta",
+          "lastName": "Šimoníková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 8,
+          "birthYear": 2014,
+          "firstName": "Ema",
+          "lastName": "Špalková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 3,
+          "birthYear": 2015,
+          "firstName": "Eva",
+          "lastName": "Tománková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2014,
+          "firstName": "Ella",
+          "lastName": "Václavková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 2014,
+          "firstName": "Veronika",
+          "lastName": "Žoldáková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 2014,
+          "firstName": "Nikol",
+          "lastName": "Žvaková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
         }
       ],
       "shortName": "TJ Sokol Vratimov",
