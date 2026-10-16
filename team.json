@@ -48,7 +48,7 @@
           "groupId": 28840,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U18A",
           "groupStartDate": "2026-09-19T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -3558,7 +3558,7 @@
           "groupId": 28842,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U16",
           "groupStartDate": "2026-09-19T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -5324,7 +5324,7 @@
           "groupId": 29477,
           "groupName": "Kvalifikačni skupina U16Z-KVD2",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -5613,7 +5613,7 @@
           "groupId": 29647,
           "groupName": "Kvalifikačni skupina U16Z-KVD 5.-6.místo",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -5804,7 +5804,7 @@
           "groupId": 29668,
           "groupName": "První kolo soutěže U16Z, skupina F",
           "groupStartDate": "2026-10-11T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -6215,7 +6215,7 @@
           "groupId": 30043,
           "groupName": "Druhé kolo soutěže U16Z, skupina F",
           "groupStartDate": "2026-11-08T00:00:00+01:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -6699,7 +6699,7 @@
           "groupId": 28842,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U16",
           "groupStartDate": "2026-09-19T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -8465,7 +8465,7 @@
           "groupId": 29476,
           "groupName": "Kvalifikačni skupina U16Z-KVD1",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -8754,7 +8754,7 @@
           "groupId": 29645,
           "groupName": "Kvalifikačni skupina U16Z-KVD finále 1.-4.místo",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -9117,7 +9117,7 @@
           "groupId": 29666,
           "groupName": "První kolo soutěže U16Z, skupina D",
           "groupStartDate": "2026-10-11T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -9528,7 +9528,7 @@
           "groupId": 30040,
           "groupName": "Druhé kolo soutěže U16Z, skupina C",
           "groupStartDate": "2026-11-08T00:00:00+01:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -9976,7 +9976,7 @@
           "groupId": 28838,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U20A",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -12067,7 +12067,7 @@
           "groupId": 29344,
           "groupName": "Městský přebor žen Ostrava",
           "groupStartDate": "2026-09-07T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -14674,7 +14674,7 @@
           "groupId": 28938,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U14",
           "groupStartDate": "2026-09-14T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -15790,7 +15790,7 @@
           "groupId": 29724,
           "groupName": "Kvalifikační turnaj U14 dívky sk. B",
           "groupStartDate": "2026-10-03T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -16159,7 +16159,7 @@
           "groupId": 29916,
           "groupName": "První kolo soutěže U14Z,sk.A",
           "groupStartDate": "2026-10-24T00:00:00+02:00",
-          "header": null,
+          "poradatel": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
