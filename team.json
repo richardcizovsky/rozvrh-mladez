@@ -4,39 +4,6 @@
       "ball": "Gala",
       "clubId": 10000165,
       "code": "",
-      "competitions": [
-        {
-          "collection": [
-            {
-              "account": 80,
-              "application": true,
-              "category": "U18Z",
-              "certification": 0,
-              "code": "MS-U18Z",
-              "competitionCategory": "Krajská",
-              "competitionSortType": "MS18",
-              "endDate": "2027-01-31T00:00:00+01:00",
-              "id": 18566,
-              "lpd": 2000,
-              "master": true,
-              "name": "Krajský přebor Moravskoslezského kraje dívek U18",
-              "parentId": 15026,
-              "region": "Moravskoslezský",
-              "regionalCategory": "Krajský přebor U18",
-              "season": "2026/27",
-              "termDate": "2026-06-26T00:00:00+02:00",
-              "type": "C",
-              "volleyId": 0
-            }
-          ],
-          "metaData": {
-            "count": 20,
-            "sort": null,
-            "start": null,
-            "total": 1
-          }
-        }
-      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92492,
       "leagueGroups": [
@@ -68,39 +35,6 @@
       "ball": "Gala",
       "clubId": 10000165,
       "code": "",
-      "competitions": [
-        {
-          "collection": [
-            {
-              "account": 80,
-              "application": true,
-              "category": "U16Z",
-              "certification": 0,
-              "code": "MS-U16Z",
-              "competitionCategory": "Krajská",
-              "competitionSortType": "MS21",
-              "endDate": "2027-01-31T00:00:00+01:00",
-              "id": 18568,
-              "lpd": 1000,
-              "master": true,
-              "name": "Krajský přebor Moravskoslezského kraje dívek U16",
-              "parentId": 15026,
-              "region": "Moravskoslezský",
-              "regionalCategory": "Krajský přebor U16",
-              "season": "2026/27",
-              "termDate": "2026-06-26T00:00:00+02:00",
-              "type": "C",
-              "volleyId": 0
-            }
-          ],
-          "metaData": {
-            "count": 20,
-            "sort": null,
-            "start": null,
-            "total": 1
-          }
-        }
-      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92491,
       "leagueGroups": [
@@ -172,39 +106,6 @@
       "ball": "Gala",
       "clubId": 10000165,
       "code": "",
-      "competitions": [
-        {
-          "collection": [
-            {
-              "account": 80,
-              "application": true,
-              "category": "U16Z",
-              "certification": 0,
-              "code": "MS-U16Z",
-              "competitionCategory": "Krajská",
-              "competitionSortType": "MS21",
-              "endDate": "2027-01-31T00:00:00+01:00",
-              "id": 18568,
-              "lpd": 1000,
-              "master": true,
-              "name": "Krajský přebor Moravskoslezského kraje dívek U16",
-              "parentId": 15026,
-              "region": "Moravskoslezský",
-              "regionalCategory": "Krajský přebor U16",
-              "season": "2026/27",
-              "termDate": "2026-06-26T00:00:00+02:00",
-              "type": "C",
-              "volleyId": 0
-            }
-          ],
-          "metaData": {
-            "count": 20,
-            "sort": null,
-            "start": null,
-            "total": 1
-          }
-        }
-      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92493,
       "leagueGroups": [
@@ -276,39 +177,6 @@
       "ball": "Gala",
       "clubId": 10000165,
       "code": "",
-      "competitions": [
-        {
-          "collection": [
-            {
-              "account": 80,
-              "application": true,
-              "category": "U20Z",
-              "certification": 0,
-              "code": "MS-U20Z",
-              "competitionCategory": "Krajská",
-              "competitionSortType": "MS14",
-              "endDate": "2027-01-31T00:00:00+01:00",
-              "id": 18564,
-              "lpd": 2000,
-              "master": true,
-              "name": "Krajský přebor Moravskoslezského kraje dívek U20",
-              "parentId": 15026,
-              "region": "Moravskoslezský",
-              "regionalCategory": "Krajský přebor U20",
-              "season": "2026/27",
-              "termDate": "2026-06-26T00:00:00+02:00",
-              "type": "C",
-              "volleyId": 0
-            }
-          ],
-          "metaData": {
-            "count": 20,
-            "sort": null,
-            "start": null,
-            "total": 1
-          }
-        }
-      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92494,
       "leagueGroups": [
@@ -340,39 +208,6 @@
       "ball": "",
       "clubId": 10000165,
       "code": "SoV",
-      "competitions": [
-        {
-          "collection": [
-            {
-              "account": 8006,
-              "application": true,
-              "category": "Z",
-              "certification": 0,
-              "code": "OV-Z",
-              "competitionCategory": "Krajská",
-              "competitionSortType": "MS7",
-              "endDate": "2027-01-31T00:00:00+01:00",
-              "id": 18793,
-              "lpd": 500,
-              "master": true,
-              "name": "Okresní přebor žen Ostrava",
-              "parentId": 15024,
-              "region": "Moravskoslezský",
-              "regionalCategory": "Okresní přebor Ostrava",
-              "season": "2026/27",
-              "termDate": "2026-07-24T00:00:00+02:00",
-              "type": "C",
-              "volleyId": 0
-            }
-          ],
-          "metaData": {
-            "count": 20,
-            "sort": null,
-            "start": null,
-            "total": 1
-          }
-        }
-      ],
       "field": "Sokolovna Vratimov, Sokolská 290/16, 73932",
       "id": 94459,
       "leagueGroups": [
@@ -404,39 +239,6 @@
       "ball": "",
       "clubId": 10000165,
       "code": "",
-      "competitions": [
-        {
-          "collection": [
-            {
-              "account": 80,
-              "application": true,
-              "category": "U14Z",
-              "certification": 0,
-              "code": "MS-U14Z",
-              "competitionCategory": "Krajská",
-              "competitionSortType": "MS26",
-              "endDate": "2027-03-13T00:00:00+01:00",
-              "id": 18574,
-              "lpd": 500,
-              "master": true,
-              "name": "Krajský přebor Moravskoslezského kraje dívek U14",
-              "parentId": 15026,
-              "region": "Moravskoslezský",
-              "regionalCategory": "Krajský přebor U14",
-              "season": "2026/27",
-              "termDate": "2026-09-13T00:00:00+02:00",
-              "type": "C",
-              "volleyId": 0
-            }
-          ],
-          "metaData": {
-            "count": 20,
-            "sort": null,
-            "start": null,
-            "total": 1
-          }
-        }
-      ],
       "field": "Sokolovna Sokolská 290 Vratimov",
       "id": 92498,
       "leagueGroups": [
