@@ -9531,7 +9531,152 @@
           "poradatel": "Pořadatel: TJ Frenštát p. R., hala GaSPŠEI, 2 hřiště ",
           "schedule": {
             "allowSportsField": false,
-            "responseData": [],
+            "responseData": [
+              {
+                "guestId": 92493,
+                "guestName": "TJ Sokol Vratimov \"A\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93858,
+                "homeName": "TJ Ostrava \"B\"",
+                "homePosition": 1,
+                "match": 1,
+                "matchId": 956345,
+                "matchStart": "2026-11-08T09:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 94080,
+                "guestName": "Volejbal Ostrava",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93684,
+                "homeName": "TJ Frenštát p. R. \"A\"",
+                "homePosition": 2,
+                "match": 2,
+                "matchId": 956346,
+                "matchStart": "2026-11-08T09:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 94080,
+                "guestName": "Volejbal Ostrava",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93858,
+                "homeName": "TJ Ostrava \"B\"",
+                "homePosition": 1,
+                "match": 3,
+                "matchId": 956347,
+                "matchStart": "2026-11-08T10:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92493,
+                "guestName": "TJ Sokol Vratimov \"A\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93684,
+                "homeName": "TJ Frenštát p. R. \"A\"",
+                "homePosition": 2,
+                "match": 4,
+                "matchId": 956348,
+                "matchStart": "2026-11-08T10:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92493,
+                "guestName": "TJ Sokol Vratimov \"A\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 94080,
+                "homeName": "Volejbal Ostrava",
+                "homePosition": 3,
+                "match": 5,
+                "matchId": 956349,
+                "matchStart": "2026-11-08T12:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 93684,
+                "guestName": "TJ Frenštát p. R. \"A\"",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93858,
+                "homeName": "TJ Ostrava \"B\"",
+                "homePosition": 1,
+                "match": 6,
+                "matchId": 956350,
+                "matchStart": "2026-11-08T13:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
             "showHallColumn": false
           },
           "scoreboard": {
@@ -16839,5 +16984,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-16T13:58+02:00"
+  "updated": "2026-10-16T18:50+02:00"
 }
