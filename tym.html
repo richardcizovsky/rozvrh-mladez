@@ -32,6 +32,9 @@
   tr.me td { background: #fff6d6; font-weight: 600; }
   .num { text-align: center; }
   .muted { color: #777; }
+  .ptr-indicator { position: fixed; top: 0; left: 50%; transform: translate(-50%, -60px); background: #2c3e50; color: #fff;
+    font-size: .85em; padding: 8px 16px; border-radius: 0 0 16px 16px; z-index: 1000; pointer-events: none; transition: transform .2s; }
+  .ptr-indicator.visible { transform: translate(-50%, 0); }
   .group-header { white-space: pre-line; margin: 8px 0 0; padding: 10px 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #555; font-size: .9em; }
   .cvf-link { margin: 6px 0 0; font-size: .9em; }
   td.match { padding: 10px 12px; }
@@ -212,11 +215,14 @@
     return wrap;
   }
 
+  let loaded = false;
+  let lastLoad = 0;
+
   async function init() {
+    lastLoad = Date.now();
     const id = Number(new URLSearchParams(location.search).get("id"));
     const content = document.getElementById("content");
     try {
-      content.replaceChildren();
       // Vždy čerstvá data: bez cache prohlížeče + unikátní parametr proti cache CDN
       const resp = await fetch("team.json?t=" + Date.now(), { cache: "no-store" });
       if (!resp.ok) throw new Error("HTTP " + resp.status);
@@ -249,14 +255,60 @@
         }, "Tabulky a Výsledky na CVF"));
       }
       document.title = `${team.shortName || team.name} – TJ Sokol Vratimov`;
-      content.append(renderRoster(team.players), renderGroups(team));
+      content.replaceChildren(renderRoster(team.players), renderGroups(team));
+      loaded = true;
     } catch (e) {
-      document.getElementById("title").textContent = "Data se nepodařilo načíst";
+      // při selhání obnovy zůstanou zobrazená původní data
+      if (!loaded) document.getElementById("title").textContent = "Data se nepodařilo načíst";
     }
   }
   init();
-  // Návrat tlačítkem Zpět může stránku obnovit z paměti – načti data znovu
+
+  const REFRESH_INTERVAL = 5 * 60 * 1000;
+  // Automatické obnovení dat každých 5 minut (jen když je karta viditelná)
+  setInterval(() => { if (!document.hidden) init(); }, REFRESH_INTERVAL);
+  // Po návratu na kartu / Zpět z paměti prohlížeče obnov, pokud jsou data starší než 5 minut
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden && Date.now() - lastLoad >= REFRESH_INTERVAL) init();
+  });
   window.addEventListener("pageshow", e => { if (e.persisted) init(); });
+
+  // Pull-to-refresh pro iOS (Safari/PWA), kde není nativně podporován
+  (function () {
+    const ind = document.createElement("div");
+    ind.className = "ptr-indicator";
+    document.body.appendChild(ind);
+    const THRESHOLD = 70;
+    let startY = null, pulled = 0, busy = false;
+
+    window.addEventListener("touchstart", e => {
+      startY = (window.scrollY <= 0 && !busy) ? e.touches[0].clientY : null;
+      pulled = 0;
+    }, { passive: true });
+
+    window.addEventListener("touchmove", e => {
+      if (startY === null) return;
+      pulled = e.touches[0].clientY - startY;
+      if (pulled > 20 && window.scrollY <= 0) {
+        ind.textContent = pulled >= THRESHOLD ? "Pusťte pro obnovení" : "Přetáhněte dolů pro obnovení";
+        ind.classList.add("visible");
+      } else {
+        ind.classList.remove("visible");
+      }
+    }, { passive: true });
+
+    window.addEventListener("touchend", async () => {
+      if (startY === null) return;
+      const doRefresh = pulled >= THRESHOLD && window.scrollY <= 0;
+      startY = null;
+      if (!doRefresh) { ind.classList.remove("visible"); return; }
+      busy = true;
+      ind.textContent = "Obnovuji…";
+      await init();
+      ind.classList.remove("visible");
+      busy = false;
+    }, { passive: true });
+  })();
 </script>
 </body>
 </html>
