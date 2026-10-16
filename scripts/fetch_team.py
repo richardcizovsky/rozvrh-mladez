@@ -32,7 +32,7 @@ def die(msg):
     sys.exit(1)
 
 
-def request(url, data=None, token=None):
+def request(url, data=None, token=None, soft=False):
     headers = {"accept": "application/json"}
     if data is not None:
         headers["Content-Type"] = "application/json"
@@ -45,9 +45,13 @@ def request(url, data=None, token=None):
         with urllib.request.urlopen(req, timeout=30) as r:
             return json.load(r)
     except urllib.error.HTTPError as e:
-        die(f"HTTP {e.code} při volání {url.split('?')[0]}")
+        err = f"HTTP {e.code} při volání {url.split('?')[0]}"
     except Exception as e:
-        die(f"{type(e).__name__} při volání {url.split('?')[0]}")
+        err = f"{type(e).__name__} při volání {url.split('?')[0]}"
+    if soft:
+        print(f"Varování: {err}", file=sys.stderr)
+        return None
+    die(err)
 
 
 def extract_token(resp):
@@ -137,6 +141,7 @@ def main():
 
     # Pro každý tým stáhne soutěže z leagueGroups[].competitionId (každé ID se stahuje jen jednou)
     cache = {}
+    group_cache = {}
     for team in data.get("collection", []):
         ids = []
         for group in team.get("leagueGroups", []):
@@ -155,6 +160,20 @@ def main():
         # Soupiska: jen hráči, z data narození zůstane pouze rok a měsíc
         roster = request(f"{BASE}/team/{team['id']}/with-roster", token=token)
         team["players"] = [clean_player(p) for p in find_players(roster)]
+
+        # Tabulka a rozpis zápasů každé skupiny (každé groupId se stahuje jen jednou)
+        for group in team.get("leagueGroups", []):
+            gid = group.get("groupId")
+            if gid is None:
+                continue
+            if gid not in group_cache:
+                sb = request(f"{BASE}/group/{gid}/scoreboard", token=token, soft=True)
+                sc = request(f"{BASE}/match/{gid}/schedule", token=token, soft=True)
+                group_cache[gid] = {
+                    "scoreboard": strip_contacts(sb) if sb is not None else None,
+                    "schedule": strip_contacts(sc) if sc is not None else None,
+                }
+            group.update(group_cache[gid])
 
     new = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     if OUT.exists() and OUT.read_text(encoding="utf-8") == new:
