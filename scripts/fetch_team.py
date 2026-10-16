@@ -66,6 +66,61 @@ def strip_contacts(obj):
     return obj
 
 
+# Klíče, ve kterých může být datum narození
+BIRTH_RE = re.compile(r"(birth|narozen|dob$)", re.IGNORECASE)
+# Další osobní údaje, které se u hráčů nikdy neukládají
+PLAYER_DROP_RE = re.compile(
+    r"(rodn|ssn|personal|passport|photo|foto|avatar|image|insurance|pojist|"
+    r"citizen|obcan|idnp|^pid$|veto)",
+    re.IGNORECASE,
+)
+
+
+def find_players(obj):
+    """Najde seznam hráčů pod klíčem 'players' (kdekoli v odpovědi)."""
+    if isinstance(obj, dict):
+        if isinstance(obj.get("players"), list):
+            return obj["players"]
+        for v in obj.values():
+            found = find_players(v)
+            if found:
+                return found
+    elif isinstance(obj, list):
+        for v in obj:
+            found = find_players(v)
+            if found:
+                return found
+    return []
+
+
+def birth_year_month(value):
+    """Z data narození vrátí (rok, měsíc); den zahodí."""
+    if not isinstance(value, str):
+        return None
+    m = re.match(r"\s*(\d{4})-(\d{1,2})", value) or None
+    if m:
+        return int(m.group(1)), int(m.group(2))
+    m = re.match(r"\s*\d{1,2}\.\s*(\d{1,2})\.\s*(\d{4})", value)
+    if m:
+        return int(m.group(2)), int(m.group(1))
+    return None
+
+
+def clean_player(player):
+    """Zahodí kontakty a osobní údaje; datum narození nahradí birthYear a birthMonth."""
+    if not isinstance(player, dict):
+        return {}
+    out = {}
+    for k, v in player.items():
+        if BIRTH_RE.search(k):
+            ym = birth_year_month(v)
+            if ym:
+                out["birthYear"], out["birthMonth"] = ym
+        elif not CONTACT_RE.search(k) and not PLAYER_DROP_RE.search(k):
+            out[k] = strip_contacts(v)
+    return out
+
+
 def main():
     login = os.environ.get("API_USERNAME")
     password = os.environ.get("API_PASSWORD")
@@ -79,23 +134,6 @@ def main():
 
     query = urllib.parse.urlencode({"season": SEASON, "clubId": CLUB_ID})
     data = strip_contacts(request(f"{BASE}/team?{query}", token=token))
-
-    # Pro každý tým stáhne soutěže z leagueGroups[].competitionId (každé ID se stahuje jen jednou)
-    cache = {}
-    for team in data.get("collection", []):
-        ids = []
-        for group in team.get("leagueGroups", []):
-            cid = group.get("competitionId")
-            if cid is not None and cid not in ids:
-                ids.append(cid)
-        competitions = []
-        for cid in ids:
-            if cid not in cache:
-                cache[cid] = strip_contacts(
-                    request(f"{BASE}/competition?{urllib.parse.urlencode({'competitionId': cid})}",
-                            token=token))
-            competitions.append(cache[cid])
-        team["competitions"] = competitions
 
     new = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
     if OUT.exists() and OUT.read_text(encoding="utf-8") == new:
