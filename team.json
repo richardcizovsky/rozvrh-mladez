@@ -1,296 +1,494 @@
 {
   "collection": [
     {
-      "id": 92492,
-      "name": "T.J. Sokol Vratimov",
-      "shortName": "TJ Sokol Vratimov",
-      "letter": "A",
-      "code": "",
       "ball": "Gala",
-      "volleyId": null,
-      "vetoId": 93603118,
       "clubId": 10000165,
-      "national": false,
-      "field": "Sokolovna Sokolská 290 Vratimov",
-      "place": [
+      "code": "",
+      "competitions": [
         {
-          "id": 410,
-          "name": "Sokolovna"
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U18Z",
+              "certification": 0,
+              "code": "MS-U18Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS18",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18566,
+              "lpd": 2000,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U18",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U18",
+              "season": "2026/27",
+              "termDate": "2026-06-26T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
         }
       ],
+      "field": "Sokolovna Sokolská 290 Vratimov",
+      "id": 92492,
       "leagueGroups": [
         {
-          "groupId": 28840,
-          "groupName": "Krajský přebor Moravskoslezského kraje dívek U18A",
-          "teamNumberInGroup": 5,
-          "groupStartDate": "2026-09-19T00:00:00+02:00",
-          "groupEndDate": "2027-01-23T00:00:00+01:00",
           "competitionId": 18566,
           "competitionName": "Krajský přebor Moravskoslezského kraje dívek U18",
-          "competitionSeason": "2026/27"
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2027-01-23T00:00:00+01:00",
+          "groupId": 28840,
+          "groupName": "Krajský přebor Moravskoslezského kraje dívek U18A",
+          "groupStartDate": "2026-09-19T00:00:00+02:00",
+          "teamNumberInGroup": 5
         }
-      ]
-    },
-    {
-      "id": 92491,
-      "name": "T.J. Sokol Vratimov \"B\"",
-      "shortName": "TJ Sokol Vratimov \"B\"",
-      "letter": "B",
-      "code": "",
-      "ball": "Gala",
-      "volleyId": null,
-      "vetoId": 93603118,
-      "clubId": 10000165,
+      ],
+      "letter": "A",
+      "name": "T.J. Sokol Vratimov",
       "national": false,
-      "field": "Sokolovna Sokolská 290 Vratimov",
       "place": [
         {
           "id": 410,
           "name": "Sokolovna"
         }
       ],
+      "shortName": "TJ Sokol Vratimov",
+      "vetoId": 93603118,
+      "volleyId": null
+    },
+    {
+      "ball": "Gala",
+      "clubId": 10000165,
+      "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U16Z",
+              "certification": 0,
+              "code": "MS-U16Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS21",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18568,
+              "lpd": 1000,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U16",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U16",
+              "season": "2026/27",
+              "termDate": "2026-06-26T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
+      "field": "Sokolovna Sokolská 290 Vratimov",
+      "id": 92491,
       "leagueGroups": [
         {
-          "groupId": 28842,
-          "groupName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "teamNumberInGroup": 1,
-          "groupStartDate": "2026-09-19T00:00:00+02:00",
-          "groupEndDate": "2027-04-05T00:00:00+02:00",
           "competitionId": 18568,
           "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2027-04-05T00:00:00+02:00",
+          "groupId": 28842,
+          "groupName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "groupStartDate": "2026-09-19T00:00:00+02:00",
+          "teamNumberInGroup": 1
         },
         {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-09-20T00:00:00+02:00",
           "groupId": 29477,
           "groupName": "Kvalifikačni skupina U16Z-KVD2",
-          "teamNumberInGroup": 3,
           "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "groupEndDate": "2026-09-20T00:00:00+02:00",
-          "competitionId": 18568,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 3
         },
         {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-09-20T00:00:00+02:00",
           "groupId": 29647,
           "groupName": "Kvalifikačni skupina U16Z-KVD 5.-6.místo",
-          "teamNumberInGroup": 2,
           "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "groupEndDate": "2026-09-20T00:00:00+02:00",
-          "competitionId": 18568,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 2
         },
         {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-10-11T00:00:00+02:00",
           "groupId": 29668,
           "groupName": "První kolo soutěže U16Z, skupina F",
-          "teamNumberInGroup": 1,
           "groupStartDate": "2026-10-11T00:00:00+02:00",
-          "groupEndDate": "2026-10-11T00:00:00+02:00",
-          "competitionId": 18568,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 1
         },
         {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-11-08T00:00:00+01:00",
           "groupId": 30043,
           "groupName": "Druhé kolo soutěže U16Z, skupina F",
-          "teamNumberInGroup": 3,
           "groupStartDate": "2026-11-08T00:00:00+01:00",
-          "groupEndDate": "2026-11-08T00:00:00+01:00",
-          "competitionId": 18568,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 3
         }
-      ]
-    },
-    {
-      "id": 92493,
-      "name": "T.J.Sokol Vratimov \"A\"",
-      "shortName": "TJ Sokol Vratimov \"A\"",
-      "letter": "A",
-      "code": "",
-      "ball": "Gala",
-      "volleyId": null,
-      "vetoId": 93603118,
-      "clubId": 10000165,
+      ],
+      "letter": "B",
+      "name": "T.J. Sokol Vratimov \"B\"",
       "national": false,
-      "field": "Sokolovna Sokolská 290 Vratimov",
       "place": [
         {
           "id": 410,
           "name": "Sokolovna"
         }
       ],
+      "shortName": "TJ Sokol Vratimov \"B\"",
+      "vetoId": 93603118,
+      "volleyId": null
+    },
+    {
+      "ball": "Gala",
+      "clubId": 10000165,
+      "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U16Z",
+              "certification": 0,
+              "code": "MS-U16Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS21",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18568,
+              "lpd": 1000,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U16",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U16",
+              "season": "2026/27",
+              "termDate": "2026-06-26T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
+      "field": "Sokolovna Sokolská 290 Vratimov",
+      "id": 92493,
       "leagueGroups": [
         {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2027-04-05T00:00:00+02:00",
           "groupId": 28842,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "teamNumberInGroup": 2,
           "groupStartDate": "2026-09-19T00:00:00+02:00",
-          "groupEndDate": "2027-04-05T00:00:00+02:00",
-          "competitionId": 18568,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 2
         },
         {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-09-20T00:00:00+02:00",
           "groupId": 29476,
           "groupName": "Kvalifikačni skupina U16Z-KVD1",
-          "teamNumberInGroup": 2,
           "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "groupEndDate": "2026-09-20T00:00:00+02:00",
-          "competitionId": 18568,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 2
         },
         {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-09-20T00:00:00+02:00",
           "groupId": 29645,
           "groupName": "Kvalifikačni skupina U16Z-KVD finále 1.-4.místo",
-          "teamNumberInGroup": 2,
           "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "groupEndDate": "2026-09-20T00:00:00+02:00",
-          "competitionId": 18568,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 2
         },
         {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-10-11T00:00:00+02:00",
           "groupId": 29666,
           "groupName": "První kolo soutěže U16Z, skupina D",
-          "teamNumberInGroup": 1,
           "groupStartDate": "2026-10-11T00:00:00+02:00",
-          "groupEndDate": "2026-10-11T00:00:00+02:00",
-          "competitionId": 18568,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 1
         },
         {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-11-08T00:00:00+01:00",
           "groupId": 30040,
           "groupName": "Druhé kolo soutěže U16Z, skupina C",
-          "teamNumberInGroup": 4,
           "groupStartDate": "2026-11-08T00:00:00+01:00",
-          "groupEndDate": "2026-11-08T00:00:00+01:00",
-          "competitionId": 18568,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 4
         }
-      ]
-    },
-    {
-      "id": 92494,
-      "name": "Tělocvičná Jednota Sokol Vratimov",
-      "shortName": "TJ Sokol Vratimov",
+      ],
       "letter": "A",
-      "code": "",
-      "ball": "Gala",
-      "volleyId": null,
-      "vetoId": null,
-      "clubId": 10000165,
+      "name": "T.J.Sokol Vratimov \"A\"",
       "national": false,
-      "field": "Sokolovna Sokolská 290 Vratimov",
       "place": [
         {
           "id": 410,
           "name": "Sokolovna"
         }
       ],
+      "shortName": "TJ Sokol Vratimov \"A\"",
+      "vetoId": 93603118,
+      "volleyId": null
+    },
+    {
+      "ball": "Gala",
+      "clubId": 10000165,
+      "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U20Z",
+              "certification": 0,
+              "code": "MS-U20Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS14",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18564,
+              "lpd": 2000,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U20",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U20",
+              "season": "2026/27",
+              "termDate": "2026-06-26T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
+      "field": "Sokolovna Sokolská 290 Vratimov",
+      "id": 92494,
       "leagueGroups": [
         {
-          "groupId": 28838,
-          "groupName": "Krajský přebor Moravskoslezského kraje dívek U20A",
-          "teamNumberInGroup": 1,
-          "groupStartDate": "2026-09-20T00:00:00+02:00",
-          "groupEndDate": "2027-03-28T00:00:00+01:00",
           "competitionId": 18564,
           "competitionName": "Krajský přebor Moravskoslezského kraje dívek U20",
-          "competitionSeason": "2026/27"
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2027-03-28T00:00:00+01:00",
+          "groupId": 28838,
+          "groupName": "Krajský přebor Moravskoslezského kraje dívek U20A",
+          "groupStartDate": "2026-09-20T00:00:00+02:00",
+          "teamNumberInGroup": 1
         }
-      ]
-    },
-    {
-      "id": 94459,
-      "name": "Tělocvičná Jednota Sokol Vratimov",
-      "shortName": "TJ Sokol Vratimov",
+      ],
       "letter": "A",
-      "code": "SoV",
-      "ball": "",
-      "volleyId": null,
-      "vetoId": null,
-      "clubId": 10000165,
+      "name": "Tělocvičná Jednota Sokol Vratimov",
       "national": false,
-      "field": "Sokolovna Vratimov, Sokolská 290/16, 73932",
       "place": [
         {
           "id": 410,
           "name": "Sokolovna"
         }
       ],
+      "shortName": "TJ Sokol Vratimov",
+      "vetoId": null,
+      "volleyId": null
+    },
+    {
+      "ball": "",
+      "clubId": 10000165,
+      "code": "SoV",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 8006,
+              "application": true,
+              "category": "Z",
+              "certification": 0,
+              "code": "OV-Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS7",
+              "endDate": "2027-01-31T00:00:00+01:00",
+              "id": 18793,
+              "lpd": 500,
+              "master": true,
+              "name": "Okresní přebor žen Ostrava",
+              "parentId": 15024,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Okresní přebor Ostrava",
+              "season": "2026/27",
+              "termDate": "2026-07-24T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
+      "field": "Sokolovna Vratimov, Sokolská 290/16, 73932",
+      "id": 94459,
       "leagueGroups": [
         {
-          "groupId": 29344,
-          "groupName": "Městský přebor žen Ostrava",
-          "teamNumberInGroup": 9,
-          "groupStartDate": "2026-09-07T00:00:00+02:00",
-          "groupEndDate": "2027-05-31T00:00:00+02:00",
           "competitionId": 18793,
           "competitionName": "Okresní přebor žen Ostrava",
-          "competitionSeason": "2026/27"
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2027-05-31T00:00:00+02:00",
+          "groupId": 29344,
+          "groupName": "Městský přebor žen Ostrava",
+          "groupStartDate": "2026-09-07T00:00:00+02:00",
+          "teamNumberInGroup": 9
         }
-      ]
-    },
-    {
-      "id": 92498,
-      "name": "TJ Sokol Vratimov",
-      "shortName": "TJ Sokol Vratimov",
+      ],
       "letter": "A",
-      "code": "",
-      "ball": "",
-      "volleyId": null,
-      "vetoId": null,
-      "clubId": 10000165,
+      "name": "Tělocvičná Jednota Sokol Vratimov",
       "national": false,
-      "field": "Sokolovna Sokolská 290 Vratimov",
       "place": [
         {
           "id": 410,
           "name": "Sokolovna"
         }
       ],
+      "shortName": "TJ Sokol Vratimov",
+      "vetoId": null,
+      "volleyId": null
+    },
+    {
+      "ball": "",
+      "clubId": 10000165,
+      "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U14Z",
+              "certification": 0,
+              "code": "MS-U14Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS26",
+              "endDate": "2027-03-13T00:00:00+01:00",
+              "id": 18574,
+              "lpd": 500,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U14",
+              "parentId": 15026,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U14",
+              "season": "2026/27",
+              "termDate": "2026-09-13T00:00:00+02:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
+      "field": "Sokolovna Sokolská 290 Vratimov",
+      "id": 92498,
       "leagueGroups": [
         {
+          "competitionId": 18574,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2027-03-08T00:00:00+01:00",
           "groupId": 28938,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U14",
-          "teamNumberInGroup": 1,
           "groupStartDate": "2026-09-14T00:00:00+02:00",
-          "groupEndDate": "2027-03-08T00:00:00+01:00",
-          "competitionId": 18574,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 1
         },
         {
+          "competitionId": 18574,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-10-03T00:00:00+02:00",
           "groupId": 29724,
           "groupName": "Kvalifikační turnaj U14 dívky sk. B",
-          "teamNumberInGroup": 1,
           "groupStartDate": "2026-10-03T00:00:00+02:00",
-          "groupEndDate": "2026-10-03T00:00:00+02:00",
-          "competitionId": 18574,
-          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
-          "competitionSeason": "2026/27"
+          "teamNumberInGroup": 1
         },
         {
-          "groupId": 29916,
-          "groupName": "První kolo soutěže U14Z,sk.A",
-          "teamNumberInGroup": 2,
-          "groupStartDate": "2026-10-24T00:00:00+02:00",
-          "groupEndDate": "2026-10-24T00:00:00+02:00",
           "competitionId": 18574,
           "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
-          "competitionSeason": "2026/27"
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-10-24T00:00:00+02:00",
+          "groupId": 29916,
+          "groupName": "První kolo soutěže U14Z,sk.A",
+          "groupStartDate": "2026-10-24T00:00:00+02:00",
+          "teamNumberInGroup": 2
         }
-      ]
+      ],
+      "letter": "A",
+      "name": "TJ Sokol Vratimov",
+      "national": false,
+      "place": [
+        {
+          "id": 410,
+          "name": "Sokolovna"
+        }
+      ],
+      "shortName": "TJ Sokol Vratimov",
+      "vetoId": null,
+      "volleyId": null
     }
   ],
   "metaData": {
-    "total": 6,
     "count": 20,
+    "sort": null,
     "start": null,
-    "sort": null
+    "total": 6
   }
 }
