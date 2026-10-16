@@ -48,6 +48,7 @@
           "groupId": 28840,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U18A",
           "groupStartDate": "2026-09-19T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -3557,6 +3558,7 @@
           "groupId": 28842,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U16",
           "groupStartDate": "2026-09-19T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -5322,6 +5324,7 @@
           "groupId": 29477,
           "groupName": "Kvalifikačni skupina U16Z-KVD2",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -5610,6 +5613,7 @@
           "groupId": 29647,
           "groupName": "Kvalifikačni skupina U16Z-KVD 5.-6.místo",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -5800,6 +5804,7 @@
           "groupId": 29668,
           "groupName": "První kolo soutěže U16Z, skupina F",
           "groupStartDate": "2026-10-11T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -6210,6 +6215,7 @@
           "groupId": 30043,
           "groupName": "Druhé kolo soutěže U16Z, skupina F",
           "groupStartDate": "2026-11-08T00:00:00+01:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -6693,6 +6699,7 @@
           "groupId": 28842,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U16",
           "groupStartDate": "2026-09-19T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -8458,6 +8465,7 @@
           "groupId": 29476,
           "groupName": "Kvalifikačni skupina U16Z-KVD1",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -8746,6 +8754,7 @@
           "groupId": 29645,
           "groupName": "Kvalifikačni skupina U16Z-KVD finále 1.-4.místo",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -9108,6 +9117,7 @@
           "groupId": 29666,
           "groupName": "První kolo soutěže U16Z, skupina D",
           "groupStartDate": "2026-10-11T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -9518,6 +9528,7 @@
           "groupId": 30040,
           "groupName": "Druhé kolo soutěže U16Z, skupina C",
           "groupStartDate": "2026-11-08T00:00:00+01:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -9965,6 +9976,7 @@
           "groupId": 28838,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U20A",
           "groupStartDate": "2026-09-20T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -12055,6 +12067,7 @@
           "groupId": 29344,
           "groupName": "Městský přebor žen Ostrava",
           "groupStartDate": "2026-09-07T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -14661,6 +14674,7 @@
           "groupId": 28938,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U14",
           "groupStartDate": "2026-09-14T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -15776,6 +15790,7 @@
           "groupId": 29724,
           "groupName": "Kvalifikační turnaj U14 dívky sk. B",
           "groupStartDate": "2026-10-03T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -16144,6 +16159,7 @@
           "groupId": 29916,
           "groupName": "První kolo soutěže U14Z,sk.A",
           "groupStartDate": "2026-10-24T00:00:00+02:00",
+          "header": null,
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -16152,11 +16168,11 @@
                 "guestName": "VK Polanka n. O. \"A\"",
                 "guestPosition": 1,
                 "hallResponse": null,
-                "homeId": 92498,
-                "homeName": "TJ Sokol Vratimov",
-                "homePosition": 2,
+                "homeId": 93856,
+                "homeName": "TJ Ostrava \"B\"",
+                "homePosition": 3,
                 "match": 1,
-                "matchId": 954304,
+                "matchId": 956315,
                 "matchStart": "2026-10-24T09:00:00+02:00",
                 "note": "",
                 "result": "",
@@ -16173,8 +16189,8 @@
                 "homeName": "TJ Ostrava \"A\"",
                 "homePosition": 4,
                 "match": 2,
-                "matchId": 954305,
-                "matchStart": "2026-10-24T09:00:00+02:00",
+                "matchId": 956316,
+                "matchStart": "2026-10-24T10:00:00+02:00",
                 "note": "",
                 "result": "",
                 "round": 1,
@@ -16182,33 +16198,16 @@
                 "withinRange": true
               },
               {
-                "guestId": 92498,
-                "guestName": "TJ Sokol Vratimov",
-                "guestPosition": 2,
+                "guestId": 92916,
+                "guestName": "VK Polanka n. O. \"A\"",
+                "guestPosition": 1,
                 "hallResponse": null,
-                "homeId": 92922,
-                "homeName": "VKB Frýdlant n. O.",
-                "homePosition": 5,
+                "homeId": 92498,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 2,
                 "match": 3,
-                "matchId": 954306,
-                "matchStart": "2026-10-24T10:15:00+02:00",
-                "note": "",
-                "result": "",
-                "round": 1,
-                "shortNote": "",
-                "withinRange": true
-              },
-              {
-                "guestId": 93857,
-                "guestName": "TJ Ostrava \"A\"",
-                "guestPosition": 4,
-                "hallResponse": null,
-                "homeId": 92916,
-                "homeName": "VK Polanka n. O. \"A\"",
-                "homePosition": 1,
-                "match": 4,
-                "matchId": 954307,
-                "matchStart": "2026-10-24T10:15:00+02:00",
+                "matchId": 956317,
+                "matchStart": "2026-10-24T10:30:00+02:00",
                 "note": "",
                 "result": "",
                 "round": 1,
@@ -16223,9 +16222,9 @@
                 "homeId": 92922,
                 "homeName": "VKB Frýdlant n. O.",
                 "homePosition": 5,
-                "match": 5,
-                "matchId": 954308,
-                "matchStart": "2026-10-24T11:30:00+02:00",
+                "match": 4,
+                "matchId": 956318,
+                "matchStart": "2026-10-24T11:00:00+02:00",
                 "note": "",
                 "result": "",
                 "round": 1,
@@ -16240,9 +16239,26 @@
                 "homeId": 92498,
                 "homeName": "TJ Sokol Vratimov",
                 "homePosition": 2,
+                "match": 5,
+                "matchId": 956319,
+                "matchStart": "2026-10-24T12:00:00+02:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92498,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 2,
+                "hallResponse": null,
+                "homeId": 92922,
+                "homeName": "VKB Frýdlant n. O.",
+                "homePosition": 5,
                 "match": 6,
-                "matchId": 954309,
-                "matchStart": "2026-10-24T11:30:00+02:00",
+                "matchId": 956320,
+                "matchStart": "2026-10-24T13:00:00+02:00",
                 "note": "",
                 "result": "",
                 "round": 2,
@@ -16250,16 +16266,16 @@
                 "withinRange": true
               },
               {
-                "guestId": 92922,
-                "guestName": "VKB Frýdlant n. O.",
-                "guestPosition": 5,
+                "guestId": 93857,
+                "guestName": "TJ Ostrava \"A\"",
+                "guestPosition": 4,
                 "hallResponse": null,
                 "homeId": 92916,
                 "homeName": "VK Polanka n. O. \"A\"",
                 "homePosition": 1,
                 "match": 7,
-                "matchId": 954310,
-                "matchStart": "2026-10-24T12:45:00+02:00",
+                "matchId": 956321,
+                "matchStart": "2026-10-24T13:00:00+02:00",
                 "note": "",
                 "result": "",
                 "round": 2,
@@ -16275,8 +16291,8 @@
                 "homeName": "TJ Ostrava \"B\"",
                 "homePosition": 3,
                 "match": 8,
-                "matchId": 954311,
-                "matchStart": "2026-10-24T12:45:00+02:00",
+                "matchId": 956322,
+                "matchStart": "2026-10-24T14:00:00+02:00",
                 "note": "",
                 "result": "",
                 "round": 2,
@@ -16292,7 +16308,7 @@
                 "homeName": "TJ Ostrava \"A\"",
                 "homePosition": 4,
                 "match": 9,
-                "matchId": 954312,
+                "matchId": 956323,
                 "matchStart": "2026-10-24T14:00:00+02:00",
                 "note": "",
                 "result": "",
@@ -16301,16 +16317,16 @@
                 "withinRange": true
               },
               {
-                "guestId": 92916,
-                "guestName": "VK Polanka n. O. \"A\"",
-                "guestPosition": 1,
+                "guestId": 92922,
+                "guestName": "VKB Frýdlant n. O.",
+                "guestPosition": 5,
                 "hallResponse": null,
-                "homeId": 93856,
-                "homeName": "TJ Ostrava \"B\"",
-                "homePosition": 3,
+                "homeId": 92916,
+                "homeName": "VK Polanka n. O. \"A\"",
+                "homePosition": 1,
                 "match": 10,
-                "matchId": 954313,
-                "matchStart": "2026-10-24T14:00:00+02:00",
+                "matchId": 956324,
+                "matchStart": "2026-10-24T15:00:00+02:00",
                 "note": "",
                 "result": "",
                 "round": 2,
