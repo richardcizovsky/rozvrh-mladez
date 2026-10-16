@@ -80,7 +80,11 @@ def main():
     query = urllib.parse.urlencode({"season": SEASON, "clubId": CLUB_ID})
     data = strip_contacts(request(f"{BASE}/team?{query}", token=token))
 
-    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    new = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+    if OUT.exists() and OUT.read_text(encoding="utf-8") == new:
+        print("Beze změny, nic se neukládá")
+        return
+    OUT.write_text(new, encoding="utf-8")
     print(f"Uloženo do {OUT.name}")
 
 
