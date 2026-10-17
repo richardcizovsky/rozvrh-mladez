@@ -252,6 +252,18 @@
    .today-table tbody tr:first-child td { border-top: none; }
    .match-teams { font-weight: 600; }
    .match-when { color: #555; }
+   /* Řádek s časem a halou: menší, kompaktní a bez oddělovače od řádku se soupeři */
+   .today-table tbody tr.has-when th,
+   .today-table tbody tr.has-when td { border-bottom: none; padding-bottom: 2px; }
+   .today-table tbody tr.when-row th,
+   .today-table tbody tr.when-row td {
+     padding-top: 0;
+     padding-bottom: 6px;
+     font-size: 0.78em;
+     font-weight: 400;
+     color: #777;
+   }
+   .today-table tbody tr.when-row th { text-align: left; }
    .match-score { font-weight: 700; font-size: 1.1em; margin-right: 6px; }
    .match-sets { color: #555; margin-right: 6px; }
    .status-badge {
@@ -613,13 +625,13 @@
               const href = esc(m.href);
 
               const firstRow = mIdx === 0;
+              const when = matchWhen(m.href, day.date, m.tymy);
               // 1. skupina + soupeři, 2. čas + hala (pokud jsou k dispozici), 3. výsledek
               html += `
-                <tr class="today-row ${firstRow ? 'match-first' : ''}" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams" colspan="2">${esc(m.tymy)}</td></tr>`;
-              const when = matchWhen(m.href, day.date, m.tymy);
+                <tr class="today-row ${firstRow ? 'match-first' : ''} ${when ? 'has-when' : ''}" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams" colspan="2">${esc(m.tymy)}</td></tr>`;
               if (when) {
                 html += `
-                <tr class="today-row" data-href="${href}"><th>${esc(when.when)}</th><td class="match-when" colspan="2">${esc(when.hall)}</td></tr>`;
+                <tr class="today-row when-row" data-href="${href}"><th>${esc(when.when)}</th><td class="match-when" colspan="2">${esc(when.hall)}</td></tr>`;
               }
 
               // Zobrazuj řádek výsledku jen pro dnešní den a minulé zápasy

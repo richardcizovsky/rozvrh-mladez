@@ -143,13 +143,22 @@
     return el("div", { class: "group-header" }, text);
   }
 
+  // Zkrácené názvy sloupců tabulky (původní: p., družstvo, utkání, sety, míče, body)
+  const COLUMN_LABELS = {
+    "p.": "#", "družstvo": "Tým", "utkání": "Z", "sety": "S", "míče": "M", "body": "B"
+  };
+  function columnLabel(v) {
+    const key = String(v || "").trim().toLowerCase();
+    return COLUMN_LABELS[key] || v;
+  }
+
   function renderScoreboard(sb) {
     if (!sb || !Array.isArray(sb.rows) || !sb.rows.length) {
       return el("div", { class: "empty" }, "Tabulka zatím není k dispozici.");
     }
     const cols = (sb.columns || []).slice().sort((a, b) => a.column - b.column);
     const thead = el("thead", {}, el("tr", {}, ...cols.map((c, i) =>
-      el("th", { class: i === 1 ? "" : "num" }, c.value))));
+      el("th", { class: i === 1 ? "" : "num" }, columnLabel(c.value)))));
     const tbody = el("tbody");
     for (const row of sb.rows) {
       const cells = (row.cells || []).slice().sort((a, b) => a.column - b.column);
