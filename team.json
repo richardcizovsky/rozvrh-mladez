@@ -743,7 +743,7 @@
                 "matchId": 936555,
                 "matchStart": "2026-10-17T10:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "0:3 (-5,-23,-22)",
                 "round": 7,
                 "shortNote": "",
                 "withinRange": true
@@ -3245,15 +3245,15 @@
                   },
                   {
                     "column": 1,
-                    "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek C"
                   },
                   {
                     "column": 2,
-                    "value": "4"
+                    "value": "7"
                   },
                   {
                     "column": 3,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 4,
@@ -3261,11 +3261,11 @@
                   },
                   {
                     "column": 5,
-                    "value": "1"
+                    "value": "0"
                   },
                   {
                     "column": 6,
-                    "value": "3"
+                    "value": "6"
                   },
                   {
                     "column": 7,
@@ -3273,19 +3273,19 @@
                   },
                   {
                     "column": 8,
-                    "value": "3:12"
+                    "value": "4:18"
                   },
                   {
                     "column": 9,
-                    "value": "272:359"
+                    "value": "417:528"
                   },
                   {
                     "column": 10,
-                    "value": "1"
+                    "value": "3"
                   }
                 ],
                 "error": null,
-                "teamId": 93697
+                "teamId": 93694
               },
               {
                 "cells": [
@@ -3295,11 +3295,11 @@
                   },
                   {
                     "column": 1,
-                    "value": "Tělocvičná jednota Sokol Frýdek - Místek C"
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
                   },
                   {
                     "column": 2,
-                    "value": "6"
+                    "value": "5"
                   },
                   {
                     "column": 3,
@@ -3311,11 +3311,11 @@
                   },
                   {
                     "column": 5,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 6,
-                    "value": "6"
+                    "value": "4"
                   },
                   {
                     "column": 7,
@@ -3323,19 +3323,19 @@
                   },
                   {
                     "column": 8,
-                    "value": "1:18"
+                    "value": "3:15"
                   },
                   {
                     "column": 9,
-                    "value": "342:478"
+                    "value": "322:434"
                   },
                   {
                     "column": 10,
-                    "value": "0"
+                    "value": "1"
                   }
                 ],
                 "error": null,
-                "teamId": 93694
+                "teamId": 93697
               }
             ]
           },
@@ -17129,5 +17129,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-17T11:19+02:00"
+  "updated": "2026-10-17T12:19+02:00"
 }
