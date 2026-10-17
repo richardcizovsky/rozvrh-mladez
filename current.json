@@ -1,27 +1,6 @@
 {
-  "updated": "2026-10-17 13:39",
+  "updated": "2026-10-18 00:15",
   "days": [
-    {
-      "date": "2026-10-17",
-      "matches": [
-        {
-          "skupina": "MS-U18ZA",
-          "cislo": "(26)",
-          "tymy": "SVK Nový Jičín - TJ Sokol Vratimov",
-          "stav": "3:0 (13,16,22)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=936554"
-        },
-        {
-          "skupina": "MS-U18ZA",
-          "cislo": "(30)",
-          "tymy": "SVK Nový Jičín - TJ Sokol Vratimov",
-          "stav": "3:1 (-20,20,12,18)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=936558"
-        }
-      ]
-    },
     {
       "date": "2026-10-18",
       "matches": [
@@ -145,9 +124,34 @@
           "href": "https://ezapis.cvf.cz/online/view.php?match=937012"
         }
       ]
+    },
+    {
+      "date": "2026-10-26",
+      "matches": []
     }
   ],
   "past_days": [
+    {
+      "date": "2026-10-17",
+      "matches": [
+        {
+          "skupina": "MS-U18ZA",
+          "cislo": "(26)",
+          "tymy": "SVK Nový Jičín - TJ Sokol Vratimov",
+          "stav": "3:0 (13,16,22)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936554"
+        },
+        {
+          "skupina": "MS-U18ZA",
+          "cislo": "(30)",
+          "tymy": "SVK Nový Jičín - TJ Sokol Vratimov",
+          "stav": "3:1 (-20,20,12,18)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936558"
+        }
+      ]
+    },
     {
       "date": "2026-10-14",
       "matches": [
