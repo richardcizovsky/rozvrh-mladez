@@ -10915,7 +10915,7 @@
                 "matchId": 937003,
                 "matchStart": "2026-10-18T10:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (19,21,5)",
                 "round": 9,
                 "shortNote": "",
                 "withinRange": true
@@ -11989,11 +11989,11 @@
                   },
                   {
                     "column": 1,
-                    "value": "Tělovýchovná jednota Sokol Stará Bělá, z.s."
+                    "value": "VO Slezská Orlice, z.s."
                   },
                   {
                     "column": 2,
-                    "value": "6"
+                    "value": "9"
                   },
                   {
                     "column": 3,
@@ -12001,7 +12001,7 @@
                   },
                   {
                     "column": 4,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 5,
@@ -12009,7 +12009,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "3"
+                    "value": "5"
                   },
                   {
                     "column": 7,
@@ -12017,19 +12017,19 @@
                   },
                   {
                     "column": 8,
-                    "value": "9:14"
+                    "value": "13:20"
                   },
                   {
                     "column": 9,
-                    "value": "437:523"
+                    "value": "670:687"
                   },
                   {
                     "column": 10,
-                    "value": "7"
+                    "value": "9"
                   }
                 ],
                 "error": null,
-                "teamId": 94060
+                "teamId": 93674
               },
               {
                 "cells": [
@@ -12089,6 +12089,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "Tělovýchovná jednota Sokol Stará Bělá, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "7"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "4"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "9:17"
+                  },
+                  {
+                    "column": 9,
+                    "value": "482:598"
+                  },
+                  {
+                    "column": 10,
+                    "value": "7"
+                  }
+                ],
+                "error": null,
+                "teamId": 94060
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "6."
+                  },
+                  {
+                    "column": 1,
                     "value": "Tělocvičná Jednota Sokol Vratimov"
                   },
                   {
@@ -12130,56 +12180,6 @@
                 ],
                 "error": null,
                 "teamId": 92494
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "6."
-                  },
-                  {
-                    "column": 1,
-                    "value": "VO Slezská Orlice, z.s."
-                  },
-                  {
-                    "column": 2,
-                    "value": "8"
-                  },
-                  {
-                    "column": 3,
-                    "value": "1"
-                  },
-                  {
-                    "column": 4,
-                    "value": "1"
-                  },
-                  {
-                    "column": 5,
-                    "value": "1"
-                  },
-                  {
-                    "column": 6,
-                    "value": "5"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "10:20"
-                  },
-                  {
-                    "column": 9,
-                    "value": "595:642"
-                  },
-                  {
-                    "column": 10,
-                    "value": "6"
-                  }
-                ],
-                "error": null,
-                "teamId": 93674
               }
             ]
           },
@@ -17129,5 +17129,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-18T11:13+02:00"
+  "updated": "2026-10-18T11:29+02:00"
 }
