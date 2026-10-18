@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18 13:29",
+  "updated": "2026-10-18 13:40",
   "days": [
     {
       "date": "2026-10-18",
@@ -15,9 +15,9 @@
         {
           "skupina": "MS-U20ZA",
           "cislo": "(30)",
-          "tymy": "TJ Hlučín - TJ Sokol Vratimov LIVE",
+          "tymy": "TJ Hlučín - TJ Sokol Vratimov",
           "stav": "3:0 (10,17,11)",
-          "badge": "",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=937008"
         }
       ]
