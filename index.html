@@ -799,6 +799,7 @@
     // Podpis „kostry“ stránky (bloky, styly, skript) – když se liší od čerstvé verze, stránka se načte znovu
     const hashStr = s => { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return h; };
     const pageSignature = d => [
+      (d.querySelector('title') || {}).textContent || '',
       [...d.querySelectorAll('details > summary')].map(s => s.textContent.replace(/\s+/g, ' ').trim()).join('|'),
       hashStr([...d.querySelectorAll('style')].map(s => s.textContent).join('')),
       hashStr([...d.querySelectorAll('script')].map(s => s.textContent).join('')),
