@@ -1,0 +1,35 @@
+name: Stažení dat klubu z CVF API
+on:
+  schedule:
+    # Každých 5 minut, posunuto oproti current.yml (2, 7, …) a team.yml (4, 9, …)
+    - cron: "1-59/5 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: current-json
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Stáhnout data klubu
+        env:
+          API_USERNAME: ${{ secrets.API_USERNAME }}
+          API_PASSWORD: ${{ secrets.API_PASSWORD }}
+        run: python scripts/fetch_club.py
+      - name: Commit club.json
+        run: |
+          if [ -n "$(git status --porcelain club.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add club.json
+            git commit -m "Aktualizace club.json"
+            git pull --rebase
+            git push
+          fi
+

@@ -328,8 +328,50 @@
      color: #2c3e50;
      min-width: 250px;
      display: inline-block;
-     text-align: center;
+      text-align: center;
    }
+   /* Partneři: sbalitelný panel nad rozvrhem */
+   .partners { margin-bottom: 16px; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
+   .partners summary {
+     cursor: pointer; list-style: none; padding: 12px 20px;
+     display: flex; align-items: center; justify-content: center; gap: 10px;
+     color: #2c3e50; font-weight: 600; text-transform: uppercase;
+     font-size: 0.9em; letter-spacing: 0.05em; user-select: none;
+   }
+   .partners summary::-webkit-details-marker { display: none; }
+   .partners summary::after { content: '▾'; transition: transform 0.2s; }
+   .partners[open] summary::after { transform: rotate(180deg); }
+   .partners summary:hover { background-color: #f4f7f6; }
+   .partners summary small { font-weight: 400; text-transform: none; letter-spacing: 0; color: #777; font-size: 0.9em; }
+   .partners > table { box-shadow: none; border-radius: 0; border-top: 1px solid #e0e0e0; }
+   .partners-list {
+     display: flex; flex-wrap: wrap; justify-content: center; gap: 14px;
+     padding: 14px 20px 20px; border-top: 1px solid #e0e0e0;
+   }
+   .partner {
+     display: flex; align-items: center; justify-content: center;
+     width: 180px; height: 90px; padding: 12px; box-sizing: border-box;
+     border: 1px solid #e0e0e0; border-radius: 8px; background: #fff;
+     transition: transform 0.2s, box-shadow 0.2s;
+   }
+   .partner:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+   .partner.partner-dark { background: #292826; border-color: #292826; }
+   .partner img { width: 100%; height: 100%; object-fit: contain; }
+   @media (max-width: 768px) { .partner { width: calc(50% - 7px); } }
+   /* Týmová fotka na pozadí: plně vidět při zabalených blocích, při rozbalení se ztlumí */
+   body::before {
+     content: '';
+     position: fixed;
+     inset: 0;
+     z-index: -1;
+     background:
+       linear-gradient(rgba(244,247,246,0.35), rgba(244,247,246,0.75)),
+       url('logos/tym.jpg') center / cover no-repeat;
+     transition: opacity 0.4s;
+   }
+   body:has(details[open])::before { opacity: 0.35; }
+   .header-content h1, .header-content h2 { text-shadow: 0 1px 6px rgba(255,255,255,0.9); }
+   .header-content h2 { color: #2c3e50; font-weight: 600; }
  </style>
 </head>
 <body>
@@ -340,10 +382,12 @@
       </div>
       <div class="header-content">
         <h1>TJ Sokol Vratimov</h1>
-        <h2>Rozpis tréninků a aktuálních zápasů</h2>
+        <h2>Volejbalový tým</h2>
       </div>
       <a href="https://www.facebook.com/profile.php?id=61551862265058" class="fb-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
     </div>
+    <details class="partners">
+      <summary>Týmy <small>tréninky, tabulky, program, soupisky</small></summary>
     <table id="schedule">
       <thead>
         <tr>
@@ -512,23 +556,39 @@
 
       </tbody>
     </table>
+    </details>
 
     <!-- Zápasy z eZapis (data z current.json, generuje GitHub Action) -->
-    <h3 class="section-title">Aktuální zápasy eZapis</h3>
-    <h4 style="text-align: center; color: #777; font-size: 0.9em; margin-top: -8px; margin-bottom: 15px; font-weight: 400;">8 dní dopředu</h4>
-    <table class="today-table">
-      <tbody id="todayMatches">
-        <tr><td colspan="3" class="today-info">Načítání dat...</td></tr>
-      </tbody>
-    </table>
+    <details class="partners">
+      <summary>Aktuální zápasy eZapis <small>8 dní dopředu</small></summary>
+      <table class="today-table">
+        <tbody id="todayMatches">
+          <tr><td colspan="3" class="today-info">Načítání dat...</td></tr>
+        </tbody>
+      </table>
+    </details>
 
-    <h3 class="section-title">Odehrané zápasy eZapis</h3>
-    <h4 style="text-align: center; color: #777; font-size: 0.9em; margin-top: -8px; margin-bottom: 15px; font-weight: 400;">8 dní zpět</h4>
-    <table class="today-table">
-      <tbody id="pastMatches">
-        <tr><td colspan="3" class="today-info">Načítání dat...</td></tr>
-      </tbody>
-    </table>
+    <details class="partners">
+      <summary>Odehrané zápasy eZapis <small>8 dní zpět</small></summary>
+      <table class="today-table">
+        <tbody id="pastMatches">
+          <tr><td colspan="3" class="today-info">Načítání dat...</td></tr>
+        </tbody>
+      </table>
+    </details>
+
+    <!-- Partneři (výchozí stav: sbaleno). Další přidejte jako další <a class="partner"> -->
+    <details class="partners">
+      <summary>Partneři</summary>
+      <div class="partners-list">
+        <a class="partner partner-dark" href="https://www.unasdomavratimov.cz/" target="_blank" rel="noopener noreferrer" title="U nás doma Vratimov"><img src="logos/unasdoma.webp" alt="U nás doma Vratimov" loading="lazy"></a>
+        <a class="partner" href="https://www.vratimov.cz/" target="_blank" rel="noopener noreferrer" title="Město Vratimov"><img src="logos/vratimov.png" alt="Město Vratimov" loading="lazy"></a>
+        <a class="partner" href="https://www.lenzing.com/" target="_blank" rel="noopener noreferrer" title="Lenzing"><img src="logos/lenzing.png" alt="Lenzing" loading="lazy"></a>
+        <a class="partner" href="https://www.huisman-cz.com/cs/uvod/" target="_blank" rel="noopener noreferrer" title="Huisman"><img src="logos/huisman.png" alt="Huisman" loading="lazy"></a>
+        <a class="partner" href="https://www.airport-ostrava.cz/" target="_blank" rel="noopener noreferrer" title="Letiště Ostrava"><img src="logos/airport.svg" alt="Letiště Ostrava" loading="lazy"></a>
+        <a class="partner" href="https://www.stolarstvi-ramik.cz/" target="_blank" rel="noopener noreferrer" title="Truhlářství Ramík"><img src="logos/ramik.png" alt="Truhlářství Ramík" loading="lazy"></a>
+      </div>
+    </details>
 
     <footer>
       <p>
@@ -716,6 +776,81 @@
         swap('footer');
       } catch (e) { /* ignoruj, zkusí se příště */ }
     }
+
+    // O klubu (club.json) – struktura odpovědi API se hledá tolerantně podle názvů klíčů
+    const escHtml = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    function findScalar(obj, re, depth = 0) {
+      if (!obj || typeof obj !== 'object' || depth > 3) return '';
+      for (const [k, v] of Object.entries(obj)) {
+        if (re.test(k) && (typeof v === 'string' || typeof v === 'number') && String(v).trim()) return String(v).trim();
+      }
+      for (const v of Object.values(obj)) {
+        if (v && typeof v === 'object' && !Array.isArray(v)) {
+          const r = findScalar(v, re, depth + 1);
+          if (r) return r;
+        }
+      }
+      return '';
+    }
+    function findPeople(obj, depth = 0, out = []) {
+      if (!obj || typeof obj !== 'object' || depth > 4) return out;
+      if (Array.isArray(obj)) {
+        obj.forEach(o => {
+          if (o && typeof o === 'object' && !Array.isArray(o)) {
+            const name = findScalar(o, /^(name|fullName|displayName)$/i)
+              || [findScalar(o, /^(first_?name|jmeno)$/i), findScalar(o, /^(last_?name|surname|prijmeni)$/i)].filter(Boolean).join(' ');
+            const email = findScalar(o, /e-?mail/i), phone = findScalar(o, /(phone|telefon|mobil|^tel$)/i);
+            if (name && (email || phone)) out.push({ name, role: findScalar(o, /^(role|function|funkce|position|title)$/i), email, phone });
+            else findPeople(o, depth + 1, out);
+          }
+        });
+      } else {
+        Object.values(obj).forEach(v => findPeople(v, depth + 1, out));
+      }
+      return out;
+    }
+    function renderClub(d) {
+      const box = document.getElementById('clubInfo');
+      let c = d.data || d.club || d.collection || d;
+      if (Array.isArray(c)) c = c[0] || {};
+      const name = findScalar(c, /^(name|nazev|clubName|fullName|title)$/i);
+      const street = findScalar(c, /^(street|ulice|address|adresa)$/i);
+      const city = findScalar(c, /^(city|obec|mesto|town)$/i);
+      const zip = findScalar(c, /^(zip|zipCode|psc|postalCode)$/i);
+      const address = [street, [zip, city].filter(Boolean).join(' ')].filter(Boolean).join(', ');
+      let web = findScalar(c, /(web|www|url|homepage)/i);
+      const rows = [
+        ['Adresa', address],
+        ['E-mail', findScalar(c, /e-?mail/i), v => `<a href="mailto:${escHtml(v)}">${escHtml(v)}</a>`],
+        ['Telefon', findScalar(c, /(phone|telefon|mobil|^tel$)/i), v => `<a href="tel:${escHtml(v.replace(/\s+/g, ''))}">${escHtml(v)}</a>`],
+        ['Web', web, v => { const u = /^https?:/i.test(v) ? v : 'https://' + v; return `<a href="${escHtml(u)}" target="_blank" rel="noopener noreferrer">${escHtml(v.replace(/^https?:\/\//i, ''))}</a>`; }],
+        ['IČO', findScalar(c, /^(ico|ic|companyId|regNumber)$/i)],
+        ['Bankovní účet', findScalar(c, /(bank|account|ucet)/i)],
+      ].filter(r => r[1]);
+      const card = (lbl, val, fmt) => `<div class="club-card"><span class="lbl">${escHtml(lbl)}</span><span class="val">${fmt ? fmt(val) : escHtml(val)}</span></div>`;
+      let html = name ? `<p class="club-name">${escHtml(name)}</p>` : '';
+      if (rows.length) html += `<div class="club-grid">${rows.map(r => card(r[0], r[1], r[2])).join('')}</div>`;
+      const people = findPeople(c);
+      if (people.length) {
+        html += '<p class="club-sub">Kontaktní osoby</p><div class="club-grid">' + people.map(p =>
+          `<div class="club-card"><span class="val">${escHtml(p.name)}${p.role ? `<span class="role">${escHtml(p.role)}</span>` : ''}</span>`
+          + (p.email ? `<span class="val"><a href="mailto:${escHtml(p.email)}">${escHtml(p.email)}</a></span>` : '')
+          + (p.phone ? `<span class="val"><a href="tel:${escHtml(p.phone.replace(/\s+/g, ''))}">${escHtml(p.phone)}</a></span>` : '')
+          + '</div>').join('') + '</div>';
+      }
+      box.innerHTML = html || '<p class="today-info">Údaje o klubu se připravují</p>';
+    }
+    async function loadClub() {
+      try {
+        const res = await fetch(`club.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        renderClub(await res.json());
+      } catch (e) {
+        document.getElementById('clubInfo').innerHTML = '<p class="today-info">Údaje o klubu se připravují</p>';
+      }
+    }
+    loadClub();
+    setInterval(() => { if (!document.hidden) loadClub(); }, 5 * 60 * 1000);
 
     loadMatches();
     // Pull-to-refresh pro iOS (Safari/PWA), kde není nativně podporován
