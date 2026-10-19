@@ -358,6 +358,19 @@
    .partner.partner-dark { background: #292826; border-color: #292826; }
    .partner img { width: 100%; height: 100%; object-fit: contain; }
    @media (max-width: 768px) { .partner { width: calc(50% - 7px); } }
+   /* O nás */
+   .club-info { padding: 18px 20px 22px; border-top: 1px solid #e0e0e0; }
+   .club-name { text-align: center; color: #2c3e50; font-size: 1.25em; font-weight: 700; margin: 0 0 14px; }
+   .club-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+   .club-card { background: #f4f7f6; border-radius: 8px; padding: 12px 14px; border-left: 4px solid #2c3e50; }
+   .club-card .lbl { display: block; color: #777; font-size: 0.75em; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 3px; }
+   .club-card .val { display: block; color: #2c3e50; font-weight: 600; word-break: break-word; }
+   .club-card a { color: #1a5fb4; text-decoration: none; }
+   .club-card a:hover { text-decoration: underline; }
+   .club-sub { margin: 18px 0 8px; color: #555; font-size: 0.85em; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; text-align: center; }
+   .club-card .role { display: block; color: #777; font-size: 0.8em; font-weight: 400; }
+   .club-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+   .club-tag { background: rgba(41,128,185,0.1); color: #2980b9; font-size: 0.82em; font-weight: 600; padding: 4px 10px; border-radius: 12px; }
    /* Týmová fotka na pozadí: plně vidět při zabalených blocích, při rozbalení se ztlumí */
    body::before {
      content: '';
@@ -575,6 +588,12 @@
           <tr><td colspan="3" class="today-info">Načítání dat...</td></tr>
         </tbody>
       </table>
+    </details>
+
+    <!-- O nás (data z club.json, generuje GitHub Action) -->
+    <details class="partners">
+      <summary>O nás <small>kontakty a údaje o klubu</small></summary>
+      <div id="clubInfo" class="club-info"><p class="today-info">Načítání dat...</p></div>
     </details>
 
     <!-- Partneři (výchozí stav: sbaleno). Další přidejte jako další <a class="partner"> -->
@@ -830,7 +849,19 @@
       const card = (lbl, val, fmt) => `<div class="club-card"><span class="lbl">${escHtml(lbl)}</span><span class="val">${fmt ? fmt(val) : escHtml(val)}</span></div>`;
       let html = name ? `<p class="club-name">${escHtml(name)}</p>` : '';
       if (rows.length) html += `<div class="club-grid">${rows.map(r => card(r[0], r[1], r[2])).join('')}</div>`;
-      const people = findPeople(c);
+      const persons = (c.responsiblePersons || []).map(p => ({
+        name: [p.title, p.firstName, p.lastName, p.titleAfter].filter(Boolean).join(' ').trim(),
+      })).filter(p => p.name);
+      if (persons.length) {
+        html += '<p class="club-sub">Odpovědné osoby</p><div class="club-grid">'
+          + persons.map(p => `<div class="club-card"><span class="val">${escHtml(p.name)}</span></div>`).join('') + '</div>';
+      }
+      const comps = (c.competitions || []).map(x => x.competitionName).filter(Boolean);
+      if (comps.length) {
+        html += '<p class="club-sub">Soutěže</p><div class="club-tags">'
+          + comps.map(n => `<span class="club-tag">${escHtml(n)}</span>`).join('') + '</div>';
+      }
+      const people = findPeople({ ...c, responsiblePersons: undefined });
       if (people.length) {
         html += '<p class="club-sub">Kontaktní osoby</p><div class="club-grid">' + people.map(p =>
           `<div class="club-card"><span class="val">${escHtml(p.name)}${p.role ? `<span class="role">${escHtml(p.role)}</span>` : ''}</span>`
