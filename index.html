@@ -343,6 +343,7 @@
    .partners[open] summary::after { transform: rotate(180deg); }
    .partners summary:hover { background-color: #f4f7f6; }
    .partners summary small { font-weight: 400; text-transform: none; letter-spacing: 0; color: #777; font-size: 0.9em; }
+   .partners summary small.ez { font-size: 0.55em; letter-spacing: 0; opacity: 0.8; margin-left: -4px; }
    .partners > table { box-shadow: none; border-radius: 0; border-top: 1px solid #e0e0e0; }
    .partners-list {
      display: flex; flex-wrap: wrap; justify-content: center; gap: 14px;
@@ -573,7 +574,7 @@
 
     <!-- Zápasy z eZapis (data z current.json, generuje GitHub Action) -->
     <details class="partners">
-      <summary>Aktuální zápasy eZapis <small>8 dní dopředu</small></summary>
+      <summary>Aktuální zápasy <small class="ez">eZapis</small> <small>8 dní dopředu</small></summary>
       <table class="today-table">
         <tbody id="todayMatches">
           <tr><td colspan="3" class="today-info">Načítání dat...</td></tr>
@@ -582,7 +583,7 @@
     </details>
 
     <details class="partners">
-      <summary>Odehrané zápasy eZapis <small>8 dní zpět</small></summary>
+      <summary>Odehrané zápasy <small class="ez">eZapis</small> <small>8 dní zpět</small></summary>
       <table class="today-table">
         <tbody id="pastMatches">
           <tr><td colspan="3" class="today-info">Načítání dat...</td></tr>
@@ -621,6 +622,19 @@
     </footer>
   </div>
   <script>
+    // Pamatuj si rozbalené/zabalené bloky (po návratu z tym.html zůstanou rozbalené, jak je uživatel nechal)
+    (function () {
+      let saved = {};
+      try { saved = JSON.parse(sessionStorage.getItem('openBlocks') || '{}'); } catch (e) { /* ignoruj */ }
+      document.querySelectorAll('details.partners').forEach((d, i) => {
+        if (saved[i] !== undefined) d.open = saved[i];
+        d.addEventListener('toggle', () => {
+          saved[i] = d.open;
+          try { sessionStorage.setItem('openBlocks', JSON.stringify(saved)); } catch (e) { /* ignoruj */ }
+        });
+      });
+    })();
+
     // Termín a hala zápasu podle matchId z team.json
     let matchInfo = {};
     let matchByTeams = {};
@@ -782,11 +796,29 @@
       }
     }
 
+    // Podpis „kostry“ stránky (bloky, styly, skript) – když se liší od čerstvé verze, stránka se načte znovu
+    const hashStr = s => { let h = 0; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return h; };
+    const pageSignature = d => [
+      [...d.querySelectorAll('details > summary')].map(s => s.textContent.replace(/\s+/g, ' ').trim()).join('|'),
+      hashStr([...d.querySelectorAll('style')].map(s => s.textContent).join('')),
+      hashStr([...d.querySelectorAll('script')].map(s => s.textContent).join('')),
+    ].join('#');
+
     async function refreshStatic() {
       try {
-        const res = await fetch(`${location.pathname}?t=${Date.now()}`, { cache: 'no-store' });
+        // cache:'reload' obejde (a zároveň aktualizuje) HTTP cache, kterou iOS/Safari u stránek drží dlouho
+        const res = await fetch(`${location.pathname}?t=${Date.now()}`, { cache: 'reload' });
         if (!res.ok) return;
         const doc = new DOMParser().parseFromString(await res.text(), 'text/html');
+        if (pageSignature(doc) !== pageSignature(document)) {
+          // Nová verze stránky – načti ji znovu (nejvýš jednou za minutu, aby nevznikla smyčka)
+          const last = Number(sessionStorage.getItem('reloadedAt') || 0);
+          if (Date.now() - last > 60000) {
+            sessionStorage.setItem('reloadedAt', String(Date.now()));
+            location.reload();
+            return;
+          }
+        }
         const swap = sel => {
           const n = doc.querySelector(sel), o = document.querySelector(sel);
           if (n && o && n.innerHTML !== o.innerHTML) o.innerHTML = n.innerHTML;
@@ -884,6 +916,7 @@
     setInterval(() => { if (!document.hidden) loadClub(); }, 5 * 60 * 1000);
 
     loadMatches();
+    refreshStatic(); // hned po otevření ověř, jestli není k dispozici novější verze stránky
     // Pull-to-refresh pro iOS (Safari/PWA), kde není nativně podporován
     (function () {
       const ind = document.createElement('div');
@@ -933,7 +966,7 @@
     };
     setInterval(maybeRefreshStatic, 30000);
     document.addEventListener('visibilitychange', () => {
-      if (!document.hidden) { loadMatches(); maybeRefreshStatic(); }
+      if (!document.hidden) { loadMatches(); lastStatic = Date.now(); refreshStatic(); }
     });
   </script>
 </body>
