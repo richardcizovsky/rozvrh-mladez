@@ -358,6 +358,9 @@
    .partner:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
    .partner.partner-dark { background: #292826; border-color: #292826; }
    .partner img { width: 100%; height: 100%; object-fit: contain; }
+   .partner:has(.partner-caption) { flex-direction: column; gap: 4px; padding: 8px 12px; }
+   .partner:has(.partner-caption) img { flex: 1; min-height: 0; }
+   .partner-caption { color: #2c3e50; font-weight: 700; font-size: 0.85em; letter-spacing: 0.15em; line-height: 1; }
    @media (max-width: 768px) { .partner { width: calc(50% - 7px); } }
    /* O nás */
    .club-info { padding: 18px 20px 22px; border-top: 1px solid #e0e0e0; }
@@ -602,7 +605,7 @@
       <summary>Partneři</summary>
       <div class="partners-list">
         <a class="partner partner-dark" href="https://www.unasdomavratimov.cz/" target="_blank" rel="noopener noreferrer" title="U nás doma Vratimov"><img src="logos/unasdoma.webp" alt="U nás doma Vratimov" loading="lazy"></a>
-        <a class="partner" href="https://www.vratimov.cz/" target="_blank" rel="noopener noreferrer" title="Město Vratimov"><img src="logos/vratimov.png" alt="Město Vratimov" loading="lazy"></a>
+        <a class="partner" href="https://www.vratimov.cz/" target="_blank" rel="noopener noreferrer" title="Město Vratimov"><img src="logos/vratimov.png" alt="Město Vratimov" loading="lazy"><span class="partner-caption">VRATIMOV</span></a>
         <a class="partner" href="https://www.lenzing.com/" target="_blank" rel="noopener noreferrer" title="Lenzing"><img src="logos/lenzing.png" alt="Lenzing" loading="lazy"></a>
         <a class="partner" href="https://www.huisman-cz.com/cs/uvod/" target="_blank" rel="noopener noreferrer" title="Huisman"><img src="logos/huisman.png" alt="Huisman" loading="lazy"></a>
         <a class="partner" href="https://www.airport-ostrava.cz/" target="_blank" rel="noopener noreferrer" title="Letiště Ostrava"><img src="logos/airport.svg" alt="Letiště Ostrava" loading="lazy"></a>
