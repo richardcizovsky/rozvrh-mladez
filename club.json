@@ -1,0 +1,115 @@
+{
+  "accountNumber": "1684174339/0800",
+  "address": {
+    "city": "Vratimov",
+    "districtDesignation": "CZ0806",
+    "districtId": 3807,
+    "districtName": "Ostrava - město",
+    "regionDesignation": "CZ080",
+    "regionId": 14,
+    "regionName": "Moravskoslezský kraj",
+    "regionRuian": 132,
+    "street": "Sokolská 290/16",
+    "zip": "73932"
+  },
+  "canceled": false,
+  "clubId": 10000165,
+  "competitions": [
+    {
+      "competitionCode": "MS-U14Z",
+      "competitionId": 18574,
+      "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+      "teams": [
+        {
+          "teamId": 92498,
+          "teamLetter": "A",
+          "teamName": "TJ Sokol Vratimov",
+          "teamShortName": "TJ Sokol Vratimov"
+        }
+      ]
+    },
+    {
+      "competitionCode": "MS-U16Z",
+      "competitionId": 18568,
+      "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+      "teams": [
+        {
+          "teamId": 92491,
+          "teamLetter": "B",
+          "teamName": "T.J. Sokol Vratimov \"B\"",
+          "teamShortName": "TJ Sokol Vratimov \"B\""
+        },
+        {
+          "teamId": 92493,
+          "teamLetter": "A",
+          "teamName": "T.J.Sokol Vratimov \"A\"",
+          "teamShortName": "TJ Sokol Vratimov \"A\""
+        }
+      ]
+    },
+    {
+      "competitionCode": "MS-U18Z",
+      "competitionId": 18566,
+      "competitionName": "Krajský přebor Moravskoslezského kraje dívek U18",
+      "teams": [
+        {
+          "teamId": 92492,
+          "teamLetter": "A",
+          "teamName": "T.J. Sokol Vratimov",
+          "teamShortName": "TJ Sokol Vratimov"
+        }
+      ]
+    },
+    {
+      "competitionCode": "MS-U20Z",
+      "competitionId": 18564,
+      "competitionName": "Krajský přebor Moravskoslezského kraje dívek U20",
+      "teams": [
+        {
+          "teamId": 92494,
+          "teamLetter": "A",
+          "teamName": "Tělocvičná Jednota Sokol Vratimov",
+          "teamShortName": "TJ Sokol Vratimov"
+        }
+      ]
+    },
+    {
+      "competitionCode": "OV-Z",
+      "competitionId": 18793,
+      "competitionName": "Okresní přebor žen Ostrava",
+      "teams": [
+        {
+          "teamId": 94459,
+          "teamLetter": "A",
+          "teamName": "Tělocvičná Jednota Sokol Vratimov",
+          "teamShortName": "TJ Sokol Vratimov"
+        }
+      ]
+    }
+  ],
+  "dic": "",
+  "email": "kavala.tomas@seznam.cz",
+  "history": "",
+  "ic": "48428655",
+  "logo": "http://api.cvf.1webit.cz/api/v1/club/image/10000165",
+  "name": "Tělocvičná Jednota Sokol Vratimov",
+  "phone": "+420602600095",
+  "responsiblePersons": [
+    {
+      "firstName": "Tomáš",
+      "lastName": "Kavala",
+      "title": "",
+      "titleAfter": "",
+      "userId": 56306204
+    },
+    {
+      "firstName": "Šárka",
+      "lastName": "Ramíková",
+      "title": "",
+      "titleAfter": "",
+      "userId": 22242303
+    }
+  ],
+  "updated": "2026-10-19T11:27+02:00",
+  "webUrl": "sokolvratimov.cz"
+}
