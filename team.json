@@ -21,9 +21,11 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U18",
               "parentId": 15026,
+              "publicGroupCount": 2,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U18",
               "season": "2026/27",
+              "showOnWeb": true,
               "termDate": "2026-06-26T00:00:00+02:00",
               "type": "C",
               "volleyId": 0
@@ -3531,9 +3533,11 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U16",
               "parentId": 15026,
+              "publicGroupCount": 37,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U16",
               "season": "2026/27",
+              "showOnWeb": true,
               "termDate": "2026-06-26T00:00:00+02:00",
               "type": "C",
               "volleyId": 0
@@ -6817,9 +6821,11 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U16",
               "parentId": 15026,
+              "publicGroupCount": 37,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U16",
               "season": "2026/27",
+              "showOnWeb": true,
               "termDate": "2026-06-26T00:00:00+02:00",
               "type": "C",
               "volleyId": 0
@@ -10239,9 +10245,11 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U20",
               "parentId": 15026,
+              "publicGroupCount": 3,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U20",
               "season": "2026/27",
+              "showOnWeb": true,
               "termDate": "2026-06-26T00:00:00+02:00",
               "type": "C",
               "volleyId": 0
@@ -12330,9 +12338,11 @@
               "master": true,
               "name": "Okresní přebor žen Ostrava",
               "parentId": 15024,
+              "publicGroupCount": 1,
               "region": "Moravskoslezský",
               "regionalCategory": "Okresní přebor Ostrava",
               "season": "2026/27",
+              "showOnWeb": true,
               "termDate": "2026-07-24T00:00:00+02:00",
               "type": "C",
               "volleyId": 0
@@ -14937,9 +14947,11 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U14",
               "parentId": 15026,
+              "publicGroupCount": 11,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U14",
               "season": "2026/27",
+              "showOnWeb": true,
               "termDate": "2026-09-13T00:00:00+02:00",
               "type": "C",
               "volleyId": 0
@@ -17129,5 +17141,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-18T14:26+02:00"
+  "updated": "2026-10-19T11:52+02:00"
 }
