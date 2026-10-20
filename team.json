@@ -12756,7 +12756,7 @@
                 "matchId": 943018,
                 "matchStart": "2026-10-20T18:15:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "0:3 (-13,-21,-20)",
                 "round": 4,
                 "shortNote": "",
                 "withinRange": true
@@ -14502,11 +14502,61 @@
                   },
                   {
                     "column": 1,
+                    "value": "Tělovýchovná jednota Hlučín, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "4"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "2"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "8:9"
+                  },
+                  {
+                    "column": 9,
+                    "value": "340:337"
+                  },
+                  {
+                    "column": 10,
+                    "value": "5"
+                  }
+                ],
+                "error": null,
+                "teamId": 94441
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "6."
+                  },
+                  {
+                    "column": 1,
                     "value": "Volejbalový klub Vratimov"
                   },
                   {
                     "column": 2,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 3,
@@ -14522,7 +14572,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 7,
@@ -14530,11 +14580,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "5:3"
+                    "value": "5:6"
                   },
                   {
                     "column": 9,
-                    "value": "165:158"
+                    "value": "219:233"
                   },
                   {
                     "column": 10,
@@ -14548,7 +14598,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "6."
+                    "value": "7."
                   },
                   {
                     "column": 1,
@@ -14593,56 +14643,6 @@
                 ],
                 "error": null,
                 "teamId": 94443
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "7."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Hlučín, z.s."
-                  },
-                  {
-                    "column": 2,
-                    "value": "3"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "2"
-                  },
-                  {
-                    "column": 6,
-                    "value": "1"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "5:9"
-                  },
-                  {
-                    "column": 9,
-                    "value": "265:283"
-                  },
-                  {
-                    "column": 10,
-                    "value": "2"
-                  }
-                ],
-                "error": null,
-                "teamId": 94441
               },
               {
                 "cells": [
@@ -17141,5 +17141,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-20T18:52+02:00"
+  "updated": "2026-10-20T19:46+02:00"
 }
