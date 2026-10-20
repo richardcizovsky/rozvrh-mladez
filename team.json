@@ -14976,7 +14976,7 @@
           "groupId": 28938,
           "groupName": "Krajský přebor Moravskoslezského kraje dívek U14",
           "groupStartDate": "2026-09-14T00:00:00+02:00",
-          "poradatel": "kvalifikace:3. 10. 2026,T1: 24. 10. 2026; T2: 14. 11. 2026; T3: 12. 12. 2026; T4: 9. 1. 2027; T5: 6. 2. 2027; T6: 6. 3. 2027,MČR: 20.-21.3.2027, 17.-18.2027, a 1.-2.5.2027",
+          "poradatel": "kvalifikace: 3. 10. 2026,T1: 24. 10. 2026; T2: 14. 11. 2026; T3: 12. 12. 2026; T4: 9. 1. 2027; T5: 6. 2. 2027; T6: 6. 3. 2027,MČR: 20.-21.3.2027, 17.-18.2027, a 1.-2.5.2027",
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
@@ -17141,5 +17141,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-19T11:52+02:00"
+  "updated": "2026-10-20T08:34+02:00"
 }
