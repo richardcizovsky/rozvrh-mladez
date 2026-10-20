@@ -11103,7 +11103,7 @@
                 "homePosition": 5,
                 "match": 32,
                 "matchId": 937010,
-                "matchStart": "2026-10-25T10:00:00+01:00",
+                "matchStart": "2026-10-25T11:00:00+01:00",
                 "note": "",
                 "result": "",
                 "round": 11,
@@ -11181,7 +11181,7 @@
                 "homePosition": 5,
                 "match": 35,
                 "matchId": 937013,
-                "matchStart": "2026-10-25T14:00:00+01:00",
+                "matchStart": "2026-10-25T15:00:00+01:00",
                 "note": "",
                 "result": "",
                 "round": 12,
@@ -12704,7 +12704,7 @@
                 "matchId": 943016,
                 "matchStart": "2026-10-20T20:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (18,14,9)",
                 "round": 4,
                 "shortNote": "",
                 "withinRange": true
@@ -14352,6 +14352,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "TJ Sokol Bohumín"
+                  },
+                  {
+                    "column": 2,
+                    "value": "4"
+                  },
+                  {
+                    "column": 3,
+                    "value": "3"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "11:4"
+                  },
+                  {
+                    "column": 9,
+                    "value": "349:265"
+                  },
+                  {
+                    "column": 10,
+                    "value": "10"
+                  }
+                ],
+                "error": null,
+                "teamId": 94458
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
                     "value": "TJ Sokol Svinov B"
                   },
                   {
@@ -14393,56 +14443,6 @@
                 ],
                 "error": null,
                 "teamId": 94444
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "3."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Sokol Bohumín"
-                  },
-                  {
-                    "column": 2,
-                    "value": "3"
-                  },
-                  {
-                    "column": 3,
-                    "value": "2"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "1"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "8:4"
-                  },
-                  {
-                    "column": 9,
-                    "value": "274:224"
-                  },
-                  {
-                    "column": 10,
-                    "value": "7"
-                  }
-                ],
-                "error": null,
-                "teamId": 94458
               },
               {
                 "cells": [
@@ -14606,7 +14606,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 3,
@@ -14622,7 +14622,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 7,
@@ -14630,11 +14630,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "3:5"
+                    "value": "3:8"
                   },
                   {
                     "column": 9,
-                    "value": "159:170"
+                    "value": "200:245"
                   },
                   {
                     "column": 10,
@@ -17141,5 +17141,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-20T19:46+02:00"
+  "updated": "2026-10-20T21:09+02:00"
 }
