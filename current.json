@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20 17:20",
+  "updated": "2026-10-20 17:34",
   "days": [
     {
       "date": "2026-10-20",
@@ -7,9 +7,9 @@
         {
           "skupina": "OV-Z",
           "cislo": "(14)",
-          "tymy": "TJ Sokol Vratimov - TJ Kunčičky",
+          "tymy": "TJ Sokol Vratimov - TJ Kunčičky LIVE",
           "stav": "-",
-          "badge": "PAUSE",
+          "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=943017"
         }
       ]
