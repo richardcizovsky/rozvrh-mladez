@@ -349,6 +349,7 @@
    }
    /* Partneři: sbalitelný panel nad rozvrhem */
    .partners { margin-bottom: 16px; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
+   .partners:not([open]) { background: rgba(255,255,255,0.5); transition: background 0.3s; }
    .partners summary {
      cursor: pointer; list-style: none; padding: 12px 20px;
      display: flex; align-items: center; justify-content: center; gap: 10px;
