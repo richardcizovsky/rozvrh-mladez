@@ -59,6 +59,10 @@
   .group-block .group-title { margin: 0; padding: 12px 20px 2px; color: #2c3e50; font-size: 0.9em; }
   .group-block .group-date { padding: 0 20px; color: #777; font-size: 0.8em; }
   .group-block .partners { margin: 10px 0 0; border-radius: 0 8px 8px 0; }
+  @media (max-width: 768px) {
+    body { margin: 10px 0; display: block; }
+    .container { padding: 0 2px; box-sizing: border-box; }
+  }
   @media (max-width: 600px) {
     .group-block { border-left-width: 3px; }
     .group-block .group-title, .group-block .group-date { padding-left: 10px; padding-right: 10px; }
@@ -85,7 +89,7 @@
   .empty { padding: 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #777; }
   .table-wrap { overflow-x: auto; }
   footer { margin-top: 40px; text-align: center; color: #777; font-size: .9em; }
-  @media (max-width: 600px) { body { margin: 16px; } th, td { padding: 6px 8px; } }
+  @media (max-width: 600px) { body { margin: 10px 0; display: block; } .container { padding: 0 2px; box-sizing: border-box; } .group-block { margin-right: 3px; } th, td { padding: 6px 8px; } }
 </style>
 </head>
 <body>
