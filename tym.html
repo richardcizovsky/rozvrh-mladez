@@ -24,8 +24,41 @@
   h3.section-title { color: #2c3e50; margin: 32px 0 10px; }
   h4 { color: #2c3e50; margin: 18px 0 8px; }
   a { color: #2c6fbb; }
-  .back { display: inline-block; margin-bottom: 16px; }
+  .back, .cvf-link a {
+    display: inline-block;
+    color: #1a5fb4;
+    text-decoration: none;
+    padding: 2px 12px;
+    border: 1px solid #1a5fb4;
+    border-radius: 999px;
+    background: #eef4fc;
+    transition: background .15s, color .15s;
+  }
+  .back:hover, .back:focus-visible, .cvf-link a:hover, .cvf-link a:focus-visible { background: #1a5fb4; color: #fff; }
+  .cvf-link a::after { content: " →"; display: inline-block; transition: transform .15s; }
+  .cvf-link a:hover::after { transform: translateX(3px); }
+  .back { margin-bottom: 16px; }
   .back-bottom { margin: 24px 0 0; }
+  /* Sbalitelný panel (stejný vzhled jako na index.html) */
+  .partners { margin: 16px 0 0; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
+  .partners summary {
+    cursor: pointer; list-style: none; padding: 12px 20px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    color: #2c3e50; font-weight: 600; text-transform: uppercase;
+    font-size: 0.9em; letter-spacing: 0.05em; user-select: none;
+  }
+  .partners summary::-webkit-details-marker { display: none; }
+  .partners summary::after { content: '▾'; transition: transform 0.2s; }
+  .partners[open] summary::after { transform: rotate(180deg); }
+  .partners summary:hover { background-color: #f4f7f6; }
+  .partners summary small { font-weight: 400; text-transform: none; letter-spacing: 0; color: #777; font-size: 0.75em; }
+  .partners > .table-wrap, .partners > .empty, .partners > .group-header { border-top: 1px solid #e0e0e0; box-shadow: none; margin: 0; }
+  .partners table { box-shadow: none; }
+  /* Blok jedné skupiny: společný rámeček s barevným pruhem, uvnitř panely Tabulka a Zápasy */
+  .group-block { margin: 28px 0 0; padding: 0 0 12px; background: #e4ebf3; border-left: 6px solid #2c3e50; border-radius: 8px; }
+  .group-block .group-title { margin: 0; padding: 12px 20px 2px; color: #2c3e50; font-size: 1.05em; }
+  .group-block .group-date { padding: 0 20px; color: #777; font-size: 0.8em; }
+  .group-block .partners { margin: 10px 12px 0; }
   table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
   th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #e3e8e6; }
   th { background: #2c3e50; color: #fff; font-weight: 600; }
@@ -39,6 +72,8 @@
   .group-header { white-space: pre-line; margin: 8px 0 0; padding: 10px 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #555; font-size: .9em; }
   .cvf-link { margin: 6px 0 0; font-size: .9em; }
   td.match { padding: 10px 12px; }
+  tr.date-header th { background: #34495e; text-transform: capitalize; font-size: 1em; padding: 10px 12px; }
+  tr.date-header:not(:first-child) th { border-top: 4px solid #2c3e50; }
   .match-when { color: #777; font-size: .85em; }
   .match-teams { font-weight: 600; margin: 2px 0; }
   .match-result { font-size: 1em; }
@@ -101,12 +136,19 @@
     });
   }
 
+  // Sbalitelný panel; stav (otevřeno/zavřeno) přežije i automatické obnovení dat
+  const openState = {};
+  function collapsible(key, title, ...children) {
+    const d = el("details", { class: "partners" }, el("summary", {}, ...(Array.isArray(title) ? title : [title])), ...children);
+    d.open = !!openState[key];
+    d.addEventListener("toggle", () => { openState[key] = d.open; });
+    return d;
+  }
+
   function renderRoster(players) {
-    const wrap = el("div");
-    wrap.append(el("h3", { class: "section-title" }, "Soupiska"));
+    const count = players && players.length ? ` (${players.length})` : "";
     if (!players || !players.length) {
-      wrap.append(el("div", { class: "empty" }, "Soupiska není k dispozici."));
-      return wrap;
+      return collapsible("roster", "Soupiska", el("div", { class: "empty" }, "Soupiska není k dispozici."));
     }
     const sorted = [...players].sort((a, b) =>
       (a.lastName || "").localeCompare(b.lastName || "", "cs") ||
@@ -119,10 +161,9 @@
         el("td", {}, `${p.lastName || ""} ${p.firstName || ""}`.trim()),
         el("td", { class: "num" }, born)));
     });
-    wrap.append(el("div", { class: "table-wrap" }, el("table", {},
+    return collapsible("roster", "Soupiska" + count, el("div", { class: "table-wrap" }, el("table", {},
       el("thead", {}, el("tr", {}, el("th", { class: "num" }, "#"), el("th", {}, "Jméno"), el("th", { class: "num" }, "Narození"))),
       tbody)));
-    return wrap;
   }
 
   // Záhlaví skupiny (header z API) – zobrazí se jako text, nikdy jako HTML
@@ -184,10 +225,24 @@
       ? String(m.hallResponse.value).replace(/\s+/g, " ").trim() : "";
   }
 
+  const pragueOpts = { timeZone: "Europe/Prague" };
+
   function renderMatches(mine, highlight) {
     if (!mine.length) return null;
     const tbody = el("tbody");
+    let lastDay = null;
     for (const m of mine) {
+      const d = new Date(m.matchStart);
+      const valid = !isNaN(d);
+      // Zápasy se seskupují podle data (v pražském čase)
+      const dayKey = valid ? d.toLocaleDateString("sv-SE", pragueOpts) : "?";
+      if (dayKey !== lastDay) {
+        lastDay = dayKey;
+        const dayLabel = valid ? d.toLocaleDateString("cs-CZ", {
+          ...pragueOpts, weekday: "long", day: "numeric", month: "long"
+        }) : "Bez data";
+        tbody.append(el("tr", { class: "date-header" }, el("th", {}, dayLabel)));
+      }
       const label = `${m.homeName || "?"} – ${m.guestName || "?"}`;
       const teams = m.matchId
         ? el("a", {
@@ -196,32 +251,47 @@
           }, label)
         : label;
       const venue = hallName(m);
-      // Tři řádky: 1. termín + hala, 2. zápas, 3. výsledek
+      const time = valid ? d.toLocaleTimeString("cs-CZ", { ...pragueOpts, hour: "2-digit", minute: "2-digit" }) : "";
+      const when = [time, venue].filter(Boolean).join(" · ");
       const mineMatch = isMine(m.homeName) || isMine(m.guestName);
+      // Řádky: 1. čas + hala, 2. zápas, 3. výsledek (jen když už existuje)
       tbody.append(el("tr", { class: highlight && mineMatch ? "me" : "" }, el("td", { class: "match" },
-        el("div", { class: "match-when" }, fmtDate(m.matchStart) + (venue ? " · " + venue : "")),
+        el("div", { class: "match-when" }, when),
         el("div", { class: "match-teams" }, teams),
-        el("div", { class: "match-result" }, m.result ? m.result : el("span", { class: "muted" }, "–")))));
+        m.result ? el("div", { class: "match-result" }, m.result) : null)));
     }
     return el("div", { class: "table-wrap" }, el("table", {}, tbody));
+  }
+
+  // Vrátí text data, pokud groupStartDate a groupEndDate připadají na stejný den (pražský čas)
+  function groupSingleDay(g) {
+    const a = new Date(g.groupStartDate), b = new Date(g.groupEndDate);
+    if (isNaN(a) || isNaN(b)) return "";
+    const key = d => d.toLocaleDateString("sv-SE", pragueOpts);
+    if (key(a) !== key(b)) return "";
+    return a.toLocaleDateString("cs-CZ", { ...pragueOpts, weekday: "long", day: "numeric", month: "long", year: "numeric" });
   }
 
   function renderGroups(team) {
     const wrap = el("div");
     const groups = team.leagueGroups || [];
     if (!groups.length) return wrap;
-    wrap.append(el("h3", { class: "section-title" }, "Tabulky a výsledky"));
     for (const g of groups) {
-      wrap.append(el("h4", {}, g.groupName || "Skupina"));
-      wrap.append(renderScoreboard(g.scoreboard));
+      const name = g.groupName || "Skupina";
       const gh = renderOrganizer(g.poradatel);
-      if (gh) wrap.append(gh);
+      // Tabulka a zápasy jedné skupiny jsou vizuálně spojené do jednoho bloku s názvem skupiny
+      const block = el("section", { class: "group-block" }, el("h3", { class: "group-title" }, name));
+      // Turnaj na jeden den: začátek a konec skupiny jsou stejné, datum se zobrazí pod názvem
+      const day = groupSingleDay(g);
+      if (day) block.append(el("div", { class: "group-date" }, day));
+      block.append(collapsible(`tab:${g.groupId || name}`, "Tabulka",
+        renderScoreboard(g.scoreboard), gh));
       const showAll = ALL_MATCHES_TEAMS.includes(team.id);
       const matches = renderMatches(getMatches(g.schedule, showAll), showAll);
       if (matches) {
-        wrap.append(el("h4", { class: "muted" }, showAll ? "Zápasy" : "Zápasy Vratimova"));
-        wrap.append(matches);
+        block.append(collapsible(`zap:${g.groupId || name}`, "Zápasy", matches));
       }
+      wrap.append(block);
     }
     return wrap;
   }

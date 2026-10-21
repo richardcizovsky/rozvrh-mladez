@@ -134,13 +134,29 @@
   tbody tr.team-links a { margin-right: 14px; }
   /* Odkazy Program a Výsledky / Tabulka / Turnaje jsou skryté (přesunuto na tym.html) */
   tbody tr.team-links { display: none; }
+  .team-hint { margin: 8px 12px; font-size: 0.9em; color: #555; }
   tbody tr.team-header a.team-link {
     color: #1a5fb4;
-    text-decoration: underline;
-    text-underline-offset: 3px;
+    text-decoration: none;
     cursor: pointer;
+    display: inline-block;
+    padding: 2px 10px;
+    border: 1px solid #1a5fb4;
+    border-radius: 999px;
+    background: #eef4fc;
+    transition: background .15s, color .15s;
   }
-  tbody tr.team-header a.team-link:hover { color: #0b3d91; text-decoration-thickness: 2px; }
+  tbody tr.team-header a.team-link::after {
+    content: " →";
+    display: inline-block;
+    transition: transform .15s;
+  }
+  tbody tr.team-header a.team-link:hover,
+  tbody tr.team-header a.team-link:focus-visible {
+    background: #1a5fb4;
+    color: #fff;
+  }
+  tbody tr.team-header a.team-link:hover::after { transform: translateX(3px); }
   tbody tr.team-links:has(+ tr.team-links) td { border-bottom: none; padding-bottom: 0; }
   .trainer-inline {
     font-weight: normal;
@@ -405,6 +421,7 @@
     </div>
     <details class="partners">
       <summary>Týmy <small>tréninky, tabulky, program, soupisky</small></summary>
+      <p class="team-hint">💡 Klikněte na název týmu pro program, výsledky, tabulku a soupisku.</p>
     <table id="schedule">
       <thead>
         <tr>
