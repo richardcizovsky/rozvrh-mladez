@@ -16,11 +16,11 @@
     justify-content: center;
   }
   .container { width: 100%; max-width: 950px; }
-  .header { display: grid; grid-template-columns: 64px 1fr 64px; align-items: center; gap: 10px; margin-bottom: 20px; }
-  .header img { width: 64px; height: 64px; object-fit: contain; }
-  .header-content { text-align: center; }
-  h1 { color: #2c3e50; margin: 0; }
-  h2 { color: #2c3e50; margin: 4px 0 0; font-size: 1.1em; font-weight: normal; }
+  .header { text-align: center; margin-bottom: 16px; }
+  .header-top { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .header img { width: 36px; height: 36px; object-fit: contain; flex: none; }
+  h1 { color: #2c3e50; margin: 0; font-size: 1.4em; line-height: 1.2; }
+  h2 { color: #2c3e50; margin: 4px 0 0; font-size: 0.9em; font-weight: normal; }
   h3.section-title { color: #2c3e50; margin: 32px 0 10px; }
   h4 { color: #2c3e50; margin: 18px 0 8px; }
   a { color: #2c6fbb; }
@@ -56,9 +56,14 @@
   .partners table { box-shadow: none; }
   /* Blok jedné skupiny: společný rámeček s barevným pruhem, uvnitř panely Tabulka a Zápasy */
   .group-block { margin: 28px 0 0; padding: 0 0 12px; background: #e4ebf3; border-left: 6px solid #2c3e50; border-radius: 8px; }
-  .group-block .group-title { margin: 0; padding: 12px 20px 2px; color: #2c3e50; font-size: 1.05em; }
+  .group-block .group-title { margin: 0; padding: 12px 20px 2px; color: #2c3e50; font-size: 0.9em; }
   .group-block .group-date { padding: 0 20px; color: #777; font-size: 0.8em; }
-  .group-block .partners { margin: 10px 12px 0; }
+  .group-block .partners { margin: 10px 0 0; border-radius: 0 8px 8px 0; }
+  @media (max-width: 600px) {
+    .group-block { border-left-width: 3px; }
+    .group-block .group-title, .group-block .group-date { padding-left: 10px; padding-right: 10px; }
+    .group-block .partners { border-radius: 0; }
+  }
   table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
   th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #e3e8e6; }
   th { background: #2c3e50; color: #fff; font-weight: 600; }
@@ -87,13 +92,12 @@
 <div class="container">
   <a class="back" href="./">&larr; Zpět na rozpis</a>
   <div class="header">
-    <img src="logo.png" alt="Logo TJ Sokol Vratimov">
-    <div class="header-content">
+    <div class="header-top">
+      <img src="logo.png" alt="Logo TJ Sokol Vratimov">
       <h1 id="title">Načítám…</h1>
-      <h2 id="subtitle"></h2>
-      <p class="cvf-link" id="cvfLink"></p>
     </div>
-    <span></span>
+    <h2 id="subtitle"></h2>
+    <p class="cvf-link" id="cvfLink"></p>
   </div>
   <div id="content"></div>
   <a class="back back-bottom" href="./">&larr; Zpět na rozpis</a>
@@ -227,7 +231,7 @@
 
   const pragueOpts = { timeZone: "Europe/Prague" };
 
-  function renderMatches(mine, highlight) {
+  function renderMatches(mine, highlight, hideHall) {
     if (!mine.length) return null;
     const tbody = el("tbody");
     let lastDay = null;
@@ -252,7 +256,7 @@
         : label;
       const venue = hallName(m);
       const time = valid ? d.toLocaleTimeString("cs-CZ", { ...pragueOpts, hour: "2-digit", minute: "2-digit" }) : "";
-      const when = [time, venue].filter(Boolean).join(" · ");
+      const when = [time, hideHall ? "" : venue].filter(Boolean).join(" · ");
       const mineMatch = isMine(m.homeName) || isMine(m.guestName);
       // Řádky: 1. čas + hala, 2. zápas, 3. výsledek (jen když už existuje)
       tbody.append(el("tr", { class: highlight && mineMatch ? "me" : "" }, el("td", { class: "match" },
@@ -287,7 +291,12 @@
       block.append(collapsible(`tab:${g.groupId || name}`, "Tabulka",
         renderScoreboard(g.scoreboard), gh));
       const showAll = ALL_MATCHES_TEAMS.includes(team.id);
-      const matches = renderMatches(getMatches(g.schedule, showAll), showAll);
+      const list = getMatches(g.schedule, showAll);
+      // Všechny zápasy ve stejné hale: hala se zobrazí jednou pod názvem skupiny (a data)
+      const halls = new Set(list.map(hallName));
+      const commonHall = list.length && halls.size === 1 ? [...halls][0] : "";
+      if (commonHall) block.insertBefore(el("div", { class: "group-date" }, commonHall), block.children[day ? 2 : 1] || null);
+      const matches = renderMatches(list, showAll, !!commonHall);
       if (matches) {
         block.append(collapsible(`zap:${g.groupId || name}`, "Zápasy", matches));
       }
