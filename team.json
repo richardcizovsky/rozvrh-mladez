@@ -3445,6 +3445,15 @@
           "playerPosition": null
         },
         {
+          "birthMonth": 9,
+          "birthYear": 2012,
+          "firstName": "Natálie",
+          "lastName": "Plachá",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
           "birthMonth": 7,
           "birthYear": 2010,
           "firstName": "Tereza",
@@ -17141,5 +17150,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-21T21:40+02:00"
+  "updated": "2026-10-24T00:02+02:00"
 }
