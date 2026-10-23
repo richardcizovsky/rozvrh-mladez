@@ -1,14 +1,6 @@
 {
-  "updated": "2026-10-21 00:16",
+  "updated": "2026-10-23 00:00",
   "days": [
-    {
-      "date": "2026-10-21",
-      "matches": []
-    },
-    {
-      "date": "2026-10-22",
-      "matches": []
-    },
     {
       "date": "2026-10-23",
       "matches": []
@@ -102,6 +94,14 @@
     {
       "date": "2026-10-29",
       "matches": []
+    },
+    {
+      "date": "2026-10-30",
+      "matches": []
+    },
+    {
+      "date": "2026-10-31",
+      "matches": []
     }
   ],
   "past_days": [
@@ -157,19 +157,6 @@
           "stav": "3:1 (-20,20,12,18)",
           "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936558"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "matches": [
-        {
-          "skupina": "OV-Z",
-          "cislo": "(10)",
-          "tymy": "TJ Hlučín - TJ Sokol Vratimov",
-          "stav": "2:3 (14,-19,-15,19,-11)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=943013"
         }
       ]
     }
