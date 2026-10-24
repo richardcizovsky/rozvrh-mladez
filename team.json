@@ -14956,7 +14956,7 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U14",
               "parentId": 15026,
-              "publicGroupCount": 14,
+              "publicGroupCount": 15,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U14",
               "season": "2026/27",
@@ -16685,7 +16685,7 @@
                 "matchId": 956323,
                 "matchStart": "2026-10-24T14:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "0:2 (-23,-16)",
                 "round": 2,
                 "shortNote": "",
                 "withinRange": true
@@ -16777,11 +16777,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 3,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 4,
@@ -16801,15 +16801,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "4:0"
+                    "value": "6:0"
                   },
                   {
                     "column": 9,
-                    "value": "100:54"
+                    "value": "150:93"
                   },
                   {
                     "column": 10,
-                    "value": "6"
+                    "value": "9"
                   }
                 ],
                 "error": null,
@@ -16877,7 +16877,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 3,
@@ -16893,7 +16893,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 7,
@@ -16901,11 +16901,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "4:1"
+                    "value": "4:3"
                   },
                   {
                     "column": 9,
-                    "value": "111:106"
+                    "value": "150:156"
                   },
                   {
                     "column": 10,
@@ -17150,5 +17150,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T15:17+02:00"
+  "updated": "2026-10-24T15:30+02:00"
 }
