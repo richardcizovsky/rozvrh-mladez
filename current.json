@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24 14:27",
+  "updated": "2026-10-24 14:47",
   "days": [
     {
       "date": "2026-10-24",
@@ -47,9 +47,9 @@
         {
           "skupina": "MS-U18ZA",
           "cislo": "(39)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"B\" LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"B\"",
+          "stav": "3:2 (9,-18,23,-24,13)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936567"
         }
       ]
