@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24 08:17",
+  "updated": "2026-10-24 09:00",
   "days": [
     {
       "date": "2026-10-24",
@@ -9,7 +9,7 @@
           "cislo": "(3)",
           "tymy": "TJ Sokol Vratimov - VK Polanka n. O. \"A\"",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956317"
         },
         {
@@ -17,7 +17,7 @@
           "cislo": "(5)",
           "tymy": "TJ Sokol Vratimov - TJ Ostrava \"A\"",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956319"
         },
         {
@@ -33,7 +33,7 @@
           "cislo": "(8)",
           "tymy": "TJ Ostrava \"B\" - TJ Sokol Vratimov",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956322"
         },
         {
