@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24 15:29",
+  "updated": "2026-10-24 15:40",
   "days": [
     {
       "date": "2026-10-24",
@@ -23,9 +23,9 @@
         {
           "skupina": "MS-U14Z-T1A",
           "cislo": "(6)",
-          "tymy": "VKB Frýdlant n. O. - TJ Sokol Vratimov",
+          "tymy": "VKB Frýdlant n. O. - TJ Sokol Vratimov LIVE",
           "stav": "-",
-          "badge": "PAUSE",
+          "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956320"
         },
         {
