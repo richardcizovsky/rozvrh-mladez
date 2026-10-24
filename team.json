@@ -16613,7 +16613,7 @@
                 "matchId": 956320,
                 "matchStart": "2026-10-24T13:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "0:2 (-15,-24)",
                 "round": 2,
                 "shortNote": "",
                 "withinRange": true
@@ -16777,7 +16777,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "column": 3,
@@ -16793,7 +16793,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 7,
@@ -16801,11 +16801,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "6:0"
+                    "value": "6:2"
                   },
                   {
                     "column": 9,
-                    "value": "150:93"
+                    "value": "189:144"
                   },
                   {
                     "column": 10,
@@ -16820,6 +16820,56 @@
                   {
                     "column": 0,
                     "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "4"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "7:3"
+                  },
+                  {
+                    "column": 9,
+                    "value": "222:193"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 92498
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
                   },
                   {
                     "column": 1,
@@ -16864,56 +16914,6 @@
                 ],
                 "error": null,
                 "teamId": 93857
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "3."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Sokol Vratimov"
-                  },
-                  {
-                    "column": 2,
-                    "value": "3"
-                  },
-                  {
-                    "column": 3,
-                    "value": "1"
-                  },
-                  {
-                    "column": 4,
-                    "value": "1"
-                  },
-                  {
-                    "column": 5,
-                    "value": "1"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "5:3"
-                  },
-                  {
-                    "column": 9,
-                    "value": "171:154"
-                  },
-                  {
-                    "column": 10,
-                    "value": "6"
-                  }
-                ],
-                "error": null,
-                "teamId": 92498
               },
               {
                 "cells": [
@@ -17150,5 +17150,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T16:31+02:00"
+  "updated": "2026-10-24T16:42+02:00"
 }
