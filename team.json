@@ -16589,7 +16589,7 @@
                 "matchId": 956319,
                 "matchStart": "2026-10-24T12:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "1:2 (-23,20,-14)",
                 "round": 1,
                 "shortNote": "",
                 "withinRange": true
@@ -16773,6 +16773,106 @@
                   },
                   {
                     "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "4:1"
+                  },
+                  {
+                    "column": 9,
+                    "value": "111:106"
+                  },
+                  {
+                    "column": 10,
+                    "value": "5"
+                  }
+                ],
+                "error": null,
+                "teamId": 93857
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "3:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "112:103"
+                  },
+                  {
+                    "column": 10,
+                    "value": "4"
+                  }
+                ],
+                "error": null,
+                "teamId": 92498
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
                     "value": "Vk Beskydy Frýdlant n. O."
                   },
                   {
@@ -16814,106 +16914,6 @@
                 ],
                 "error": null,
                 "teamId": 92922
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "2."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Sokol Vratimov"
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "1"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "2:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "50:42"
-                  },
-                  {
-                    "column": 10,
-                    "value": "3"
-                  }
-                ],
-                "error": null,
-                "teamId": 92498
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "3."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Ostrava A"
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "1"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "2:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "50:44"
-                  },
-                  {
-                    "column": 10,
-                    "value": "3"
-                  }
-                ],
-                "error": null,
-                "teamId": 93857
               },
               {
                 "cells": [
@@ -17150,5 +17150,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T13:28+02:00"
+  "updated": "2026-10-24T13:50+02:00"
 }
