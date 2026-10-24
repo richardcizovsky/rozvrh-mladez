@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24 10:57",
+  "updated": "2026-10-24 11:52",
   "days": [
     {
       "date": "2026-10-24",
@@ -7,9 +7,9 @@
         {
           "skupina": "MS-U14Z-T1A",
           "cislo": "(3)",
-          "tymy": "TJ Sokol Vratimov - VK Polanka n. O. \"A\" LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Sokol Vratimov - VK Polanka n. O. \"A\"",
+          "stav": "2:0 (22,20)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956317"
         },
         {
@@ -39,15 +39,15 @@
         {
           "skupina": "MS-U18ZA",
           "cislo": "(35)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"B\" LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"B\"",
+          "stav": "3:1 (-22,21,16,20)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936563"
         },
         {
           "skupina": "MS-U18ZA",
           "cislo": "(39)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"B\"",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"B\" LIVE",
           "stav": "-",
           "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936567"
