@@ -33,12 +33,13 @@
   }
   .header {
     display: grid;
-    grid-template-columns: 64px 1fr 64px;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
   }
   .header-logo {
+    justify-self: start;
     width: 64px;
     height: 64px;
   }
@@ -47,12 +48,19 @@
     height: 100%;
     object-fit: contain;
   }
-  .header > .fb-icon {
+  .header-social {
     justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .header-social .fb-icon {
     margin-left: 0;
     font-size: 2.8em;
     line-height: 1;
   }
+  .header-social .ig-icon { color: #c13584; }
+  .header-social .ig-icon:hover { color: #e1306c; }
   .header-content {
     text-align: center;
   }
@@ -191,11 +199,12 @@
     body { margin: 10px 0; display: block; }
     .container { padding: 0 2px; box-sizing: border-box; }
     th, td { padding: 10px; }
-    .header { grid-template-columns: 44px 1fr 44px; gap: 6px; margin-bottom: 12px; }
+    .header { gap: 6px; margin-bottom: 12px; }
     .header-logo { width: 44px; height: 44px; }
     h1 { font-size: 1.2em; }
     h2 { font-size: 0.85em; margin-top: 2px; }
-    .header > .fb-icon { font-size: 2.2em; }
+    .header-social { gap: 8px; }
+    .header-social .fb-icon { font-size: 2.2em; }
   }
 
   footer {
@@ -420,7 +429,10 @@
         <h1>TJ Sokol Vratimov</h1>
         <h2>Volejbalový tým</h2>
       </div>
-      <a href="https://www.facebook.com/profile.php?id=61551862265058" class="fb-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <div class="header-social">
+        <a href="https://www.facebook.com/profile.php?id=61551862265058" class="fb-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/volejbalvratimov/" class="fb-icon ig-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
     <details class="partners">
       <summary>Týmy <small>tréninky, tabulky, program, soupisky</small></summary>
@@ -644,7 +656,8 @@
         <a href="https://ezapis.cvf.cz/">eZapis</a> |
         <a href="https://eos.sokolvratimov.cz/">eos Vratimov</a> |
         <a href="https://sokolvratimov.cz/">Sokol Vratimov</a> |
-        <a href="https://www.facebook.com/profile.php?id=61551862265058">Facebook</a>
+        <a href="https://www.facebook.com/profile.php?id=61551862265058">Facebook</a> |
+        <a href="https://www.instagram.com/volejbalvratimov/">Instagram</a>
       </p>
     </footer>
   </div>
