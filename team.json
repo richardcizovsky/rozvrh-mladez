@@ -14956,7 +14956,7 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U14",
               "parentId": 15026,
-              "publicGroupCount": 11,
+              "publicGroupCount": 12,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U14",
               "season": "2026/27",
@@ -17150,5 +17150,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T12:48+02:00"
+  "updated": "2026-10-24T13:16+02:00"
 }
