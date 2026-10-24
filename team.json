@@ -15047,6 +15047,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O."
+                  },
+                  {
+                    "column": 2,
+                    "value": "4"
+                  },
+                  {
+                    "column": 3,
+                    "value": "3"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "6:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "189:144"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 92922
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
                     "value": "Klub volejbalu Kopřivnice"
                   },
                   {
@@ -15093,7 +15143,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "2."
+                    "value": "3."
                   },
                   {
                     "column": 1,
@@ -15143,7 +15193,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "3."
+                    "value": "4."
                   },
                   {
                     "column": 1,
@@ -15193,7 +15243,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "4."
+                    "value": "5."
                   },
                   {
                     "column": 1,
@@ -15243,7 +15293,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "5."
+                    "value": "6."
                   },
                   {
                     "column": 1,
@@ -15293,7 +15343,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "6."
+                    "value": "7."
                   },
                   {
                     "column": 1,
@@ -15343,7 +15393,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "7."
+                    "value": "8."
                   },
                   {
                     "column": 1,
@@ -15393,7 +15443,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "8."
+                    "value": "9."
                   },
                   {
                     "column": 1,
@@ -15443,7 +15493,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "9."
+                    "value": "10."
                   },
                   {
                     "column": 1,
@@ -15493,7 +15543,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "10."
+                    "value": "11."
                   },
                   {
                     "column": 1,
@@ -15543,7 +15593,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "11."
+                    "value": "12."
                   },
                   {
                     "column": 1,
@@ -15593,7 +15643,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "12."
+                    "value": "13."
                   },
                   {
                     "column": 1,
@@ -15643,7 +15693,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "13."
+                    "value": "14."
                   },
                   {
                     "column": 1,
@@ -15693,7 +15743,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "14."
+                    "value": "15."
                   },
                   {
                     "column": 1,
@@ -15743,7 +15793,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "15."
+                    "value": "16."
                   },
                   {
                     "column": 1,
@@ -15793,7 +15843,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "16."
+                    "value": "17."
                   },
                   {
                     "column": 1,
@@ -15843,7 +15893,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "17."
+                    "value": "18."
                   },
                   {
                     "column": 1,
@@ -15893,7 +15943,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "18."
+                    "value": "19."
                   },
                   {
                     "column": 1,
@@ -15938,56 +15988,6 @@
                 ],
                 "error": null,
                 "teamId": 93673
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "19."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Vk Beskydy Frýdlant n. O."
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 92922
               },
               {
                 "cells": [
@@ -16777,11 +16777,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "4"
+                    "value": "8"
                   },
                   {
                     "column": 3,
-                    "value": "3"
+                    "value": "6"
                   },
                   {
                     "column": 4,
@@ -16793,7 +16793,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 7,
@@ -16801,15 +16801,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "6:2"
+                    "value": "12:4"
                   },
                   {
                     "column": 9,
-                    "value": "189:144"
+                    "value": "378:288"
                   },
                   {
                     "column": 10,
-                    "value": "9"
+                    "value": "18"
                   }
                 ],
                 "error": null,
@@ -17637,5 +17637,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T17:01+02:00"
+  "updated": "2026-10-24T20:23+02:00"
 }
