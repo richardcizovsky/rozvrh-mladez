@@ -977,7 +977,7 @@
                 "matchId": 936564,
                 "matchStart": "2026-10-24T09:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "0:3 (-14,-21,-21)",
                 "round": 9,
                 "shortNote": "",
                 "withinRange": true
@@ -2997,6 +2997,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "Sportovní volejbalový klub Nový Jičín"
+                  },
+                  {
+                    "column": 2,
+                    "value": "9"
+                  },
+                  {
+                    "column": 3,
+                    "value": "7"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "22:9"
+                  },
+                  {
+                    "column": 9,
+                    "value": "711:604"
+                  },
+                  {
+                    "column": 10,
+                    "value": "21"
+                  }
+                ],
+                "error": null,
+                "teamId": 94042
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
                     "value": "Vk Beskydy Frýdlant n. O."
                   },
                   {
@@ -3038,56 +3088,6 @@
                 ],
                 "error": null,
                 "teamId": 92920
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "2."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Sportovní volejbalový klub Nový Jičín"
-                  },
-                  {
-                    "column": 2,
-                    "value": "8"
-                  },
-                  {
-                    "column": 3,
-                    "value": "6"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "2"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "19:9"
-                  },
-                  {
-                    "column": 9,
-                    "value": "636:548"
-                  },
-                  {
-                    "column": 10,
-                    "value": "18"
-                  }
-                ],
-                "error": null,
-                "teamId": 94042
               },
               {
                 "cells": [
@@ -3201,7 +3201,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "column": 3,
@@ -3217,7 +3217,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "column": 7,
@@ -3225,11 +3225,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "7:12"
+                    "value": "7:15"
                   },
                   {
                     "column": 9,
-                    "value": "360:417"
+                    "value": "416:492"
                   },
                   {
                     "column": 10,
@@ -17150,5 +17150,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T09:55+02:00"
+  "updated": "2026-10-24T10:21+02:00"
 }
