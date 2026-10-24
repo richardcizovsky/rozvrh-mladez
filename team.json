@@ -1081,7 +1081,7 @@
                 "matchId": 936568,
                 "matchStart": "2026-10-24T13:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "0:3 (-15,-13,-16)",
                 "round": 10,
                 "shortNote": "",
                 "withinRange": true
@@ -3051,11 +3051,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "column": 3,
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "column": 4,
@@ -3075,15 +3075,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "22:9"
+                    "value": "25:9"
                   },
                   {
                     "column": 9,
-                    "value": "711:604"
+                    "value": "786:648"
                   },
                   {
                     "column": 10,
-                    "value": "21"
+                    "value": "24"
                   }
                 ],
                 "error": null,
@@ -3201,7 +3201,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "7"
+                    "value": "8"
                   },
                   {
                     "column": 3,
@@ -3217,7 +3217,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "column": 7,
@@ -3225,11 +3225,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "7:15"
+                    "value": "7:18"
                   },
                   {
                     "column": 9,
-                    "value": "416:492"
+                    "value": "460:567"
                   },
                   {
                     "column": 10,
@@ -14956,7 +14956,7 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U14",
               "parentId": 15026,
-              "publicGroupCount": 12,
+              "publicGroupCount": 14,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U14",
               "season": "2026/27",
@@ -17150,5 +17150,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T13:16+02:00"
+  "updated": "2026-10-24T13:28+02:00"
 }
