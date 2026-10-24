@@ -1,6 +1,61 @@
 {
-  "updated": "2026-10-24 16:42",
+  "updated": "2026-10-25 00:00",
   "days": [
+    {
+      "date": "2026-10-25",
+      "matches": [
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(31)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Stará Bělá",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937009"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(34)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Stará Bělá",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937012"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "matches": []
+    },
+    {
+      "date": "2026-10-27",
+      "matches": []
+    },
+    {
+      "date": "2026-10-28",
+      "matches": []
+    },
+    {
+      "date": "2026-10-29",
+      "matches": []
+    },
+    {
+      "date": "2026-10-30",
+      "matches": []
+    },
+    {
+      "date": "2026-10-31",
+      "matches": []
+    },
+    {
+      "date": "2026-11-01",
+      "matches": []
+    },
+    {
+      "date": "2026-11-02",
+      "matches": []
+    }
+  ],
+  "past_days": [
     {
       "date": "2026-10-24",
       "matches": [
@@ -54,57 +109,6 @@
         }
       ]
     },
-    {
-      "date": "2026-10-25",
-      "matches": [
-        {
-          "skupina": "MS-U20ZA",
-          "cislo": "(31)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol Stará Bělá",
-          "stav": "-",
-          "badge": "",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=937009"
-        },
-        {
-          "skupina": "MS-U20ZA",
-          "cislo": "(34)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol Stará Bělá",
-          "stav": "-",
-          "badge": "",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=937012"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "matches": []
-    },
-    {
-      "date": "2026-10-27",
-      "matches": []
-    },
-    {
-      "date": "2026-10-28",
-      "matches": []
-    },
-    {
-      "date": "2026-10-29",
-      "matches": []
-    },
-    {
-      "date": "2026-10-30",
-      "matches": []
-    },
-    {
-      "date": "2026-10-31",
-      "matches": []
-    },
-    {
-      "date": "2026-11-01",
-      "matches": []
-    }
-  ],
-  "past_days": [
     {
       "date": "2026-10-20",
       "matches": [
