@@ -15051,11 +15051,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "4"
+                    "value": "1"
                   },
                   {
                     "column": 3,
-                    "value": "3"
+                    "value": "0"
                   },
                   {
                     "column": 4,
@@ -15067,7 +15067,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "1"
+                    "value": "0"
                   },
                   {
                     "column": 7,
@@ -15075,15 +15075,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "6:2"
+                    "value": "0:0"
                   },
                   {
                     "column": 9,
-                    "value": "189:144"
+                    "value": "0:0"
                   },
                   {
                     "column": 10,
-                    "value": "9"
+                    "value": "21"
                   }
                 ],
                 "error": null,
@@ -15094,6 +15094,56 @@
                   {
                     "column": 0,
                     "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "20"
+                  }
+                ],
+                "error": null,
+                "teamId": 92498
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
                   },
                   {
                     "column": 1,
@@ -15143,7 +15193,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "3."
+                    "value": "4."
                   },
                   {
                     "column": 1,
@@ -15193,7 +15243,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "4."
+                    "value": "5."
                   },
                   {
                     "column": 1,
@@ -15243,7 +15293,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "5."
+                    "value": "6."
                   },
                   {
                     "column": 1,
@@ -15293,7 +15343,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "6."
+                    "value": "7."
                   },
                   {
                     "column": 1,
@@ -15338,56 +15388,6 @@
                 ],
                 "error": null,
                 "teamId": 93685
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "7."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Sokol Vratimov"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 92498
               },
               {
                 "cells": [
@@ -17637,5 +17637,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T20:23+02:00"
+  "updated": "2026-10-24T20:38+02:00"
 }
