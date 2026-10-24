@@ -14956,7 +14956,7 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U14",
               "parentId": 15026,
-              "publicGroupCount": 15,
+              "publicGroupCount": 16,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U14",
               "season": "2026/27",
@@ -17018,6 +17018,493 @@
             ]
           },
           "teamNumberInGroup": 2
+        },
+        {
+          "competitionId": 18574,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-11-14T00:00:00+01:00",
+          "groupId": 30083,
+          "groupName": "Druhé kolo soutěže U14Z,sk. A",
+          "groupStartDate": "2026-11-14T00:00:00+01:00",
+          "poradatel": "",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [
+              {
+                "guestId": 92922,
+                "guestName": "VKB Frýdlant n. O.",
+                "guestPosition": 1,
+                "hallResponse": null,
+                "homeId": 92498,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 2,
+                "match": 1,
+                "matchId": 957296,
+                "matchStart": "2026-11-14T09:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 93857,
+                "guestName": "TJ Ostrava \"A\"",
+                "guestPosition": 3,
+                "hallResponse": null,
+                "homeId": 93856,
+                "homeName": "TJ Ostrava \"B\"",
+                "homePosition": 4,
+                "match": 2,
+                "matchId": 957297,
+                "matchStart": "2026-11-14T09:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92498,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 2,
+                "hallResponse": null,
+                "homeId": 93693,
+                "homeName": "TJ Sokol F-M \"A\"",
+                "homePosition": 5,
+                "match": 3,
+                "matchId": 957298,
+                "matchStart": "2026-11-14T10:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 93856,
+                "guestName": "TJ Ostrava \"B\"",
+                "guestPosition": 4,
+                "hallResponse": null,
+                "homeId": 92922,
+                "homeName": "VKB Frýdlant n. O.",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 957299,
+                "matchStart": "2026-11-14T10:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 93857,
+                "guestName": "TJ Ostrava \"A\"",
+                "guestPosition": 3,
+                "hallResponse": null,
+                "homeId": 93693,
+                "homeName": "TJ Sokol F-M \"A\"",
+                "homePosition": 5,
+                "match": 5,
+                "matchId": 957300,
+                "matchStart": "2026-11-14T12:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 93856,
+                "guestName": "TJ Ostrava \"B\"",
+                "guestPosition": 4,
+                "hallResponse": null,
+                "homeId": 92498,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 2,
+                "match": 6,
+                "matchId": 957301,
+                "matchStart": "2026-11-14T12:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 93693,
+                "guestName": "TJ Sokol F-M \"A\"",
+                "guestPosition": 5,
+                "hallResponse": null,
+                "homeId": 92922,
+                "homeName": "VKB Frýdlant n. O.",
+                "homePosition": 1,
+                "match": 7,
+                "matchId": 957302,
+                "matchStart": "2026-11-14T13:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92498,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 2,
+                "hallResponse": null,
+                "homeId": 93857,
+                "homeName": "TJ Ostrava \"A\"",
+                "homePosition": 3,
+                "match": 8,
+                "matchId": 957303,
+                "matchStart": "2026-11-14T13:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 93693,
+                "guestName": "TJ Sokol F-M \"A\"",
+                "guestPosition": 5,
+                "hallResponse": null,
+                "homeId": 93856,
+                "homeName": "TJ Ostrava \"B\"",
+                "homePosition": 4,
+                "match": 9,
+                "matchId": 957304,
+                "matchStart": "2026-11-14T15:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92922,
+                "guestName": "VKB Frýdlant n. O.",
+                "guestPosition": 1,
+                "hallResponse": null,
+                "homeId": 93857,
+                "homeName": "TJ Ostrava \"A\"",
+                "homePosition": 3,
+                "match": 10,
+                "matchId": 957305,
+                "matchStart": "2026-11-14T15:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
+            "showHallColumn": false
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 92498
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93693
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93857
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93856
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "5."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O."
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 92922
+              }
+            ]
+          },
+          "teamNumberInGroup": 2
         }
       ],
       "letter": "A",
@@ -17150,5 +17637,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T16:42+02:00"
+  "updated": "2026-10-24T17:01+02:00"
 }
