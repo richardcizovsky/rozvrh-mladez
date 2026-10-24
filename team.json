@@ -925,7 +925,7 @@
                 "matchId": 936562,
                 "matchStart": "2026-10-24T10:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "0:3 (-12,-10,-13)",
                 "round": 9,
                 "shortNote": "",
                 "withinRange": true
@@ -2997,6 +2997,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O."
+                  },
+                  {
+                    "column": 2,
+                    "value": "7"
+                  },
+                  {
+                    "column": 3,
+                    "value": "7"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "21:1"
+                  },
+                  {
+                    "column": 9,
+                    "value": "543:334"
+                  },
+                  {
+                    "column": 10,
+                    "value": "21"
+                  }
+                ],
+                "error": null,
+                "teamId": 92920
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
                     "value": "Sportovní volejbalový klub Nový Jičín"
                   },
                   {
@@ -3038,56 +3088,6 @@
                 ],
                 "error": null,
                 "teamId": 94042
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "2."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Vk Beskydy Frýdlant n. O."
-                  },
-                  {
-                    "column": 2,
-                    "value": "6"
-                  },
-                  {
-                    "column": 3,
-                    "value": "6"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "18:1"
-                  },
-                  {
-                    "column": 9,
-                    "value": "468:299"
-                  },
-                  {
-                    "column": 10,
-                    "value": "18"
-                  }
-                ],
-                "error": null,
-                "teamId": 92920
               },
               {
                 "cells": [
@@ -3251,7 +3251,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "column": 3,
@@ -3267,7 +3267,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "column": 7,
@@ -3275,11 +3275,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "7:21"
+                    "value": "7:24"
                   },
                   {
                     "column": 9,
-                    "value": "539:645"
+                    "value": "574:720"
                   },
                   {
                     "column": 10,
@@ -16517,7 +16517,7 @@
                 "matchId": 956316,
                 "matchStart": "2026-10-24T10:00:00+02:00",
                 "note": "",
-                "result": "",
+                "result": "2:0 (22,22)",
                 "round": 1,
                 "shortNote": "",
                 "withinRange": true
@@ -16773,7 +16773,7 @@
                   },
                   {
                     "column": 1,
-                    "value": "Tělovýchovná jednota Ostrava B"
+                    "value": "Tělovýchovná jednota Ostrava A"
                   },
                   {
                     "column": 2,
@@ -16805,7 +16805,57 @@
                   },
                   {
                     "column": 9,
-                    "value": "50:36"
+                    "value": "50:44"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 93857
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "94:86"
                   },
                   {
                     "column": 10,
@@ -16819,7 +16869,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "2."
+                    "value": "3."
                   },
                   {
                     "column": 1,
@@ -16869,7 +16919,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "3."
+                    "value": "4."
                   },
                   {
                     "column": 1,
@@ -16914,56 +16964,6 @@
                 ],
                 "error": null,
                 "teamId": 92498
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "4."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Ostrava A"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 93857
               },
               {
                 "cells": [
@@ -17150,5 +17150,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-24T10:21+02:00"
+  "updated": "2026-10-24T11:20+02:00"
 }
