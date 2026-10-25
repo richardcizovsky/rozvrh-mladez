@@ -85,6 +85,7 @@
   tr.date-header:not(:first-child) th { border-top: 4px solid #2c3e50; }
   .match-when { color: #777; font-size: .85em; }
   .match-teams { font-weight: 600; margin: 2px 0; }
+  .match-time { color: #777; font-weight: 600; font-size: 0.78em; margin-right: 4px; font-variant-numeric: tabular-nums; }
   .match-result { font-size: 1em; }
   .empty { padding: 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #777; }
   .table-wrap { overflow-x: auto; }
@@ -305,14 +306,13 @@
             target: "_blank", rel: "noopener noreferrer"
           }, label)
         : label;
-      const venue = hallName(m);
+      const venue = hideHall ? "" : hallName(m);
       const time = valid ? d.toLocaleTimeString("cs-CZ", { ...pragueOpts, hour: "2-digit", minute: "2-digit" }) : "";
-      const when = [time, hideHall ? "" : venue].filter(Boolean).join(" · ");
       const mineMatch = isMine(m.homeName) || isMine(m.guestName);
-      // Řádky: 1. čas + hala, 2. zápas, 3. výsledek (jen když už existuje)
+      // Řádky: 1. hala (jen když se liší), 2. čas + zápas, 3. výsledek (jen když už existuje)
       tbody.append(el("tr", { class: highlight && mineMatch ? "me" : "" }, el("td", { class: "match" },
-        el("div", { class: "match-when" }, when),
-        el("div", { class: "match-teams" }, teams),
+        venue ? el("div", { class: "match-when" }, venue) : null,
+        el("div", { class: "match-teams" }, time ? el("span", { class: "match-time" }, time) : null, teams),
         m.result ? el("div", { class: "match-result" }, m.result) : null)));
     }
     return el("div", { class: "table-wrap" }, el("table", {}, tbody));
