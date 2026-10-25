@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25 12:52",
+  "updated": "2026-10-25 15:18",
   "days": [
     {
       "date": "2026-10-25",
@@ -15,9 +15,9 @@
         {
           "skupina": "MS-U20ZA",
           "cislo": "(34)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol Stará Bělá LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Stará Bělá",
+          "stav": "1:3 (25,-19,-23,-11)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=937012"
         }
       ]
