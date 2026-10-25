@@ -226,21 +226,45 @@
     return COLUMN_LABELS[key] || v;
   }
 
+  // Nulová hodnota v tabulce: "0", "0:0" nebo prázdná buňka
+  function isZeroValue(v) {
+    const s = String(v === null || v === undefined ? "" : v).trim();
+    return s === "" || /^0+(\s*:\s*0+)?$/.test(s);
+  }
+
   function renderScoreboard(sb) {
     if (!sb || !Array.isArray(sb.rows) || !sb.rows.length) {
       return el("div", { class: "empty" }, "Tabulka zatím není k dispozici.");
     }
     const cols = (sb.columns || []).slice().sort((a, b) => a.column - b.column);
-    const thead = el("thead", {}, el("tr", {}, ...cols.map((c, i) =>
-      el("th", { class: i === 1 ? "" : "num" }, columnLabel(c.value)))));
-    const tbody = el("tbody");
-    for (const row of sb.rows) {
-      const cells = (row.cells || []).slice().sort((a, b) => a.column - b.column);
-      const mine = cells.some(c => isMine(c.value));
-      tbody.append(el("tr", { class: mine ? "me" : "" },
-        ...cells.map((c, i) => el("td", { class: i === 1 ? "" : "num" }, c.value))));
+    const rows = sb.rows.map(row => (row.cells || []).slice().sort((a, b) => a.column - b.column));
+    // Je sloupec (podle čísla) ve všech řádcích nulový?
+    const colAllZero = colNo => rows.every(cells =>
+      cells.filter(c => c.column === colNo).every(c => isZeroValue(c.value)));
+    // Pořadí a název týmu jsou první dva sloupce a zobrazují se vždy
+    const keepCols = cols.slice(0, 2).map(c => c.column);
+    const statCols = cols.slice(2);
+    let visible;
+    if (statCols.every(c => colAllZero(c.column))) {
+      // Ještě se nehrálo (všude 0 nebo 0:0): jen pořadí a název týmu
+      visible = new Set(keepCols);
+    } else {
+      // Sloupec K se skryje, pokud je ve všech řádcích nulový
+      visible = new Set(cols
+        .filter(c => !(String(c.value || "").trim().toUpperCase() === "K" && colAllZero(c.column)))
+        .map(c => c.column));
     }
-    return el("div", { class: "table-wrap" }, el("table", {}, thead, tbody));
+    const shownCols = cols.filter(c => visible.has(c.column));
+    const thead = el("thead", {}, el("tr", {}, ...shownCols.map((c, i) =>
+      el("th", { class: i === 1 ? "team" : "num" }, columnLabel(c.value)))));
+    const tbody = el("tbody");
+    for (const all of rows) {
+      const cells = all.filter(c => visible.has(c.column));
+      const mine = all.some(c => isMine(c.value));
+      tbody.append(el("tr", { class: mine ? "me" : "" },
+        ...cells.map((c, i) => el("td", { class: i === 1 ? "team" : "num" }, c.value))));
+    }
+    return el("div", { class: "table-wrap" }, el("table", { class: "scoreboard" }, thead, tbody));
   }
 
   function getMatches(schedule, showAll) {
