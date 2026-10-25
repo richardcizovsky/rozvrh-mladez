@@ -31,6 +31,10 @@ python3 -m http.server
 
 a otevři `http://localhost:8000`.
 
+Pokud hlásí `OSError: [Errno 48] Address already in use`, server už běží (zjistíš přes `lsof -nP -iTCP:8000 -sTCP:LISTEN`). Buď použij běžící server, ukonči ho (`kill <PID>`), nebo spusť jiný port: `python3 -m http.server 8001`.
+
+Mobilní zobrazení otestuješ v prohlížeči přes vývojářské nástroje (Chrome: `Cmd+Opt+I` a pak `Cmd+Shift+M`).
+
 ## Lokální testování `fetch_current.py`
 
 ### Instalace závislostí
@@ -139,4 +143,14 @@ Stránka `index.html`:
 - Obě sekce dynamicky načítají data z `current.json`
 - Dny bez zápasů se nezobrazují (v sekci aktuálních se dnešní den vždy zobrazí)
 - Zápasy jsou seřazeny od nejnověji odehrané (minulé) a od dnešního dne (budoucí)
+
+### Mobilní zobrazení
+
+`index.html` i `tym.html` mají na malých displejích menší písmo:
+- do šířky 768 px je základní velikost písma `14px`, do 420 px `13px` (na desktopu výchozích 16 px)
+- většina velikostí je v `em`, takže se nadpisy, tabulky i štítky zmenší úměrně
+- na mobilu jsou také menší odsazení v tabulkách, tlačítkách a záhlavích panelů
+- `text-size-adjust: 100%` brání tomu, aby si mobilní prohlížeč (hlavně iOS Safari) písmo sám zvětšoval
+
+Při úpravách stylů zadávej velikosti písma v `em`, aby se na mobilu správně zmenšily.
 

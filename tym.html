@@ -90,6 +90,29 @@
   .table-wrap { overflow-x: auto; }
   footer { margin-top: 40px; text-align: center; color: #777; font-size: .9em; }
   @media (max-width: 600px) { body { margin: 10px 0; display: block; } .container { padding: 0 2px; box-sizing: border-box; } .group-block { margin-right: 3px; } th, td { padding: 6px 8px; } }
+  /* Menší písmo na mobilech – většina velikostí je v em, takže se zmenší úměrně */
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  @media (max-width: 768px) { body { font-size: 14px; } .partners summary { padding: 10px 12px; } }
+  @media (max-width: 420px) { body { font-size: 13px; } }
+  /* Tabulka skupiny: název týmu se nikdy nezalomí, místo se šetří na číselných sloupcích */
+  table.scoreboard th, table.scoreboard td { white-space: nowrap; }
+  table.scoreboard .team { width: 100%; }
+  table.scoreboard .num { width: 1%; }
+  @media (max-width: 768px) {
+    table.scoreboard th, table.scoreboard td { padding: 6px 4px; }
+    table.scoreboard .team { padding-left: 6px; padding-right: 6px; }
+    table.scoreboard .num { font-size: 0.9em; }
+  }
+  @media (max-width: 420px) {
+    table.scoreboard th, table.scoreboard td { padding: 5px 3px; }
+    table.scoreboard .num { font-size: 0.85em; }
+  }
+  /* Zápasy: kompaktnější řádky na mobilu */
+  @media (max-width: 768px) {
+    td.match { padding: 5px 8px; line-height: 1.3; }
+    .match-teams { margin: 0; }
+    tr.date-header th { padding: 7px 8px; }
+  }
 </style>
 </head>
 <body>

@@ -203,8 +203,8 @@
     .header-logo { width: 44px; height: 44px; }
     h1 { font-size: 1.2em; }
     h2 { font-size: 0.85em; margin-top: 2px; }
-    .header-social { gap: 8px; }
-    .header-social .fb-icon { font-size: 2.2em; }
+    .header-social { gap: 12px; }
+    .header-social .fb-icon { font-size: 3em; }
   }
 
   footer {
@@ -416,7 +416,26 @@
    }
    body:has(details[open])::before { opacity: 0.35; }
    .header-content h1, .header-content h2 { text-shadow: 0 1px 6px rgba(255,255,255,0.9); }
-   .header-content h2 { color: #2c3e50; font-weight: 600; }
+    .header-content h2 { color: #2c3e50; font-weight: 600; }
+    /* Menší písmo na mobilech – většina velikostí je v em, takže se zmenší úměrně */
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    @media (max-width: 768px) {
+      body { font-size: 14px; }
+      th, td { padding: 8px; }
+      .date-header th { padding: 10px 12px; }
+      .date-display { min-width: 0; font-size: 1em; }
+      .date-nav-btn { padding: 6px 12px; margin: 0 6px; }
+      .partners summary { padding: 10px 12px; }
+      /* Rozvrh: sloupec Den jen tak široký, jak je potřeba, zbytek dostane Místo */
+      #schedule thead th:nth-child(1) { width: 1%; }
+      #schedule thead th:nth-child(2) { width: 1%; }
+      #schedule tbody tr:not(.team-header):not(.team-links) td:nth-child(1),
+      #schedule tbody tr:not(.team-header):not(.team-links) td:nth-child(2) { white-space: nowrap; }
+      #schedule tbody tr:not(.team-header):not(.team-links) td:nth-child(1) { padding-right: 4px; }
+    }
+    @media (max-width: 420px) {
+      body { font-size: 13px; }
+    }
  </style>
 </head>
 <body>
