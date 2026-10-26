@@ -1,10 +1,6 @@
 {
-  "updated": "2026-10-26 00:16",
+  "updated": "2026-10-27 00:01",
   "days": [
-    {
-      "date": "2026-10-26",
-      "matches": []
-    },
     {
       "date": "2026-10-27",
       "matches": []
@@ -36,6 +32,19 @@
     {
       "date": "2026-11-03",
       "matches": []
+    },
+    {
+      "date": "2026-11-04",
+      "matches": [
+        {
+          "skupina": "OV-Z",
+          "cislo": "(19)",
+          "tymy": "TJ Sokol Svinov \"A\" - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=943022"
+        }
+      ]
     }
   ],
   "past_days": [
@@ -123,27 +132,6 @@
           "stav": "3:0 (17,17,11)",
           "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=943017"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-18",
-      "matches": [
-        {
-          "skupina": "MS-U20ZA",
-          "cislo": "(27)",
-          "tymy": "TJ Hlučín - TJ Sokol Vratimov",
-          "stav": "3:0 (15,13,10)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=937005"
-        },
-        {
-          "skupina": "MS-U20ZA",
-          "cislo": "(30)",
-          "tymy": "TJ Hlučín - TJ Sokol Vratimov",
-          "stav": "3:0 (10,17,11)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=937008"
         }
       ]
     }
