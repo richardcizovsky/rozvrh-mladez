@@ -16777,11 +16777,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "8"
+                    "value": "4"
                   },
                   {
                     "column": 3,
-                    "value": "6"
+                    "value": "3"
                   },
                   {
                     "column": 4,
@@ -16793,7 +16793,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "2"
+                    "value": "1"
                   },
                   {
                     "column": 7,
@@ -16801,15 +16801,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "12:4"
+                    "value": "6:2"
                   },
                   {
                     "column": 9,
-                    "value": "378:288"
+                    "value": "189:144"
                   },
                   {
                     "column": 10,
-                    "value": "18"
+                    "value": "9"
                   }
                 ],
                 "error": null,
@@ -17637,5 +17637,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-25T16:32+01:00"
+  "updated": "2026-10-26T07:46+01:00"
 }
