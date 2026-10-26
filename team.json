@@ -15151,15 +15151,15 @@
                   },
                   {
                     "column": 2,
-                    "value": "4"
+                    "value": "1"
                   },
                   {
                     "column": 3,
-                    "value": "2"
+                    "value": "0"
                   },
                   {
                     "column": 4,
-                    "value": "1"
+                    "value": "0"
                   },
                   {
                     "column": 5,
@@ -15167,7 +15167,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "1"
+                    "value": "0"
                   },
                   {
                     "column": 7,
@@ -15175,15 +15175,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "6:3"
+                    "value": "0:0"
                   },
                   {
                     "column": 9,
-                    "value": "200:189"
+                    "value": "0:0"
                   },
                   {
                     "column": 10,
-                    "value": "8"
+                    "value": "19"
                   }
                 ],
                 "error": null,
@@ -15197,461 +15197,11 @@
                   },
                   {
                     "column": 1,
-                    "value": "Klub volejbalu Kopřivnice"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 95232
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "5."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Sportovní akademie Ostrava"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 94072
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "6."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Sportovní volejbalový klub Nový Jičín \"A\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 94047
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "7."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Sportovní volejbalový klub Nový Jičín \"B\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 94046
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "8."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Frenštát pod Radhoštěm"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 93685
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "9."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 93693
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "10."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 93692
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "11."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Hlučín \"A\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 95343
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "12."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Hlučín \"B\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 95342
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "13."
-                  },
-                  {
-                    "column": 1,
                     "value": "Tělovýchovná jednota Ostrava B"
                   },
                   {
                     "column": 2,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 3,
@@ -15683,7 +15233,7 @@
                   },
                   {
                     "column": 10,
-                    "value": "0"
+                    "value": "18"
                   }
                 ],
                 "error": null,
@@ -15693,107 +15243,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "14."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Sokol Stará Bělá"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 95360
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "15."
-                  },
-                  {
-                    "column": 1,
-                    "value": "VK Karviná"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 95229
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "16."
+                    "value": "5."
                   },
                   {
                     "column": 1,
@@ -15801,7 +15251,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 3,
@@ -15833,7 +15283,7 @@
                   },
                   {
                     "column": 10,
-                    "value": "0"
+                    "value": "17"
                   }
                 ],
                 "error": null,
@@ -15843,15 +15293,15 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "17."
+                    "value": "6."
                   },
                   {
                     "column": 1,
-                    "value": "VK Polanka nad Odrou \"B\""
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
                   },
                   {
                     "column": 2,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 3,
@@ -15883,25 +15333,25 @@
                   },
                   {
                     "column": 10,
-                    "value": "0"
+                    "value": "16"
                   }
                 ],
                 "error": null,
-                "teamId": 93102
+                "teamId": 93693
               },
               {
                 "cells": [
                   {
                     "column": 0,
-                    "value": "18."
+                    "value": "7."
                   },
                   {
                     "column": 1,
-                    "value": "VK Raškovice"
+                    "value": "Klub volejbalu Kopřivnice"
                   },
                   {
                     "column": 2,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 3,
@@ -15933,17 +15383,117 @@
                   },
                   {
                     "column": 10,
-                    "value": "0"
+                    "value": "15"
                   }
                 ],
                 "error": null,
-                "teamId": 92958
+                "teamId": 95232
               },
               {
                 "cells": [
                   {
                     "column": 0,
-                    "value": "19."
+                    "value": "8."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní volejbalový klub Nový Jičín \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "14"
+                  }
+                ],
+                "error": null,
+                "teamId": 94047
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "9."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Hlučín \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "13"
+                  }
+                ],
+                "error": null,
+                "teamId": 95343
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "10."
                   },
                   {
                     "column": 1,
@@ -15951,7 +15501,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 3,
@@ -15983,7 +15533,7 @@
                   },
                   {
                     "column": 10,
-                    "value": "0"
+                    "value": "12"
                   }
                 ],
                 "error": null,
@@ -15993,15 +15543,15 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "20."
+                    "value": "11."
                   },
                   {
                     "column": 1,
-                    "value": "Volejbal Ostrava"
+                    "value": "VK Raškovice"
                   },
                   {
                     "column": 2,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 3,
@@ -16033,7 +15583,207 @@
                   },
                   {
                     "column": 10,
+                    "value": "11"
+                  }
+                ],
+                "error": null,
+                "teamId": 92958
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "12."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Sokol Stará Bělá"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
                     "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "10"
+                  }
+                ],
+                "error": null,
+                "teamId": 95360
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "13."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Frenštát pod Radhoštěm"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 93685
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "14."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VK Karviná"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "8"
+                  }
+                ],
+                "error": null,
+                "teamId": 95229
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "15."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Volejbal Ostrava"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "7"
                   }
                 ],
                 "error": null,
@@ -16043,15 +15793,15 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "21."
+                    "value": "16."
                   },
                   {
                     "column": 1,
-                    "value": "Školní sportovní klub Bílovec"
+                    "value": "VK Polanka nad Odrou \"B\""
                   },
                   {
                     "column": 2,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 3,
@@ -16083,11 +15833,261 @@
                   },
                   {
                     "column": 10,
+                    "value": "6"
+                  }
+                ],
+                "error": null,
+                "teamId": 93102
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "17."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Školní sportovní klub Bílovec"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
                     "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "5"
                   }
                 ],
                 "error": null,
                 "teamId": 92954
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "18."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní volejbalový klub Nový Jičín \"B\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "4"
+                  }
+                ],
+                "error": null,
+                "teamId": 94046
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "19."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní akademie Ostrava"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 94072
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "20."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "2"
+                  }
+                ],
+                "error": null,
+                "teamId": 93692
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "21."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Hlučín \"B\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "1"
+                  }
+                ],
+                "error": null,
+                "teamId": 95342
               }
             ]
           },
@@ -17637,5 +17637,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-26T08:19+01:00"
+  "updated": "2026-10-26T08:52+01:00"
 }
