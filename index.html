@@ -369,6 +369,17 @@
    .partners summary::after { content: '▾'; transition: transform 0.2s; }
    .partners[open] summary::after { transform: rotate(180deg); }
    .partners summary:hover { background-color: #f4f7f6; }
+   /* Panel s odkazem na jinou stránku (např. Fotogalerie) – vypadá jako zabalený blok */
+   div.partners { background: rgba(255,255,255,0.5); }
+   .partners .page-link {
+     display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 20px;
+     color: #2c3e50; font-weight: 600; text-transform: uppercase; text-decoration: none;
+     font-size: 0.9em; letter-spacing: 0.05em;
+   }
+   .partners .page-link::after { content: '→'; transition: transform 0.2s; }
+   .partners .page-link:hover { background-color: #f4f7f6; }
+   .partners .page-link:hover::after { transform: translateX(3px); }
+   .partners .page-link small { font-weight: 400; text-transform: none; letter-spacing: 0; color: #777; font-size: 0.9em; }
    .partners summary small { font-weight: 400; text-transform: none; letter-spacing: 0; color: #777; font-size: 0.9em; }
    .partners summary small.ez { font-size: 0.55em; letter-spacing: 0; opacity: 0.8; margin-left: -4px; }
    .partners > table { box-shadow: none; border-radius: 0; border-top: 1px solid #e0e0e0; }
@@ -650,6 +661,11 @@
       <summary>O nás <small>kontakty a údaje o klubu</small></summary>
       <div id="clubInfo" class="club-info"><p class="today-info">Načítání dat...</p></div>
     </details>
+
+    <!-- Fotogalerie je samostatná stránka, aby se fotky nestahovaly při každém načtení rozpisu -->
+    <div class="partners">
+      <a class="page-link" href="fotogalerie.html">Fotogalerie <small>fotky týmů</small></a>
+    </div>
 
     <!-- Partneři (výchozí stav: sbaleno). Další přidejte jako další <a class="partner"> -->
     <details class="partners">

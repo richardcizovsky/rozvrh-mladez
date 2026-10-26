@@ -7,6 +7,8 @@ Stránka se rozvrhem tréninků a zápasy z eZapis.
 ```
 rozvrh-mladez/
 ├── index.html              # Hlavní stránka
+├── fotogalerie.html        # Fotogalerie (samostatná stránka, fotky se nestahují s rozpisem)
+├── foto/                   # Fotky ve WebP (1920 px), náhledy v foto/nahled/ (720 px)
 ├── logo.png                # Logo klubu
 ├── current.json            # Zápasy z eZapis (generuje se automaticky)
 ├── sitemap.xml             # Mapa webu pro SEO
@@ -154,3 +156,16 @@ Stránka `index.html`:
 
 Při úpravách stylů zadávej velikosti písma v `em`, aby se na mobilu správně zmenšily.
 
+## Fotogalerie
+
+`fotogalerie.html` je samostatná stránka (odkaz z `index.html`), takže se fotky nestahují při každém načtení rozpisu.
+Mřížka načítá jen malé náhledy (`loading="lazy"`), plná fotka se stáhne až po kliknutí.
+
+Přidání fotky (ImageMagick, odstraní EXIF/GPS metadata):
+
+```bash
+magick FOTKA.jpg -auto-orient -strip -resize '1920x1920>' -quality 78 foto/nazev.webp
+magick FOTKA.jpg -auto-orient -strip -resize '720x720>' -quality 70 foto/nahled/nazev.webp
+```
+
+Pak přidej položku `{ file: "nazev", title: "Popisek" }` do pole `PHOTOS` ve `fotogalerie.html`.

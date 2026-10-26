@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Fotogalerie volejbalových týmů TJ Sokol Vratimov – ženy, mládež, přípravka a trenéři.">
+<link rel="canonical" href="https://tjsokolvratimov.cz/fotogalerie.html">
+<title>Fotogalerie – TJ Sokol Vratimov</title>
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .container { width: 100%; max-width: 950px; }
+  .header { text-align: center; margin-bottom: 20px; }
+  .header-top { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .header img { width: 36px; height: 36px; object-fit: contain; flex: none; }
+  h1 { color: #2c3e50; margin: 0; font-size: 1.4em; line-height: 1.2; }
+  .back {
+    display: inline-block;
+    color: #1a5fb4;
+    text-decoration: none;
+    padding: 2px 12px;
+    border: 1px solid #1a5fb4;
+    border-radius: 999px;
+    background: #eef4fc;
+    margin-bottom: 16px;
+    transition: background .15s, color .15s;
+  }
+  .back:hover, .back:focus-visible { background: #1a5fb4; color: #fff; }
+  .back-bottom { margin: 24px 0 0; }
+
+  /* Mřížka náhledů */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+  .gallery figure { margin: 0; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
+  .gallery button { display: block; width: 100%; padding: 0; border: 0; background: #dfe6e3; cursor: zoom-in; }
+  .gallery img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; transition: transform .25s; }
+  .gallery button:hover img, .gallery button:focus-visible img { transform: scale(1.03); }
+  .gallery figcaption { padding: 10px 14px; color: #2c3e50; font-weight: 600; text-align: center; }
+  .gallery li.wide { grid-column: 1 / -1; }
+
+  /* Prohlížeč fotky na celou obrazovku */
+  dialog.lightbox { padding: 0; border: 0; max-width: 100vw; max-height: 100vh; width: 100vw; height: 100vh; background: rgba(0,0,0,0.92); color: #fff; }
+  dialog.lightbox::backdrop { background: rgba(0,0,0,0.92); }
+  .lb-inner { position: relative; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .lb-inner img { max-width: 100%; max-height: calc(100% - 60px); object-fit: contain; user-select: none; }
+  .lb-caption { margin-top: 10px; font-weight: 600; text-align: center; }
+  .lb-btn { position: absolute; background: rgba(255,255,255,0.15); color: #fff; border: 0; border-radius: 999px; width: 44px; height: 44px; font-size: 1.4em; cursor: pointer; }
+  .lb-btn:hover, .lb-btn:focus-visible { background: rgba(255,255,255,0.35); }
+  .lb-close { top: 12px; right: 12px; }
+  .lb-prev { left: 12px; top: 50%; transform: translateY(-50%); }
+  .lb-next { right: 12px; top: 50%; transform: translateY(-50%); }
+
+  footer { margin-top: 40px; text-align: center; color: #777; font-size: .9em; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  @media (max-width: 768px) {
+    body { margin: 10px 0; display: block; font-size: 14px; }
+    .container { padding: 0 8px; box-sizing: border-box; }
+    .gallery { gap: 10px; }
+  }
+  @media (max-width: 420px) { body { font-size: 13px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="./">&larr; Zpět na hlavní stránku</a>
+  <div class="header">
+    <div class="header-top">
+      <img src="logo.png" alt="Logo TJ Sokol Vratimov">
+      <h1>Fotogalerie</h1>
+    </div>
+  </div>
+
+  <!-- Fotky jsou ve foto/ (1920 px) a náhledy ve foto/nahled/ (720 px), formát WebP.
+       Plná fotka se stahuje až po kliknutí na náhled. -->
+  <ul class="gallery" id="gallery"></ul>
+
+  <a class="back back-bottom" href="./">&larr; Zpět na hlavní stránku</a>
+  <footer>TJ Sokol Vratimov – volejbal</footer>
+</div>
+
+<dialog class="lightbox" id="lightbox" aria-label="Prohlížeč fotek">
+  <div class="lb-inner">
+    <img id="lbImg" alt="">
+    <div class="lb-caption" id="lbCaption"></div>
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Zavřít">✕</button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Předchozí fotka">‹</button>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Další fotka">›</button>
+  </div>
+</dialog>
+
+<script>
+  // Seznam fotek: soubor (bez přípony) a popisek. Nové fotky přidejte sem.
+  const PHOTOS = [
+    { file: "vsechnytymy", title: "Všechny týmy", wide: true },
+    { file: "zeny", title: "Ženy" },
+    { file: "u18u20", title: "U18 / U20" },
+    { file: "u16a", title: "U16 A" },
+    { file: "u16b", title: "U16 B" },
+    { file: "u14", title: "U14" },
+    { file: "starsipripravka", title: "Starší přípravka" },
+    { file: "mladsipripravka", title: "Mladší přípravka" },
+    { file: "treneri", title: "Trenéři" }
+  ];
+
+  const gallery = document.getElementById("gallery");
+  PHOTOS.forEach((p, i) => {
+    const li = document.createElement("li");
+    if (p.wide) li.className = "wide";
+    const fig = document.createElement("figure");
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.setAttribute("aria-label", `Zvětšit fotku: ${p.title}`);
+    const img = document.createElement("img");
+    img.src = `foto/nahled/${p.file}.webp`;
+    img.alt = p.title;
+    img.width = 720;
+    img.height = 405;
+    // První (velká) fotka se načte hned, ostatní až při posunu stránky
+    img.loading = i === 0 ? "eager" : "lazy";
+    img.decoding = "async";
+    btn.append(img);
+    btn.addEventListener("click", () => openAt(i));
+    const cap = document.createElement("figcaption");
+    cap.textContent = p.title;
+    fig.append(btn, cap);
+    li.append(fig);
+    gallery.append(li);
+  });
+
+  // Prohlížeč fotek
+  const lb = document.getElementById("lightbox");
+  const lbImg = document.getElementById("lbImg");
+  const lbCaption = document.getElementById("lbCaption");
+  let current = 0;
+
+  function show(i) {
+    current = (i + PHOTOS.length) % PHOTOS.length;
+    const p = PHOTOS[current];
+    lbImg.src = `foto/${p.file}.webp`;
+    lbImg.alt = p.title;
+    lbCaption.textContent = `${p.title} (${current + 1}/${PHOTOS.length})`;
+  }
+  function openAt(i) {
+    show(i);
+    lb.showModal();
+  }
+  document.getElementById("lbClose").addEventListener("click", () => lb.close());
+  document.getElementById("lbPrev").addEventListener("click", () => show(current - 1));
+  document.getElementById("lbNext").addEventListener("click", () => show(current + 1));
+  // Klik mimo fotku zavře prohlížeč
+  lb.addEventListener("click", e => { if (e.target === lb || e.target.classList.contains("lb-inner")) lb.close(); });
+  document.addEventListener("keydown", e => {
+    if (!lb.open) return;
+    if (e.key === "ArrowLeft") show(current - 1);
+    else if (e.key === "ArrowRight") show(current + 1);
+  });
+  // Swipe na mobilu
+  let touchX = null;
+  lb.addEventListener("touchstart", e => { touchX = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener("touchend", e => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    touchX = null;
+    if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
+  }, { passive: true });
+</script>
+</body>
+</html>
+
