@@ -17027,7 +17027,7 @@
           "groupId": 30083,
           "groupName": "Druhé kolo soutěže U14Z,sk. A",
           "groupStartDate": "2026-11-14T00:00:00+01:00",
-          "poradatel": "",
+          "poradatel": "tělocvična 11.ZŠ Frýdek-Místek   Jiřího z Poděbrad 3109 Frýdek-Místek, vchod je z ulice Lysohorského ",
           "schedule": {
             "allowSportsField": false,
             "responseData": [
@@ -17035,7 +17035,14 @@
                 "guestId": 93693,
                 "guestName": "TJ Sokol F-M \"A\"",
                 "guestPosition": 5,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 92922,
                 "homeName": "VKB Frýdlant n. O.",
                 "homePosition": 1,
@@ -17052,7 +17059,14 @@
                 "guestId": 93856,
                 "guestName": "TJ Ostrava \"B\"",
                 "guestPosition": 4,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 92498,
                 "homeName": "TJ Sokol Vratimov",
                 "homePosition": 2,
@@ -17069,7 +17083,14 @@
                 "guestId": 92922,
                 "guestName": "VKB Frýdlant n. O.",
                 "guestPosition": 1,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 93857,
                 "homeName": "TJ Ostrava \"A\"",
                 "homePosition": 3,
@@ -17086,7 +17107,14 @@
                 "guestId": 92498,
                 "guestName": "TJ Sokol Vratimov",
                 "guestPosition": 2,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 93693,
                 "homeName": "TJ Sokol F-M \"A\"",
                 "homePosition": 5,
@@ -17103,7 +17131,14 @@
                 "guestId": 93857,
                 "guestName": "TJ Ostrava \"A\"",
                 "guestPosition": 3,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 93856,
                 "homeName": "TJ Ostrava \"B\"",
                 "homePosition": 4,
@@ -17120,7 +17155,14 @@
                 "guestId": 92498,
                 "guestName": "TJ Sokol Vratimov",
                 "guestPosition": 2,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 92922,
                 "homeName": "VKB Frýdlant n. O.",
                 "homePosition": 1,
@@ -17137,7 +17179,14 @@
                 "guestId": 93693,
                 "guestName": "TJ Sokol F-M \"A\"",
                 "guestPosition": 5,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 93857,
                 "homeName": "TJ Ostrava \"A\"",
                 "homePosition": 3,
@@ -17154,7 +17203,14 @@
                 "guestId": 92922,
                 "guestName": "VKB Frýdlant n. O.",
                 "guestPosition": 1,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 93856,
                 "homeName": "TJ Ostrava \"B\"",
                 "homePosition": 4,
@@ -17171,7 +17227,14 @@
                 "guestId": 93857,
                 "guestName": "TJ Ostrava \"A\"",
                 "guestPosition": 3,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 92498,
                 "homeName": "TJ Sokol Vratimov",
                 "homePosition": 2,
@@ -17188,7 +17251,14 @@
                 "guestId": 93856,
                 "guestName": "TJ Ostrava \"B\"",
                 "guestPosition": 4,
-                "hallResponse": null,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
                 "homeId": 93693,
                 "homeName": "TJ Sokol F-M \"A\"",
                 "homePosition": 5,
@@ -17637,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-26T10:36+01:00"
+  "updated": "2026-10-26T13:06+01:00"
 }
