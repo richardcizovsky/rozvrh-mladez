@@ -359,6 +359,7 @@
    /* Partneři: sbalitelný panel nad rozvrhem */
    .partners { margin-bottom: 16px; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
    .partners:not([open]) { background: rgba(255,255,255,0.5); transition: background 0.3s; }
+   .partners summary, .partners .page-link { line-height: 1.4; }
    .partners summary {
      cursor: pointer; list-style: none; padding: 12px 20px;
      display: flex; align-items: center; justify-content: center; gap: 10px;
@@ -436,7 +437,7 @@
       .date-header th { padding: 10px 12px; }
       .date-display { min-width: 0; font-size: 1em; }
       .date-nav-btn { padding: 6px 12px; margin: 0 6px; }
-      .partners summary { padding: 10px 12px; }
+      .partners summary, .partners .page-link { padding: 10px 12px; }
       /* Rozvrh: sloupec Den jen tak široký, jak je potřeba, zbytek dostane Místo */
       #schedule thead th:nth-child(1) { width: 1%; }
       #schedule thead th:nth-child(2) { width: 1%; }
