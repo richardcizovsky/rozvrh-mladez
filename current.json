@@ -1,10 +1,6 @@
 {
-  "updated": "2026-10-28 00:12",
+  "updated": "2026-10-29 00:02",
   "days": [
-    {
-      "date": "2026-10-28",
-      "matches": []
-    },
     {
       "date": "2026-10-29",
       "matches": []
@@ -44,6 +40,10 @@
     },
     {
       "date": "2026-11-05",
+      "matches": []
+    },
+    {
+      "date": "2026-11-06",
       "matches": []
     }
   ],
@@ -119,19 +119,6 @@
           "stav": "3:2 (9,-18,23,-24,13)",
           "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936567"
-        }
-      ]
-    },
-    {
-      "date": "2026-10-20",
-      "matches": [
-        {
-          "skupina": "OV-Z",
-          "cislo": "(14)",
-          "tymy": "TJ Sokol Vratimov - TJ Kunčičky",
-          "stav": "3:0 (17,17,11)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=943017"
         }
       ]
     }
