@@ -1,10 +1,6 @@
 {
-  "updated": "2026-10-29 00:02",
+  "updated": "2026-10-30 00:23",
   "days": [
-    {
-      "date": "2026-10-29",
-      "matches": []
-    },
     {
       "date": "2026-10-30",
       "matches": []
@@ -45,6 +41,43 @@
     {
       "date": "2026-11-06",
       "matches": []
+    },
+    {
+      "date": "2026-11-07",
+      "matches": [
+        {
+          "skupina": "MS-U18ZA",
+          "cislo": "(43)",
+          "tymy": "VKB Frýdlant n. O. - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936571"
+        },
+        {
+          "skupina": "MS-U18ZA",
+          "cislo": "(47)",
+          "tymy": "VKB Frýdlant n. O. - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936575"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(39)",
+          "tymy": "ŠSK Bílovec - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937017"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cislo": "(42)",
+          "tymy": "ŠSK Bílovec - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937020"
+        }
+      ]
     }
   ],
   "past_days": [
