@@ -1,10 +1,6 @@
 {
-  "updated": "2026-10-30 00:23",
+  "updated": "2026-10-31 00:10",
   "days": [
-    {
-      "date": "2026-10-30",
-      "matches": []
-    },
     {
       "date": "2026-10-31",
       "matches": []
@@ -76,6 +72,59 @@
           "stav": "-",
           "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=937020"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "matches": [
+        {
+          "skupina": "MS-U16Z-T2C",
+          "cislo": "(1)",
+          "tymy": "TJ Ostrava \"B\" - TJ Sokol Vratimov \"A\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956393"
+        },
+        {
+          "skupina": "MS-U16Z-T2C",
+          "cislo": "(4)",
+          "tymy": "TJ Frenštát p. R. \"A\" - TJ Sokol Vratimov \"A\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956396"
+        },
+        {
+          "skupina": "MS-U16Z-T2C",
+          "cislo": "(5)",
+          "tymy": "Volejbal Ostrava - TJ Sokol Vratimov \"A\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956397"
+        },
+        {
+          "skupina": "MS-U16Z-T2F",
+          "cislo": "(1)",
+          "tymy": "VK Kylešovice - TJ Sokol Vratimov \"B\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956375"
+        },
+        {
+          "skupina": "MS-U16Z-T2F",
+          "cislo": "(4)",
+          "tymy": "VO Slezská Orlice - TJ Sokol Vratimov \"B\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956378"
+        },
+        {
+          "skupina": "MS-U16Z-T2F",
+          "cislo": "(6)",
+          "tymy": "TJ Sokol Vratimov \"B\" - TJ Hlučín \"C\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956380"
         }
       ]
     }
