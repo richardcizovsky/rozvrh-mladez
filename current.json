@@ -1,10 +1,6 @@
 {
-  "updated": "2026-10-31 00:10",
+  "updated": "2026-11-01 00:11",
   "days": [
-    {
-      "date": "2026-10-31",
-      "matches": []
-    },
     {
       "date": "2026-11-01",
       "matches": []
@@ -127,6 +123,10 @@
           "href": "https://ezapis.cvf.cz/online/view.php?match=956380"
         }
       ]
+    },
+    {
+      "date": "2026-11-09",
+      "matches": []
     }
   ],
   "past_days": [
