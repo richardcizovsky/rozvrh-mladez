@@ -1387,7 +1387,7 @@
                 "homePosition": 7,
                 "match": 52,
                 "matchId": 936580,
-                "matchStart": "2026-11-21T10:00:00+01:00",
+                "matchStart": "2026-11-21T09:00:00+01:00",
                 "note": "",
                 "result": "",
                 "round": 13,
@@ -1491,7 +1491,7 @@
                 "homePosition": 7,
                 "match": 56,
                 "matchId": 936584,
-                "matchStart": "2026-11-21T14:00:00+01:00",
+                "matchStart": "2026-11-21T12:00:00+01:00",
                 "note": "",
                 "result": "",
                 "round": 14,
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-10-27T12:00+01:00"
+  "updated": "2026-11-02T09:49+01:00"
 }
