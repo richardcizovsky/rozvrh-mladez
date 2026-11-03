@@ -67,8 +67,8 @@
   .team-link::after { content: " →"; display: inline-block; transition: transform .15s; }
   .team-link:hover, .team-link:focus-visible { background: #1a5fb4; color: #fff; }
   .team-link:hover::after { transform: translateX(3px); }
-  .team-comp { color: #555; font-size: 0.85em; }
-  .team-count { color: #777; font-size: 0.8em; margin-left: auto; }
+  .team-comp { color: #555; font-size: 0.85em; flex-basis: 100%; }
+  .team-count { color: #777; font-size: 0.8em; }
   .empty { padding: 12px 20px; color: #777; border-top: 1px solid #e0e0e0; }
   footer { margin-top: 40px; text-align: center; color: #777; font-size: .9em; }
   html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
@@ -147,8 +147,8 @@
       const href = `historie-tym.html?${new URLSearchParams({ sezona: code, id: t.id })}`;
       ul.append(el("li", {},
         el("a", { class: "team-link", href }, teamLabel(t, all)),
-        comp ? el("span", { class: "team-comp" }, comp) : null,
-        n ? el("span", { class: "team-count" }, `soupiska: ${n}`) : null));
+        n ? el("span", { class: "team-count" }, `soupiska: ${n}`) : null,
+        comp ? el("span", { class: "team-comp" }, comp) : null));
     }
     d.append(ul);
     return d;
