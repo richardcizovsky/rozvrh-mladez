@@ -135,6 +135,8 @@
   const PARAMS = new URLSearchParams(location.search);
   const SEASON_CODE = /^\d{6}$/.test(PARAMS.get("sezona") || "") ? PARAMS.get("sezona") : "";
   const SEASON_NAME = SEASON_CODE ? `${SEASON_CODE.slice(0, 4)}/${SEASON_CODE.slice(4)}` : "";
+  // Odkazy zápasů na eZápis jen od sezóny 2025/26 (starší zápisy na eZápisu nejsou)
+  const EZAPIS_LINKS = SEASON_CODE >= "202526";
 
   // Pomocná funkce pro bezpečné vytváření prvků (žádné vkládání HTML z dat)
   function el(tag, attrs, ...children) {
@@ -301,7 +303,7 @@
         tbody.append(el("tr", { class: "date-header" }, el("th", {}, dayLabel)));
       }
       const label = `${m.homeName || "?"} – ${m.guestName || "?"}`;
-      const teams = m.matchId
+      const teams = m.matchId && EZAPIS_LINKS
         ? el("a", {
             href: "https://ezapis.cvf.cz/online/view.php?match=" + encodeURIComponent(m.matchId),
             target: "_blank", rel: "noopener noreferrer"
