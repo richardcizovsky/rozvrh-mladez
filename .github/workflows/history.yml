@@ -1,0 +1,40 @@
+name: Stažení historie týmů z CVF API
+on:
+  # Historická data se nemění, spouští se jen ručně
+  workflow_dispatch:
+    inputs:
+      seasons:
+        description: "Sezóny oddělené mezerou (např. 2024/25 2023/24); prázdné = 2025/26 až 2022/23"
+        required: false
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: current-json
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Stáhnout historii týmů
+        env:
+          API_USERNAME: ${{ secrets.API_USERNAME }}
+          API_PASSWORD: ${{ secrets.API_PASSWORD }}
+          SEASONS: ${{ github.event.inputs.seasons }}
+        run: python scripts/fetch_history.py $SEASONS
+      - name: Commit history*.json
+        run: |
+          if [ -n "$(git status --porcelain -- 'history*.json')" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add history*.json
+            git commit -m "Aktualizace historie týmů"
+            git pull --rebase
+            git push
+          fi
+
+

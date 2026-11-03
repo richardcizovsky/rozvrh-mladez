@@ -1,0 +1,4079 @@
+{
+  "collection": [
+    {
+      "ball": "Gala",
+      "clubId": 10000165,
+      "code": "",
+      "competitions": [
+        {
+          "collection": [
+            {
+              "account": 80,
+              "application": true,
+              "category": "U14Z",
+              "certification": 0,
+              "code": "MS-U14Z",
+              "competitionCategory": "Krajská",
+              "competitionSortType": "MS26",
+              "endDate": "2023-01-31T00:00:00+01:00",
+              "id": 17402,
+              "lpd": 300,
+              "master": true,
+              "name": "Krajský přebor Moravskoslezského kraje dívek U14",
+              "parentId": 15026,
+              "publicGroupCount": 29,
+              "region": "Moravskoslezský",
+              "regionalCategory": "Krajský přebor U14",
+              "season": "2022/23",
+              "showOnWeb": true,
+              "termDate": "2023-01-31T00:00:00+01:00",
+              "type": "C",
+              "volleyId": 0
+            }
+          ],
+          "metaData": {
+            "count": 20,
+            "sort": null,
+            "start": null,
+            "total": 1
+          }
+        }
+      ],
+      "field": "Sokolovna Sokolská 290 Vratimov ",
+      "id": 79938,
+      "leagueGroups": [
+        {
+          "competitionId": 17402,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2022/23",
+          "groupEndDate": "2023-04-01T00:00:00+02:00",
+          "groupId": 19530,
+          "groupName": "KP Moravskoslezského kraje dívek U14",
+          "groupStartDate": "2022-09-17T00:00:00+02:00",
+          "poradatel": "termíny turnajů: KV: 1.10., T1: 12.11., T2: 10.12., 2022  T3: 7.1., T4: 4.2., T5: 4.3., T6: 1.4. 2023, MČR 1.část 24. - 26. 3. 2023",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [],
+            "showHallColumn": true
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Školní sportovní klub Bílovec,z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "116"
+                  }
+                ],
+                "error": null,
+                "teamId": 79934
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní volejbalový klub Nový Jičín,z.s. A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "112"
+                  }
+                ],
+                "error": null,
+                "teamId": 79930
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VK Raškovice"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "95"
+                  }
+                ],
+                "error": null,
+                "teamId": 79925
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Klub volejbalu Kopřivnice, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "92"
+                  }
+                ],
+                "error": null,
+                "teamId": 79924
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "5."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Volejbalový klub Kylešovice, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "84"
+                  }
+                ],
+                "error": null,
+                "teamId": 79936
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "6."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Volejbalová akademie mládeže Havířov, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "76"
+                  }
+                ],
+                "error": null,
+                "teamId": 79935
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "7."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VKB Frýdlant n.O."
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "71"
+                  }
+                ],
+                "error": null,
+                "teamId": 79933
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "8."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VO Slezská Orlice, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "69"
+                  }
+                ],
+                "error": null,
+                "teamId": 79937
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "9."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VK Polanka nad Odrou, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "56"
+                  }
+                ],
+                "error": null,
+                "teamId": 79926
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "10."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VK Karviná, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "53"
+                  }
+                ],
+                "error": null,
+                "teamId": 81025
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "11."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní volejbalový klub Nový Jičín,z.s. B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "46"
+                  }
+                ],
+                "error": null,
+                "teamId": 79929
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "12."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Frenštát pod Radhoštěm, spolek"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "43"
+                  }
+                ],
+                "error": null,
+                "teamId": 79939
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "13."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní volejbalový klub Nový Jičín, z.s. C"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "42"
+                  }
+                ],
+                "error": null,
+                "teamId": 80717
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "14."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "41"
+                  }
+                ],
+                "error": null,
+                "teamId": 79928
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "15."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "30"
+                  }
+                ],
+                "error": null,
+                "teamId": 79927
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "16."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Hlučín, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "4"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "25"
+                  }
+                ],
+                "error": null,
+                "teamId": 81386
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "17."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "14"
+                  }
+                ],
+                "error": null,
+                "teamId": 79932
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "18."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná Jednota Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "11"
+                  }
+                ],
+                "error": null,
+                "teamId": 79938
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "19."
+                  },
+                  {
+                    "column": 1,
+                    "value": "SVK Nový Jičín, z.s. \"D\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "4"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "8"
+                  }
+                ],
+                "error": null,
+                "teamId": 81389
+              }
+            ]
+          },
+          "teamNumberInGroup": 16
+        },
+        {
+          "competitionId": 17402,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2022/23",
+          "groupEndDate": "2022-10-02T00:00:00+02:00",
+          "groupId": 19966,
+          "groupName": "KVALIFIKAČNÍ TURNAJ U14 DÍVKY Sk. D",
+          "groupStartDate": "2022-10-01T00:00:00+02:00",
+          "poradatel": "Termín: 1. 10. 2022, Pořadatel: VK Polanka nad Odrou, Sportovní hala Heleny Salichové (3 kurty)",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sportovní hala - Heleny Salichové 1275 Ostrava - Polanka nad Odrou"
+                },
+                "homeId": 79930,
+                "homeName": "SVK Nový Jičín A",
+                "homePosition": 1,
+                "match": 1,
+                "matchId": 748576,
+                "matchStart": "2022-10-01T09:00:00+02:00",
+                "note": "",
+                "result": "2:0 (7,6)",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79926,
+                "guestName": "VK Polanka nad Odrou",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sportovní hala - Heleny Salichové 1275 Ostrava - Polanka nad Odrou"
+                },
+                "homeId": 79924,
+                "homeName": "KV Kopřivnice,",
+                "homePosition": 2,
+                "match": 2,
+                "matchId": 748577,
+                "matchStart": "2022-10-01T10:30:00+02:00",
+                "note": "",
+                "result": "2:0 (14,23)",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79926,
+                "guestName": "VK Polanka nad Odrou",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sportovní hala - Heleny Salichové 1275 Ostrava - Polanka nad Odrou"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 4,
+                "match": 3,
+                "matchId": 748578,
+                "matchStart": "2022-10-01T12:00:00+02:00",
+                "note": "",
+                "result": "0:2 (-9,-18)",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79924,
+                "guestName": "KV Kopřivnice,",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sportovní hala - Heleny Salichové 1275 Ostrava - Polanka nad Odrou"
+                },
+                "homeId": 79930,
+                "homeName": "SVK Nový Jičín A",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 748579,
+                "matchStart": "2022-10-01T12:00:00+02:00",
+                "note": "",
+                "result": "2:0 (23,8)",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sportovní hala - Heleny Salichové 1275 Ostrava - Polanka nad Odrou"
+                },
+                "homeId": 79924,
+                "homeName": "KV Kopřivnice,",
+                "homePosition": 2,
+                "match": 5,
+                "matchId": 748580,
+                "matchStart": "2022-10-01T13:30:00+02:00",
+                "note": "",
+                "result": "2:0 (12,21)",
+                "round": 5,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79930,
+                "guestName": "SVK Nový Jičín A",
+                "guestPosition": 1,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sportovní hala - Heleny Salichové 1275 Ostrava - Polanka nad Odrou"
+                },
+                "homeId": 79926,
+                "homeName": "VK Polanka nad Odrou",
+                "homePosition": 3,
+                "match": 6,
+                "matchId": 748581,
+                "matchStart": "2022-10-01T13:30:00+02:00",
+                "note": "",
+                "result": "0:2 (-8,-14)",
+                "round": 6,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
+            "showHallColumn": false
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní volejbalový klub Nový Jičín,z.s. A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "3"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "6:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "150:66"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 79930
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Klub volejbalu Kopřivnice, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "4:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "131:120"
+                  },
+                  {
+                    "column": 10,
+                    "value": "6"
+                  }
+                ],
+                "error": null,
+                "teamId": 79924
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VK Polanka nad Odrou, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:4"
+                  },
+                  {
+                    "column": 9,
+                    "value": "109:127"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 79926
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná Jednota Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "3"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:6"
+                  },
+                  {
+                    "column": 9,
+                    "value": "73:150"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 79938
+              }
+            ]
+          },
+          "teamNumberInGroup": 4
+        },
+        {
+          "competitionId": 17402,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2022/23",
+          "groupEndDate": "2022-11-13T00:00:00+01:00",
+          "groupId": 20099,
+          "groupName": "PRVNÍ KOLO SOUTĚŽE U14, DÍVKY, SKUPINA D",
+          "groupStartDate": "2022-11-12T00:00:00+01:00",
+          "poradatel": "Termín: 12.11.2022; Pořadatel: SVK Nový Jičín, tělocvična Msgr. Šrámka (1 kurt)",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 646,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Tělocvična Msgr. Šrámka - Msgr. Šrámka 1105 Nový Jičín"
+                },
+                "homeId": 81025,
+                "homeName": "VK Karviná, z.s.",
+                "homePosition": 1,
+                "match": 1,
+                "matchId": 754449,
+                "matchStart": "2022-11-12T09:00:00+01:00",
+                "note": "",
+                "result": "2:1 (9,-21,7)",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 80717,
+                "guestName": "SVK Nový Jičín C",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 646,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Tělocvična Msgr. Šrámka - Msgr. Šrámka 1105 Nový Jičín"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 2,
+                "match": 2,
+                "matchId": 754450,
+                "matchStart": "2022-11-12T10:00:00+01:00",
+                "note": "",
+                "result": "0:2 (-6,-13)",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 80717,
+                "guestName": "SVK Nový Jičín C",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 646,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Tělocvična Msgr. Šrámka - Msgr. Šrámka 1105 Nový Jičín"
+                },
+                "homeId": 79932,
+                "homeName": "TJ Ostrava",
+                "homePosition": 4,
+                "match": 3,
+                "matchId": 754451,
+                "matchStart": "2022-11-12T11:00:00+01:00",
+                "note": "",
+                "result": "0:2 (-12,-15)",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 646,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Tělocvična Msgr. Šrámka - Msgr. Šrámka 1105 Nový Jičín"
+                },
+                "homeId": 81025,
+                "homeName": "VK Karviná, z.s.",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 754452,
+                "matchStart": "2022-11-12T12:00:00+01:00",
+                "note": "",
+                "result": "2:0 (20,9)",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 646,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Tělocvična Msgr. Šrámka - Msgr. Šrámka 1105 Nový Jičín"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 2,
+                "match": 5,
+                "matchId": 754453,
+                "matchStart": "2022-11-12T13:00:00+01:00",
+                "note": "",
+                "result": "2:0 (21,18)",
+                "round": 5,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81025,
+                "guestName": "VK Karviná, z.s.",
+                "guestPosition": 1,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 646,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Tělocvična Msgr. Šrámka - Msgr. Šrámka 1105 Nový Jičín"
+                },
+                "homeId": 80717,
+                "homeName": "SVK Nový Jičín C",
+                "homePosition": 3,
+                "match": 6,
+                "matchId": 754454,
+                "matchStart": "2022-11-12T14:00:00+01:00",
+                "note": "",
+                "result": "0:2 (-13,-24)",
+                "round": 6,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
+            "showHallColumn": false
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VK Karviná, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "6:1"
+                  },
+                  {
+                    "column": 9,
+                    "value": "162:107"
+                  },
+                  {
+                    "column": 10,
+                    "value": "8"
+                  }
+                ],
+                "error": null,
+                "teamId": 81025
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní volejbalový klub Nový Jičín, z.s. C"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "4:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "137:97"
+                  },
+                  {
+                    "column": 10,
+                    "value": "6"
+                  }
+                ],
+                "error": null,
+                "teamId": 80717
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná Jednota Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:4"
+                  },
+                  {
+                    "column": 9,
+                    "value": "98:139"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 79938
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "1:6"
+                  },
+                  {
+                    "column": 9,
+                    "value": "107:161"
+                  },
+                  {
+                    "column": 10,
+                    "value": "1"
+                  }
+                ],
+                "error": null,
+                "teamId": 79932
+              }
+            ]
+          },
+          "teamNumberInGroup": 2
+        },
+        {
+          "competitionId": 17402,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2022/23",
+          "groupEndDate": "2022-12-11T00:00:00+01:00",
+          "groupId": 20322,
+          "groupName": "DRUHÉ KOLO SOUTĚŽE U14, DÍVKY, SKUPINA D",
+          "groupStartDate": "2022-12-10T00:00:00+01:00",
+          "poradatel": "Termín: 10.12.2022, Pořadatel: TJ Sokol Frýdek-Místek, 11. ZŠ (2 kurty)",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79928,
+                "homeName": "TJ Sokol Frýdek - Místek A",
+                "homePosition": 1,
+                "match": 1,
+                "matchId": 755609,
+                "matchStart": "2022-12-10T09:00:00+01:00",
+                "note": "",
+                "result": "2:1 (14,-17,11)",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79927,
+                "homeName": "TJ Sokol Frýdek - Místek B",
+                "homePosition": 2,
+                "match": 2,
+                "matchId": 755610,
+                "matchStart": "2022-12-10T09:00:00+01:00",
+                "note": "",
+                "result": "2:0 (8,11)",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79932,
+                "homeName": "TJ Ostrava",
+                "homePosition": 4,
+                "match": 3,
+                "matchId": 755611,
+                "matchStart": "2022-12-10T10:30:00+01:00",
+                "note": "",
+                "result": "2:1 (-15,11,8)",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79927,
+                "guestName": "TJ Sokol Frýdek - Místek B",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79928,
+                "homeName": "TJ Sokol Frýdek - Místek A",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 755612,
+                "matchStart": "2022-12-10T10:30:00+01:00",
+                "note": "",
+                "result": "2:1 (-20,26,13)",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79927,
+                "homeName": "TJ Sokol Frýdek - Místek B",
+                "homePosition": 2,
+                "match": 5,
+                "matchId": 755613,
+                "matchStart": "2022-12-10T12:00:00+01:00",
+                "note": "",
+                "result": "2:0 (22,14)",
+                "round": 5,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79928,
+                "guestName": "TJ Sokol Frýdek - Místek A",
+                "guestPosition": 1,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 3,
+                "match": 6,
+                "matchId": 755614,
+                "matchStart": "2022-12-10T12:00:00+01:00",
+                "note": "",
+                "result": "0:2 (-20,-18)",
+                "round": 6,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
+            "showHallColumn": false
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "2"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "6:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "170:152"
+                  },
+                  {
+                    "column": 10,
+                    "value": "7"
+                  }
+                ],
+                "error": null,
+                "teamId": 79928
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "5:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "164:118"
+                  },
+                  {
+                    "column": 10,
+                    "value": "7"
+                  }
+                ],
+                "error": null,
+                "teamId": 79927
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "3:5"
+                  },
+                  {
+                    "column": 9,
+                    "value": "141:151"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 79932
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná Jednota Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "1:6"
+                  },
+                  {
+                    "column": 9,
+                    "value": "101:155"
+                  },
+                  {
+                    "column": 10,
+                    "value": "1"
+                  }
+                ],
+                "error": null,
+                "teamId": 79938
+              }
+            ]
+          },
+          "teamNumberInGroup": 3
+        },
+        {
+          "competitionId": 17402,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2022/23",
+          "groupEndDate": "2023-01-08T00:00:00+01:00",
+          "groupId": 20585,
+          "groupName": "TŘETÍ KOLO SOUTĚŽE U14, DÍVKY, SKUPINA D",
+          "groupStartDate": "2023-01-07T00:00:00+01:00",
+          "poradatel": "Termín: 7.1.2023; Pořadatel: TJ Sokol Vratimov (1 kurt)",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 410,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sokolovna - Sokolská 290 Vratimov"
+                },
+                "homeId": 80717,
+                "homeName": "SVK Nový Jičín C",
+                "homePosition": 1,
+                "match": 1,
+                "matchId": 758139,
+                "matchStart": "2023-01-07T09:00:00+01:00",
+                "note": "",
+                "result": "2:0 (10,8)",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81389,
+                "guestName": "SVK Nový Jičín \"D\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 410,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sokolovna - Sokolská 290 Vratimov"
+                },
+                "homeId": 81386,
+                "homeName": "TJ Hlučín",
+                "homePosition": 3,
+                "match": 2,
+                "matchId": 758140,
+                "matchStart": "2023-01-07T10:00:00+01:00",
+                "note": "",
+                "result": "2:0 (20,17)",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 410,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sokolovna - Sokolská 290 Vratimov"
+                },
+                "homeId": 81386,
+                "homeName": "TJ Hlučín",
+                "homePosition": 3,
+                "match": 3,
+                "matchId": 758141,
+                "matchStart": "2023-01-07T11:00:00+01:00",
+                "note": "",
+                "result": "2:0 (13,10)",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81389,
+                "guestName": "SVK Nový Jičín \"D\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 410,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sokolovna - Sokolská 290 Vratimov"
+                },
+                "homeId": 80717,
+                "homeName": "SVK Nový Jičín C",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 758142,
+                "matchStart": "2023-01-07T12:00:00+01:00",
+                "note": "",
+                "result": "2:0 (22,11)",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81386,
+                "guestName": "TJ Hlučín",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 410,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sokolovna - Sokolská 290 Vratimov"
+                },
+                "homeId": 80717,
+                "homeName": "SVK Nový Jičín C",
+                "homePosition": 1,
+                "match": 5,
+                "matchId": 758143,
+                "matchStart": "2023-01-07T13:00:00+01:00",
+                "note": "",
+                "result": "0:2 (-18,-19)",
+                "round": 5,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 410,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Sokolovna - Sokolská 290 Vratimov"
+                },
+                "homeId": 81389,
+                "homeName": "SVK Nový Jičín \"D\"",
+                "homePosition": 4,
+                "match": 6,
+                "matchId": 758144,
+                "matchStart": "2023-01-07T14:00:00+01:00",
+                "note": "",
+                "result": "1:2 (15,-23,-9)",
+                "round": 6,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
+            "showHallColumn": false
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Hlučín, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "3"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "6:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "150:97"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 81386
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní volejbalový klub Nový Jičín, z.s. C"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "4:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "137:101"
+                  },
+                  {
+                    "column": 10,
+                    "value": "6"
+                  }
+                ],
+                "error": null,
+                "teamId": 80717
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná Jednota Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:5"
+                  },
+                  {
+                    "column": 9,
+                    "value": "96:157"
+                  },
+                  {
+                    "column": 10,
+                    "value": "2"
+                  }
+                ],
+                "error": null,
+                "teamId": 79938
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "SVK Nový Jičín, z.s. \"D\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "1:6"
+                  },
+                  {
+                    "column": 9,
+                    "value": "127:155"
+                  },
+                  {
+                    "column": 10,
+                    "value": "1"
+                  }
+                ],
+                "error": null,
+                "teamId": 81389
+              }
+            ]
+          },
+          "teamNumberInGroup": 2
+        },
+        {
+          "competitionId": 17402,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2022/23",
+          "groupEndDate": "2023-02-05T00:00:00+01:00",
+          "groupId": 20797,
+          "groupName": "ČTVRTÉ KOLO SOUTĚŽE U14, DÍVKY, SKUPINA D",
+          "groupStartDate": "2023-02-04T00:00:00+01:00",
+          "poradatel": "Termín: 4.2.2023; Pořadatel: TJ Sokol Frýdek-Místek, 11. ZŠ (2 kurty)",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79928,
+                "homeName": "TJ Sokol Frýdek - Místek A",
+                "homePosition": 1,
+                "match": 1,
+                "matchId": 761604,
+                "matchStart": "2023-02-04T09:00:00+01:00",
+                "note": "",
+                "result": "2:1 (-12,20,14)",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81389,
+                "guestName": "SVK Nový Jičín \"D\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 3,
+                "match": 2,
+                "matchId": 761605,
+                "matchStart": "2023-02-04T09:00:00+01:00",
+                "note": "",
+                "result": "2:1 (-24,20,13)",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 3,
+                "match": 3,
+                "matchId": 761606,
+                "matchStart": "2023-02-04T10:30:00+01:00",
+                "note": "",
+                "result": "0:2 (-18,-17)",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81389,
+                "guestName": "SVK Nový Jičín \"D\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79928,
+                "homeName": "TJ Sokol Frýdek - Místek A",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 761607,
+                "matchStart": "2023-02-04T10:30:00+01:00",
+                "note": "",
+                "result": "2:0 (20,11)",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79928,
+                "homeName": "TJ Sokol Frýdek - Místek A",
+                "homePosition": 1,
+                "match": 5,
+                "matchId": 761608,
+                "matchStart": "2023-02-04T12:00:00+01:00",
+                "note": "",
+                "result": "2:0 (15,9)",
+                "round": 5,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 81389,
+                "homeName": "SVK Nový Jičín \"D\"",
+                "homePosition": 4,
+                "match": 6,
+                "matchId": 761609,
+                "matchStart": "2023-02-04T12:00:00+01:00",
+                "note": "",
+                "result": "0:2 (-19,-16)",
+                "round": 6,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
+            "showHallColumn": false
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "6:1"
+                  },
+                  {
+                    "column": 9,
+                    "value": "153:114"
+                  },
+                  {
+                    "column": 10,
+                    "value": "8"
+                  }
+                ],
+                "error": null,
+                "teamId": 79928
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "5:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "159:123"
+                  },
+                  {
+                    "column": 10,
+                    "value": "7"
+                  }
+                ],
+                "error": null,
+                "teamId": 79932
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná Jednota Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:5"
+                  },
+                  {
+                    "column": 9,
+                    "value": "123:159"
+                  },
+                  {
+                    "column": 10,
+                    "value": "2"
+                  }
+                ],
+                "error": null,
+                "teamId": 79938
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "SVK Nový Jičín, z.s. \"D\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "1:6"
+                  },
+                  {
+                    "column": 9,
+                    "value": "125:164"
+                  },
+                  {
+                    "column": 10,
+                    "value": "1"
+                  }
+                ],
+                "error": null,
+                "teamId": 81389
+              }
+            ]
+          },
+          "teamNumberInGroup": 3
+        },
+        {
+          "competitionId": 17402,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2022/23",
+          "groupEndDate": "2023-03-05T00:00:00+01:00",
+          "groupId": 20942,
+          "groupName": "PÁTÉ KOLO SOUTĚŽE U14, DÍVKY, SKUPINA D",
+          "groupStartDate": "2023-03-04T00:00:00+01:00",
+          "poradatel": "Termín: 4.3.2023; Pořadatel: TJ Sokol Frýdek-Místek, 11.ZŠ (2 kurty)",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79927,
+                "homeName": "TJ Sokol Frýdek - Místek B",
+                "homePosition": 1,
+                "match": 1,
+                "matchId": 764171,
+                "matchStart": "2023-03-04T09:00:00+01:00",
+                "note": "",
+                "result": "2:0 (14,21)",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81389,
+                "guestName": "SVK Nový Jičín \"D\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 3,
+                "match": 2,
+                "matchId": 764172,
+                "matchStart": "2023-03-04T09:00:00+01:00",
+                "note": "",
+                "result": "0:2 (-16,-12)",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 3,
+                "match": 3,
+                "matchId": 764173,
+                "matchStart": "2023-03-04T10:30:00+01:00",
+                "note": "",
+                "result": "2:0 (23,20)",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81389,
+                "guestName": "SVK Nový Jičín \"D\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79927,
+                "homeName": "TJ Sokol Frýdek - Místek B",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 764174,
+                "matchStart": "2023-03-04T10:30:00+01:00",
+                "note": "",
+                "result": "2:0 (21,16)",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 79927,
+                "homeName": "TJ Sokol Frýdek - Místek B",
+                "homePosition": 1,
+                "match": 5,
+                "matchId": 764175,
+                "matchStart": "2023-03-04T12:00:00+01:00",
+                "note": "",
+                "result": "2:0 (16,14)",
+                "round": 5,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 117,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "tělocvična 11.ZŠ Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 81389,
+                "homeName": "SVK Nový Jičín \"D\"",
+                "homePosition": 4,
+                "match": 6,
+                "matchId": 764176,
+                "matchStart": "2023-03-04T12:00:00+01:00",
+                "note": "",
+                "result": "2:0 (22,25)",
+                "round": 6,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
+            "showHallColumn": false
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "3"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "6:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "150:102"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 79927
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "SVK Nový Jičín, z.s. \"D\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "4:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "139:125"
+                  },
+                  {
+                    "column": 10,
+                    "value": "6"
+                  }
+                ],
+                "error": null,
+                "teamId": 81389
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná Jednota Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:4"
+                  },
+                  {
+                    "column": 9,
+                    "value": "108:143"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 79938
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "3"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:6"
+                  },
+                  {
+                    "column": 9,
+                    "value": "125:152"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 79932
+              }
+            ]
+          },
+          "teamNumberInGroup": 3
+        },
+        {
+          "competitionId": 17402,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2022/23",
+          "groupEndDate": "2023-04-02T00:00:00+02:00",
+          "groupId": 21141,
+          "groupName": "ŠESTÉ KOLO SOUTĚŽE U14, DÍVKY, SKUPINA D",
+          "groupStartDate": "2023-04-01T00:00:00+02:00",
+          "poradatel": "Termín: 1.4.2023; Pořadatel: SVK Nový Jičín , hala ABC (1 kurt)",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [
+              {
+                "guestId": 81389,
+                "guestName": "SVK Nový Jičín \"D\"",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 79939,
+                "homeName": "TJ Frenštát p. Radhoštěm",
+                "homePosition": 1,
+                "match": 1,
+                "matchId": 765958,
+                "matchStart": "2023-04-01T09:00:00+02:00",
+                "note": "",
+                "result": "2:0 (19,21)",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 3,
+                "match": 2,
+                "matchId": 765959,
+                "matchStart": "2023-04-01T10:00:00+02:00",
+                "note": "",
+                "result": "2:0 (18,12)",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81389,
+                "guestName": "SVK Nový Jičín \"D\"",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 79938,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 3,
+                "match": 3,
+                "matchId": 765960,
+                "matchStart": "2023-04-01T11:00:00+02:00",
+                "note": "",
+                "result": "0:2 (-13,-19)",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79932,
+                "guestName": "TJ Ostrava",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 79939,
+                "homeName": "TJ Frenštát p. Radhoštěm",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 765961,
+                "matchStart": "2023-04-01T12:00:00+02:00",
+                "note": "",
+                "result": "2:0 (10,7)",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 79938,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 79939,
+                "homeName": "TJ Frenštát p. Radhoštěm",
+                "homePosition": 1,
+                "match": 5,
+                "matchId": 765962,
+                "matchStart": "2023-04-01T13:00:00+02:00",
+                "note": "",
+                "result": "2:0 (9,11)",
+                "round": 5,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 81389,
+                "guestName": "SVK Nový Jičín \"D\"",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 79932,
+                "homeName": "TJ Ostrava",
+                "homePosition": 4,
+                "match": 6,
+                "matchId": 765963,
+                "matchStart": "2023-04-01T14:00:00+02:00",
+                "note": "",
+                "result": "0:2 (-20,-18)",
+                "round": 6,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
+            "showHallColumn": false
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Frenštát pod Radhoštěm, spolek"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "3"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "6:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "150:77"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 79939
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "SVK Nový Jičín, z.s. \"D\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "4:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "140:120"
+                  },
+                  {
+                    "column": 10,
+                    "value": "6"
+                  }
+                ],
+                "error": null,
+                "teamId": 81389
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná Jednota Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:4"
+                  },
+                  {
+                    "column": 9,
+                    "value": "102:130"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 79938
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "3"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:6"
+                  },
+                  {
+                    "column": 9,
+                    "value": "85:150"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 79932
+              }
+            ]
+          },
+          "teamNumberInGroup": 3
+        }
+      ],
+      "letter": "A",
+      "name": "Tělocvičná Jednota Sokol Vratimov",
+      "national": false,
+      "place": [
+        {
+          "id": 410,
+          "name": "Sokolovna"
+        }
+      ],
+      "players": [
+        {
+          "birthMonth": 9,
+          "birthYear": 2010,
+          "firstName": "Tereza",
+          "lastName": "Bartošová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 9,
+          "birthYear": 2011,
+          "firstName": "Adéla",
+          "lastName": "Bernatíková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 2010,
+          "firstName": "Karolína",
+          "lastName": "Gvuzdová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 12,
+          "birthYear": 2013,
+          "firstName": "Valérie",
+          "lastName": "Kaločová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 4,
+          "birthYear": 2012,
+          "firstName": "Iva",
+          "lastName": "Němečková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 2,
+          "birthYear": 2010,
+          "firstName": "Tereza",
+          "lastName": "Oberhelová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 11,
+          "birthYear": 2011,
+          "firstName": "Sára",
+          "lastName": "Omeiri",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 10,
+          "birthYear": 2012,
+          "firstName": "Ema",
+          "lastName": "Soldánová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 3,
+          "birthYear": 2011,
+          "firstName": "Natálie",
+          "lastName": "Stašová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 5,
+          "birthYear": 2013,
+          "firstName": "Nina",
+          "lastName": "Špalková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 3,
+          "birthYear": 2012,
+          "firstName": "Klára",
+          "lastName": "Zárubová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 3,
+          "birthYear": 2011,
+          "firstName": "Valentýna",
+          "lastName": "Závadová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
+          "birthMonth": 1,
+          "birthYear": 2014,
+          "firstName": "Nikol",
+          "lastName": "Žvaková",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        }
+      ],
+      "shortName": "TJ Sokol Vratimov",
+      "vetoId": null,
+      "volleyId": 0
+    }
+  ],
+  "metaData": {
+    "count": 20,
+    "sort": null,
+    "start": null,
+    "total": 1
+  },
+  "updated": "2026-11-03T10:48+01:00"
+}

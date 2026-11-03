@@ -8,6 +8,8 @@ Static GitHub Pages site (custom domain in `CNAME`) with the training schedule a
 - `scripts/fetch_current.py`: standard library only, no dependencies. It scrapes `https://ezapis.cvf.cz/online/?search=YYYY-MM-DD` with a custom `HTMLParser` (`table.match-table`, `tr[data-href]`). It keeps only rows whose teams cell contains `FILTER = "Sokol Vratimov"`. It uses the Europe/Prague timezone. If a day fails to download, it keeps that day's old data. It rewrites the file only when the matches change, which avoids needless commits.
 - `.github/workflows/current.yml`: GitHub Actions workflow that runs the scraper every 5 minutes (and manually via `workflow_dispatch`). It commits and pushes `current.json` only when it changed.
 - `sitemap.xml`, `robots.txt` and `_config.yml` are SEO and Pages config.
+- `scripts/fetch_history.py` reuses `fetch_team.fetch_season()` to save past seasons (2025/26–2022/23; older seasons are empty in the API) into `historyRRRRRR.json` (e.g. `history202526.json`), same schema as `team.json`. Run manually via `.github/workflows/history.yml`.
+- `historie.html` lists past seasons (`SEASONS` array) grouped by season, then team. Team links go to the separate page `historie-tym.html?sezona=RRRRRR&id=…` (based on `tym.html`, but a standalone copy; `tym.html` is only for the current season). It loads `historyRRRRRR.json` (back link to `historie.html`, no auto-refresh, all group matches shown). When adding a season, update `SEASONS` and `fetch_history.py` together.
 
 ## Commands
 - Run the scraper: `python3 scripts/fetch_current.py`. It needs network access and writes `current.json`.

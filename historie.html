@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Historie výsledků volejbalových týmů TJ Sokol Vratimov v minulých sezónách – tabulky, zápasy a soupisky.">
+<link rel="canonical" href="https://tjsokolvratimov.cz/historie.html">
+<title>Historie – TJ Sokol Vratimov</title>
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .container { width: 100%; max-width: 950px; }
+  .header { text-align: center; margin-bottom: 16px; }
+  .header-top { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .header img { width: 36px; height: 36px; object-fit: contain; flex: none; }
+  h1 { color: #2c3e50; margin: 0; font-size: 1.4em; line-height: 1.2; }
+  h2 { color: #2c3e50; margin: 4px 0 0; font-size: 0.9em; font-weight: normal; }
+  .back {
+    display: inline-block;
+    color: #1a5fb4;
+    text-decoration: none;
+    padding: 2px 12px;
+    border: 1px solid #1a5fb4;
+    border-radius: 999px;
+    background: #eef4fc;
+    margin-bottom: 16px;
+    transition: background .15s, color .15s;
+  }
+  .back:hover, .back:focus-visible { background: #1a5fb4; color: #fff; }
+  .back-bottom { margin: 24px 0 0; }
+  /* Sbalitelný panel sezóny (stejný vzhled jako na index.html) */
+  .partners { margin: 16px 0 0; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
+  .partners summary {
+    cursor: pointer; list-style: none; padding: 12px 20px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    color: #2c3e50; font-weight: 600; text-transform: uppercase;
+    font-size: 0.9em; letter-spacing: 0.05em; user-select: none;
+  }
+  .partners summary::-webkit-details-marker { display: none; }
+  .partners summary::after { content: '▾'; transition: transform 0.2s; }
+  .partners[open] summary::after { transform: rotate(180deg); }
+  .partners summary:hover { background-color: #f4f7f6; }
+  .partners summary small { font-weight: 400; text-transform: none; letter-spacing: 0; color: #777; font-size: 0.75em; }
+  /* Seznam týmů sezóny */
+  .teams { list-style: none; margin: 0; padding: 0; border-top: 1px solid #e0e0e0; }
+  .teams li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; padding: 12px 20px; border-bottom: 1px solid #e0e0e0; }
+  .teams li:last-child { border-bottom: none; }
+  .team-link {
+    color: #1a5fb4;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    padding: 2px 10px;
+    border: 1px solid #1a5fb4;
+    border-radius: 999px;
+    background: #eef4fc;
+    transition: background .15s, color .15s;
+  }
+  .team-link::after { content: " →"; display: inline-block; transition: transform .15s; }
+  .team-link:hover, .team-link:focus-visible { background: #1a5fb4; color: #fff; }
+  .team-link:hover::after { transform: translateX(3px); }
+  .team-comp { color: #555; font-size: 0.85em; }
+  .team-count { color: #777; font-size: 0.8em; margin-left: auto; }
+  .empty { padding: 12px 20px; color: #777; border-top: 1px solid #e0e0e0; }
+  footer { margin-top: 40px; text-align: center; color: #777; font-size: .9em; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  @media (max-width: 768px) {
+    body { margin: 10px 0; display: block; font-size: 14px; }
+    .container { padding: 0 2px; box-sizing: border-box; }
+    .partners summary { padding: 10px 12px; }
+    .teams li { padding: 10px 12px; }
+  }
+  @media (max-width: 420px) { body { font-size: 13px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="./">&larr; Zpět na hlavní stránku</a>
+  <div class="header">
+    <div class="header-top">
+      <img src="logo.png" alt="Logo TJ Sokol Vratimov">
+      <h1>Historie výsledků</h1>
+    </div>
+    <h2>Minulé sezóny – klikněte na tým pro tabulky, zápasy a soupisku</h2>
+  </div>
+  <div id="content"><p class="empty">Načítání dat...</p></div>
+  <a class="back back-bottom" href="./">&larr; Zpět na hlavní stránku</a>
+  <footer>Data: Česká volejbalová federace</footer>
+</div>
+<script>
+  // Sezóny s daty (soubory historyRRRRRR.json generuje scripts/fetch_history.py); nejnovější první
+  const SEASONS = ["202526", "202425", "202324", "202223"];
+  const seasonName = code => `${code.slice(0, 4)}/${code.slice(4)}`;
+
+  function el(tag, attrs, ...children) {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (k === "class") e.className = v; else e.setAttribute(k, v);
+    }
+    for (const c of children) {
+      if (c === null || c === undefined) continue;
+      e.append(c.nodeType ? c : document.createTextNode(String(c)));
+    }
+    return e;
+  }
+
+  // Kategorie týmu (např. U14Z) ze soutěží; názvy týmů v API jsou u všech skoro stejné
+  function teamCategory(t) {
+    for (const c of t.competitions || []) {
+      for (const x of (c && c.collection) || []) if (x.category) return x.category;
+    }
+    return "";
+  }
+  // Popisek týmu: kategorie, při více týmech stejné kategorie v sezóně i písmeno (U14Z-A, U14Z-B)
+  function teamLabel(t, all) {
+    const cat = teamCategory(t);
+    if (!cat) return t.shortName || t.name || "Tým";
+    const dup = all.filter(o => teamCategory(o) === cat).length > 1;
+    return dup && t.letter ? `${cat}-${t.letter}` : cat;
+  }
+  // Řazení podle věku (U14 < U16 < … < dospělí), pak podle písmene
+  const ageKey = t => { const m = teamCategory(t).match(/U(\d+)/i); return m ? Number(m[1]) : 999; };
+
+  function renderSeason(code, data, open) {
+    const all = (data && data.collection) || [];
+    const teams = [...all].sort((a, b) => ageKey(a) - ageKey(b) ||
+      teamLabel(a, all).localeCompare(teamLabel(b, all), "cs"));
+    const d = el("details", { class: "partners" },
+      el("summary", {}, `Sezóna ${seasonName(code)}`, el("small", {}, teams.length ? `${teams.length} týmů` : "")));
+    d.open = open;
+    if (!teams.length) {
+      d.append(el("p", { class: "empty" }, data ? "Žádné týmy" : "Data se nepodařilo načíst"));
+      return d;
+    }
+    const ul = el("ul", { class: "teams" });
+    for (const t of teams) {
+      const comp = (t.leagueGroups && t.leagueGroups[0] && t.leagueGroups[0].competitionName) || "";
+      const n = (t.players || []).length;
+      const href = `historie-tym.html?${new URLSearchParams({ sezona: code, id: t.id })}`;
+      ul.append(el("li", {},
+        el("a", { class: "team-link", href }, teamLabel(t, all)),
+        comp ? el("span", { class: "team-comp" }, comp) : null,
+        n ? el("span", { class: "team-count" }, `soupiska: ${n}`) : null));
+    }
+    d.append(ul);
+    return d;
+  }
+
+  async function init() {
+    const results = await Promise.all(SEASONS.map(async code => {
+      try {
+        const res = await fetch(`history${code}.json`);
+        return res.ok ? await res.json() : null;
+      } catch (e) { return null; }
+    }));
+    // Výchozí stav: všechny sezóny zabalené; rozbalené sezóny se zachovají po návratu ze stránky týmu
+    let saved = {};
+    try { saved = JSON.parse(sessionStorage.getItem("historyOpen") || "{}"); } catch (e) { /* ignoruj */ }
+    const blocks = SEASONS.map((code, i) => {
+      const d = renderSeason(code, results[i], saved[code] === true);
+      d.addEventListener("toggle", () => {
+        saved[code] = d.open;
+        try { sessionStorage.setItem("historyOpen", JSON.stringify(saved)); } catch (e) { /* ignoruj */ }
+      });
+      return d;
+    });
+    document.getElementById("content").replaceChildren(...blocks);
+  }
+  init();
+</script>
+</body>
+</html>
+
+
+

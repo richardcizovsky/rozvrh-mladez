@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<title>Historie týmu – TJ Sokol Vratimov</title>
+<link rel="icon" type="image/png" href="logo.png">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .container { width: 100%; max-width: 950px; }
+  .header { text-align: center; margin-bottom: 16px; }
+  .header-top { display: flex; align-items: center; justify-content: center; gap: 10px; }
+  .header img { width: 36px; height: 36px; object-fit: contain; flex: none; }
+  h1 { color: #2c3e50; margin: 0; font-size: 1.4em; line-height: 1.2; }
+  h2 { color: #2c3e50; margin: 4px 0 0; font-size: 0.9em; font-weight: normal; }
+  h3.section-title { color: #2c3e50; margin: 32px 0 10px; }
+  h4 { color: #2c3e50; margin: 18px 0 8px; }
+  a { color: #2c6fbb; }
+  .back, .cvf-link a {
+    display: inline-block;
+    color: #1a5fb4;
+    text-decoration: none;
+    padding: 2px 12px;
+    border: 1px solid #1a5fb4;
+    border-radius: 999px;
+    background: #eef4fc;
+    transition: background .15s, color .15s;
+  }
+  .back:hover, .back:focus-visible, .cvf-link a:hover, .cvf-link a:focus-visible { background: #1a5fb4; color: #fff; }
+  .cvf-link a::after { content: " →"; display: inline-block; transition: transform .15s; }
+  .cvf-link a:hover::after { transform: translateX(3px); }
+  .back { margin-bottom: 16px; }
+  .back-bottom { margin: 24px 0 0; }
+  /* Sbalitelný panel (stejný vzhled jako na index.html) */
+  .partners { margin: 16px 0 0; background: #fff; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
+  .partners summary {
+    cursor: pointer; list-style: none; padding: 12px 20px;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    color: #2c3e50; font-weight: 600; text-transform: uppercase;
+    font-size: 0.9em; letter-spacing: 0.05em; user-select: none;
+  }
+  .partners summary::-webkit-details-marker { display: none; }
+  .partners summary::after { content: '▾'; transition: transform 0.2s; }
+  .partners[open] summary::after { transform: rotate(180deg); }
+  .partners summary:hover { background-color: #f4f7f6; }
+  .partners summary small { font-weight: 400; text-transform: none; letter-spacing: 0; color: #777; font-size: 0.75em; }
+  .partners > .table-wrap, .partners > .empty, .partners > .group-header { border-top: 1px solid #e0e0e0; box-shadow: none; margin: 0; }
+  .partners table { box-shadow: none; }
+  /* Blok jedné skupiny: společný rámeček s barevným pruhem, uvnitř panely Tabulka a Zápasy */
+  .group-block { margin: 28px 0 0; padding: 0 0 12px; background: #e4ebf3; border-left: 6px solid #2c3e50; border-radius: 8px; }
+  .group-block .group-title { margin: 0; padding: 12px 20px 2px; color: #2c3e50; font-size: 0.9em; }
+  .group-block .group-date { padding: 0 20px; color: #777; font-size: 0.8em; }
+  .group-block .partners { margin: 10px 0 0; border-radius: 0 8px 8px 0; }
+  @media (max-width: 768px) {
+    body { margin: 10px 0; display: block; }
+    .container { padding: 0 2px; box-sizing: border-box; }
+  }
+  @media (max-width: 600px) {
+    .group-block { border-left-width: 3px; }
+    .group-block .group-title, .group-block .group-date { padding-left: 10px; padding-right: 10px; }
+    .group-block .partners { border-radius: 0; }
+  }
+  table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #e3e8e6; }
+  th { background: #2c3e50; color: #fff; font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  tr.me td { background: #fff6d6; font-weight: 600; }
+  .num { text-align: center; }
+  .muted { color: #777; }
+  .group-header { white-space: pre-line; margin: 8px 0 0; padding: 10px 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #555; font-size: .9em; }
+  .cvf-link { margin: 6px 0 0; font-size: .9em; }
+  td.match { padding: 10px 12px; }
+  tr.date-header th { background: #34495e; text-transform: capitalize; font-size: 1em; padding: 10px 12px; }
+  tr.date-header:not(:first-child) th { border-top: 4px solid #2c3e50; }
+  .match-when { color: #777; font-size: .85em; }
+  .match-teams { font-weight: 600; margin: 2px 0; }
+  .match-time { color: #777; font-weight: 600; font-size: 0.78em; margin-right: 4px; font-variant-numeric: tabular-nums; }
+  .match-result { font-size: 1em; }
+  .empty { padding: 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #777; }
+  .table-wrap { overflow-x: auto; }
+  footer { margin-top: 40px; text-align: center; color: #777; font-size: .9em; }
+  @media (max-width: 600px) { body { margin: 10px 0; display: block; } .container { padding: 0 2px; box-sizing: border-box; } .group-block { margin-right: 3px; } th, td { padding: 6px 8px; } }
+  /* Menší písmo na mobilech – většina velikostí je v em, takže se zmenší úměrně */
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  @media (max-width: 768px) { body { font-size: 14px; } .partners summary { padding: 10px 12px; } }
+  @media (max-width: 420px) { body { font-size: 13px; } }
+  /* Tabulka skupiny: název týmu se nikdy nezalomí, místo se šetří na číselných sloupcích */
+  table.scoreboard th, table.scoreboard td { white-space: nowrap; }
+  table.scoreboard .team { width: 100%; }
+  table.scoreboard .num { width: 1%; }
+  @media (max-width: 768px) {
+    table.scoreboard th, table.scoreboard td { padding: 6px 4px; }
+    table.scoreboard .team { padding-left: 6px; padding-right: 6px; }
+    table.scoreboard .num { font-size: 0.9em; }
+  }
+  @media (max-width: 420px) {
+    table.scoreboard th, table.scoreboard td { padding: 5px 3px; }
+    table.scoreboard .num { font-size: 0.85em; }
+  }
+  /* Zápasy: kompaktnější řádky na mobilu */
+  @media (max-width: 768px) {
+    td.match { padding: 5px 8px; line-height: 1.3; }
+    .match-teams { margin: 0; }
+    tr.date-header th { padding: 7px 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="historie.html">&larr; Zpět na historii</a>
+  <div class="header">
+    <div class="header-top">
+      <img src="logo.png" alt="Logo TJ Sokol Vratimov">
+      <h1 id="title">Načítám…</h1>
+    </div>
+    <h2 id="subtitle"></h2>
+    <p class="cvf-link" id="cvfLink"></p>
+  </div>
+  <div id="content"></div>
+  <a class="back back-bottom" href="historie.html">&larr; Zpět na historii</a>
+  <footer>Data: Česká volejbalová federace. Staženo: <span id="updated">–</span></footer>
+</div>
+<script>
+  // Stránka týmu z minulé sezóny: historie-tym.html?sezona=202425&id=85421
+  // Data jsou v historyRRRRRR.json (generuje scripts/fetch_history.py), struktura stejná jako team.json.
+  const MY_CLUB_RE = /sokol\s+vratimov/i;
+  const PARAMS = new URLSearchParams(location.search);
+  const SEASON_CODE = /^\d{6}$/.test(PARAMS.get("sezona") || "") ? PARAMS.get("sezona") : "";
+  const SEASON_NAME = SEASON_CODE ? `${SEASON_CODE.slice(0, 4)}/${SEASON_CODE.slice(4)}` : "";
+
+  // Pomocná funkce pro bezpečné vytváření prvků (žádné vkládání HTML z dat)
+  function el(tag, attrs, ...children) {
+    const e = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (k === "class") e.className = v; else e.setAttribute(k, v);
+    }
+    for (const c of children) {
+      if (c === null || c === undefined) continue;
+      e.append(c.nodeType ? c : document.createTextNode(String(c)));
+    }
+    return e;
+  }
+
+  function isMine(name) {
+    return typeof name === "string" && MY_CLUB_RE.test(name);
+  }
+
+  // Zástupný soupeř (volný los), např. "#8" – takové zápasy se nezobrazují
+  function isPlaceholder(name) {
+    return typeof name === "string" && /^\s*#\d+/.test(name);
+  }
+
+  // Kategorie týmu (např. U14Z) ze soutěží – názvy týmů v API jsou u všech skoro stejné
+  function teamCategory(t) {
+    for (const c of t.competitions || []) {
+      for (const x of (c && c.collection) || []) if (x.category) return x.category;
+    }
+    return "";
+  }
+  // Popisek týmu: kategorie, při více týmech stejné kategorie v sezóně i písmeno (stejně jako historie.html)
+  function teamLabel(t, all) {
+    const cat = teamCategory(t);
+    if (!cat) return t.shortName || t.name || "Tým";
+    const dup = all.filter(o => teamCategory(o) === cat).length > 1;
+    return dup && t.letter ? `${cat}-${t.letter}` : cat;
+  }
+
+  // Sbalitelný panel
+  function collapsible(title, ...children) {
+    return el("details", { class: "partners" }, el("summary", {}, ...(Array.isArray(title) ? title : [title])), ...children);
+  }
+
+  function renderRoster(players) {
+    const count = players && players.length ? ` (${players.length})` : "";
+    if (!players || !players.length) {
+      return collapsible("Soupiska", el("div", { class: "empty" }, "Soupiska není k dispozici."));
+    }
+    const sorted = [...players].sort((a, b) =>
+      (a.lastName || "").localeCompare(b.lastName || "", "cs") ||
+      (a.firstName || "").localeCompare(b.firstName || "", "cs"));
+    const tbody = el("tbody");
+    sorted.forEach((p, i) => {
+      const born = p.birthYear ? (p.birthMonth ? `${p.birthMonth}/${p.birthYear}` : p.birthYear) : "";
+      tbody.append(el("tr", {},
+        el("td", { class: "num" }, i + 1),
+        el("td", {}, `${p.lastName || ""} ${p.firstName || ""}`.trim()),
+        el("td", { class: "num" }, born)));
+    });
+    return collapsible("Soupiska" + count, el("div", { class: "table-wrap" }, el("table", {},
+      el("thead", {}, el("tr", {}, el("th", { class: "num" }, "#"), el("th", {}, "Jméno"), el("th", { class: "num" }, "Narození"))),
+      tbody)));
+  }
+
+  // Záhlaví skupiny (header z API) – zobrazí se jako text, nikdy jako HTML
+  function renderOrganizer(header) {
+    if (header === null || header === undefined || header === "") return null;
+    let text = "";
+    if (typeof header === "string") {
+      const doc = new DOMParser().parseFromString(header.replace(/<br\s*\/?>/gi, "\n"), "text/html");
+      text = (doc.body.textContent || "").trim();
+    } else if (Array.isArray(header)) {
+      text = header.filter(v => v !== null && typeof v !== "object").join("\n");
+    } else if (typeof header === "object") {
+      text = Object.entries(header)
+        .filter(([, v]) => v !== null && v !== "" && typeof v !== "object")
+        .map(([k, v]) => `${k}: ${v}`).join("\n");
+    } else {
+      text = String(header);
+    }
+    if (!text) return null;
+    return el("div", { class: "group-header" }, text);
+  }
+
+  // Zkrácené názvy sloupců tabulky (původní: p., družstvo, utkání, sety, míče, body)
+  const COLUMN_LABELS = {
+    "p.": "#", "družstvo": "Tým", "utkání": "Z", "sety": "S", "míče": "M", "body": "B"
+  };
+  function columnLabel(v) {
+    const key = String(v || "").trim().toLowerCase();
+    return COLUMN_LABELS[key] || v;
+  }
+
+  // Nulová hodnota v tabulce: "0", "0:0" nebo prázdná buňka
+  function isZeroValue(v) {
+    const s = String(v === null || v === undefined ? "" : v).trim();
+    return s === "" || /^0+(\s*:\s*0+)?$/.test(s);
+  }
+
+  function renderScoreboard(sb) {
+    if (!sb || !Array.isArray(sb.rows) || !sb.rows.length) {
+      return el("div", { class: "empty" }, "Tabulka není k dispozici.");
+    }
+    const cols = (sb.columns || []).slice().sort((a, b) => a.column - b.column);
+    const rows = sb.rows.map(row => (row.cells || []).slice().sort((a, b) => a.column - b.column));
+    // Je sloupec (podle čísla) ve všech řádcích nulový?
+    const colAllZero = colNo => rows.every(cells =>
+      cells.filter(c => c.column === colNo).every(c => isZeroValue(c.value)));
+    // Pořadí a název týmu jsou první dva sloupce a zobrazují se vždy
+    const keepCols = cols.slice(0, 2).map(c => c.column);
+    const statCols = cols.slice(2);
+    let visible;
+    if (statCols.every(c => colAllZero(c.column))) {
+      // Nehrálo se (všude 0 nebo 0:0): jen pořadí a název týmu
+      visible = new Set(keepCols);
+    } else {
+      // Sloupec K se skryje, pokud je ve všech řádcích nulový
+      visible = new Set(cols
+        .filter(c => !(String(c.value || "").trim().toUpperCase() === "K" && colAllZero(c.column)))
+        .map(c => c.column));
+    }
+    const shownCols = cols.filter(c => visible.has(c.column));
+    const thead = el("thead", {}, el("tr", {}, ...shownCols.map((c, i) =>
+      el("th", { class: i === 1 ? "team" : "num" }, columnLabel(c.value)))));
+    const tbody = el("tbody");
+    for (const all of rows) {
+      const cells = all.filter(c => visible.has(c.column));
+      const mine = all.some(c => isMine(c.value));
+      tbody.append(el("tr", { class: mine ? "me" : "" },
+        ...cells.map((c, i) => el("td", { class: i === 1 ? "team" : "num" }, c.value))));
+    }
+    return el("div", { class: "table-wrap" }, el("table", { class: "scoreboard" }, thead, tbody));
+  }
+
+  // V historii se zobrazují všechny zápasy skupiny, zápasy Sokola Vratimov jsou zvýrazněné
+  function getMatches(schedule) {
+    const all = (schedule && Array.isArray(schedule.responseData)) ? schedule.responseData : [];
+    return all
+      .filter(m => !isPlaceholder(m.homeName) && !isPlaceholder(m.guestName))
+      .sort((a, b) => new Date(a.matchStart) - new Date(b.matchStart));
+  }
+
+  function hallName(m) {
+    return m.hallResponse && m.hallResponse.value
+      ? String(m.hallResponse.value).replace(/\s+/g, " ").trim() : "";
+  }
+
+  const pragueOpts = { timeZone: "Europe/Prague" };
+
+  function renderMatches(list, hideHall) {
+    if (!list.length) return null;
+    const tbody = el("tbody");
+    let lastDay = null;
+    for (const m of list) {
+      const d = new Date(m.matchStart);
+      const valid = !isNaN(d);
+      // Zápasy se seskupují podle data (v pražském čase); v historii i s rokem
+      const dayKey = valid ? d.toLocaleDateString("sv-SE", pragueOpts) : "?";
+      if (dayKey !== lastDay) {
+        lastDay = dayKey;
+        const dayLabel = valid ? d.toLocaleDateString("cs-CZ", {
+          ...pragueOpts, weekday: "long", day: "numeric", month: "long", year: "numeric"
+        }) : "Bez data";
+        tbody.append(el("tr", { class: "date-header" }, el("th", {}, dayLabel)));
+      }
+      const label = `${m.homeName || "?"} – ${m.guestName || "?"}`;
+      const teams = m.matchId
+        ? el("a", {
+            href: "https://ezapis.cvf.cz/online/view.php?match=" + encodeURIComponent(m.matchId),
+            target: "_blank", rel: "noopener noreferrer"
+          }, label)
+        : label;
+      const venue = hideHall ? "" : hallName(m);
+      const time = valid ? d.toLocaleTimeString("cs-CZ", { ...pragueOpts, hour: "2-digit", minute: "2-digit" }) : "";
+      const mineMatch = isMine(m.homeName) || isMine(m.guestName);
+      // Řádky: 1. hala (jen když se liší), 2. čas + zápas, 3. výsledek
+      tbody.append(el("tr", { class: mineMatch ? "me" : "" }, el("td", { class: "match" },
+        venue ? el("div", { class: "match-when" }, venue) : null,
+        el("div", { class: "match-teams" }, time ? el("span", { class: "match-time" }, time) : null, teams),
+        m.result ? el("div", { class: "match-result" }, m.result) : null)));
+    }
+    return el("div", { class: "table-wrap" }, el("table", {}, tbody));
+  }
+
+  // Vrátí text data, pokud groupStartDate a groupEndDate připadají na stejný den (pražský čas)
+  function groupSingleDay(g) {
+    const a = new Date(g.groupStartDate), b = new Date(g.groupEndDate);
+    if (isNaN(a) || isNaN(b)) return "";
+    const key = d => d.toLocaleDateString("sv-SE", pragueOpts);
+    if (key(a) !== key(b)) return "";
+    return a.toLocaleDateString("cs-CZ", { ...pragueOpts, weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  }
+
+  function renderGroups(team) {
+    const wrap = el("div");
+    for (const g of team.leagueGroups || []) {
+      const name = g.groupName || "Skupina";
+      // Tabulka a zápasy jedné skupiny jsou vizuálně spojené do jednoho bloku s názvem skupiny
+      const block = el("section", { class: "group-block" }, el("h3", { class: "group-title" }, name));
+      // Turnaj na jeden den: začátek a konec skupiny jsou stejné, datum se zobrazí pod názvem
+      const day = groupSingleDay(g);
+      if (day) block.append(el("div", { class: "group-date" }, day));
+      block.append(collapsible("Tabulka", renderScoreboard(g.scoreboard), renderOrganizer(g.poradatel)));
+      const list = getMatches(g.schedule);
+      // Všechny zápasy ve stejné hale: hala se zobrazí jednou pod názvem skupiny (a data)
+      const halls = new Set(list.map(hallName));
+      const commonHall = list.length && halls.size === 1 ? [...halls][0] : "";
+      if (commonHall) block.insertBefore(el("div", { class: "group-date" }, commonHall), block.children[day ? 2 : 1] || null);
+      const matches = renderMatches(list, !!commonHall);
+      if (matches) block.append(collapsible("Zápasy", matches));
+      wrap.append(block);
+    }
+    return wrap;
+  }
+
+  // Historická data se nemění – načtou se jednou, bez automatického obnovování
+  async function init() {
+    const id = Number(PARAMS.get("id"));
+    const title = document.getElementById("title");
+    if (!SEASON_CODE) { title.textContent = "Neplatná sezóna"; return; }
+    try {
+      const resp = await fetch(`history${SEASON_CODE}.json`);
+      if (!resp.ok) throw new Error("HTTP " + resp.status);
+      const data = await resp.json();
+      const upd = new Date(data.updated);
+      document.getElementById("updated").textContent = isNaN(upd) ? "–" : upd.toLocaleDateString("cs-CZ", {
+        timeZone: "Europe/Prague", day: "numeric", month: "numeric", year: "numeric"
+      });
+      const all = data.collection || [];
+      const team = all.find(t => t.id === id);
+      if (!team) { title.textContent = "Tým nenalezen"; return; }
+      const label = teamLabel(team, all);
+      const main = team.leagueGroups && team.leagueGroups[0];
+      title.textContent = label;
+      document.getElementById("subtitle").textContent =
+        [`Sezóna ${SEASON_NAME}`, main && main.competitionName].filter(Boolean).join(" · ");
+      // Odkaz na tabulku hlavní skupiny na webu CVF
+      if (main && main.groupId && main.competitionId) {
+        const qs = new URLSearchParams({
+          filteredGroupId: main.groupId, competitionId: main.competitionId,
+          region: "Moravskoslezský", mode: "scoreboard"
+        });
+        document.getElementById("cvfLink").append(el("a", {
+          href: "https://www.cvf.cz/souteze/krajske-souteze?" + qs.toString(),
+          target: "_blank", rel: "noopener noreferrer"
+        }, "Tabulky a Výsledky na CVF"));
+      }
+      document.title = `${label} (${SEASON_NAME}) – Historie – TJ Sokol Vratimov`;
+      document.getElementById("content").replaceChildren(renderRoster(team.players), renderGroups(team));
+    } catch (e) {
+      title.textContent = "Data se nepodařilo načíst";
+    }
+  }
+  init();
+</script>
+</body>
+</html>
+

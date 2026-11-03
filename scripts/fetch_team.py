@@ -184,19 +184,33 @@ def clean_player(player):
     return out
 
 
-def main():
-    login = os.environ.get("API_USERNAME")
+def login():
+    """Přihlásí se do API a vrátí token (jen v paměti)."""
+    username = os.environ.get("API_USERNAME")
     password = os.environ.get("API_PASSWORD")
-    if not login or not password:
+    if not username or not password:
         die("chybí API_USERNAME nebo API_PASSWORD")
 
-    token = extract_token(request(f"{BASE}/auth/login", {"login": login, "password": password}))
+    token = extract_token(request(f"{BASE}/auth/login", {"login": username, "password": password}))
     if not token:
         die("v odpovědi na přihlášení nebyl nalezen token")
     print(f"::add-mask::{token}")  # pojistka: GitHub Actions token v logu zamaskuje
+    return token
 
-    query = urllib.parse.urlencode({"season": SEASON, "clubId": CLUB_ID})
+
+def main():
+    fetch_season(SEASON, OUT, login())
+
+
+def fetch_season(season, out, token, exclude_ids=()):
+    """Stáhne data týmů klubu pro danou sezónu a uloží je do souboru out.
+
+    exclude_ids: ID týmů, které se do výstupu nezahrnou (např. soutěže, které se nakonec nehrály).
+    """
+    query = urllib.parse.urlencode({"season": season, "clubId": CLUB_ID})
     data = strip_contacts(request(f"{BASE}/team?{query}", token=token))
+    if exclude_ids and isinstance(data.get("collection"), list):
+        data["collection"] = [t for t in data["collection"] if t.get("id") not in exclude_ids]
 
     # Pro každý tým stáhne soutěže z leagueGroups[].competitionId (každé ID se stahuje jen jednou)
     cache = {}
@@ -244,19 +258,19 @@ def main():
 
     # Čas aktualizace se zapisuje jen při skutečné změně dat (jinak by se commitovalo každou hodinu)
     old = {}
-    if OUT.exists():
+    if out.exists():
         try:
-            old = json.loads(OUT.read_text(encoding="utf-8"))
+            old = json.loads(out.read_text(encoding="utf-8"))
         except ValueError:
             old = {}
     old_updated = old.pop("updated", None)
     if old_updated and old == data:
-        print("Beze změny, nic se neukládá")
+        print(f"{out.name}: beze změny, nic se neukládá")
         return
     data["updated"] = datetime.now(ZoneInfo("Europe/Prague")).isoformat(timespec="minutes")
     new = json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-    OUT.write_text(new, encoding="utf-8")
-    print(f"Uloženo do {OUT.name}")
+    out.write_text(new, encoding="utf-8")
+    print(f"Uloženo do {out.name}")
 
 
 if __name__ == "__main__":

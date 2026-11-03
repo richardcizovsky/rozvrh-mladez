@@ -8,6 +8,11 @@ Stránka se rozvrhem tréninků a zápasy z eZapis.
 rozvrh-mladez/
 ├── index.html              # Hlavní stránka
 ├── fotogalerie.html        # Fotogalerie (samostatná stránka, fotky se nestahují s rozpisem)
+├── tym.html                # Detail týmu aktuální sezóny (team.json)
+├── historie.html           # Historie minulých sezón: sezóna → týmy
+├── historie-tym.html       # Detail týmu z minulé sezóny (?sezona=RRRRRR&id=…, data z historyRRRRRR.json)
+├── history202526.json      # Data týmů minulých sezón 2025/26 až 2022/23 (generuje fetch_history.py)
+├── …                       # history202425.json, history202324.json, history202223.json
 ├── foto/                   # Fotky ve WebP (1920 px), náhledy v foto/nahled/ (720 px)
 ├── logo.png                # Logo klubu
 ├── current.json            # Zápasy z eZapis (generuje se automaticky)
@@ -18,9 +23,12 @@ rozvrh-mladez/
 ├── .github/
 │   ├── copilot-instructions.md  # Instrukce pro Copilota
 │   └── workflows/
-│       └── current.yml     # GitHub Actions – aktualizace current.json každých 5 minut
+│       ├── current.yml     # GitHub Actions – aktualizace current.json každých 5 minut
+│       └── history.yml     # GitHub Actions – ruční stažení historie týmů (history*.json)
 └── scripts/
-    └── fetch_current.py    # Script na stažení zápasů z eZapis
+    ├── fetch_current.py    # Script na stažení zápasů z eZapis
+    ├── fetch_team.py       # Stažení dat týmů aktuální sezóny do team.json
+    └── fetch_history.py    # Stažení dat týmů minulých sezón do history*.json
 ```
 
 ## Lokální náhled stránky
@@ -155,6 +163,22 @@ Stránka `index.html`:
 - `text-size-adjust: 100%` brání tomu, aby si mobilní prohlížeč (hlavně iOS Safari) písmo sám zvětšoval
 
 Při úpravách stylů zadávej velikosti písma v `em`, aby se na mobilu správně zmenšily.
+
+## Historie minulých sezón
+
+Data: `scripts/fetch_history.py` stáhne data týmů za sezóny **2025/26 až 2022/23** (starší CVF API nevrací) ve stejné struktuře jako `team.json` do `history202526.json`, `history202425.json`, `history202324.json` a `history202223.json`. Spouští se ručně workflowem `.github/workflows/history.yml` nebo lokálně:
+
+```bash
+API_USERNAME=... API_PASSWORD=... python3 scripts/fetch_history.py            # všechny sezóny
+API_USERNAME=... API_PASSWORD=... python3 scripts/fetch_history.py 2024/25    # jen vybrané
+```
+
+Zobrazení:
+- `index.html` má blok **Historie** s odkazem na `historie.html`
+- `historie.html` seskupí týmy podle sezóny (všechny sezóny jsou ve výchozím stavu zabalené) a pak podle týmu; tým se popisuje kategorií soutěže (např. `U14Z`, při více týmech stejné kategorie `U14Z-A`, `U14Z-B`)
+- klik na tým otevře samostatnou stránku `historie-tym.html?sezona=202425&id=…` (soupiska, tabulky, všechny zápasy skupiny se zvýrazněním Vratimova); načte `historyRRRRRR.json`, odkaz Zpět vede na historii a data se automaticky neobnovují. `tym.html` pro aktuální sezónu se nemění
+- při přidání sezóny uprav pole `SEASONS` v `historie.html` a `FIRST_YEAR`/`LAST_YEAR` v `scripts/fetch_history.py`
+- týmy ze soutěží, které se nakonec nehrály, se do historie neukládají – seznam ID je v `EXCLUDE_TEAMS` ve `scripts/fetch_history.py` (2025/26: U18Z-B okresní přebor, 2024/25: U14M Letní pohár)
 
 ## Fotogalerie
 
