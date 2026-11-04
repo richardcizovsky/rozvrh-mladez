@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04 19:15",
+  "updated": "2026-11-04 21:45",
   "days": [
     {
       "date": "2026-11-04",
@@ -7,9 +7,9 @@
         {
           "skupina": "OV-Z",
           "cislo": "(19)",
-          "tymy": "TJ Sokol Svinov \"A\" - TJ Sokol Vratimov LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Sokol Svinov \"A\" - TJ Sokol Vratimov",
+          "stav": "1:3 (-23,23,-22,-24)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=943022"
         }
       ]
