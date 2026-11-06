@@ -139,6 +139,7 @@ Script je spouštěn automaticky prostřednictvím GitHub Actions každých 5 mi
 - **updated**: Čas poslední aktualizace
 - **days**: Budoucí zápasy od dnešního dne až na 8 dní dopředu (včetně prázdných dní)
 - **past_days**: Minulé zápasy z posledních 8 dní (jen dny se zápasy)
+- **cas** (u zápasu): Čas začátku z eZapis (`HH:MM`, může být prázdný); web ho použije, když termín chybí v `team.json`
 
 ## Zobrazení na webu
 

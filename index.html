@@ -799,7 +799,9 @@
               const href = esc(m.href);
 
               const firstRow = mIdx === 0;
-              const when = matchWhen(m.href, day.date, m.tymy);
+              let when = matchWhen(m.href, day.date, m.tymy);
+              // záloha: čas z eZapis (current.json), když v team.json termín chybí
+              if (m.cas && (!when || !when.when)) when = { when: m.cas, hall: when ? when.hall : '' };
               // 1. skupina + soupeři, 2. čas + hala (pokud jsou k dispozici), 3. výsledek
               html += `
                 <tr class="today-row ${firstRow ? 'match-first' : ''} ${when ? 'has-when' : ''}" data-href="${href}"><th>${esc(m.skupina)} ${esc(m.cislo)}</th><td class="match-teams" colspan="2">${esc(m.tymy)}</td></tr>`;
