@@ -1,10 +1,6 @@
 {
-  "updated": "2026-11-06 15:02",
+  "updated": "2026-11-07 00:10",
   "days": [
-    {
-      "date": "2026-11-06",
-      "matches": []
-    },
     {
       "date": "2026-11-07",
       "matches": [
@@ -173,6 +169,29 @@
           "stav": "-",
           "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=957304"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "matches": [
+        {
+          "skupina": "MS-U20ZA",
+          "cas": "10:00",
+          "cislo": "(44)",
+          "tymy": "TJ Sokol Vratimov - VO Slezská Orlice",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937022"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cas": "14:00",
+          "cislo": "(47)",
+          "tymy": "TJ Sokol Vratimov - VO Slezská Orlice",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937025"
         }
       ]
     }
