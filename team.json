@@ -1233,7 +1233,7 @@
                 "matchId": 936574,
                 "matchStart": "2026-11-07T14:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (20,24,22)",
                 "round": 12,
                 "shortNote": "",
                 "withinRange": true
@@ -1259,7 +1259,7 @@
                 "matchId": 936575,
                 "matchStart": "2026-11-07T14:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (12,23,24)",
                 "round": 12,
                 "shortNote": "",
                 "withinRange": true
@@ -1285,7 +1285,7 @@
                 "matchId": 936576,
                 "matchStart": "2026-11-07T13:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:1 (23,23,-18,23)",
                 "round": 12,
                 "shortNote": "",
                 "withinRange": true
@@ -3001,11 +3001,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "column": 3,
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "column": 4,
@@ -3025,15 +3025,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "27:1"
+                    "value": "30:1"
                   },
                   {
                     "column": 9,
-                    "value": "693:434"
+                    "value": "769:493"
                   },
                   {
                     "column": 10,
-                    "value": "27"
+                    "value": "30"
                   }
                 ],
                 "error": null,
@@ -3101,7 +3101,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "column": 3,
@@ -3117,7 +3117,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "column": 7,
@@ -3125,11 +3125,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "19:13"
+                    "value": "19:16"
                   },
                   {
                     "column": 9,
-                    "value": "711:653"
+                    "value": "770:729"
                   },
                   {
                     "column": 10,
@@ -3151,11 +3151,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "column": 3,
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "column": 4,
@@ -3175,15 +3175,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "16:16"
+                    "value": "19:17"
                   },
                   {
                     "column": 9,
-                    "value": "669:676"
+                    "value": "762:770"
                   },
                   {
                     "column": 10,
-                    "value": "14"
+                    "value": "17"
                   }
                 ],
                 "error": null,
@@ -3197,65 +3197,15 @@
                   },
                   {
                     "column": 1,
-                    "value": "TJ Odry"
-                  },
-                  {
-                    "column": 2,
-                    "value": "9"
-                  },
-                  {
-                    "column": 3,
-                    "value": "2"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "7"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "7:21"
-                  },
-                  {
-                    "column": 9,
-                    "value": "503:642"
-                  },
-                  {
-                    "column": 10,
-                    "value": "6"
-                  }
-                ],
-                "error": null,
-                "teamId": 93930
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "6."
-                  },
-                  {
-                    "column": 1,
                     "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
                   },
                   {
                     "column": 2,
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "column": 3,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 4,
@@ -3275,11 +3225,61 @@
                   },
                   {
                     "column": 8,
-                    "value": "12:24"
+                    "value": "15:24"
                   },
                   {
                     "column": 9,
-                    "value": "692:803"
+                    "value": "768:869"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 93697
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "6."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Odry"
+                  },
+                  {
+                    "column": 2,
+                    "value": "10"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "8"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "7:24"
+                  },
+                  {
+                    "column": 9,
+                    "value": "569:718"
                   },
                   {
                     "column": 10,
@@ -3287,7 +3287,7 @@
                   }
                 ],
                 "error": null,
-                "teamId": 93697
+                "teamId": 93930
               },
               {
                 "cells": [
@@ -3301,7 +3301,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "column": 3,
@@ -3317,7 +3317,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "column": 7,
@@ -3325,11 +3325,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "8:30"
+                    "value": "9:33"
                   },
                   {
                     "column": 9,
-                    "value": "694:892"
+                    "value": "788:985"
                   },
                   {
                     "column": 10,
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-07T12:38+01:00"
+  "updated": "2026-11-07T13:28+01:00"
 }
