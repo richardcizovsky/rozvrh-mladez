@@ -1131,7 +1131,7 @@
                 "matchId": 936570,
                 "matchStart": "2026-11-07T10:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (12,18,13)",
                 "round": 11,
                 "shortNote": "",
                 "withinRange": true
@@ -1157,7 +1157,7 @@
                 "matchId": 936571,
                 "matchStart": "2026-11-07T10:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (23,12,21)",
                 "round": 11,
                 "shortNote": "",
                 "withinRange": true
@@ -3001,11 +3001,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "column": 3,
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "column": 4,
@@ -3025,15 +3025,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "24:1"
+                    "value": "27:1"
                   },
                   {
                     "column": 9,
-                    "value": "618:378"
+                    "value": "693:434"
                   },
                   {
                     "column": 10,
-                    "value": "24"
+                    "value": "27"
                   }
                 ],
                 "error": null,
@@ -3101,7 +3101,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "column": 3,
@@ -3117,7 +3117,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 7,
@@ -3125,11 +3125,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "19:10"
+                    "value": "19:13"
                   },
                   {
                     "column": 9,
-                    "value": "655:578"
+                    "value": "711:653"
                   },
                   {
                     "column": 10,
@@ -3201,7 +3201,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "column": 3,
@@ -3217,7 +3217,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "column": 7,
@@ -3225,11 +3225,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "7:18"
+                    "value": "7:21"
                   },
                   {
                     "column": 9,
-                    "value": "460:567"
+                    "value": "503:642"
                   },
                   {
                     "column": 10,
@@ -3244,6 +3244,56 @@
                   {
                     "column": 0,
                     "value": "6."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "9"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "3"
+                  },
+                  {
+                    "column": 6,
+                    "value": "5"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "12:24"
+                  },
+                  {
+                    "column": 9,
+                    "value": "692:803"
+                  },
+                  {
+                    "column": 10,
+                    "value": "6"
+                  }
+                ],
+                "error": null,
+                "teamId": 93697
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "7."
                   },
                   {
                     "column": 1,
@@ -3288,56 +3338,6 @@
                 ],
                 "error": null,
                 "teamId": 93694
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "7."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělocvičná jednota Sokol Frýdek - Místek B"
-                  },
-                  {
-                    "column": 2,
-                    "value": "8"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "3"
-                  },
-                  {
-                    "column": 6,
-                    "value": "5"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "9:24"
-                  },
-                  {
-                    "column": 9,
-                    "value": "617:760"
-                  },
-                  {
-                    "column": 10,
-                    "value": "3"
-                  }
-                ],
-                "error": null,
-                "teamId": 93697
               }
             ]
           },
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-07T10:52+01:00"
+  "updated": "2026-11-07T11:22+01:00"
 }
