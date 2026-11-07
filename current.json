@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07 10:40",
+  "updated": "2026-11-07 10:58",
   "days": [
     {
       "date": "2026-11-07",
@@ -26,9 +26,9 @@
           "skupina": "MS-U20ZA",
           "cas": "11:00",
           "cislo": "(39)",
-          "tymy": "ŠSK Bílovec - TJ Sokol Vratimov",
+          "tymy": "ŠSK Bílovec - TJ Sokol Vratimov LIVE",
           "stav": "-",
-          "badge": "PAUSE",
+          "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=937017"
         },
         {
