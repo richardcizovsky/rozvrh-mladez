@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07 11:11",
+  "updated": "2026-11-07 11:21",
   "days": [
     {
       "date": "2026-11-07",
@@ -9,8 +9,8 @@
           "cas": "10:00",
           "cislo": "(43)",
           "tymy": "VKB Frýdlant n. O. - TJ Sokol Vratimov",
-          "stav": "-",
-          "badge": "PAUSE",
+          "stav": "3:0 (23,12,21)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936571"
         },
         {
@@ -19,16 +19,16 @@
           "cislo": "(47)",
           "tymy": "VKB Frýdlant n. O. - TJ Sokol Vratimov",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936575"
         },
         {
           "skupina": "MS-U20ZA",
           "cas": "11:00",
           "cislo": "(39)",
-          "tymy": "ŠSK Bílovec - TJ Sokol Vratimov",
+          "tymy": "ŠSK Bílovec - TJ Sokol Vratimov LIVE",
           "stav": "-",
-          "badge": "PAUSE",
+          "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=937017"
         },
         {
