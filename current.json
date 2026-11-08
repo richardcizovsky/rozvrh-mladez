@@ -1,65 +1,6 @@
 {
-  "updated": "2026-11-08 15:05",
+  "updated": "2026-11-09 00:11",
   "days": [
-    {
-      "date": "2026-11-08",
-      "matches": [
-        {
-          "skupina": "MS-U16Z-T2C",
-          "cas": "09:00",
-          "cislo": "(1)",
-          "tymy": "TJ Ostrava \"B\" - TJ Sokol Vratimov \"A\"",
-          "stav": "0:2 (-17,-15)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=956393"
-        },
-        {
-          "skupina": "MS-U16Z-T2C",
-          "cas": "10:30",
-          "cislo": "(4)",
-          "tymy": "TJ Frenštát p. R. \"A\" - TJ Sokol Vratimov \"A\"",
-          "stav": "0:2 (-16,-19)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=956396"
-        },
-        {
-          "skupina": "MS-U16Z-T2C",
-          "cas": "12:00",
-          "cislo": "(5)",
-          "tymy": "Volejbal Ostrava - TJ Sokol Vratimov \"A\"",
-          "stav": "0:2 (-22,-17)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=956397"
-        },
-        {
-          "skupina": "MS-U16Z-T2F",
-          "cas": "09:00",
-          "cislo": "(1)",
-          "tymy": "VK Kylešovice - TJ Sokol Vratimov \"B\"",
-          "stav": "2:0 (21,17)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=956375"
-        },
-        {
-          "skupina": "MS-U16Z-T2F",
-          "cas": "13:30",
-          "cislo": "(4)",
-          "tymy": "VO Slezská Orlice - TJ Sokol Vratimov \"B\"",
-          "stav": "0:2 (-11,-15)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=956378"
-        },
-        {
-          "skupina": "MS-U16Z-T2F",
-          "cas": "16:30",
-          "cislo": "(6)",
-          "tymy": "TJ Sokol Vratimov \"B\" - TJ Hlučín \"C\"",
-          "stav": "1:2 (-18,21,-13)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=956380"
-        }
-      ]
-    },
     {
       "date": "2026-11-09",
       "matches": []
@@ -157,9 +98,72 @@
     {
       "date": "2026-11-16",
       "matches": []
+    },
+    {
+      "date": "2026-11-17",
+      "matches": []
     }
   ],
   "past_days": [
+    {
+      "date": "2026-11-08",
+      "matches": [
+        {
+          "skupina": "MS-U16Z-T2C",
+          "cas": "09:00",
+          "cislo": "(1)",
+          "tymy": "TJ Ostrava \"B\" - TJ Sokol Vratimov \"A\"",
+          "stav": "0:2 (-17,-15)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956393"
+        },
+        {
+          "skupina": "MS-U16Z-T2C",
+          "cas": "10:30",
+          "cislo": "(4)",
+          "tymy": "TJ Frenštát p. R. \"A\" - TJ Sokol Vratimov \"A\"",
+          "stav": "0:2 (-16,-19)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956396"
+        },
+        {
+          "skupina": "MS-U16Z-T2C",
+          "cas": "12:00",
+          "cislo": "(5)",
+          "tymy": "Volejbal Ostrava - TJ Sokol Vratimov \"A\"",
+          "stav": "0:2 (-22,-17)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956397"
+        },
+        {
+          "skupina": "MS-U16Z-T2F",
+          "cas": "09:00",
+          "cislo": "(1)",
+          "tymy": "VK Kylešovice - TJ Sokol Vratimov \"B\"",
+          "stav": "2:0 (21,17)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956375"
+        },
+        {
+          "skupina": "MS-U16Z-T2F",
+          "cas": "13:30",
+          "cislo": "(4)",
+          "tymy": "VO Slezská Orlice - TJ Sokol Vratimov \"B\"",
+          "stav": "0:2 (-11,-15)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956378"
+        },
+        {
+          "skupina": "MS-U16Z-T2F",
+          "cas": "16:30",
+          "cislo": "(6)",
+          "tymy": "TJ Sokol Vratimov \"B\" - TJ Hlučín \"C\"",
+          "stav": "1:2 (-18,21,-13)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=956380"
+        }
+      ]
+    },
     {
       "date": "2026-11-07",
       "matches": [
