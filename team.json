@@ -11244,7 +11244,7 @@
                 "matchId": 937015,
                 "matchStart": "2026-11-08T10:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:2 (-22,20,21,-20,14)",
                 "round": 13,
                 "shortNote": "",
                 "withinRange": true
@@ -12060,7 +12060,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "column": 3,
@@ -12072,7 +12072,7 @@
                   },
                   {
                     "column": 5,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 6,
@@ -12084,15 +12084,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "16:23"
+                    "value": "18:26"
                   },
                   {
                     "column": 9,
-                    "value": "764:872"
+                    "value": "869:980"
                   },
                   {
                     "column": 10,
-                    "value": "12"
+                    "value": "13"
                   }
                 ],
                 "error": null,
@@ -12103,6 +12103,56 @@
                   {
                     "column": 0,
                     "value": "5."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Sokol Bohumín"
+                  },
+                  {
+                    "column": 2,
+                    "value": "11"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "7"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "12:28"
+                  },
+                  {
+                    "column": 9,
+                    "value": "773:909"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 93675
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "6."
                   },
                   {
                     "column": 1,
@@ -12147,56 +12197,6 @@
                 ],
                 "error": null,
                 "teamId": 92494
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "6."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Sokol Bohumín"
-                  },
-                  {
-                    "column": 2,
-                    "value": "10"
-                  },
-                  {
-                    "column": 3,
-                    "value": "2"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "1"
-                  },
-                  {
-                    "column": 6,
-                    "value": "7"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "9:26"
-                  },
-                  {
-                    "column": 9,
-                    "value": "665:804"
-                  },
-                  {
-                    "column": 10,
-                    "value": "7"
-                  }
-                ],
-                "error": null,
-                "teamId": 93675
               }
             ]
           },
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-08T11:44+01:00"
+  "updated": "2026-11-08T12:13+01:00"
 }
