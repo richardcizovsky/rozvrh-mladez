@@ -11385,13 +11385,13 @@
                 "guestPosition": 2,
                 "hallResponse": {
                   "hallDetail": {
-                    "name": "Sokolovna TJ Sokol Stará Bělá"
+                    "name": "Sportovní hala Nová Bělá"
                   },
-                  "id": 335,
+                  "id": 929,
                   "sportsFieldDetail": null,
                   "target": "hall",
-                  "type": "green",
-                  "value": "Sokolovna TJ Sokol Stará Bělá - Junácká 6 Ostrava - Stará Bělá"
+                  "type": "orange",
+                  "value": "Sportovní hala Nová Bělá - Krmelínská 750 Ostrava - Nová Bělá"
                 },
                 "homeId": 94060,
                 "homeName": "TJ Sokol Stará Bělá",
@@ -11463,13 +11463,13 @@
                 "guestPosition": 2,
                 "hallResponse": {
                   "hallDetail": {
-                    "name": "Sokolovna TJ Sokol Stará Bělá"
+                    "name": "Sportovní hala Nová Bělá"
                   },
-                  "id": 335,
+                  "id": 929,
                   "sportsFieldDetail": null,
                   "target": "hall",
-                  "type": "green",
-                  "value": "Sokolovna TJ Sokol Stará Bělá - Junácká 6 Ostrava - Stará Bělá"
+                  "type": "orange",
+                  "value": "Sportovní hala Nová Bělá - Krmelínská 750 Ostrava - Nová Bělá"
                 },
                 "homeId": 94060,
                 "homeName": "TJ Sokol Stará Bělá",
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-08T18:54+01:00"
+  "updated": "2026-11-08T20:06+01:00"
 }
