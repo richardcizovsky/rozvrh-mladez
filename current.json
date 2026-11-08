@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08 07:51",
+  "updated": "2026-11-08 07:59",
   "days": [
     {
       "date": "2026-11-08",
@@ -35,9 +35,9 @@
           "skupina": "MS-U16Z-T2F",
           "cas": "09:00",
           "cislo": "(1)",
-          "tymy": "VK Kylešovice - TJ Sokol Vratimov \"B\" LIVE",
+          "tymy": "VK Kylešovice - TJ Sokol Vratimov \"B\"",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956375"
         },
         {
