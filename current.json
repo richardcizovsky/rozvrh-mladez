@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08 00:09",
+  "updated": "2026-11-08 04:34",
   "days": [
     {
       "date": "2026-11-08",
@@ -37,7 +37,7 @@
           "cislo": "(1)",
           "tymy": "VK Kylešovice - TJ Sokol Vratimov \"B\"",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956375"
         },
         {
