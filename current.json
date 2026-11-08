@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08 12:09",
+  "updated": "2026-11-08 12:45",
   "days": [
     {
       "date": "2026-11-08",
@@ -44,9 +44,9 @@
           "skupina": "MS-U16Z-T2F",
           "cas": "13:30",
           "cislo": "(4)",
-          "tymy": "VO Slezská Orlice - TJ Sokol Vratimov \"B\" LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "VO Slezská Orlice - TJ Sokol Vratimov \"B\"",
+          "stav": "0:2 (-11,-15)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956378"
         },
         {
