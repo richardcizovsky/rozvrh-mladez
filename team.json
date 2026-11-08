@@ -9735,7 +9735,7 @@
                 "matchId": 956394,
                 "matchStart": "2026-11-08T09:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "2:0 (23,20)",
                 "round": 1,
                 "shortNote": "",
                 "withinRange": true
@@ -9945,6 +9945,106 @@
                   },
                   {
                     "column": 1,
+                    "value": "TJ Frenštát pod Radhoštěm \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "50:43"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 93684
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Volejbal Ostrava"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "43:50"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 94080
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
                     "value": "TJ Ostrava \"B\""
                   },
                   {
@@ -9986,106 +10086,6 @@
                 ],
                 "error": null,
                 "teamId": 93858
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "3."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Frenštát pod Radhoštěm \"A\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 93684
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "4."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Volejbal Ostrava"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 94080
               }
             ]
           },
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-08T09:54+01:00"
+  "updated": "2026-11-08T10:08+01:00"
 }
