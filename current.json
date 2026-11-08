@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08 11:12",
+  "updated": "2026-11-08 11:21",
   "days": [
     {
       "date": "2026-11-08",
@@ -46,7 +46,7 @@
           "cislo": "(4)",
           "tymy": "VO Slezská Orlice - TJ Sokol Vratimov \"B\"",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956378"
         },
         {
