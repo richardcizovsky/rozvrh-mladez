@@ -6275,7 +6275,7 @@
                 "matchId": 956376,
                 "matchStart": "2026-11-08T10:30:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "0:2 (-18,-12)",
                 "round": 2,
                 "shortNote": "",
                 "withinRange": true
@@ -6435,6 +6435,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "TJ Hlučín, z.s. \"C\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "50:30"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 93941
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
                     "value": "VK Kylešovice, z.s."
                   },
                   {
@@ -6481,7 +6531,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "2."
+                    "value": "3."
                   },
                   {
                     "column": 1,
@@ -6531,56 +6581,6 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "3."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Hlučín, z.s. \"C\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 93941
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
                     "value": "4."
                   },
                   {
@@ -6589,7 +6589,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 3,
@@ -6605,7 +6605,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 7,
@@ -6613,11 +6613,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "0:0"
+                    "value": "0:2"
                   },
                   {
                     "column": 9,
-                    "value": "0:0"
+                    "value": "30:50"
                   },
                   {
                     "column": 10,
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-08T10:08+01:00"
+  "updated": "2026-11-08T10:55+01:00"
 }
