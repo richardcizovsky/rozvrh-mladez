@@ -9711,7 +9711,7 @@
                 "matchId": 956393,
                 "matchStart": "2026-11-08T09:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "0:2 (-17,-15)",
                 "round": 1,
                 "shortNote": "",
                 "withinRange": true
@@ -9899,11 +9899,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 3,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 4,
@@ -9923,15 +9923,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "0:0"
+                    "value": "2:0"
                   },
                   {
                     "column": 9,
-                    "value": "0:0"
+                    "value": "50:32"
                   },
                   {
                     "column": 10,
-                    "value": "0"
+                    "value": "3"
                   }
                 ],
                 "error": null,
@@ -9942,6 +9942,56 @@
                   {
                     "column": 0,
                     "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Ostrava \"B\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:2"
+                  },
+                  {
+                    "column": 9,
+                    "value": "32:50"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93858
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
                   },
                   {
                     "column": 1,
@@ -9986,56 +10036,6 @@
                 ],
                 "error": null,
                 "teamId": 93684
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "3."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Ostrava \"B\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 93858
               },
               {
                 "cells": [
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-08T09:36+01:00"
+  "updated": "2026-11-08T09:54+01:00"
 }
