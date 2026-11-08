@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08 12:54",
+  "updated": "2026-11-08 13:08",
   "days": [
     {
       "date": "2026-11-08",
@@ -26,9 +26,9 @@
           "skupina": "MS-U16Z-T2C",
           "cas": "12:00",
           "cislo": "(5)",
-          "tymy": "Volejbal Ostrava - TJ Sokol Vratimov \"A\" LIVE",
+          "tymy": "Volejbal Ostrava - TJ Sokol Vratimov \"A\"",
           "stav": "0:2 (-22,-17)",
-          "badge": "",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956397"
         },
         {
