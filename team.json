@@ -6371,7 +6371,7 @@
                 "matchId": 956380,
                 "matchStart": "2026-11-08T16:30:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "1:2 (-18,21,-13)",
                 "round": 6,
                 "shortNote": "",
                 "withinRange": true
@@ -6485,11 +6485,11 @@
                   },
                   {
                     "column": 1,
-                    "value": "T.J. Sokol Vratimov \"B\""
+                    "value": "TJ Hlučín, z.s. \"C\""
                   },
                   {
                     "column": 2,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 3,
@@ -6497,7 +6497,7 @@
                   },
                   {
                     "column": 4,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 5,
@@ -6513,19 +6513,19 @@
                   },
                   {
                     "column": 8,
-                    "value": "2:2"
+                    "value": "4:3"
                   },
                   {
                     "column": 9,
-                    "value": "88:76"
+                    "value": "141:136"
                   },
                   {
                     "column": 10,
-                    "value": "3"
+                    "value": "5"
                   }
                 ],
                 "error": null,
-                "teamId": 92491
+                "teamId": 93941
               },
               {
                 "cells": [
@@ -6535,11 +6535,11 @@
                   },
                   {
                     "column": 1,
-                    "value": "TJ Hlučín, z.s. \"C\""
+                    "value": "T.J. Sokol Vratimov \"B\""
                   },
                   {
                     "column": 2,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 3,
@@ -6551,7 +6551,7 @@
                   },
                   {
                     "column": 5,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 6,
@@ -6563,19 +6563,19 @@
                   },
                   {
                     "column": 8,
-                    "value": "2:2"
+                    "value": "3:4"
                   },
                   {
                     "column": 9,
-                    "value": "80:80"
+                    "value": "144:137"
                   },
                   {
                     "column": 10,
-                    "value": "3"
+                    "value": "4"
                   }
                 ],
                 "error": null,
-                "teamId": 93941
+                "teamId": 92491
               },
               {
                 "cells": [
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-08T14:18+01:00"
+  "updated": "2026-11-08T15:05+01:00"
 }
