@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08 08:23",
+  "updated": "2026-11-08 08:32",
   "days": [
     {
       "date": "2026-11-08",
@@ -19,14 +19,14 @@
           "cislo": "(4)",
           "tymy": "TJ Frenštát p. R. \"A\" - TJ Sokol Vratimov \"A\"",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956396"
         },
         {
           "skupina": "MS-U16Z-T2C",
           "cas": "12:00",
           "cislo": "(5)",
-          "tymy": "Volejbal Ostrava - TJ Sokol Vratimov \"A\"",
+          "tymy": "Volejbal Ostrava - TJ Sokol Vratimov \"A\" LIVE",
           "stav": "-",
           "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956397"
@@ -35,9 +35,9 @@
           "skupina": "MS-U16Z-T2F",
           "cas": "09:00",
           "cislo": "(1)",
-          "tymy": "VK Kylešovice - TJ Sokol Vratimov \"B\"",
+          "tymy": "VK Kylešovice - TJ Sokol Vratimov \"B\" LIVE",
           "stav": "-",
-          "badge": "PAUSE",
+          "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=956375"
         },
         {
