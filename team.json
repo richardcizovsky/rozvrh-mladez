@@ -3633,6 +3633,306 @@
                   },
                   {
                     "column": 1,
+                    "value": "VK Polanka nad Odrou, z.s. \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "60"
+                  }
+                ],
+                "error": null,
+                "teamId": 92918
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "ŠSK Bílovec,z.s. \"B\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "59"
+                  }
+                ],
+                "error": null,
+                "teamId": 92955
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VK Raškovice z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "1:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "54"
+                  }
+                ],
+                "error": null,
+                "teamId": 92957
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O. \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "54"
+                  }
+                ],
+                "error": null,
+                "teamId": 92923
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "5."
+                  },
+                  {
+                    "column": 1,
+                    "value": "T.J.Sokol Vratimov \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "44"
+                  }
+                ],
+                "error": null,
+                "teamId": 92493
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "6."
+                  },
+                  {
+                    "column": 1,
+                    "value": "ŠSK Bílovec,z.s. \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "40"
+                  }
+                ],
+                "error": null,
+                "teamId": 92956
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "7."
+                  },
+                  {
+                    "column": 1,
                     "value": "TJ Ostrava \"A\""
                   },
                   {
@@ -3679,7 +3979,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "2."
+                    "value": "8."
                   },
                   {
                     "column": 1,
@@ -3729,7 +4029,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "3."
+                    "value": "9."
                   },
                   {
                     "column": 1,
@@ -3779,7 +4079,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "4."
+                    "value": "10."
                   },
                   {
                     "column": 1,
@@ -3829,15 +4129,15 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "5."
+                    "value": "11."
                   },
                   {
                     "column": 1,
-                    "value": "ŠSK Bílovec,z.s. \"B\""
+                    "value": "VK Polanka nad Odrou, z.s. \"B\""
                   },
                   {
                     "column": 2,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 3,
@@ -3873,163 +4173,13 @@
                   }
                 ],
                 "error": null,
-                "teamId": 92955
+                "teamId": 92917
               },
               {
                 "cells": [
                   {
                     "column": 0,
-                    "value": "6."
-                  },
-                  {
-                    "column": 1,
-                    "value": "VK Polanka nad Odrou, z.s. \"A\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "29"
-                  }
-                ],
-                "error": null,
-                "teamId": 92918
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "7."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Vk Beskydy Frýdlant n. O. \"A\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "28"
-                  }
-                ],
-                "error": null,
-                "teamId": 92923
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "8."
-                  },
-                  {
-                    "column": 1,
-                    "value": "VK Raškovice z.s."
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "27"
-                  }
-                ],
-                "error": null,
-                "teamId": 92957
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "9."
+                    "value": "12."
                   },
                   {
                     "column": 1,
@@ -4079,7 +4229,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "10."
+                    "value": "13."
                   },
                   {
                     "column": 1,
@@ -4129,7 +4279,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "11."
+                    "value": "14."
                   },
                   {
                     "column": 1,
@@ -4179,7 +4329,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "12."
+                    "value": "15."
                   },
                   {
                     "column": 1,
@@ -4229,7 +4379,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "13."
+                    "value": "16."
                   },
                   {
                     "column": 1,
@@ -4279,65 +4429,15 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "14."
+                    "value": "17."
                   },
                   {
                     "column": 1,
-                    "value": "ŠSK Bílovec,z.s. \"A\""
+                    "value": "T.J. Sokol Vratimov \"B\""
                   },
                   {
                     "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "21"
-                  }
-                ],
-                "error": null,
-                "teamId": 92956
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "15."
-                  },
-                  {
-                    "column": 1,
-                    "value": "T.J.Sokol Vratimov \"A\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 3,
@@ -4373,13 +4473,13 @@
                   }
                 ],
                 "error": null,
-                "teamId": 92493
+                "teamId": 92491
               },
               {
                 "cells": [
                   {
                     "column": 0,
-                    "value": "16."
+                    "value": "18."
                   },
                   {
                     "column": 1,
@@ -4429,7 +4529,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "17."
+                    "value": "19."
                   },
                   {
                     "column": 1,
@@ -4479,7 +4579,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "18."
+                    "value": "20."
                   },
                   {
                     "column": 1,
@@ -4529,7 +4629,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "19."
+                    "value": "21."
                   },
                   {
                     "column": 1,
@@ -4579,57 +4679,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "20."
-                  },
-                  {
-                    "column": 1,
-                    "value": "VK Polanka nad Odrou, z.s. \"B\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "15"
-                  }
-                ],
-                "error": null,
-                "teamId": 92917
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "21."
+                    "value": "22."
                   },
                   {
                     "column": 1,
@@ -4679,7 +4729,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "22."
+                    "value": "23."
                   },
                   {
                     "column": 1,
@@ -4729,7 +4779,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "23."
+                    "value": "24."
                   },
                   {
                     "column": 1,
@@ -4779,7 +4829,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "24."
+                    "value": "25."
                   },
                   {
                     "column": 1,
@@ -4824,56 +4874,6 @@
                 ],
                 "error": null,
                 "teamId": 93714
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "25."
-                  },
-                  {
-                    "column": 1,
-                    "value": "T.J. Sokol Vratimov \"B\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "10"
-                  }
-                ],
-                "error": null,
-                "teamId": 92491
               },
               {
                 "cells": [
@@ -4933,6 +4933,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O. \"B\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 92921
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "28."
+                  },
+                  {
+                    "column": 1,
                     "value": "TJ Hlučín, z.s. \"C\""
                   },
                   {
@@ -4979,7 +5029,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "28."
+                    "value": "29."
                   },
                   {
                     "column": 1,
@@ -5029,7 +5079,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "29."
+                    "value": "30."
                   },
                   {
                     "column": 1,
@@ -5074,56 +5124,6 @@
                 ],
                 "error": null,
                 "teamId": 93698
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "30."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Vk Beskydy Frýdlant n. O. \"B\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "5"
-                  }
-                ],
-                "error": null,
-                "teamId": 92921
               },
               {
                 "cells": [
@@ -6921,6 +6921,306 @@
                   },
                   {
                     "column": 1,
+                    "value": "VK Polanka nad Odrou, z.s. \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "60"
+                  }
+                ],
+                "error": null,
+                "teamId": 92918
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "ŠSK Bílovec,z.s. \"B\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "59"
+                  }
+                ],
+                "error": null,
+                "teamId": 92955
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VK Raškovice z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "1:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "54"
+                  }
+                ],
+                "error": null,
+                "teamId": 92957
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O. \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "54"
+                  }
+                ],
+                "error": null,
+                "teamId": 92923
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "5."
+                  },
+                  {
+                    "column": 1,
+                    "value": "T.J.Sokol Vratimov \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "44"
+                  }
+                ],
+                "error": null,
+                "teamId": 92493
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "6."
+                  },
+                  {
+                    "column": 1,
+                    "value": "ŠSK Bílovec,z.s. \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "40"
+                  }
+                ],
+                "error": null,
+                "teamId": 92956
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "7."
+                  },
+                  {
+                    "column": 1,
                     "value": "TJ Ostrava \"A\""
                   },
                   {
@@ -6967,7 +7267,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "2."
+                    "value": "8."
                   },
                   {
                     "column": 1,
@@ -7017,7 +7317,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "3."
+                    "value": "9."
                   },
                   {
                     "column": 1,
@@ -7067,7 +7367,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "4."
+                    "value": "10."
                   },
                   {
                     "column": 1,
@@ -7117,15 +7417,15 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "5."
+                    "value": "11."
                   },
                   {
                     "column": 1,
-                    "value": "ŠSK Bílovec,z.s. \"B\""
+                    "value": "VK Polanka nad Odrou, z.s. \"B\""
                   },
                   {
                     "column": 2,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 3,
@@ -7161,163 +7461,13 @@
                   }
                 ],
                 "error": null,
-                "teamId": 92955
+                "teamId": 92917
               },
               {
                 "cells": [
                   {
                     "column": 0,
-                    "value": "6."
-                  },
-                  {
-                    "column": 1,
-                    "value": "VK Polanka nad Odrou, z.s. \"A\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "29"
-                  }
-                ],
-                "error": null,
-                "teamId": 92918
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "7."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Vk Beskydy Frýdlant n. O. \"A\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "28"
-                  }
-                ],
-                "error": null,
-                "teamId": 92923
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "8."
-                  },
-                  {
-                    "column": 1,
-                    "value": "VK Raškovice z.s."
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "27"
-                  }
-                ],
-                "error": null,
-                "teamId": 92957
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "9."
+                    "value": "12."
                   },
                   {
                     "column": 1,
@@ -7367,7 +7517,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "10."
+                    "value": "13."
                   },
                   {
                     "column": 1,
@@ -7417,7 +7567,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "11."
+                    "value": "14."
                   },
                   {
                     "column": 1,
@@ -7467,7 +7617,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "12."
+                    "value": "15."
                   },
                   {
                     "column": 1,
@@ -7517,7 +7667,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "13."
+                    "value": "16."
                   },
                   {
                     "column": 1,
@@ -7567,65 +7717,15 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "14."
+                    "value": "17."
                   },
                   {
                     "column": 1,
-                    "value": "ŠSK Bílovec,z.s. \"A\""
+                    "value": "T.J. Sokol Vratimov \"B\""
                   },
                   {
                     "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "21"
-                  }
-                ],
-                "error": null,
-                "teamId": 92956
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "15."
-                  },
-                  {
-                    "column": 1,
-                    "value": "T.J.Sokol Vratimov \"A\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 3,
@@ -7661,13 +7761,13 @@
                   }
                 ],
                 "error": null,
-                "teamId": 92493
+                "teamId": 92491
               },
               {
                 "cells": [
                   {
                     "column": 0,
-                    "value": "16."
+                    "value": "18."
                   },
                   {
                     "column": 1,
@@ -7717,7 +7817,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "17."
+                    "value": "19."
                   },
                   {
                     "column": 1,
@@ -7767,7 +7867,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "18."
+                    "value": "20."
                   },
                   {
                     "column": 1,
@@ -7817,7 +7917,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "19."
+                    "value": "21."
                   },
                   {
                     "column": 1,
@@ -7867,57 +7967,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "20."
-                  },
-                  {
-                    "column": 1,
-                    "value": "VK Polanka nad Odrou, z.s. \"B\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "15"
-                  }
-                ],
-                "error": null,
-                "teamId": 92917
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "21."
+                    "value": "22."
                   },
                   {
                     "column": 1,
@@ -7967,7 +8017,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "22."
+                    "value": "23."
                   },
                   {
                     "column": 1,
@@ -8017,7 +8067,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "23."
+                    "value": "24."
                   },
                   {
                     "column": 1,
@@ -8067,7 +8117,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "24."
+                    "value": "25."
                   },
                   {
                     "column": 1,
@@ -8112,56 +8162,6 @@
                 ],
                 "error": null,
                 "teamId": 93714
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "25."
-                  },
-                  {
-                    "column": 1,
-                    "value": "T.J. Sokol Vratimov \"B\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "10"
-                  }
-                ],
-                "error": null,
-                "teamId": 92491
               },
               {
                 "cells": [
@@ -8221,6 +8221,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O. \"B\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "9"
+                  }
+                ],
+                "error": null,
+                "teamId": 92921
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "28."
+                  },
+                  {
+                    "column": 1,
                     "value": "TJ Hlučín, z.s. \"C\""
                   },
                   {
@@ -8267,7 +8317,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "28."
+                    "value": "29."
                   },
                   {
                     "column": 1,
@@ -8317,7 +8367,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "29."
+                    "value": "30."
                   },
                   {
                     "column": 1,
@@ -8362,56 +8412,6 @@
                 ],
                 "error": null,
                 "teamId": 93698
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "30."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Vk Beskydy Frýdlant n. O. \"B\""
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "5"
-                  }
-                ],
-                "error": null,
-                "teamId": 92921
               },
               {
                 "cells": [
@@ -17707,5 +17707,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-09T06:44+01:00"
+  "updated": "2026-11-09T08:38+01:00"
 }
