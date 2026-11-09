@@ -6630,6 +6630,272 @@
             ]
           },
           "teamNumberInGroup": 3
+        },
+        {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-12-06T00:00:00+01:00",
+          "groupId": 30321,
+          "groupName": "Třetí kolo soutěže U16Z, skupina F",
+          "groupStartDate": "2026-12-06T00:00:00+01:00",
+          "poradatel": "Pořadatel:",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [],
+            "showHallColumn": true
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Sportovní akademie Ostrava, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 94074
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "T.J. Sokol Vratimov \"B\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 92491
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Frenštát pod Radhoštěm \"B\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93690
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Hlučín, z.s. \"C\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93941
+              }
+            ]
+          },
+          "teamNumberInGroup": 3
         }
       ],
       "letter": "B",
@@ -18023,5 +18289,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-09T09:32+01:00"
+  "updated": "2026-11-09T09:40+01:00"
 }
