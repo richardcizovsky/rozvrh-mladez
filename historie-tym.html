@@ -229,6 +229,8 @@
     const key = String(v || "").trim().toLowerCase();
     return COLUMN_LABELS[key] || v;
   }
+  // Sloupce, které se skryjí jen společně (když jsou všechny ve všech řádcích nulové), spolu s nimi i M (míče)
+  const HIDE_WITH_M = new Set(["V3", "V2", "P1", "P0", "S"]);
 
   // Nulová hodnota v tabulce: "0", "0:0" nebo prázdná buňka
   function isZeroValue(v) {
@@ -253,10 +255,15 @@
       // Nehrálo se (všude 0 nebo 0:0): jen pořadí a název týmu
       visible = new Set(keepCols);
     } else {
+      const key = c => String(columnLabel(c.value) || "").trim().toUpperCase();
       // Sloupec K se skryje, pokud je ve všech řádcích nulový
-      visible = new Set(cols
-        .filter(c => !(String(c.value || "").trim().toUpperCase() === "K" && colAllZero(c.column)))
-        .map(c => c.column));
+      const hidden = cols.filter(c => key(c) === "K" && colAllZero(c.column));
+      // Sloupce V3, V2, P1, P0 a S se skryjí jen společně – když jsou nulové všechny; pak se skryje i M (míče)
+      const detail = cols.filter(c => HIDE_WITH_M.has(key(c)));
+      if (detail.length && detail.every(c => colAllZero(c.column))) {
+        hidden.push(...detail, ...cols.filter(c => key(c) === "M"));
+      }
+      visible = new Set(cols.filter(c => !hidden.includes(c)).map(c => c.column));
     }
     const shownCols = cols.filter(c => visible.has(c.column));
     const thead = el("thead", {}, el("tr", {}, ...shownCols.map((c, i) =>
