@@ -10090,6 +10090,322 @@
             ]
           },
           "teamNumberInGroup": 4
+        },
+        {
+          "competitionId": 18568,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U16",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-12-06T00:00:00+01:00",
+          "groupId": 30317,
+          "groupName": "Třetí kolo soutěže U16Z, skupina B",
+          "groupStartDate": "2026-12-06T00:00:00+01:00",
+          "poradatel": "Pořadatel:",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [],
+            "showHallColumn": true
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "SVK Nový Jičín, z.s. \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 94045
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "T.J.Sokol Vratimov \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 92493
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VAM Havířov, z.s. \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93713
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VK Raškovice z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 92957
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "5."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O. \"A\""
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 92923
+              }
+            ]
+          },
+          "teamNumberInGroup": 5
         }
       ],
       "letter": "A",
@@ -17707,5 +18023,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-09T08:56+01:00"
+  "updated": "2026-11-09T09:32+01:00"
 }
