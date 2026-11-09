@@ -3542,7 +3542,7 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U16",
               "parentId": 15026,
-              "publicGroupCount": 37,
+              "publicGroupCount": 45,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U16",
               "season": "2026/27",
@@ -7096,7 +7096,7 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U16",
               "parentId": 15026,
-              "publicGroupCount": 37,
+              "publicGroupCount": 45,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U16",
               "season": "2026/27",
@@ -13527,7 +13527,7 @@
                 "homePosition": 6,
                 "match": 22,
                 "matchId": 943025,
-                "matchStart": "2026-11-11T19:20:00+01:00",
+                "matchStart": "2026-11-18T19:20:00+01:00",
                 "note": "",
                 "result": "",
                 "round": 6,
@@ -18289,5 +18289,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-09T09:40+01:00"
+  "updated": "2026-11-09T09:50+01:00"
 }
