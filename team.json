@@ -13503,7 +13503,7 @@
                 "matchId": 943024,
                 "matchStart": "2026-11-10T17:45:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:1 (-17,22,21,18)",
                 "round": 6,
                 "shortNote": "",
                 "withinRange": true
@@ -14897,11 +14897,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "column": 3,
-                    "value": "3"
+                    "value": "4"
                   },
                   {
                     "column": 4,
@@ -14921,15 +14921,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "15:6"
+                    "value": "18:7"
                   },
                   {
                     "column": 9,
-                    "value": "484:423"
+                    "value": "576:509"
                   },
                   {
                     "column": 10,
-                    "value": "13"
+                    "value": "16"
                   }
                 ],
                 "error": null,
@@ -14993,56 +14993,6 @@
                   },
                   {
                     "column": 1,
-                    "value": "TJ Sokol Svinov B"
-                  },
-                  {
-                    "column": 2,
-                    "value": "4"
-                  },
-                  {
-                    "column": 3,
-                    "value": "2"
-                  },
-                  {
-                    "column": 4,
-                    "value": "1"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "1"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "9:5"
-                  },
-                  {
-                    "column": 9,
-                    "value": "291:258"
-                  },
-                  {
-                    "column": 10,
-                    "value": "8"
-                  }
-                ],
-                "error": null,
-                "teamId": 94444
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "4."
-                  },
-                  {
-                    "column": 1,
                     "value": "VK Polanka nad Odrou, z.s."
                   },
                   {
@@ -15084,6 +15034,56 @@
                 ],
                 "error": null,
                 "teamId": 94436
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Sokol Svinov B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "5"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "10:8"
+                  },
+                  {
+                    "column": 9,
+                    "value": "377:350"
+                  },
+                  {
+                    "column": 10,
+                    "value": "8"
+                  }
+                ],
+                "error": null,
+                "teamId": 94444
               },
               {
                 "cells": [
@@ -18289,5 +18289,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-09T09:50+01:00"
+  "updated": "2026-11-10T19:36+01:00"
 }
