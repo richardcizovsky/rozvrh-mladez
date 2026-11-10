@@ -15495,6 +15495,15 @@
           "playerPosition": null
         },
         {
+          "birthMonth": 2,
+          "birthYear": 2010,
+          "firstName": "Vilma",
+          "lastName": "Španihelová",
+          "playerHeight": null,
+          "playerJerseyNumber": null,
+          "playerPosition": null
+        },
+        {
           "birthMonth": 9,
           "birthYear": 2009,
           "firstName": "Barbora",
@@ -18289,5 +18298,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-10T20:15+01:00"
+  "updated": "2026-11-11T00:10+01:00"
 }
