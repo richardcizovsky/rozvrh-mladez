@@ -1,20 +1,6 @@
 {
-  "updated": "2026-11-10 19:43",
+  "updated": "2026-11-11 00:05",
   "days": [
-    {
-      "date": "2026-11-10",
-      "matches": [
-        {
-          "skupina": "OV-Z",
-          "cas": "17:45",
-          "cislo": "(21)",
-          "tymy": "TJ Sokol Vratimov - TJ Sokol Svinov \"B\"",
-          "stav": "3:1 (-17,22,21,18)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=943024"
-        }
-      ]
-    },
     {
       "date": "2026-11-11",
       "matches": []
@@ -121,9 +107,27 @@
     {
       "date": "2026-11-18",
       "matches": []
+    },
+    {
+      "date": "2026-11-19",
+      "matches": []
     }
   ],
   "past_days": [
+    {
+      "date": "2026-11-10",
+      "matches": [
+        {
+          "skupina": "OV-Z",
+          "cas": "17:45",
+          "cislo": "(21)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol Svinov \"B\"",
+          "stav": "3:1 (-17,22,21,18)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=943024"
+        }
+      ]
+    },
     {
       "date": "2026-11-08",
       "matches": [
