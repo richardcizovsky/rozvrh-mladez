@@ -13555,7 +13555,7 @@
                 "matchId": 943026,
                 "matchStart": "2026-11-11T20:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:1 (16,-21,18,11)",
                 "round": 6,
                 "shortNote": "",
                 "withinRange": true
@@ -15193,6 +15193,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "Tělovýchovná jednota Sokol Stará Bělá, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "5"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "4"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "5:13"
+                  },
+                  {
+                    "column": 9,
+                    "value": "364:412"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 94435
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "8."
+                  },
+                  {
+                    "column": 1,
                     "value": "TJ Sokol Svinov A"
                   },
                   {
@@ -15239,7 +15289,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "8."
+                    "value": "9."
                   },
                   {
                     "column": 1,
@@ -15247,7 +15297,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "column": 3,
@@ -15263,7 +15313,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "column": 7,
@@ -15271,11 +15321,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "3:15"
+                    "value": "4:18"
                   },
                   {
                     "column": 9,
-                    "value": "287:427"
+                    "value": "357:523"
                   },
                   {
                     "column": 10,
@@ -15284,56 +15334,6 @@
                 ],
                 "error": null,
                 "teamId": 94442
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "9."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Sokol Stará Bělá, z.s."
-                  },
-                  {
-                    "column": 2,
-                    "value": "4"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "4"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "2:12"
-                  },
-                  {
-                    "column": 9,
-                    "value": "268:342"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 94435
               }
             ]
           },
@@ -18298,5 +18298,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-11T00:10+01:00"
+  "updated": "2026-11-11T21:57+01:00"
 }
