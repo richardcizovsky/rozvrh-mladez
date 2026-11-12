@@ -1,10 +1,6 @@
 {
-  "updated": "2026-11-12 00:02",
+  "updated": "2026-11-13 00:10",
   "days": [
-    {
-      "date": "2026-11-12",
-      "matches": []
-    },
     {
       "date": "2026-11-13",
       "matches": []
@@ -111,6 +107,29 @@
     {
       "date": "2026-11-20",
       "matches": []
+    },
+    {
+      "date": "2026-11-21",
+      "matches": [
+        {
+          "skupina": "MS-U18ZA",
+          "cas": "10:00",
+          "cislo": "(50)",
+          "tymy": "TJ Sokol Vratimov - VK Polanka n. O. \"B\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936578"
+        },
+        {
+          "skupina": "MS-U18ZA",
+          "cas": "14:00",
+          "cislo": "(54)",
+          "tymy": "TJ Sokol Vratimov - VK Polanka n. O. \"B\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936582"
+        }
+      ]
     }
   ],
   "past_days": [
@@ -225,20 +244,6 @@
           "stav": "3:0 (19,6,16)",
           "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=937020"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "matches": [
-        {
-          "skupina": "OV-Z",
-          "cas": "19:20",
-          "cislo": "(19)",
-          "tymy": "TJ Sokol Svinov \"A\" - TJ Sokol Vratimov",
-          "stav": "1:3 (-23,23,-22,-24)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=943022"
         }
       ]
     }
