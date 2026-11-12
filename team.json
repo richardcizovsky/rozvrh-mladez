@@ -10365,11 +10365,11 @@
           "groupId": 30317,
           "groupName": "Třetí kolo soutěže U16Z, skupina B",
           "groupStartDate": "2026-12-06T00:00:00+01:00",
-          "poradatel": "Pořadatel:",
+          "poradatel": "Pořadatel: SVK Nový Jičín, 2 hřiště, Hala ABC",
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
-            "showHallColumn": true
+            "showHallColumn": false
           },
           "scoreboard": {
             "columns": [
@@ -18298,5 +18298,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-11T21:57+01:00"
+  "updated": "2026-11-12T15:37+01:00"
 }
