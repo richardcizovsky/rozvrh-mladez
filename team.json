@@ -6639,11 +6639,11 @@
           "groupId": 30321,
           "groupName": "Třetí kolo soutěže U16Z, skupina F",
           "groupStartDate": "2026-12-06T00:00:00+01:00",
-          "poradatel": "Pořadatel:",
+          "poradatel": "Pořadatel: TJ Frenštát p.R. \"B\", hala GaSPŠEI,  2 kurty",
           "schedule": {
             "allowSportsField": false,
             "responseData": [],
-            "showHallColumn": true
+            "showHallColumn": false
           },
           "scoreboard": {
             "columns": [
@@ -18298,5 +18298,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-12T15:37+01:00"
+  "updated": "2026-11-12T15:46+01:00"
 }
