@@ -1,10 +1,6 @@
 {
-  "updated": "2026-11-13 00:10",
+  "updated": "2026-11-14 00:05",
   "days": [
-    {
-      "date": "2026-11-13",
-      "matches": []
-    },
     {
       "date": "2026-11-14",
       "matches": [
@@ -128,6 +124,29 @@
           "stav": "-",
           "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936582"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "matches": [
+        {
+          "skupina": "MS-U20ZA",
+          "cas": "10:00",
+          "cislo": "(50)",
+          "tymy": "TJ Sokol Bohumín - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937028"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cas": "14:00",
+          "cislo": "(53)",
+          "tymy": "TJ Sokol Bohumín - TJ Sokol Vratimov",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937031"
         }
       ]
     }
