@@ -84,6 +84,8 @@
   .match-teams { font-weight: 600; margin: 2px 0; }
   .match-time { color: #777; font-weight: 600; font-size: 0.78em; margin-right: 4px; font-variant-numeric: tabular-nums; }
   .match-result { font-size: 1em; }
+  .match-line { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 12px; margin: 2px 0; }
+  .match-line .match-teams { margin: 0; }
   .empty { padding: 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #777; }
   .table-wrap { overflow-x: auto; }
   footer { margin-top: 40px; text-align: center; color: #777; font-size: .9em; }
@@ -109,13 +111,36 @@
   @media (max-width: 768px) {
     td.match { padding: 5px 8px; line-height: 1.3; }
     .match-teams { margin: 0; }
+    .match-line { margin: 0; }
     tr.date-header th { padding: 7px 8px; }
   }
+  /* Řádek s tlačítkem Zpět a přepínačem "Skrýt zabalené" */
+  .nav-row { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 12px; }
+  .nav-row .back { margin: 0; }
+  .nav-top { margin: 0 0 16px; }
+  .nav-bottom { margin: 24px 0 0; }
+  .toggle { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; color: #2c3e50; font-size: .9em; }
+  .toggle input { position: absolute; opacity: 0; width: 0; height: 0; }
+  .toggle .switch { position: relative; width: 36px; height: 20px; background: #c5ccd3; border-radius: 999px; transition: background .15s; flex: none; }
+  .toggle .switch::after { content: ""; position: absolute; top: 2px; left: 2px; width: 16px; height: 16px; background: #fff; border-radius: 50%; box-shadow: 0 1px 3px rgba(0,0,0,.3); transition: transform .15s; }
+  .toggle input:checked + .switch { background: #1a5fb4; }
+  .toggle input:checked + .switch::after { transform: translateX(16px); }
+  .toggle input:focus-visible + .switch { outline: 2px solid #1a5fb4; outline-offset: 2px; }
+  /* Zapnutý přepínač: skryje zavřené panely a skupiny bez otevřeného panelu */
+  body.hide-collapsed details.partners:not([open]) { display: none; }
+  body.hide-collapsed .group-block:not(:has(details[open])) { display: none; }
 </style>
 </head>
 <body>
 <div class="container">
-  <a class="back" href="historie.html">&larr; Zpět na historii</a>
+  <div class="nav-row nav-top">
+    <a class="back" href="historie.html">&larr; Zpět na historii</a>
+    <label class="toggle">
+      <input type="checkbox" class="hide-toggle">
+      <span class="switch" aria-hidden="true"></span>
+      Skrýt zabalené
+    </label>
+  </div>
   <div class="header">
     <div class="header-top">
       <img src="logo.png" alt="Logo TJ Sokol Vratimov">
@@ -125,7 +150,14 @@
     <p class="cvf-link" id="cvfLink"></p>
   </div>
   <div id="content"></div>
-  <a class="back back-bottom" href="historie.html">&larr; Zpět na historii</a>
+  <div class="nav-row nav-bottom">
+    <a class="back" href="historie.html">&larr; Zpět na historii</a>
+    <label class="toggle">
+      <input type="checkbox" class="hide-toggle">
+      <span class="switch" aria-hidden="true"></span>
+      Skrýt zabalené
+    </label>
+  </div>
   <footer>Data: Česká volejbalová federace. Staženo: <span id="updated">–</span></footer>
 </div>
 <script>
@@ -177,7 +209,9 @@
 
   // Sbalitelný panel
   function collapsible(title, ...children) {
-    return el("details", { class: "partners" }, el("summary", {}, ...(Array.isArray(title) ? title : [title])), ...children);
+    const d = el("details", { class: "partners" }, el("summary", {}, ...(Array.isArray(title) ? title : [title])), ...children);
+    d.addEventListener("toggle", () => { if (d.open) scheduleLayout(); });
+    return d;
   }
 
   function renderRoster(players) {
@@ -266,17 +300,50 @@
       visible = new Set(cols.filter(c => !hidden.includes(c)).map(c => c.column));
     }
     const shownCols = cols.filter(c => visible.has(c.column));
+    // Klíč sloupce (Z, B, …) pro pozdější přesun sloupce B na úzkých displejích
+    const colKey = {};
+    for (const c of shownCols) colKey[c.column] = String(columnLabel(c.value) || "").trim().toUpperCase();
     const thead = el("thead", {}, el("tr", {}, ...shownCols.map((c, i) =>
-      el("th", { class: i === 1 ? "team" : "num" }, columnLabel(c.value)))));
+      el("th", { class: i === 1 ? "team" : "num", "data-key": colKey[c.column] }, columnLabel(c.value)))));
     const tbody = el("tbody");
     for (const all of rows) {
       const cells = all.filter(c => visible.has(c.column));
       const mine = all.some(c => isMine(c.value));
       tbody.append(el("tr", { class: mine ? "me" : "" },
-        ...cells.map((c, i) => el("td", { class: i === 1 ? "team" : "num" }, c.value))));
+        ...cells.map((c, i) => el("td", { class: i === 1 ? "team" : "num", "data-key": colKey[c.column] || "" }, c.value))));
     }
     return el("div", { class: "table-wrap" }, el("table", { class: "scoreboard" }, thead, tbody));
   }
+
+  // Když se tabulka nevejde a musí se vodorovně skrolovat, přesune se sloupec B (body) hned za Z
+  function layoutScoreboards() {
+    for (const table of document.querySelectorAll("table.scoreboard")) {
+      const wrap = table.parentElement;
+      const rowsEls = table.querySelectorAll("tr");
+      // Návrat do původního pořadí (B na původním místě)
+      for (const tr of rowsEls) {
+        const b = tr.querySelector(':scope > [data-key="B"]');
+        if (!b) continue;
+        if (b.dataset.orig === undefined) b.dataset.orig = [...tr.children].indexOf(b);
+        b.remove();
+        tr.insertBefore(b, tr.children[Number(b.dataset.orig)] || null);
+      }
+      // Zavřený panel nemá rozměry – přepočítá se po otevření
+      if (!wrap.clientWidth || wrap.scrollWidth <= wrap.clientWidth + 1) continue;
+      for (const tr of rowsEls) {
+        const b = tr.querySelector(':scope > [data-key="B"]');
+        const z = tr.querySelector(':scope > [data-key="Z"]');
+        if (b && z) z.after(b);
+      }
+    }
+  }
+  let layoutPending = false;
+  function scheduleLayout() {
+    if (layoutPending) return;
+    layoutPending = true;
+    requestAnimationFrame(() => { layoutPending = false; layoutScoreboards(); });
+  }
+  window.addEventListener("resize", scheduleLayout);
 
   // V historii se zobrazují všechny zápasy skupiny, zápasy Sokola Vratimov jsou zvýrazněné
   function getMatches(schedule) {
@@ -322,8 +389,10 @@
       // Řádky: 1. hala (jen když se liší), 2. čas + zápas, 3. výsledek
       tbody.append(el("tr", { class: mineMatch ? "me" : "" }, el("td", { class: "match" },
         venue ? el("div", { class: "match-when" }, venue) : null,
-        el("div", { class: "match-teams" }, time ? el("span", { class: "match-time" }, time) : null, teams),
-        m.result ? el("div", { class: "match-result" }, m.result) : null)));
+        // Zápas a výsledek na jednom řádku; když se nevejdou, výsledek se zalomí pod zápas
+        el("div", { class: "match-line" },
+          el("div", { class: "match-teams" }, time ? el("span", { class: "match-time" }, time) : null, teams),
+          m.result ? el("div", { class: "match-result" }, m.result) : null))));
     }
     return el("div", { class: "table-wrap" }, el("table", {}, tbody));
   }
@@ -393,11 +462,22 @@
       }
       document.title = `${label} (${SEASON_NAME}) – Historie – TJ Sokol Vratimov`;
       document.getElementById("content").replaceChildren(renderRoster(team.players), renderGroups(team));
+      scheduleLayout();
     } catch (e) {
       title.textContent = "Data se nepodařilo načíst";
     }
   }
   init();
+
+  // Přepínač "Skrýt zabalené" (výchozí stav: vypnuto); oba přepínače (nahoře a dole) se synchronizují
+  const hideToggles = document.querySelectorAll(".hide-toggle");
+  hideToggles.forEach(t => {
+    t.checked = false;
+    t.addEventListener("change", () => {
+      hideToggles.forEach(o => { o.checked = t.checked; });
+      document.body.classList.toggle("hide-collapsed", t.checked);
+    });
+  });
 </script>
 </body>
 </html>
