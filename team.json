@@ -17737,7 +17737,7 @@
                 "matchId": 957300,
                 "matchStart": "2026-11-14T12:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "0:2 (-20,-14)",
                 "round": 1,
                 "shortNote": "",
                 "withinRange": true
@@ -17971,6 +17971,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "1"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "2:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "50:34"
+                  },
+                  {
+                    "column": 10,
+                    "value": "3"
+                  }
+                ],
+                "error": null,
+                "teamId": 93857
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
                     "value": "TJ Sokol Vratimov"
                   },
                   {
@@ -18017,7 +18067,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "3."
+                    "value": "4."
                   },
                   {
                     "column": 1,
@@ -18067,7 +18117,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "4."
+                    "value": "5."
                   },
                   {
                     "column": 1,
@@ -18075,7 +18125,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 3,
@@ -18091,7 +18141,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 7,
@@ -18099,11 +18149,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "0:2"
+                    "value": "0:4"
                   },
                   {
                     "column": 9,
-                    "value": "33:50"
+                    "value": "67:100"
                   },
                   {
                     "column": 10,
@@ -18112,56 +18162,6 @@
                 ],
                 "error": null,
                 "teamId": 93856
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "5."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Ostrava A"
-                  },
-                  {
-                    "column": 2,
-                    "value": "0"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "0"
-                  }
-                ],
-                "error": null,
-                "teamId": 93857
               }
             ]
           },
@@ -18298,5 +18298,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-14T11:13+01:00"
+  "updated": "2026-11-14T12:37+01:00"
 }
