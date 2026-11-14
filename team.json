@@ -17761,7 +17761,7 @@
                 "matchId": 957301,
                 "matchStart": "2026-11-14T12:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "1:2 (-21,24,-5)",
                 "round": 2,
                 "shortNote": "",
                 "withinRange": true
@@ -17971,6 +17971,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "TJ Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "3"
+                  },
+                  {
+                    "column": 3,
+                    "value": "1"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "4:3"
+                  },
+                  {
+                    "column": 9,
+                    "value": "141:135"
+                  },
+                  {
+                    "column": 10,
+                    "value": "5"
+                  }
+                ],
+                "error": null,
+                "teamId": 92498
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
                     "value": "Tělovýchovná jednota Ostrava A"
                   },
                   {
@@ -18017,56 +18067,6 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "3."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Sokol Vratimov"
-                  },
-                  {
-                    "column": 2,
-                    "value": "2"
-                  },
-                  {
-                    "column": 3,
-                    "value": "1"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "1"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "2:2"
-                  },
-                  {
-                    "column": 9,
-                    "value": "77:83"
-                  },
-                  {
-                    "column": 10,
-                    "value": "3"
-                  }
-                ],
-                "error": null,
-                "teamId": 92498
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
                     "value": "4."
                   },
                   {
@@ -18075,7 +18075,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 3,
@@ -18087,7 +18087,7 @@
                   },
                   {
                     "column": 5,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 6,
@@ -18099,15 +18099,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "0:2"
+                    "value": "1:4"
                   },
                   {
                     "column": 9,
-                    "value": "37:50"
+                    "value": "89:114"
                   },
                   {
                     "column": 10,
-                    "value": "0"
+                    "value": "1"
                   }
                 ],
                 "error": null,
@@ -18298,5 +18298,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-14T12:37+01:00"
+  "updated": "2026-11-14T12:46+01:00"
 }
