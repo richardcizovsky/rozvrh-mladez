@@ -17713,7 +17713,7 @@
                 "matchId": 957299,
                 "matchStart": "2026-11-14T10:30:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "2:0 (10,17)",
                 "round": 1,
                 "shortNote": "",
                 "withinRange": true
@@ -17921,15 +17921,15 @@
                   },
                   {
                     "column": 1,
-                    "value": "TJ Sokol Vratimov"
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
                   },
                   {
                     "column": 2,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 3,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 4,
@@ -17949,19 +17949,19 @@
                   },
                   {
                     "column": 8,
-                    "value": "2:0"
+                    "value": "4:0"
                   },
                   {
                     "column": 9,
-                    "value": "50:33"
+                    "value": "100:64"
                   },
                   {
                     "column": 10,
-                    "value": "3"
+                    "value": "6"
                   }
                 ],
                 "error": null,
-                "teamId": 92498
+                "teamId": 93693
               },
               {
                 "cells": [
@@ -17971,11 +17971,11 @@
                   },
                   {
                     "column": 1,
-                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
+                    "value": "TJ Sokol Vratimov"
                   },
                   {
                     "column": 2,
-                    "value": "1"
+                    "value": "2"
                   },
                   {
                     "column": 3,
@@ -17991,7 +17991,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "0"
+                    "value": "1"
                   },
                   {
                     "column": 7,
@@ -17999,11 +17999,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "2:0"
+                    "value": "2:2"
                   },
                   {
                     "column": 9,
-                    "value": "50:37"
+                    "value": "77:83"
                   },
                   {
                     "column": 10,
@@ -18011,7 +18011,7 @@
                   }
                 ],
                 "error": null,
-                "teamId": 93693
+                "teamId": 92498
               },
               {
                 "cells": [
@@ -18298,5 +18298,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-14T10:04+01:00"
+  "updated": "2026-11-14T11:13+01:00"
 }
