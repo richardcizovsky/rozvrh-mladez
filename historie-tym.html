@@ -88,6 +88,12 @@
   tbody.day.collapsed tr.date-header th::after { transform: rotate(-90deg); }
   tbody.day.collapsed tr:not(.date-header) { display: none; }
   body.hide-collapsed tbody.day.collapsed { display: none; }
+  /* Při zapnutém "Skrýt zabalené" nejdou dny sbalit: bez šipky a bez přepínače "Vše zabalit" */
+  body.hide-collapsed tbody.day.collapsible tr.date-header th { cursor: default; }
+  body.hide-collapsed tbody.day.collapsible tr.date-header th:hover { background: #34495e; }
+  body.hide-collapsed tbody.day.collapsible tr.date-header th::after { content: none; }
+  .day-toggle-row { display: flex; justify-content: flex-end; padding: 8px 12px; background: #fff; border-top: 1px solid #e0e0e0; }
+  body.hide-collapsed .day-toggle-row { display: none; }
   .match-when { color: #777; font-size: .85em; }
   .match-teams { font-weight: 600; margin: 2px 0; }
   .match-time { color: #777; font-weight: 600; font-size: 0.78em; margin-right: 4px; font-variant-numeric: tabular-nums; }
@@ -421,20 +427,41 @@
   const pragueOpts = { timeZone: "Europe/Prague" };
 
   // Sbalitelné dny v seznamu zápasů (výchozí stav: rozbalené)
-  function makeDayCollapsible(tbody, th) {
+  function makeDayCollapsible(tbody, th, onChange) {
     tbody.classList.add("collapsible");
     th.setAttribute("role", "button");
     th.setAttribute("tabindex", "0");
     th.setAttribute("aria-expanded", "true");
-    const toggle = () => {
-      const closed = tbody.classList.toggle("collapsed");
+    // Nastaví stav dne (používá i přepínač "Vše zabalit")
+    const set = closed => {
+      tbody.classList.toggle("collapsed", closed);
       th.setAttribute("aria-expanded", String(!closed));
       if (!closed) scheduleLayout();
+    };
+    const toggle = () => {
+      // Při zapnutém "Skrýt zabalené" se dny nesbalují (sbalený den by zmizel)
+      if (document.body.classList.contains("hide-collapsed")) return;
+      set(!tbody.classList.contains("collapsed"));
+      onChange();
     };
     th.addEventListener("click", toggle);
     th.addEventListener("keydown", e => {
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
     });
+    return set;
+  }
+
+  // Přepínač "Vše zabalit" nad seznamem zápasů s více dny
+  function dayToggleAll(table, setters) {
+    const cb = el("input", { type: "checkbox" });
+    const sync = () => {
+      cb.checked = [...table.querySelectorAll("tbody.day")].every(t => t.classList.contains("collapsed"));
+    };
+    cb.addEventListener("change", () => setters.forEach(set => set(cb.checked)));
+    sync();
+    const row = el("div", { class: "day-toggle-row" },
+      el("label", { class: "toggle" }, cb, el("span", { class: "switch", "aria-hidden": "true" }), "Vše zabalit"));
+    return { row, sync };
   }
 
   function renderMatches(list, hideHall) {
@@ -443,6 +470,8 @@
     const dayOf = m => { const d = new Date(m.matchStart); return isNaN(d) ? "?" : d.toLocaleDateString("sv-SE", pragueOpts); };
     // Více dnů: záhlaví s datem jde sbalit
     const multiDay = new Set(list.map(dayOf)).size > 1;
+    const setters = [];
+    let syncAll = () => {};
     let tbody = null;
     let lastDay = null;
     for (const m of list) {
@@ -457,7 +486,7 @@
         }) : "Bez data";
         const th = el("th", {}, dayLabel);
         tbody = el("tbody", { class: "day" }, el("tr", { class: "date-header" }, th));
-        if (multiDay) makeDayCollapsible(tbody, th);
+        if (multiDay) setters.push(makeDayCollapsible(tbody, th, () => syncAll()));
         table.append(tbody);
       }
       const label = `${m.homeName || "?"} – ${m.guestName || "?"}`;
@@ -478,7 +507,14 @@
           el("div", { class: "match-teams" }, time ? el("span", { class: "match-time" }, time) : null, teams),
           m.result ? el("div", { class: "match-result" }, m.result) : null))));
     }
-    return el("div", { class: "table-wrap" }, table);
+    const wrap = el("div", { class: "table-wrap" }, table);
+    if (!multiDay) return wrap;
+    // Více dnů: nad seznamem přepínač "Vše zabalit"
+    const all = dayToggleAll(table, setters);
+    syncAll = all.sync;
+    const frag = document.createDocumentFragment();
+    frag.append(all.row, wrap);
+    return frag;
   }
 
   // Vrátí text data, pokud groupStartDate a groupEndDate připadají na stejný den (pražský čas)
