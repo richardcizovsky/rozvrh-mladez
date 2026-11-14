@@ -83,6 +83,14 @@
   td.match { padding: 10px 12px; }
   tr.date-header th { background: #34495e; text-transform: capitalize; font-size: 1em; padding: 10px 12px; }
   tr.date-header:not(:first-child) th { border-top: 4px solid #2c3e50; }
+  tbody.day + tbody.day tr.date-header th { border-top: 4px solid #2c3e50; }
+  /* Sbalitelné dny v seznamu zápasů */
+  tbody.day.collapsible tr.date-header th { cursor: pointer; user-select: none; }
+  tbody.day.collapsible tr.date-header th:hover { background: #3d566e; }
+  tbody.day.collapsible tr.date-header th::after { content: "▾"; float: right; display: inline-block; transition: transform .2s; }
+  tbody.day.collapsed tr.date-header th::after { transform: rotate(-90deg); }
+  tbody.day.collapsed tr:not(.date-header) { display: none; }
+  body.hide-collapsed tbody.day.collapsed { display: none; }
   .match-when { color: #777; font-size: .85em; }
   .match-teams { font-weight: 600; margin: 2px 0; }
   .match-time { color: #777; font-weight: 600; font-size: 0.78em; margin-right: 4px; font-variant-numeric: tabular-nums; }
@@ -136,6 +144,11 @@
   .toggle input:focus-visible + .switch { outline: 2px solid #1a5fb4; outline-offset: 2px; }
   body.hide-collapsed details.partners:not([open]) { display: none; }
   body.hide-collapsed .group-block:not(:has(details[open])) { display: none; }
+  /* Zapnutý přepínač: bez poznámky pod tabulkou a bez rozbalovacích tlačítek (Soupiska, Tabulka, Zápasy) */
+  body.hide-collapsed details.partners > summary,
+  body.hide-collapsed .group-block .group-header { display: none; }
+  body.hide-collapsed details.partners > .table-wrap,
+  body.hide-collapsed details.partners > .empty { border-top: none; }
 </style>
 </head>
 <body>
@@ -363,8 +376,8 @@
       lines.forEach(l => l.classList.remove("no-time", "wrapped"));
       // Zavřený panel nemá rozměry – přepočítá se po otevření
       if (!table.clientWidth) continue;
-      // Měří se jen zápasy s výsledkem; dostupná šířka před měřením bez zalamování
-      const items = lines.filter(l => l.querySelector(".match-result")).map(l => ({ l, avail: l.clientWidth }));
+      // Měří se jen viditelné zápasy s výsledkem (ne ve sbaleném dni); dostupná šířka před měřením bez zalamování
+      const items = lines.filter(l => l.querySelector(".match-result") && l.clientWidth).map(l => ({ l, avail: l.clientWidth }));
       const fits = ({ l, avail }) => {
         l.classList.add("measure");
         const ok = l.scrollWidth <= avail + 1;
@@ -401,21 +414,50 @@
 
   const pragueOpts = { timeZone: "Europe/Prague" };
 
-  function renderMatches(mine, highlight, hideHall) {
+  // Sbalitelné dny v seznamu zápasů (výchozí stav: rozbalené); stav přežije i automatické obnovení dat
+  const dayClosed = {};
+  function makeDayCollapsible(tbody, th, stateKey) {
+    tbody.classList.add("collapsible");
+    th.setAttribute("role", "button");
+    th.setAttribute("tabindex", "0");
+    const apply = closed => {
+      tbody.classList.toggle("collapsed", closed);
+      th.setAttribute("aria-expanded", String(!closed));
+    };
+    apply(!!dayClosed[stateKey]);
+    const toggle = () => {
+      dayClosed[stateKey] = !tbody.classList.contains("collapsed");
+      apply(dayClosed[stateKey]);
+      if (!dayClosed[stateKey]) scheduleLayout();
+    };
+    th.addEventListener("click", toggle);
+    th.addEventListener("keydown", e => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+    });
+  }
+
+  function renderMatches(mine, highlight, hideHall, key) {
     if (!mine.length) return null;
-    const tbody = el("tbody");
+    const table = el("table", {});
+    const dayOf = m => { const d = new Date(m.matchStart); return isNaN(d) ? "?" : d.toLocaleDateString("sv-SE", pragueOpts); };
+    // Více dnů: záhlaví s datem jde sbalit
+    const multiDay = new Set(mine.map(dayOf)).size > 1;
+    let tbody = null;
     let lastDay = null;
     for (const m of mine) {
       const d = new Date(m.matchStart);
       const valid = !isNaN(d);
       // Zápasy se seskupují podle data (v pražském čase)
-      const dayKey = valid ? d.toLocaleDateString("sv-SE", pragueOpts) : "?";
+      const dayKey = dayOf(m);
       if (dayKey !== lastDay) {
         lastDay = dayKey;
         const dayLabel = valid ? d.toLocaleDateString("cs-CZ", {
           ...pragueOpts, weekday: "long", day: "numeric", month: "long"
         }) : "Bez data";
-        tbody.append(el("tr", { class: "date-header" }, el("th", {}, dayLabel)));
+        const th = el("th", {}, dayLabel);
+        tbody = el("tbody", { class: "day" }, el("tr", { class: "date-header" }, th));
+        if (multiDay) makeDayCollapsible(tbody, th, `${key}:${dayKey}`);
+        table.append(tbody);
       }
       const label = `${m.homeName || "?"} – ${m.guestName || "?"}`;
       const teams = m.matchId
@@ -435,7 +477,7 @@
           el("div", { class: "match-teams" }, time ? el("span", { class: "match-time" }, time) : null, teams),
           m.result ? el("div", { class: "match-result" }, m.result) : null))));
     }
-    return el("div", { class: "table-wrap" }, el("table", {}, tbody));
+    return el("div", { class: "table-wrap" }, table);
   }
 
   // Vrátí text data, pokud groupStartDate a groupEndDate připadají na stejný den (pražský čas)
@@ -467,7 +509,7 @@
       const halls = new Set(list.map(hallName));
       const commonHall = list.length && halls.size === 1 ? [...halls][0] : "";
       if (commonHall) block.insertBefore(el("div", { class: "group-date" }, commonHall), block.children[day ? 2 : 1] || null);
-      const matches = renderMatches(list, showAll, !!commonHall);
+      const matches = renderMatches(list, showAll, !!commonHall, g.groupId || name);
       if (matches) {
         block.append(collapsible(`zap:${g.groupId || name}`, "Zápasy", matches));
       }
