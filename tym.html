@@ -89,6 +89,11 @@
   .match-result { font-size: 1em; }
   .match-line { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: 12px; margin: 2px 0; }
   .match-line .match-teams { margin: 0; }
+  /* Zápas s výsledkem při nedostatku místa: 1. skryje se čas, 2. výsledek se zalomí pod zápas */
+  .match-line.measure, .match-line.measure * { white-space: nowrap; }
+  .match-line.measure { flex-wrap: nowrap; }
+  .match-line.no-time .match-time { display: none; }
+  .match-line.wrapped { flex-direction: column; align-items: flex-start; }
   .empty { padding: 12px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: #777; }
   .table-wrap { overflow-x: auto; }
   footer { margin-top: 40px; text-align: center; color: #777; font-size: .9em; }
@@ -266,7 +271,18 @@
     return s === "" || /^0+(\s*:\s*0+)?$/.test(s);
   }
 
-  function renderScoreboard(sb) {
+  // Názvy týmů ze zápasů skupiny (teamId → název), použijí se i v tabulce
+  function teamNames(schedule) {
+    const map = new Map();
+    const all = (schedule && Array.isArray(schedule.responseData)) ? schedule.responseData : [];
+    for (const m of all) {
+      if (m.homeId != null && m.homeName && !isPlaceholder(m.homeName)) map.set(m.homeId, m.homeName);
+      if (m.guestId != null && m.guestName && !isPlaceholder(m.guestName)) map.set(m.guestId, m.guestName);
+    }
+    return map;
+  }
+
+  function renderScoreboard(sb, names) {
     if (!sb || !Array.isArray(sb.rows) || !sb.rows.length) {
       return el("div", { class: "empty" }, "Tabulka zatím není k dispozici.");
     }
@@ -300,12 +316,18 @@
     const thead = el("thead", {}, el("tr", {}, ...shownCols.map((c, i) =>
       el("th", { class: i === 1 ? "team" : "num", "data-key": colKey[c.column] }, columnLabel(c.value)))));
     const tbody = el("tbody");
-    for (const all of rows) {
+    // Sloupec s názvem týmu (druhý sloupec tabulky)
+    const teamCol = cols[1] ? cols[1].column : null;
+    rows.forEach((all, ri) => {
       const cells = all.filter(c => visible.has(c.column));
       const mine = all.some(c => isMine(c.value));
+      // Název týmu ze zápasů (podle teamId), pokud je k dispozici
+      const tid = sb.rows[ri].teamId;
+      const alias = names && tid !== null && tid !== undefined ? names.get(tid) : "";
       tbody.append(el("tr", { class: mine ? "me" : "" },
-        ...cells.map((c, i) => el("td", { class: i === 1 ? "team" : "num", "data-key": colKey[c.column] || "" }, c.value))));
-    }
+        ...cells.map((c, i) => el("td", { class: i === 1 ? "team" : "num", "data-key": colKey[c.column] || "" },
+          c.column === teamCol && alias ? alias : c.value))));
+    });
     return el("div", { class: "table-wrap" }, el("table", { class: "scoreboard" }, thead, tbody));
   }
 
@@ -332,10 +354,35 @@
     }
   }
   let layoutPending = false;
+  // Zápasy s výsledkem: když se řádek nevejde, nejdřív se skryje čas (u všech zápasů v seznamu),
+  // teprve pak jde výsledek pod zápas
+  function layoutMatches() {
+    const tables = new Set([...document.querySelectorAll(".match-line")].map(l => l.closest("table")));
+    for (const table of tables) {
+      const lines = [...table.querySelectorAll(".match-line")];
+      lines.forEach(l => l.classList.remove("no-time", "wrapped"));
+      // Zavřený panel nemá rozměry – přepočítá se po otevření
+      if (!table.clientWidth) continue;
+      // Měří se jen zápasy s výsledkem; dostupná šířka před měřením bez zalamování
+      const items = lines.filter(l => l.querySelector(".match-result")).map(l => ({ l, avail: l.clientWidth }));
+      const fits = ({ l, avail }) => {
+        l.classList.add("measure");
+        const ok = l.scrollWidth <= avail + 1;
+        l.classList.remove("measure");
+        return ok;
+      };
+      // 1. krok: nevejde se některý zápas i s časem → čas se skryje u všech zápasů s výsledkem
+      // (zápasy bez výsledku mají čas vždy viditelný)
+      if (items.every(fits)) continue;
+      items.forEach(it => it.l.classList.add("no-time"));
+      // 2. krok: co se nevejde ani bez času, má výsledek na dalším řádku
+      for (const it of items) if (!fits(it)) it.l.classList.add("wrapped");
+    }
+  }
   function scheduleLayout() {
     if (layoutPending) return;
     layoutPending = true;
-    requestAnimationFrame(() => { layoutPending = false; layoutScoreboards(); });
+    requestAnimationFrame(() => { layoutPending = false; layoutScoreboards(); layoutMatches(); });
   }
   window.addEventListener("resize", scheduleLayout);
 
@@ -413,7 +460,7 @@
       const day = groupSingleDay(g);
       if (day) block.append(el("div", { class: "group-date" }, day));
       block.append(collapsible(`tab:${g.groupId || name}`, "Tabulka",
-        renderScoreboard(g.scoreboard), gh));
+        renderScoreboard(g.scoreboard, teamNames(g.schedule)), gh));
       const showAll = ALL_MATCHES_TEAMS.includes(team.id);
       const list = getMatches(g.schedule, showAll);
       // Všechny zápasy ve stejné hale: hala se zobrazí jednou pod názvem skupiny (a data)
