@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14 10:01",
+  "updated": "2026-11-14 10:13",
   "days": [
     {
       "date": "2026-11-14",
@@ -17,9 +17,9 @@
           "skupina": "MS-U14Z-T2A",
           "cas": "10:30",
           "cislo": "(4)",
-          "tymy": "TJ Sokol F-M \"A\" - TJ Sokol Vratimov",
+          "tymy": "TJ Sokol F-M \"A\" - TJ Sokol Vratimov LIVE",
           "stav": "-",
-          "badge": "PAUSE",
+          "badge": "",
           "href": "https://ezapis.cvf.cz/online/view.php?match=957299"
         },
         {
@@ -37,7 +37,7 @@
           "cislo": "(9)",
           "tymy": "TJ Sokol Vratimov - TJ Ostrava \"A\"",
           "stav": "-",
-          "badge": "",
+          "badge": "PAUSE",
           "href": "https://ezapis.cvf.cz/online/view.php?match=957304"
         }
       ]
