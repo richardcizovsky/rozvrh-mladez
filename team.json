@@ -18178,7 +18178,268 @@
           "poradatel": "",
           "schedule": {
             "allowSportsField": false,
-            "responseData": [],
+            "responseData": [
+              {
+                "guestId": 93693,
+                "guestName": "TJ Sokol F-M \"A\"",
+                "guestPosition": 1,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "Sokolovna"
+                  },
+                  "id": 410,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "Sokolovna - Sokolská 290 Vratimov"
+                },
+                "homeId": 92498,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 2,
+                "match": 1,
+                "matchId": 959893,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": false
+              },
+              {
+                "guestId": 93857,
+                "guestName": "TJ Ostrava \"A\"",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "Sokolovna"
+                  },
+                  "id": 114,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "Sokolovna - Hlavní 401 Frýdlant nad Ostravicí - Frýdlant"
+                },
+                "homeId": 92922,
+                "homeName": "VKB Frýdlant n. O.",
+                "homePosition": 4,
+                "match": 2,
+                "matchId": 959894,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": false
+              },
+              {
+                "guestId": 92498,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "ZŠ Janáčkovo náměstí 17"
+                  },
+                  "id": 199,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "ZŠ Janáčkovo náměstí 17 - Janáčkovo náměstí 1970 Krnov - Pod Bezručovým vrchem"
+                },
+                "homeId": 93673,
+                "homeName": "VO Slezská Orlice",
+                "homePosition": 5,
+                "match": 3,
+                "matchId": 959895,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": false
+              },
+              {
+                "guestId": 92922,
+                "guestName": "VKB Frýdlant n. O.",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "ZŠ Jiřího z Poděbrad Frýdek-Místek"
+                  },
+                  "id": 501,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "ZŠ Jiřího z Poděbrad Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 93693,
+                "homeName": "TJ Sokol F-M \"A\"",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 959896,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": false
+              },
+              {
+                "guestId": 93857,
+                "guestName": "TJ Ostrava \"A\"",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "ZŠ Janáčkovo náměstí 17"
+                  },
+                  "id": 199,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "ZŠ Janáčkovo náměstí 17 - Janáčkovo náměstí 1970 Krnov - Pod Bezručovým vrchem"
+                },
+                "homeId": 93673,
+                "homeName": "VO Slezská Orlice",
+                "homePosition": 5,
+                "match": 5,
+                "matchId": 959897,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": false
+              },
+              {
+                "guestId": 92922,
+                "guestName": "VKB Frýdlant n. O.",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "Sokolovna"
+                  },
+                  "id": 410,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "Sokolovna - Sokolská 290 Vratimov"
+                },
+                "homeId": 92498,
+                "homeName": "TJ Sokol Vratimov",
+                "homePosition": 2,
+                "match": 6,
+                "matchId": 959898,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": false
+              },
+              {
+                "guestId": 93673,
+                "guestName": "VO Slezská Orlice",
+                "guestPosition": 5,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "ZŠ Jiřího z Poděbrad Frýdek-Místek"
+                  },
+                  "id": 501,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "ZŠ Jiřího z Poděbrad Frýdek-Místek - Jiřího z Poděbrad 3109 Frýdek-Místek - Frýdek"
+                },
+                "homeId": 93693,
+                "homeName": "TJ Sokol F-M \"A\"",
+                "homePosition": 1,
+                "match": 7,
+                "matchId": 959899,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": false
+              },
+              {
+                "guestId": 92498,
+                "guestName": "TJ Sokol Vratimov",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "Hala míčových sportů"
+                  },
+                  "id": 41,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "Hala míčových sportů - Varenská 3098 Ostrava - Moravská Ostrava"
+                },
+                "homeId": 93857,
+                "homeName": "TJ Ostrava \"A\"",
+                "homePosition": 3,
+                "match": 8,
+                "matchId": 959900,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": false
+              },
+              {
+                "guestId": 93673,
+                "guestName": "VO Slezská Orlice",
+                "guestPosition": 5,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "Sokolovna"
+                  },
+                  "id": 114,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "Sokolovna - Hlavní 401 Frýdlant nad Ostravicí - Frýdlant"
+                },
+                "homeId": 92922,
+                "homeName": "VKB Frýdlant n. O.",
+                "homePosition": 4,
+                "match": 9,
+                "matchId": 959901,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": false
+              },
+              {
+                "guestId": 93693,
+                "guestName": "TJ Sokol F-M \"A\"",
+                "guestPosition": 1,
+                "hallResponse": {
+                  "hallDetail": {
+                    "name": "Hala míčových sportů"
+                  },
+                  "id": 41,
+                  "sportsFieldDetail": null,
+                  "target": "hall",
+                  "type": "green",
+                  "value": "Hala míčových sportů - Varenská 3098 Ostrava - Moravská Ostrava"
+                },
+                "homeId": 93857,
+                "homeName": "TJ Ostrava \"A\"",
+                "homePosition": 3,
+                "match": 10,
+                "matchId": 959902,
+                "matchStart": null,
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": false
+              }
+            ],
             "showHallColumn": true
           },
           "scoreboard": {
@@ -18614,5 +18875,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-15T08:51+01:00"
+  "updated": "2026-11-15T09:00+01:00"
 }
