@@ -15638,6 +15638,206 @@
                   },
                   {
                     "column": 1,
+                    "value": "TJ Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "40"
+                  }
+                ],
+                "error": null,
+                "teamId": 92498
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O."
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "39"
+                  }
+                ],
+                "error": null,
+                "teamId": 92922
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "38"
+                  }
+                ],
+                "error": null,
+                "teamId": 93857
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "37"
+                  }
+                ],
+                "error": null,
+                "teamId": 93693
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "5."
+                  },
+                  {
+                    "column": 1,
                     "value": "VK Polanka nad Odrou \"A\""
                   },
                   {
@@ -15684,7 +15884,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "2."
+                    "value": "6."
                   },
                   {
                     "column": 1,
@@ -15734,7 +15934,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "3."
+                    "value": "7."
                   },
                   {
                     "column": 1,
@@ -15784,7 +15984,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "4."
+                    "value": "8."
                   },
                   {
                     "column": 1,
@@ -15834,7 +16034,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "5."
+                    "value": "9."
                   },
                   {
                     "column": 1,
@@ -15884,7 +16084,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "6."
+                    "value": "10."
                   },
                   {
                     "column": 1,
@@ -15934,107 +16134,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "7."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Vk Beskydy Frýdlant n. O."
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "21"
-                  }
-                ],
-                "error": null,
-                "teamId": 92922
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "8."
-                  },
-                  {
-                    "column": 1,
-                    "value": "TJ Sokol Vratimov"
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "20"
-                  }
-                ],
-                "error": null,
-                "teamId": 92498
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "9."
+                    "value": "11."
                   },
                   {
                     "column": 1,
@@ -16084,57 +16184,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "10."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Ostrava A"
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "19"
-                  }
-                ],
-                "error": null,
-                "teamId": 93857
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "11."
+                    "value": "12."
                   },
                   {
                     "column": 1,
@@ -16184,7 +16234,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "12."
+                    "value": "13."
                   },
                   {
                     "column": 1,
@@ -16234,7 +16284,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "13."
+                    "value": "14."
                   },
                   {
                     "column": 1,
@@ -16279,56 +16329,6 @@
                 ],
                 "error": null,
                 "teamId": 95229
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "14."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "16"
-                  }
-                ],
-                "error": null,
-                "teamId": 93693
               },
               {
                 "cells": [
@@ -18298,5 +18298,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-14T15:38+01:00"
+  "updated": "2026-11-15T08:42+01:00"
 }
