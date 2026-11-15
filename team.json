@@ -6642,7 +6642,152 @@
           "poradatel": "Pořadatel: TJ Frenštát p.R. \"B\", hala GaSPŠEI,  2 kurty",
           "schedule": {
             "allowSportsField": false,
-            "responseData": [],
+            "responseData": [
+              {
+                "guestId": 94074,
+                "guestName": "SA Ostrava",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93690,
+                "homeName": "TJ Frenštát p. R. \"B\"",
+                "homePosition": 1,
+                "match": 1,
+                "matchId": 960011,
+                "matchStart": "2026-12-06T09:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92491,
+                "guestName": "TJ Sokol Vratimov \"B\"",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93941,
+                "homeName": "TJ Hlučín \"C\"",
+                "homePosition": 2,
+                "match": 2,
+                "matchId": 960012,
+                "matchStart": "2026-12-06T09:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92491,
+                "guestName": "TJ Sokol Vratimov \"B\"",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93690,
+                "homeName": "TJ Frenštát p. R. \"B\"",
+                "homePosition": 1,
+                "match": 3,
+                "matchId": 960013,
+                "matchStart": "2026-12-06T10:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 94074,
+                "guestName": "SA Ostrava",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93941,
+                "homeName": "TJ Hlučín \"C\"",
+                "homePosition": 2,
+                "match": 4,
+                "matchId": 960014,
+                "matchStart": "2026-12-06T10:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 93941,
+                "guestName": "TJ Hlučín \"C\"",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 93690,
+                "homeName": "TJ Frenštát p. R. \"B\"",
+                "homePosition": 1,
+                "match": 5,
+                "matchId": 960015,
+                "matchStart": "2026-12-06T12:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 94074,
+                "guestName": "SA Ostrava",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 1119,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "SH GaSPŠEI Frenštát - Křižíkova 2204 Frenštát pod Radhoštěm"
+                },
+                "homeId": 92491,
+                "homeName": "TJ Sokol Vratimov \"B\"",
+                "homePosition": 3,
+                "match": 6,
+                "matchId": 960016,
+                "matchStart": "2026-12-06T12:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
             "showHallColumn": false
           },
           "scoreboard": {
@@ -19116,5 +19261,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-15T20:06+01:00"
+  "updated": "2026-11-15T21:00+01:00"
 }
