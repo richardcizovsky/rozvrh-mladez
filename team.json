@@ -10368,7 +10368,248 @@
           "poradatel": "Pořadatel: SVK Nový Jičín, 2 hřiště, Hala ABC",
           "schedule": {
             "allowSportsField": false,
-            "responseData": [],
+            "responseData": [
+              {
+                "guestId": 93713,
+                "guestName": "VAM Havířov \"A\"",
+                "guestPosition": 1,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 92957,
+                "homeName": "VK Raškovice",
+                "homePosition": 3,
+                "match": 1,
+                "matchId": 959967,
+                "matchStart": "2026-12-06T09:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92493,
+                "guestName": "TJ Sokol Vratimov \"A\"",
+                "guestPosition": 5,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 92923,
+                "homeName": "VKB Frýdlant n. O. \"A\"",
+                "homePosition": 4,
+                "match": 2,
+                "matchId": 959968,
+                "matchStart": "2026-12-06T09:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 1,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92957,
+                "guestName": "VK Raškovice",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 92493,
+                "homeName": "TJ Sokol Vratimov \"A\"",
+                "homePosition": 5,
+                "match": 3,
+                "matchId": 959969,
+                "matchStart": "2026-12-06T10:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 94045,
+                "guestName": "SVK Nový Jičín \"A\"",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 93713,
+                "homeName": "VAM Havířov \"A\"",
+                "homePosition": 1,
+                "match": 4,
+                "matchId": 959970,
+                "matchStart": "2026-12-06T10:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 2,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92493,
+                "guestName": "TJ Sokol Vratimov \"A\"",
+                "guestPosition": 5,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 94045,
+                "homeName": "SVK Nový Jičín \"A\"",
+                "homePosition": 2,
+                "match": 5,
+                "matchId": 959971,
+                "matchStart": "2026-12-06T12:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92923,
+                "guestName": "VKB Frýdlant n. O. \"A\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 92957,
+                "homeName": "VK Raškovice",
+                "homePosition": 3,
+                "match": 6,
+                "matchId": 959972,
+                "matchStart": "2026-12-06T12:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 3,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 94045,
+                "guestName": "SVK Nový Jičín \"A\"",
+                "guestPosition": 2,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 92923,
+                "homeName": "VKB Frýdlant n. O. \"A\"",
+                "homePosition": 4,
+                "match": 7,
+                "matchId": 959973,
+                "matchStart": "2026-12-06T13:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 93713,
+                "guestName": "VAM Havířov \"A\"",
+                "guestPosition": 1,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 92493,
+                "homeName": "TJ Sokol Vratimov \"A\"",
+                "homePosition": 5,
+                "match": 8,
+                "matchId": 959974,
+                "matchStart": "2026-12-06T13:30:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 4,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92923,
+                "guestName": "VKB Frýdlant n. O. \"A\"",
+                "guestPosition": 4,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 93713,
+                "homeName": "VAM Havířov \"A\"",
+                "homePosition": 1,
+                "match": 9,
+                "matchId": 959975,
+                "matchStart": "2026-12-06T15:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 5,
+                "shortNote": "",
+                "withinRange": true
+              },
+              {
+                "guestId": 92957,
+                "guestName": "VK Raškovice",
+                "guestPosition": 3,
+                "hallResponse": {
+                  "hallDetail": null,
+                  "id": 645,
+                  "sportsFieldDetail": null,
+                  "target": null,
+                  "type": null,
+                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                },
+                "homeId": 94045,
+                "homeName": "SVK Nový Jičín \"A\"",
+                "homePosition": 2,
+                "match": 10,
+                "matchId": 959976,
+                "matchStart": "2026-12-06T15:00:00+01:00",
+                "note": "",
+                "result": "",
+                "round": 5,
+                "shortNote": "",
+                "withinRange": true
+              }
+            ],
             "showHallColumn": false
           },
           "scoreboard": {
@@ -18875,5 +19116,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-15T13:38+01:00"
+  "updated": "2026-11-15T20:06+01:00"
 }
