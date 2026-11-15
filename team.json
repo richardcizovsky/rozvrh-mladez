@@ -15547,7 +15547,7 @@
               "master": true,
               "name": "Krajský přebor Moravskoslezského kraje dívek U14",
               "parentId": 15026,
-              "publicGroupCount": 19,
+              "publicGroupCount": 20,
               "region": "Moravskoslezský",
               "regionalCategory": "Krajský přebor U14",
               "season": "2026/27",
@@ -15838,6 +15838,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava B"
+                  },
+                  {
+                    "column": 2,
+                    "value": "2"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "35"
+                  }
+                ],
+                "error": null,
+                "teamId": 93856
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "6."
+                  },
+                  {
+                    "column": 1,
                     "value": "VK Polanka nad Odrou \"A\""
                   },
                   {
@@ -15884,7 +15934,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "6."
+                    "value": "7."
                   },
                   {
                     "column": 1,
@@ -15934,7 +15984,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "7."
+                    "value": "8."
                   },
                   {
                     "column": 1,
@@ -15984,7 +16034,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "8."
+                    "value": "9."
                   },
                   {
                     "column": 1,
@@ -16034,7 +16084,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "9."
+                    "value": "10."
                   },
                   {
                     "column": 1,
@@ -16084,7 +16134,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "10."
+                    "value": "11."
                   },
                   {
                     "column": 1,
@@ -16134,7 +16184,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "11."
+                    "value": "12."
                   },
                   {
                     "column": 1,
@@ -16179,56 +16229,6 @@
                 ],
                 "error": null,
                 "teamId": 95360
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "12."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Tělovýchovná jednota Ostrava B"
-                  },
-                  {
-                    "column": 2,
-                    "value": "1"
-                  },
-                  {
-                    "column": 3,
-                    "value": "0"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "0"
-                  },
-                  {
-                    "column": 6,
-                    "value": "0"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 9,
-                    "value": "0:0"
-                  },
-                  {
-                    "column": 10,
-                    "value": "18"
-                  }
-                ],
-                "error": null,
-                "teamId": 93856
               },
               {
                 "cells": [
@@ -18166,6 +18166,322 @@
             ]
           },
           "teamNumberInGroup": 2
+        },
+        {
+          "competitionId": 18574,
+          "competitionName": "Krajský přebor Moravskoslezského kraje dívek U14",
+          "competitionSeason": "2026/27",
+          "groupEndDate": "2026-12-12T00:00:00+01:00",
+          "groupId": 30088,
+          "groupName": "Třetí kolo soutěže U14Z,sk. A",
+          "groupStartDate": "2026-12-12T00:00:00+01:00",
+          "poradatel": "",
+          "schedule": {
+            "allowSportsField": false,
+            "responseData": [],
+            "showHallColumn": true
+          },
+          "scoreboard": {
+            "columns": [
+              {
+                "column": 0,
+                "value": "p."
+              },
+              {
+                "column": 1,
+                "value": "družstvo"
+              },
+              {
+                "column": 2,
+                "value": "utkání"
+              },
+              {
+                "column": 3,
+                "value": "V3"
+              },
+              {
+                "column": 4,
+                "value": "V2"
+              },
+              {
+                "column": 5,
+                "value": "P1"
+              },
+              {
+                "column": 6,
+                "value": "P0"
+              },
+              {
+                "column": 7,
+                "value": "K"
+              },
+              {
+                "column": 8,
+                "value": "sety"
+              },
+              {
+                "column": 9,
+                "value": "míče"
+              },
+              {
+                "column": 10,
+                "value": "body"
+              }
+            ],
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "1."
+                  },
+                  {
+                    "column": 1,
+                    "value": "TJ Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 92498
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "2."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělocvičná jednota Sokol Frýdek - Místek A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93693
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Tělovýchovná jednota Ostrava A"
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93857
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
+                    "value": "VO Slezská Orlice"
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 93673
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "5."
+                  },
+                  {
+                    "column": 1,
+                    "value": "Vk Beskydy Frýdlant n. O."
+                  },
+                  {
+                    "column": 2,
+                    "value": "0"
+                  },
+                  {
+                    "column": 3,
+                    "value": "0"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "0"
+                  },
+                  {
+                    "column": 6,
+                    "value": "0"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 9,
+                    "value": "0:0"
+                  },
+                  {
+                    "column": 10,
+                    "value": "0"
+                  }
+                ],
+                "error": null,
+                "teamId": 92922
+              }
+            ]
+          },
+          "teamNumberInGroup": 2
         }
       ],
       "letter": "A",
@@ -18298,5 +18614,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-15T08:42+01:00"
+  "updated": "2026-11-15T08:51+01:00"
 }
