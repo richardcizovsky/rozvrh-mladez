@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17 11:17",
+  "updated": "2026-11-17 11:26",
   "days": [
     {
       "date": "2026-11-17",
@@ -8,9 +8,9 @@
           "skupina": "MS-U18ZA",
           "cas": "10:00",
           "cislo": "(82)",
-          "tymy": "TJ Sokol Vratimov - SVK Nový Jičín LIVE",
+          "tymy": "TJ Sokol Vratimov - SVK Nový Jičín",
           "stav": "3:0 (23,18,14)",
-          "badge": "",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936610"
         },
         {
