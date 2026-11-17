@@ -2161,7 +2161,7 @@
                 "matchId": 936610,
                 "matchStart": "2026-11-17T10:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (23,18,14)",
                 "round": 21,
                 "shortNote": "",
                 "withinRange": true
@@ -3051,7 +3051,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "column": 3,
@@ -3067,7 +3067,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 7,
@@ -3075,11 +3075,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "25:9"
+                    "value": "25:12"
                   },
                   {
                     "column": 9,
-                    "value": "786:648"
+                    "value": "841:723"
                   },
                   {
                     "column": 10,
@@ -3101,11 +3101,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "column": 3,
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "column": 4,
@@ -3125,15 +3125,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "19:16"
+                    "value": "22:16"
                   },
                   {
                     "column": 9,
-                    "value": "770:729"
+                    "value": "845:784"
                   },
                   {
                     "column": 10,
-                    "value": "17"
+                    "value": "20"
                   }
                 ],
                 "error": null,
@@ -19261,5 +19261,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-16T19:38+01:00"
+  "updated": "2026-11-17T11:23+01:00"
 }
