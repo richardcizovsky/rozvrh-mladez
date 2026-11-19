@@ -1,10 +1,6 @@
 {
-  "updated": "2026-11-19 00:11",
+  "updated": "2026-11-20 00:00",
   "days": [
-    {
-      "date": "2026-11-19",
-      "matches": []
-    },
     {
       "date": "2026-11-20",
       "matches": []
@@ -74,6 +70,29 @@
     {
       "date": "2026-11-27",
       "matches": []
+    },
+    {
+      "date": "2026-11-28",
+      "matches": [
+        {
+          "skupina": "MS-U18ZA",
+          "cas": "10:00",
+          "cislo": "(60)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"C\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936588"
+        },
+        {
+          "skupina": "MS-U18ZA",
+          "cas": "14:00",
+          "cislo": "(64)",
+          "tymy": "TJ Sokol Vratimov - TJ Sokol F-M \"C\"",
+          "stav": "-",
+          "badge": "",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=936592"
+        }
+      ]
     }
   ],
   "past_days": [
