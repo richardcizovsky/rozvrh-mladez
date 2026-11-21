@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21 11:21",
+  "updated": "2026-11-21 13:42",
   "days": [
     {
       "date": "2026-11-21",
@@ -17,9 +17,9 @@
           "skupina": "MS-U18ZA",
           "cas": "13:00",
           "cislo": "(54)",
-          "tymy": "TJ Sokol Vratimov - VK Polanka n. O. \"B\" LIVE",
-          "stav": "-",
-          "badge": "",
+          "tymy": "TJ Sokol Vratimov - VK Polanka n. O. \"B\"",
+          "stav": "2:3 (23,-16,22,-23,-11)",
+          "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=936582"
         }
       ]
