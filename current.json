@@ -1,29 +1,6 @@
 {
-  "updated": "2026-11-22 13:27",
+  "updated": "2026-11-23 00:21",
   "days": [
-    {
-      "date": "2026-11-22",
-      "matches": [
-        {
-          "skupina": "MS-U20ZA",
-          "cas": "10:00",
-          "cislo": "(50)",
-          "tymy": "TJ Sokol Bohumín - TJ Sokol Vratimov",
-          "stav": "3:0 (17,23,9)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=937028"
-        },
-        {
-          "skupina": "MS-U20ZA",
-          "cas": "14:00",
-          "cislo": "(53)",
-          "tymy": "TJ Sokol Bohumín - TJ Sokol Vratimov",
-          "stav": "3:0 (16,22,22)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=937031"
-        }
-      ]
-    },
     {
       "date": "2026-11-23",
       "matches": []
@@ -93,9 +70,36 @@
     {
       "date": "2026-11-30",
       "matches": []
+    },
+    {
+      "date": "2026-12-01",
+      "matches": []
     }
   ],
   "past_days": [
+    {
+      "date": "2026-11-22",
+      "matches": [
+        {
+          "skupina": "MS-U20ZA",
+          "cas": "10:00",
+          "cislo": "(50)",
+          "tymy": "TJ Sokol Bohumín - TJ Sokol Vratimov",
+          "stav": "3:0 (17,23,9)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937028"
+        },
+        {
+          "skupina": "MS-U20ZA",
+          "cas": "14:00",
+          "cislo": "(53)",
+          "tymy": "TJ Sokol Bohumín - TJ Sokol Vratimov",
+          "stav": "3:0 (16,22,22)",
+          "badge": "PLAY",
+          "href": "https://ezapis.cvf.cz/online/view.php?match=937031"
+        }
+      ]
+    },
     {
       "date": "2026-11-21",
       "matches": [
@@ -162,47 +166,6 @@
           "stav": "1:3 (-16,23,-17,-14)",
           "badge": "PLAY",
           "href": "https://ezapis.cvf.cz/online/view.php?match=937025"
-        }
-      ]
-    },
-    {
-      "date": "2026-11-14",
-      "matches": [
-        {
-          "skupina": "MS-U14Z-T2A",
-          "cas": "09:00",
-          "cislo": "(2)",
-          "tymy": "TJ Sokol Vratimov - TJ Ostrava \"B\"",
-          "stav": "2:0 (12,21)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=957297"
-        },
-        {
-          "skupina": "MS-U14Z-T2A",
-          "cas": "10:30",
-          "cislo": "(4)",
-          "tymy": "TJ Sokol F-M \"A\" - TJ Sokol Vratimov",
-          "stav": "2:0 (10,17)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=957299"
-        },
-        {
-          "skupina": "MS-U14Z-T2A",
-          "cas": "12:00",
-          "cislo": "(6)",
-          "tymy": "VKB Frýdlant n. O. - TJ Sokol Vratimov",
-          "stav": "1:2 (-21,24,-5)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=957301"
-        },
-        {
-          "skupina": "MS-U14Z-T2A",
-          "cas": "15:00",
-          "cislo": "(9)",
-          "tymy": "TJ Sokol Vratimov - TJ Ostrava \"A\"",
-          "stav": "2:0 (17,13)",
-          "badge": "PLAY",
-          "href": "https://ezapis.cvf.cz/online/view.php?match=957304"
         }
       ]
     }
