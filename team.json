@@ -14017,7 +14017,7 @@
                 "homePosition": 6,
                 "match": 26,
                 "matchId": 943029,
-                "matchStart": "2026-11-25T19:20:00+01:00",
+                "matchStart": "2027-01-06T19:20:00+01:00",
                 "note": "",
                 "result": "",
                 "round": 7,
@@ -19261,5 +19261,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-22T14:30+01:00"
+  "updated": "2026-11-23T07:30+01:00"
 }
