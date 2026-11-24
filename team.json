@@ -14045,7 +14045,7 @@
                 "matchId": 943030,
                 "matchStart": "2026-11-24T18:15:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:1 (-23,19,20,21)",
                 "round": 7,
                 "shortNote": "",
                 "withinRange": true
@@ -15429,11 +15429,61 @@
                   },
                   {
                     "column": 1,
+                    "value": "Volejbalový klub Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "3"
+                  },
+                  {
+                    "column": 4,
+                    "value": "0"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "2"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "12:11"
+                  },
+                  {
+                    "column": 9,
+                    "value": "500:484"
+                  },
+                  {
+                    "column": 10,
+                    "value": "10"
+                  }
+                ],
+                "error": null,
+                "teamId": 94433
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "5."
+                  },
+                  {
+                    "column": 1,
                     "value": "TJ Sokol Svinov B"
                   },
                   {
                     "column": 2,
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "column": 3,
@@ -15449,7 +15499,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "2"
+                    "value": "3"
                   },
                   {
                     "column": 7,
@@ -15457,11 +15507,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "10:8"
+                    "value": "11:11"
                   },
                   {
                     "column": 9,
-                    "value": "377:350"
+                    "value": "462:448"
                   },
                   {
                     "column": 10,
@@ -15475,7 +15525,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "5."
+                    "value": "6."
                   },
                   {
                     "column": 1,
@@ -15520,56 +15570,6 @@
                 ],
                 "error": null,
                 "teamId": 94436
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "6."
-                  },
-                  {
-                    "column": 1,
-                    "value": "Volejbalový klub Vratimov"
-                  },
-                  {
-                    "column": 2,
-                    "value": "5"
-                  },
-                  {
-                    "column": 3,
-                    "value": "2"
-                  },
-                  {
-                    "column": 4,
-                    "value": "0"
-                  },
-                  {
-                    "column": 5,
-                    "value": "1"
-                  },
-                  {
-                    "column": 6,
-                    "value": "2"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "9:10"
-                  },
-                  {
-                    "column": 9,
-                    "value": "402:399"
-                  },
-                  {
-                    "column": 10,
-                    "value": "7"
-                  }
-                ],
-                "error": null,
-                "teamId": 94433
               },
               {
                 "cells": [
@@ -19261,5 +19261,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-24T13:20+01:00"
+  "updated": "2026-11-24T20:24+01:00"
 }
