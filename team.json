@@ -13993,7 +13993,7 @@
                 "matchId": 943028,
                 "matchStart": "2026-11-25T20:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "0:3 (-9,-12,-19)",
                 "round": 7,
                 "shortNote": "",
                 "withinRange": true
@@ -15379,6 +15379,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "VK Polanka nad Odrou, z.s."
+                  },
+                  {
+                    "column": 2,
+                    "value": "6"
+                  },
+                  {
+                    "column": 3,
+                    "value": "2"
+                  },
+                  {
+                    "column": 4,
+                    "value": "2"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "1"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "14:11"
+                  },
+                  {
+                    "column": 9,
+                    "value": "554:516"
+                  },
+                  {
+                    "column": 10,
+                    "value": "11"
+                  }
+                ],
+                "error": null,
+                "teamId": 94436
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "4."
+                  },
+                  {
+                    "column": 1,
                     "value": "Tělovýchovná jednota Hlučín, z.s."
                   },
                   {
@@ -15425,7 +15475,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "4."
+                    "value": "5."
                   },
                   {
                     "column": 1,
@@ -15475,7 +15525,7 @@
                 "cells": [
                   {
                     "column": 0,
-                    "value": "5."
+                    "value": "6."
                   },
                   {
                     "column": 1,
@@ -15520,56 +15570,6 @@
                 ],
                 "error": null,
                 "teamId": 94444
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "6."
-                  },
-                  {
-                    "column": 1,
-                    "value": "VK Polanka nad Odrou, z.s."
-                  },
-                  {
-                    "column": 2,
-                    "value": "5"
-                  },
-                  {
-                    "column": 3,
-                    "value": "1"
-                  },
-                  {
-                    "column": 4,
-                    "value": "2"
-                  },
-                  {
-                    "column": 5,
-                    "value": "1"
-                  },
-                  {
-                    "column": 6,
-                    "value": "1"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "11:11"
-                  },
-                  {
-                    "column": 9,
-                    "value": "479:476"
-                  },
-                  {
-                    "column": 10,
-                    "value": "8"
-                  }
-                ],
-                "error": null,
-                "teamId": 94436
               },
               {
                 "cells": [
@@ -15683,7 +15683,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "6"
+                    "value": "7"
                   },
                   {
                     "column": 3,
@@ -15699,7 +15699,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "column": 7,
@@ -15707,11 +15707,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "4:18"
+                    "value": "4:21"
                   },
                   {
                     "column": 9,
-                    "value": "357:523"
+                    "value": "397:598"
                   },
                   {
                     "column": 10,
@@ -19261,5 +19261,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-24T20:24+01:00"
+  "updated": "2026-11-25T21:08+01:00"
 }
