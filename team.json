@@ -1966,13 +1966,13 @@
                 "guestPosition": 4,
                 "hallResponse": {
                   "hallDetail": {
-                    "name": "Hala ABC"
+                    "name": "Tělocvična Msgr. Šrámka"
                   },
-                  "id": 645,
+                  "id": 646,
                   "sportsFieldDetail": null,
                   "target": "hall",
-                  "type": "green",
-                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                  "type": "orange",
+                  "value": "Tělocvična Msgr. Šrámka - Msgr. Šrámka 1105 Nový Jičín"
                 },
                 "homeId": 94042,
                 "homeName": "SVK Nový Jičín",
@@ -2068,13 +2068,13 @@
                 "guestPosition": 4,
                 "hallResponse": {
                   "hallDetail": {
-                    "name": "Hala ABC"
+                    "name": "Tělocvična Msgr. Šrámka"
                   },
-                  "id": 645,
+                  "id": 646,
                   "sportsFieldDetail": null,
                   "target": "hall",
-                  "type": "green",
-                  "value": "Hala ABC - Purkyňova 116 Nový Jičín"
+                  "type": "orange",
+                  "value": "Tělocvična Msgr. Šrámka - Msgr. Šrámka 1105 Nový Jičín"
                 },
                 "homeId": 94042,
                 "homeName": "SVK Nový Jičín",
@@ -19261,5 +19261,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-25T21:08+01:00"
+  "updated": "2026-11-27T12:27+01:00"
 }
