@@ -1697,7 +1697,7 @@
                 "matchId": 936592,
                 "matchStart": "2026-11-28T14:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (14,20,15)",
                 "round": 16,
                 "shortNote": "",
                 "withinRange": true
@@ -3047,6 +3047,56 @@
                   },
                   {
                     "column": 1,
+                    "value": "T.J. Sokol Vratimov"
+                  },
+                  {
+                    "column": 2,
+                    "value": "16"
+                  },
+                  {
+                    "column": 3,
+                    "value": "10"
+                  },
+                  {
+                    "column": 4,
+                    "value": "1"
+                  },
+                  {
+                    "column": 5,
+                    "value": "1"
+                  },
+                  {
+                    "column": 6,
+                    "value": "4"
+                  },
+                  {
+                    "column": 7,
+                    "value": "0"
+                  },
+                  {
+                    "column": 8,
+                    "value": "36:20"
+                  },
+                  {
+                    "column": 9,
+                    "value": "1272:1134"
+                  },
+                  {
+                    "column": 10,
+                    "value": "33"
+                  }
+                ],
+                "error": null,
+                "teamId": 92492
+              },
+              {
+                "cells": [
+                  {
+                    "column": 0,
+                    "value": "3."
+                  },
+                  {
+                    "column": 1,
                     "value": "Sportovní volejbalový klub Nový Jičín"
                   },
                   {
@@ -3088,56 +3138,6 @@
                 ],
                 "error": null,
                 "teamId": 94042
-              },
-              {
-                "cells": [
-                  {
-                    "column": 0,
-                    "value": "3."
-                  },
-                  {
-                    "column": 1,
-                    "value": "T.J. Sokol Vratimov"
-                  },
-                  {
-                    "column": 2,
-                    "value": "15"
-                  },
-                  {
-                    "column": 3,
-                    "value": "9"
-                  },
-                  {
-                    "column": 4,
-                    "value": "1"
-                  },
-                  {
-                    "column": 5,
-                    "value": "1"
-                  },
-                  {
-                    "column": 6,
-                    "value": "4"
-                  },
-                  {
-                    "column": 7,
-                    "value": "0"
-                  },
-                  {
-                    "column": 8,
-                    "value": "33:20"
-                  },
-                  {
-                    "column": 9,
-                    "value": "1197:1085"
-                  },
-                  {
-                    "column": 10,
-                    "value": "30"
-                  }
-                ],
-                "error": null,
-                "teamId": 92492
               },
               {
                 "cells": [
@@ -3301,7 +3301,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "13"
+                    "value": "14"
                   },
                   {
                     "column": 3,
@@ -3317,7 +3317,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "column": 7,
@@ -3325,11 +3325,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "9:36"
+                    "value": "9:39"
                   },
                   {
                     "column": 9,
-                    "value": "839:1060"
+                    "value": "888:1135"
                   },
                   {
                     "column": 10,
@@ -19261,5 +19261,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-28T12:21+01:00"
+  "updated": "2026-11-28T13:16+01:00"
 }
