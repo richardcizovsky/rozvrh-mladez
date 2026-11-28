@@ -1543,7 +1543,7 @@
                 "matchId": 936586,
                 "matchStart": "2026-11-28T10:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "0:3 (-23,-16,-9)",
                 "round": 15,
                 "shortNote": "",
                 "withinRange": true
@@ -1569,7 +1569,7 @@
                 "matchId": 936587,
                 "matchStart": "2026-11-28T10:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "0:3 (-17,-15,-20)",
                 "round": 15,
                 "shortNote": "",
                 "withinRange": true
@@ -1595,7 +1595,7 @@
                 "matchId": 936588,
                 "matchStart": "2026-11-28T10:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (12,22,17)",
                 "round": 15,
                 "shortNote": "",
                 "withinRange": true
@@ -3001,11 +3001,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "column": 3,
-                    "value": "11"
+                    "value": "12"
                   },
                   {
                     "column": 4,
@@ -3025,15 +3025,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "36:3"
+                    "value": "39:3"
                   },
                   {
                     "column": 9,
-                    "value": "948:621"
+                    "value": "1023:669"
                   },
                   {
                     "column": 10,
-                    "value": "35"
+                    "value": "38"
                   }
                 ],
                 "error": null,
@@ -3051,7 +3051,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "column": 3,
@@ -3067,7 +3067,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "4"
+                    "value": "5"
                   },
                   {
                     "column": 7,
@@ -3075,11 +3075,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "31:15"
+                    "value": "31:18"
                   },
                   {
                     "column": 9,
-                    "value": "1054:888"
+                    "value": "1102:963"
                   },
                   {
                     "column": 10,
@@ -3101,11 +3101,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "14"
+                    "value": "15"
                   },
                   {
                     "column": 3,
-                    "value": "8"
+                    "value": "9"
                   },
                   {
                     "column": 4,
@@ -3125,15 +3125,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "30:20"
+                    "value": "33:20"
                   },
                   {
                     "column": 9,
-                    "value": "1122:1034"
+                    "value": "1197:1085"
                   },
                   {
                     "column": 10,
-                    "value": "27"
+                    "value": "30"
                   }
                 ],
                 "error": null,
@@ -3151,11 +3151,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "column": 3,
-                    "value": "5"
+                    "value": "6"
                   },
                   {
                     "column": 4,
@@ -3175,15 +3175,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "23:22"
+                    "value": "26:22"
                   },
                   {
                     "column": 9,
-                    "value": "949:972"
+                    "value": "1024:1024"
                   },
                   {
                     "column": 10,
-                    "value": "19"
+                    "value": "22"
                   }
                 ],
                 "error": null,
@@ -3251,7 +3251,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "column": 3,
@@ -3267,7 +3267,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "9"
+                    "value": "10"
                   },
                   {
                     "column": 7,
@@ -3275,11 +3275,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "9:30"
+                    "value": "9:33"
                   },
                   {
                     "column": 9,
-                    "value": "697:897"
+                    "value": "749:972"
                   },
                   {
                     "column": 10,
@@ -3301,7 +3301,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "12"
+                    "value": "13"
                   },
                   {
                     "column": 3,
@@ -3317,7 +3317,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "column": 7,
@@ -3325,11 +3325,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "9:33"
+                    "value": "9:36"
                   },
                   {
                     "column": 9,
-                    "value": "788:985"
+                    "value": "839:1060"
                   },
                   {
                     "column": 10,
@@ -19261,5 +19261,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-27T12:27+01:00"
+  "updated": "2026-11-28T11:23+01:00"
 }
