@@ -12706,7 +12706,7 @@
                 "matchId": 937034,
                 "matchStart": "2026-11-28T11:00:00+01:00",
                 "note": "",
-                "result": "",
+                "result": "3:0 (23,7,18)",
                 "round": 19,
                 "shortNote": "",
                 "withinRange": true
@@ -12878,11 +12878,11 @@
                   },
                   {
                     "column": 2,
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "column": 3,
-                    "value": "18"
+                    "value": "19"
                   },
                   {
                     "column": 4,
@@ -12902,15 +12902,15 @@
                   },
                   {
                     "column": 8,
-                    "value": "54:1"
+                    "value": "57:1"
                   },
                   {
                     "column": 9,
-                    "value": "1371:778"
+                    "value": "1446:826"
                   },
                   {
                     "column": 10,
-                    "value": "54"
+                    "value": "57"
                   }
                 ],
                 "error": null,
@@ -13078,7 +13078,7 @@
                   },
                   {
                     "column": 2,
-                    "value": "16"
+                    "value": "17"
                   },
                   {
                     "column": 3,
@@ -13094,7 +13094,7 @@
                   },
                   {
                     "column": 6,
-                    "value": "10"
+                    "value": "11"
                   },
                   {
                     "column": 7,
@@ -13102,11 +13102,11 @@
                   },
                   {
                     "column": 8,
-                    "value": "19:37"
+                    "value": "19:40"
                   },
                   {
                     "column": 9,
-                    "value": "1105:1265"
+                    "value": "1153:1340"
                   },
                   {
                     "column": 10,
@@ -19261,5 +19261,5 @@
     "start": null,
     "total": 6
   },
-  "updated": "2026-11-28T11:23+01:00"
+  "updated": "2026-11-28T12:21+01:00"
 }
